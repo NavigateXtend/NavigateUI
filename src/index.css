@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (max-width: 768px) {
+  .shareGallery {
+    transition: all 0.7s linear;
+    animation: moving2 60s infinite;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shareGallery {
+    transition: all 0.7s linear;
+    animation: moving 20s infinite;
+  }
+}
+@keyframes moving {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  33.3333% {
+    transform: translateX(-100%);
+  }
+
+  66.6666% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes moving2 {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  16.6666% {
+    transform: translateX(-100%);
+  }
+  33.3333% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-300%);
+  }
+  66.6666% {
+    transform: translateX(-400%);
+  }
+  83.3333% {
+    transform: translateX(-500%);
+  }
+}
