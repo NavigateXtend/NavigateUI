@@ -21,7 +21,9 @@ const Button1 = () => {
         Hover
       </button>
       {/* 4 */}
-      <button className="text-white before:block before:absolute">Hover</button>
+      <button className=" before:block before:absolute before:inset-0 before:bg-orange-300 before:duration-500 after:duration-500 duration-300 hover:before:skew-y-12 after:block after:absolute after:inset-0 after:bg-white hover:after:-skew-y-12 before:-z-10 after:-z-10 inline-block relative text-black">
+        <span className="relative">Hover</span>
+      </button>
     </>
   );
 };
