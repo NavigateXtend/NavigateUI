@@ -3,7 +3,7 @@ const Button1 = () => {
   return (
     <>
       {/* 1 */}
-      <button className="bg-red-600 hover:scale-95  text-white duration-300">
+      <button className="bg-red-600 hover:scale-95 text-white duration-300">
         Hover
       </button>
       {/* 2 */}
@@ -28,6 +28,14 @@ const Button1 = () => {
       <button className="bg-white focus:border-b-2 focus:border-l-2 border-l-4 border-b-4 focus:translate-y-0 -translate-y-[2px] duration-150 focus:bg-white border-yellow-600 rounded-lg">
         Click
       </button>
+      {/* 6 */}
+      <button className="bg-lime-300 text-black relative overflow-hidden group z-10 rounded-lg hover:text-white duration-1000">
+        <span className="absolute bg-lime-500 rounded-lg  rotate-12 group-hover:rotate-0 inset-0 group-hover:scale-100 scale-0 -z-10 group-hover:duration-500 duration-1000 origin-center transform transition-all"></span>
+        <span className="absolute bg-lime-700 rounded-lg rotate-12 group-hover:rotate-0  inset-0 group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-700 origin-center transform transition-all"></span>
+        <span className="absolute bg-lime-900 rounded-lg rotate-12 group-hover:rotate-0  inset-0 group-hover:scale-100 scale-0 -z-10 group-hover:duration-1000 duration-500 origin-center transform transition-all"></span>
+        Hover
+      </button>
+      {/* 7 */}
     </>
   );
 };
