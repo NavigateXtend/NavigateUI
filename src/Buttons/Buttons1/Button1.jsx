@@ -7,7 +7,7 @@ const Button1 = () => {
         Hover
       </button>
       {/* 2 */}
-      <button className="hover:bg-white hover:text-black text-white hover:scale-95 bg-transparent border-2 hover:border-transparent border-white duration-300">
+      <button className="hover:before:bg-white before:w-0 before:h-0 hover:before:h-full before:top-0 before:duration-500 before:-z-10 before:left-0 hover:before:w-full before:block before:absolute relative inline-block transform origin-left hover:text-black text-white  bg-transparent border-2 hover:border-transparent border-white duration-500">
         Hover
       </button>
       {/* 3 */}
