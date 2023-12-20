@@ -7,7 +7,7 @@ const Button1 = () => {
         Hover
       </button>
       {/* 2 */}
-      <button className="text-3xl w-32 h-12 hover:before:bg-white before:w-0 before:h-0 hover:before:h-full before:top-0 before:duration-500 before:-z-10 before:left-0 hover:before:w-full before:block before:absolute relative inline-block transform origin-left hover:text-black text-white  bg-transparent border-2 hover:border-transparent border-white duration-500">
+      <button className="text-3xl w-32 h-12 hover:before:bg-black before:w-0 before:h-0 hover:before:h-full before:top-0 before:duration-500 before:-z-10 before:left-0 hover:before:w-full before:block before:absolute relative inline-block transform origin-left hover:text-white text-black  bg-transparent border-2 border-black duration-500">
         Hover
       </button>
       {/* 3 */}
@@ -25,12 +25,13 @@ const Button1 = () => {
         <span>Hover</span>
       </button>
       {/* 5 */}
-      <button className="text-3xl w-32 h-12 bg-blue-500  text-white focus:border-b-2 focus:border-l-2 border-l-4 border-b-4 focus:translate-y-0 -translate-y-[2px] duration-150 focus:bg-blue-500 border-yellow-500 rounded-lg">
+      <button className="text-3xl w-32 h-12 bg-blue-500  text-white focus:border-y-2 border-y-4 border-b-4 focus:translate-y-0 -translate-y-[2px] duration-150 focus:bg-blue-500 border-yellow-500 rounded-lg">
         Click
       </button>
       {/* 6 */}
-      <button className="text-3xl w-32 h-12 bg-lime-300 text-black relative overflow-hidden group z-10 hover:text-white duration-1000">
-        <span className="absolute bg-lime-900 -inset-5 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-700 origin-center transform transition-all"></span>
+      <button className="text-3xl w-32 h-16 bg-[#5F8670] text-white relative overflow-hidden group z-10 hover:text-white duration-1000">
+        <span className="absolute bg-[#FF9800] w-36 h-36 rounded-full group-hover:scale-100 scale-0 -z-10 -left-2 -top-10 group-hover:duration-500 duration-700 origin-center transform transition-all"></span>
+        <span className="absolute bg-[#BE3144] w-36 h-36 -left-2 -top-10 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-500 origin-center transform transition-all"></span>
         Hover
       </button>
       {/* 7 */}
