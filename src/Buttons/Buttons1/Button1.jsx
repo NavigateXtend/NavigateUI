@@ -29,10 +29,8 @@ const Button1 = () => {
         Click
       </button>
       {/* 6 */}
-      <button className="bg-lime-300 text-black relative overflow-hidden group z-10 rounded-lg hover:text-white duration-1000">
-        <span className="absolute bg-lime-500 rounded-lg  rotate-12 group-hover:rotate-0 inset-0 group-hover:scale-100 scale-0 -z-10 group-hover:duration-500 duration-1000 origin-center transform transition-all"></span>
-        <span className="absolute bg-lime-700 rounded-lg rotate-12 group-hover:rotate-0  inset-0 group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-700 origin-center transform transition-all"></span>
-        <span className="absolute bg-lime-900 rounded-lg rotate-12 group-hover:rotate-0  inset-0 group-hover:scale-100 scale-0 -z-10 group-hover:duration-1000 duration-500 origin-center transform transition-all"></span>
+      <button className="bg-lime-300 text-black relative overflow-hidden group z-10 hover:text-white duration-1000">
+        <span className="absolute bg-lime-900 -inset-5 rounded-full group-hover:scale-100 scale-0 -z-10 group-hover:duration-700 duration-700 origin-center transform transition-all"></span>
         Hover
       </button>
       {/* 7 */}
