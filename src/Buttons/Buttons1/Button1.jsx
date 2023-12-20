@@ -34,12 +34,15 @@ const Button1 = () => {
         </span>
       </button>
       {/* 6 */}
-      <button className="text-3xl relative w-32 h-16 bg-[#F05941] text-[#22092C] border-y-4 duration-500 overflow-hidden border-[#22092C] z-50 group">
+      <button className="text-3xl relative w-32 h-16 bg-[#F05941] text-[#872341] border-y-4 duration-500 overflow-hidden border-[#872341] z-50 group">
         Hover
-        <span className="bg-[#22092C] absolute inset-0 -translate-y-full group-hover:translate-y-0 group-hover:duration-1000"></span>
-        <span className="bg-[#22092C] absolute inset-0 translate-y-full group-hover:translate-y-0 group-hover:duration-1000"></span>
-        <span className="bg-[#22092C] absolute inset-0 translate-x-full group-hover:translate-x-0 group-hover:delay-300 delay-100 duration-1000"></span>
-        <span className="bg-[#22092C] absolute inset-0 -translate-x-full group-hover:translate-x-0 group-hover:delay-300 delay-100 duration-1000"></span>
+        <span className="absolute opacity-0 group-hover:opacity-100 duration-100 group-hover:duration-1000 ease-out flex justify-center inset-0 items-center z-10 text-white">
+          Leave
+        </span>
+        <span className="bg-[#872341] absolute inset-0 -translate-y-full group-hover:translate-y-0 group-hover:duration-1000"></span>
+        <span className="bg-[#872341] absolute inset-0 translate-y-full group-hover:translate-y-0 group-hover:duration-1000"></span>
+        <span className="bg-[#872341] absolute inset-0 translate-x-full group-hover:translate-x-0 group-hover:delay-300 delay-100 duration-1000"></span>
+        <span className="bg-[#872341] absolute inset-0 -translate-x-full group-hover:translate-x-0 group-hover:delay-300 delay-100 duration-1000"></span>
       </button>
       {/* 7 */}
       <button className="text-3xl w-32 h-16 bg-[#5F8670] text-white relative overflow-hidden group z-10 hover:text-white duration-1000">
