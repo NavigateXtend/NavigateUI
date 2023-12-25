@@ -27,7 +27,7 @@ const Card2 = () => {
               <span className="text-[#c5c5c7]">999+</span>
             </div>
             <button className="bg-orange-600 text-white px-2 py-1 rounded-xl">
-              30%off
+              30%off.
             </button>
           </div>
           <div className="flex justify-center">
