@@ -4,6 +4,7 @@ import Navbar from "../Nav/Navbar";
 const MainLayout = () => {
   return (
     <div>
+      {/* h  */}
       <Navbar />
       <Outlet />
     </div>
