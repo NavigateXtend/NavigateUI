@@ -3,6 +3,7 @@ import MainLayout from "./../Layouts/MainLayout";
 import { Slider1 } from "../Sliders/Slider1/Slider1";
 import Button from "../Buttons/Button";
 import Card from "./../Cards/Card";
+import Form from "./../Forms/Form";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
       {
         path: "/card",
         element: <Card />,
+      },
+      {
+        path: "/form",
+        element: <Form />,
       },
     ],
   },
