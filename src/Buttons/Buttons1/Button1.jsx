@@ -7,14 +7,18 @@ const Button1 = () => {
         Hover
       </button>
       {/* 2 */}
-      <button className="text-3xl w-32 h-16 hover:before:bg-black before:w-0 before:h-0 hover:before:h-full before:top-0 before:duration-500 before:-z-10 before:left-0 hover:before:w-full before:block before:absolute relative inline-block transform origin-left hover:text-white text-black  bg-transparent border-2 border-black duration-500">
+      <button className="text-3xl w-32 h-16 hover:before:bg-black before:w-0 before:h-0 hover:before:h-full before:bottom-0 before:duration-500 before:-z-10 before:right-0 hover:before:w-full before:block before:absolute relative inline-block transform hover:text-white text-black  bg-transparent border-2 border-black duration-500 ">
+        Hover
+      </button>
+       {/* 2 variant */}
+      <button className="border-2 text-3xl w-32 h-16 border-black hover:before:bg-black before:w-full before:h-0 hover:before:h-full hover:before:-z-10 hover:before:absolute before:absolute relative before:top-0 hover:before:left-0 before:duration-500  hover:text-white transform origin-top  before:block">
         Hover
       </button>
       {/* 3 */}
       <button className="text-3xl w-32 h-16 bg-black text-white relative overflow-hidden group z-10 rounded-lg">
-        <span className="absolute bg-white rotate-12 -inset-44 group-hover:duration-500 duration-1000 scale-x-0 group-hover:scale-x-100 origin-left transform transition-transform"></span>
-        <span className="absolute bg-teal-500 rotate-12 -inset-44 group-hover:duration-1000 duration-700 scale-x-0 group-hover:scale-x-100 origin-left transform transition-transform"></span>
-        <span className="absolute bg-teal-600 rotate-12 -inset-44 group-hover:duration-700 duration-500 scale-x-0 group-hover:scale-x-50 origin-left transform transition-transform"></span>
+        <span className="absolute bg-white rotate-12 -inset-8 group-hover:duration-500 duration-1000 scale-x-0 group-hover:scale-x-100 origin-left transform transition-transform"></span>
+        <span className="absolute bg-teal-500 rotate-12 -inset-8 group-hover:duration-1000 duration-700 scale-x-0 group-hover:scale-x-100 origin-left transform transition-transform"></span>
+        <span className="absolute bg-teal-600 rotate-12 -inset-8 group-hover:duration-700 duration-500 scale-x-0 group-hover:scale-x-50 origin-left transform transition-transform"></span>
         <span className="absolute opacity-0 group-hover:opacity-100 duration-100 group-hover:duration-1000 ease-out text-center z-10 text-white">
           Leave
         </span>
