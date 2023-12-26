@@ -4,8 +4,6 @@ const Card = () => {
   return (
     <div>
       <Card1 />
-      <Card1 />
-      <Card1 />
     </div>
   );
 };
