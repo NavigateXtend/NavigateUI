@@ -1,8 +1,8 @@
 const Form1 = () => {
   return (
-    <div className="w-full md:w-1/2 mx-auto lg:w-[500px] border-2 border-black drop-shadow-lg bg-white px-5 md:px-0">
-      <h1 className="backdrop-blur-sm text-4xl px-5 py-4">Login</h1>
-      <form className="p-5">
+    <div className="w-full md:w-1/2 mx-auto lg:w-[500px] border-2 border-black drop-shadow-lg bg-white">
+      <form className="p-8">
+        <h1 className="backdrop-blur-sm text-4xl pb-4">Login</h1>
         <div className="space-y-5">
           <label htmlFor="email" className="block">
             Email
@@ -25,7 +25,7 @@ const Form1 = () => {
         {/* button type will be submit for handling form submission*/}
         <button
           type="button"
-          className="py-2 px-5 my-4 shadow-lg border-2 border-black"
+          className="py-2 px-5 mb-4 mt-8 shadow-lg border-2 border-black"
         >
           Submit
         </button>
