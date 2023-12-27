@@ -7,6 +7,7 @@ const Form = () => {
       <Form1></Form1>
       <Form2></Form2>
       <Form1></Form1>
+      <Form1></Form1>
     </div>
   );
 };
