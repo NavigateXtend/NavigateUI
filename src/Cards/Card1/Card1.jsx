@@ -5,7 +5,7 @@ const Card1 = () => {
     <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-4 m-20 flex flex-col justify-center items-center">
       <div className="relative  w-[120px] h-[120px]">
         <img
-          src="https://i.pinimg.com/564x/31/79/7d/31797df019c3dd0832d49fd890277d9a.jpg"
+          src="https://i.ibb.co/Wgm6RTL/Whats-App-Image-2023-12-10-at-5-03-06-PM-1.jpg"
           alt=""
           className="w-full h-full object-cover rounded-full "
         />
@@ -24,7 +24,7 @@ const Card1 = () => {
         </span>
       </div>
       <div className="text-center space-y-1">
-        <h1 className="text-2xl text-gray-700">Mrs. Miya Khalifa</h1>
+        <h1 className="text-2xl text-gray-700">Mr.Shiyam Sarker</h1>
         <p className="text-gray-400 text-sm">UI/UX Designer</p>
       </div>
       <div className="flex justify-between w-full py-2">
