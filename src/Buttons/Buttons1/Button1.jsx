@@ -2,7 +2,7 @@ import "../button.css";
 
 const Button1 = () => {
   return (
-    <>
+    <div className="space-y-3 grid grid-cols-3 gap-5 justify-items-center items-center">
       {/* 1 */}
       <button className="text-3xl w-32 h-16 bg-red-600 hover:scale-95 text-white duration-300">
         Hover
@@ -68,7 +68,7 @@ const Button1 = () => {
       </button>
       {/* 10 */}
       <button className="text-3xl box-border border-4 border-green-900 w-48 h-16 bg-green-600 text-white relative group">
-        <span className="pr-6">Download</span>
+        <span className="pr-8">Download</span>
         <span className="bg-green-900 absolute right-0 top-0  h-full flex items-center justify-center px-1 group-hover:duration-300 group-hover:w-full w-8 duration-300">
           <svg
             viewBox="0 0 24 24"
@@ -102,7 +102,16 @@ const Button1 = () => {
           </svg>
         </span>
       </button>
-    </>
+      {/* 11 */}
+      <button
+        type="button"
+        className="text-3xl w-48 h-14 border-2 border-violet-950 text-violet-950 relative group hover:text-violet-200 overflow-hidden"
+      >
+        <span className="bg-violet-950 ease-in absolute w-[57%]  -translate-x-full group-hover:translate-x-0 -left-2 top-0 bottom-0 duration-300 -z-10 skew-x-12"></span>
+        <span className="bg-violet-700 ease-in absolute w-[55%]  translate-x-full group-hover:translate-x-0 -right-2 top-0 bottom-0 duration-300 skew-x-12 -z-10"></span>
+        Button
+      </button>
+    </div>
   );
 };
 
