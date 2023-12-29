@@ -5,7 +5,7 @@ const MainLayout = () => {
   return (
     <div className="flex gap-5">
       <Navbar />
-      <div className="w-10/12 my-20">
+      <div className="w-[75%] my-20">
         <Outlet />
       </div>
     </div>
