@@ -31,7 +31,7 @@ const Card2 = () => {
           </button>
         </div>
         <div className="flex justify-center">
-          <img src="https://source.unsplash.com/300x300/?smartwatch" alt="" />
+          <img src="https://source.unsplash.com/300x300/?watch" alt="" />
         </div>
         <div className="text-center w-[85%] mx-auto font-semibold space-y-2">
           <h6>Waterproof Sport Smart Watch Monitor for IOS & Android</h6>
