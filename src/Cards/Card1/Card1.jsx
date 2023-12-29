@@ -1,6 +1,6 @@
 const Card1 = () => {
   return (
-    <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-4 m-20 flex flex-col justify-center items-center">
+    <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-4 my-10 flex flex-col justify-center items-center">
       <div className="relative  w-[120px] h-[120px]">
         <img
           src="https://source.unsplash.com/600x600/?portrait"
