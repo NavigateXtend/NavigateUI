@@ -45,11 +45,11 @@ const Form3 = () => {
         {/* button type will be submit for handling form submission*/}
         <button
           type="button"
-          className="py-2 px-5 mb-4 mx-auto mt-8 overflow-hidden shadow-lg border-2 border-black before:block before:absolute before:translate-x-full before:inset-0 before:bg-black before:hover:translate-x-0  before:duration-300 before:rounded-s-full before:-z-10 after:-z-10 after:rounded-e-full after:duration-300 after:hover:translate-x-0 after:block after:absolute after:-translate-x-full after:inset-0 after:bg-black relative block hover:text-white"
+          className="py-2 px-5 mb-4 mx-auto mt-8 shadow-lg border-2 border-black block"
         >
           Submit
         </button>
-        <p className="mb-3">
+        <p className="mb-3 text-center">
           Already have an account?{" "}
           <Link
             onClick={() => {
@@ -122,10 +122,10 @@ const Form3 = () => {
 
       {/* img */}
       <div
-        className={`absolute w-1/2 left-0 top-0 z-50 min-h-full duration-300 overflow-hidden  hidden lg:block ${
+        className={`absolute w-1/2 left-0 top-0 z-50 min-h-full duration-300 overflow-hidden  hidden lg:block border-black ${
           register
-            ? "translate-x-full left-auto rounded-tl-full rounded-br-none duration-300"
-            : "rounded-br-full"
+            ? "translate-x-full left-auto rounded-bl-full rounded-br-none duration-300 border-t-2 border-s-2"
+            : "rounded-br-full border-b-2 border-e-2"
         }`}
       >
         <img
@@ -167,11 +167,11 @@ const Form3 = () => {
         {/* button type will be submit for handling form submission*/}
         <button
           type="button"
-          className="py-2 px-5 mb-4 mx-auto mt-8 overflow-hidden shadow-lg border-2 border-black before:block before:absolute before:translate-x-full before:inset-0 before:bg-black before:hover:translate-x-0  before:duration-300 before:rounded-s-full before:-z-10 after:-z-10 after:rounded-e-full after:duration-300 after:hover:translate-x-0 after:block after:absolute after:-translate-x-full after:inset-0 after:bg-black relative block hover:text-white"
+          className="py-2 px-5 mb-4 mx-auto mt-8 shadow-lg border-2 border-black block"
         >
           Submit
         </button>
-        <p className="mb-3">
+        <p className="mb-3 text-center">
           Don't have an account?{" "}
           <Link
             onClick={() => {

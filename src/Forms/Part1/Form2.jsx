@@ -1,4 +1,4 @@
-const Form2 = () => {
+const Form1 = () => {
   return (
     <div className="w-full mx-auto lg:w-[500px] drop-shadow-lg bg-white">
       <form className="p-12">
@@ -92,4 +92,4 @@ const Form2 = () => {
   );
 };
 
-export default Form2;
+export default Form1;
