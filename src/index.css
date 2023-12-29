@@ -7,10 +7,6 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
-.navVisible {
-  transition: height 300ms ease-in-out;
-}
-
 /* input[id="s"]:checked ~ span {
   transform: translateY(0);
   color: red;
@@ -20,4 +16,31 @@ input[id="ss"]:checked ~ span {
 }
 input[id="sss"]:checked ~ span {
   transform: translateY(200%);
+} */
+
+/* .con {
+  container: button/inline-size;
+  border-bottom: 1px solid #ccc;
+}
+.button {
+  display: inline-flex;
+  column-gap: 0.025rem;
+  align-items: center;
+}
+
+.button-text {
+  display: none;
+}
+@container button (width > 110px) {
+  .button-text {
+    display: inline;
+  }
+  .button-icon {
+    display: none;
+  }
+}
+@container button (width > 160px) {
+  .button-text {
+    display: inline;
+  }
 } */
