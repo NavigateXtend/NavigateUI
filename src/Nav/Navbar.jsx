@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="border-2 sticky top-0 w-[25%] h-screen overflow-hidden select-none">
+      <div className="border-r sticky top-0 w-[25%] h-screen overflow-hidden select-none">
         <div className="flex flex-col  w-full h-full group space-y-6">
           <div>
             <h1 className="text-3xl p-8 text-gray-800">
@@ -95,13 +95,13 @@ const Navbar = () => {
                 className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
                 to="/"
               >
-                home
+                Introduction
               </Link>
               <Link
                 className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
                 to="button"
               >
-                Button
+                Quick Start
               </Link>
             </div>
             {/* Component  */}
