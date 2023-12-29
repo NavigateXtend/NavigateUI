@@ -1,13 +1,11 @@
-import React from 'react';
-
 const Card1 = () => {
   return (
     <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-4 m-20 flex flex-col justify-center items-center">
       <div className="relative  w-[120px] h-[120px]">
         <img
-          src="https://i.ibb.co/Wgm6RTL/Whats-App-Image-2023-12-10-at-5-03-06-PM-1.jpg"
+          src="https://source.unsplash.com/600x600/?portrait"
           alt=""
-          className="w-full h-full object-cover rounded-full "
+          className="w-full h-full rounded-full "
         />
         <span className="absolute bottom-4 right-0 bg-white rounded-full w-[25px] h-[25px] border-2 border-white">
           <svg
@@ -24,7 +22,7 @@ const Card1 = () => {
         </span>
       </div>
       <div className="text-center space-y-1">
-        <h1 className="text-2xl text-gray-700">Mr.Shiyam Sarker</h1>
+        <h1 className="text-2xl text-gray-700">Nullify</h1>
         <p className="text-gray-400 text-sm">UI/UX Designer</p>
       </div>
       <div className="flex justify-between w-full py-2">
