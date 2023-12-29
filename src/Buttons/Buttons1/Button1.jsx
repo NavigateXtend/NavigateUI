@@ -10,7 +10,7 @@ const Button1 = () => {
       <button className="text-3xl w-32 h-16 hover:before:bg-black before:w-0 before:h-0 hover:before:h-full before:bottom-0 before:duration-500 before:-z-10 before:right-0 hover:before:w-full before:block before:absolute relative inline-block transform hover:text-white text-black  bg-transparent border-2 border-black duration-500 ">
         Hover
       </button>
-       {/* 2 variant */}
+      {/* 2 variant */}
       <button className="border-2 text-3xl w-32 h-16 border-black hover:before:bg-black before:w-full before:h-0 hover:before:h-full hover:before:-z-10 hover:before:absolute before:absolute relative before:top-0 hover:before:left-0 before:duration-500  hover:text-white transform origin-top  before:block">
         Hover
       </button>
@@ -60,6 +60,10 @@ const Button1 = () => {
         <span className="bg-indigo-600 group-hover:scale-125 scale-0 ease-in-out duration-300 delay-100 w-28 h-28 rounded-full absolute mx-auto my-auto inset-0 -z-10"></span>
         <span className="bg-indigo-500 group-hover:scale-125 scale-0 ease-in-out duration-300 delay-200 w-20 h-20 rounded-full absolute mx-auto my-auto inset-0 -z-10"></span>
         <span className="bg-indigo-400 group-hover:scale-125 scale-0 ease-in-out duration-300 delay-300 w-12 h-12 rounded-full absolute mx-auto my-auto inset-0 -z-10"></span>
+      </button>
+      {/* 9 */}
+      <button className="text-3xl w-32 h-16 before:absolute before:block before:inset-0 before:-z-10 before:bg-fuchsia-500 text-white after:block hover:after:w-full after:w-0  after:hover:left-0 after:right-0 after:top-0 after:h-full after:-z-10 after:duration-300 after:bg-fuchsia-950 after:absolute relative inline-block">
+        Hover
       </button>
     </>
   );
