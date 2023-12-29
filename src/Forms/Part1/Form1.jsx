@@ -1,7 +1,8 @@
 const Form1 = () => {
   return (
-    <div className="w-full mx-auto lg:w-[500px] border-2 border-black drop-shadow-lg bg-white">
-      <form className="p-8">
+    <div className="w-full mx-auto lg:w-[800px] border-2 border-black drop-shadow-lg bg-white flex">
+      <div className="flex-1 w-full h-full bg-blue-500"></div>
+      <form className="p-8 flex-1">
         <h1 className="backdrop-blur-sm text-4xl pb-4">Login</h1>
         <div className="space-y-5">
           <label htmlFor="email" className="block">
@@ -12,7 +13,6 @@ const Form1 = () => {
             type="email"
             placeholder="example@example.com"
             className="p-3 block w-full drop-shadow-lg outline-none border-2  invalid:border-red-700 valid:border-black"
-            required
           />
           <label htmlFor="password" className="block">
             Password
@@ -22,7 +22,6 @@ const Form1 = () => {
             type="password"
             placeholder=".............."
             className="p-3 block w-full drop-shadow-lg outline-none border-2 invalid:border-red-700 valid:border-black"
-            required
           />
         </div>
 
