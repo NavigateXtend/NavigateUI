@@ -7,13 +7,26 @@ export const Slider = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
 
   const sliders = [
-    { img: slide1, tags: "Bed room" },
-    { img: slide2, tags: "Living room" },
-    { img: slide3, tags: "Drawing room" },
-    { img: slide1, tags: "Drawing room" },
-    { img: slide2, tags: "Drawing room" },
-    { img: slide3, tags: "Drawing room" },
-    { img: slide1, tags: "Drawing room" },
+    {
+      img: "https://source.unsplash.com/600x600/?bedroom",
+      tags: "Room",
+    },
+    {
+      img: "https://source.unsplash.com/600x600/?room",
+      tags: "Room",
+    },
+    {
+      img: "https://source.unsplash.com/600x600/?livingrooms",
+      tags: "Room",
+    },
+    {
+      img: "https://source.unsplash.com/600x600/?livingroom",
+      tags: "Room",
+    },
+    {
+      img: "https://source.unsplash.com/600x600/?bedrooms",
+      tags: "Room",
+    },
   ];
 
   const nextSlider = () => {
@@ -35,9 +48,7 @@ export const Slider = () => {
 
       {/* slider container */}
       <div
-        className={`ease-linear duration-300 flex gap-[2%] transform translate-x-${
-          -currentSlider * 52
-        }`}
+        className={`ease-linear duration-300 flex gap-[2%]`}
         style={{ transform: `translateX(-${currentSlider * 52}%)` }}
       >
         {/* sliders */}
@@ -70,8 +81,8 @@ export const Slider = () => {
 
 export const Slider1 = () => {
   return (
-    <div className="max-w-7xl mx-auto h-[540px] md:h-[670px] px-5 flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10">
-      <div className="bg-[#FCF8F3] w-full absolute left-0 h-[540px] md:h-[670px] -z-40 "></div>
+    <div className="max-w-7xl mx-auto h-[540px] md:h-[670px] px-10 flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
+      <div className="bg-[#FCF8F3] w-full absolute left-0 h-[540px] md:h-[670px] -z-40"></div>
       <div className="w-full lg:w-1/3 text-center lg:text-left space-y-2 lg:space-y-5 py-5">
         <h1 className="text-2xl lg:text-[40px] font-bold">
           50+ Beautiful rooms inspiration

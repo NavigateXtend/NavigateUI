@@ -1,6 +1,6 @@
 const Form1 = () => {
   return (
-    <div className="w-full md:w-1/2 mx-auto lg:w-[500px] border-2 border-black drop-shadow-lg bg-white">
+    <div className="w-full mx-auto lg:w-[500px] border-2 border-black drop-shadow-lg bg-white">
       <form className="p-8">
         <h1 className="backdrop-blur-sm text-4xl pb-4">Login</h1>
         <div className="space-y-5">
@@ -10,7 +10,9 @@ const Form1 = () => {
           <input
             id="email"
             type="email"
-            className="p-3 block w-full drop-shadow-lg outline-none border-2 border-black"
+            placeholder="example@example.com"
+            className="p-3 block w-full drop-shadow-lg outline-none border-2  invalid:border-red-700 valid:border-black"
+            required
           />
           <label htmlFor="password" className="block">
             Password
@@ -18,13 +20,15 @@ const Form1 = () => {
           <input
             id="password"
             type="password"
-            className="p-3 block w-full drop-shadow-lg outline-none border-2 border-black"
+            placeholder=".............."
+            className="p-3 block w-full drop-shadow-lg outline-none border-2 invalid:border-red-700 valid:border-black"
+            required
           />
         </div>
 
         {/* button type will be submit for handling form submission*/}
         <button
-          type="button"
+          type="submit"
           className="py-2 px-5 mb-4 mt-8 shadow-lg border-2 border-black"
         >
           Submit

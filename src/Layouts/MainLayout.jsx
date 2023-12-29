@@ -3,10 +3,11 @@ import Navbar from "../Nav/Navbar";
 
 const MainLayout = () => {
   return (
-    <div>
-      {/* h  */}
+    <div className="flex gap-5">
       <Navbar />
-      <Outlet />
+      <div className="w-10/12 my-20">
+        <Outlet />
+      </div>
     </div>
   );
 };

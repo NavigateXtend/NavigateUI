@@ -1,6 +1,6 @@
 const Form2 = () => {
   return (
-    <div className="w-full md:w-1/2 mx-auto lg:w-[500px] drop-shadow-lg bg-white">
+    <div className="w-full mx-auto lg:w-[500px] drop-shadow-lg bg-white">
       <form className="p-12">
         <h1 className="backdrop-blur-sm text-4xl pb-8">Login</h1>
         <div className="space-y-5">
