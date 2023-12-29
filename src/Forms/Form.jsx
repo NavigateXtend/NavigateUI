@@ -1,6 +1,6 @@
-import Form1 from "./Part1/Form1";
-import Form2 from "./Part1/Form2";
+import Form2 from "./Part1/Form1";
 import Form3 from "./Part1/Form3";
+import Form1 from "./Part1/Form2";
 
 const Form = () => {
   return (
