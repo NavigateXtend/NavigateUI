@@ -1,4 +1,5 @@
 import "../button.css";
+
 const Button1 = () => {
   return (
     <>
@@ -7,7 +8,7 @@ const Button1 = () => {
         Hover
       </button>
       {/* 2 */}
-      <button className="text-3xl w-32 h-16 hover:before:bg-black before:w-0 before:h-0 hover:before:h-full before:bottom-0 before:duration-500 before:-z-10 before:right-0 hover:before:w-full before:block before:absolute relative inline-block transform hover:text-white text-black  bg-transparent border-2 border-black duration-500 ">
+      <button className="text-3xl w-32 h-16 before:block before:absolute hover:before:bg-black before:w-0 before:h-0 hover:before:h-20 hover:before:w-40 before:-bottom-2 before:-right-2 before:duration-500 before:rounded-3xl before:-z-10  relative inline-block transform hover:text-white text-black bg-transparent border-2 overflow-hidden border-black duration-500 ">
         Hover
       </button>
       {/* 2 variant */}
