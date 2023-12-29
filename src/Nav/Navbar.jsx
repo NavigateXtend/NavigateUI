@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isDocOpen, setDocIsOpen] = useState(false);
+  const [isDocOpen, setDocIsOpen] = useState(true);
+  const [isComponentOpen, setComponentIsOpen] = useState(true);
 
   return (
     <>
@@ -16,11 +17,12 @@ const Navbar = () => {
           </div>
           {/* container   */}
           <div className="flex flex-col text-lg text-gray-600 font-sans px-4 duration-300 ">
+            {/* Docs  */}
             <div
               onClick={() => setDocIsOpen(!isDocOpen)}
-              className="py-2  flex items-center justify-between px-6 hover:bg-gray-200 rounded-lg "
+              className="py-2  flex items-center justify-between px-6 hover:bg-sky-50 rounded-lg duration-300"
             >
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-4">
                 <svg
                   width={25}
                   viewBox="0 0 24 24"
@@ -83,40 +85,120 @@ const Navbar = () => {
                 </g>
               </svg>
             </div>
-
             {/* doc div  */}
             <div
               className={` ${
-                isDocOpen
-                  ? "h-full w-full visible navVisible"
-                  : "h-0 w-0 invisible"
-              } flex flex-col ml-8 text-lg space-y-2 border-l my-2 px-2 `}
+                isDocOpen ? "" : "hidden"
+              } flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 `}
             >
               <Link
-                className="hover:bg-gray-200 py-2 duration-700  px-6 hover:rounded-lg "
+                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
                 to="/"
               >
                 home
               </Link>
               <Link
-                className="hover:bg-gray-200 py-2 duration-300  px-6 hover:rounded-lg "
+                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
                 to="button"
               >
                 Button
               </Link>
             </div>
-            <Link className="py-2 px-10 hover:bg-gray-200" to="button">
-              Button
-            </Link>
-            <Link className="py-2 px-10 hover:bg-gray-200" to="slider">
-              Slider
-            </Link>
-            <Link className="py-2 px-10 hover:bg-gray-200" to="card">
-              Card
-            </Link>
-            <Link className="py-2 px-10 hover:bg-gray-200" to="form">
-              Form
-            </Link>
+            {/* Component  */}
+            <div
+              onClick={() => setComponentIsOpen(!isComponentOpen)}
+              className="py-2  flex items-center justify-between px-6 hover:bg-sky-50 rounded-lg duration-300"
+            >
+              <div className="flex items-center gap-4">
+                <svg
+                  width={25}
+                  fill="#0095FF"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    {" "}
+                    <title>shapes</title>{" "}
+                    <path d="M9.072 14.75h13.855c0 0 0.001 0 0.001 0 0.414 0 0.75-0.336 0.75-0.75 0-0.138-0.037-0.267-0.102-0.379l0.002 0.004-6.929-12c-0.142-0.211-0.379-0.349-0.649-0.349s-0.508 0.137-0.648 0.346l-0.002 0.003-6.928 12c-0.063 0.108-0.1 0.237-0.1 0.375 0 0.414 0.336 0.75 0.75 0.75v0zM16 3.5l5.629 9.75h-11.258zM7.838 17.25c-0.049-0.001-0.107-0.002-0.164-0.002-3.729 0-6.752 3.023-6.752 6.752s3.023 6.752 6.752 6.752c0.058 0 0.115-0.001 0.173-0.002l-0.008 0c0.049 0.001 0.107 0.002 0.164 0.002 3.729 0 6.752-3.023 6.752-6.752s-3.023-6.752-6.752-6.752c-0.058 0-0.115 0.001-0.173 0.002l0.008-0zM7.838 29.25c-0.048 0.002-0.103 0.002-0.159 0.002-2.901 0-5.252-2.352-5.252-5.252s2.352-5.252 5.252-5.252c0.056 0 0.112 0.001 0.168 0.003l-0.008-0c0.048-0.002 0.103-0.002 0.159-0.002 2.901 0 5.252 2.352 5.252 5.252s-2.352 5.252-5.252 5.252c-0.056 0-0.112-0.001-0.168-0.003l0.008 0zM28 17.25h-8c-1.518 0.002-2.748 1.232-2.75 2.75v8c0.002 1.518 1.232 2.748 2.75 2.75h8c1.518-0.002 2.748-1.232 2.75-2.75v-8c-0.002-1.518-1.232-2.748-2.75-2.75h-0zM29.25 28c-0.001 0.69-0.56 1.249-1.25 1.25h-8c-0.69-0.001-1.249-0.56-1.25-1.25v-8c0.001-0.69 0.56-1.249 1.25-1.25h8c0.69 0.001 1.249 0.56 1.25 1.25v0z"></path>{" "}
+                  </g>
+                </svg>
+                <span>Components</span>
+              </div>
+              <svg
+                className={`${
+                  isComponentOpen
+                    ? "duration-300 "
+                    : "-rotate-180 duration-300 "
+                }`}
+                width={35}
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  {" "}
+                  <path
+                    d="M7 14.5L12 9.5L14.5 12L17 14.5"
+                    stroke="#0095FF"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>{" "}
+                  <path
+                    d="M7 14.5L12 9.5L14.5 12"
+                    stroke="#363853"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  ></path>{" "}
+                </g>
+              </svg>
+            </div>
+
+            {/* Component div  */}
+            <div
+              className={` ${
+                isComponentOpen ? "" : "hidden"
+              } flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 `}
+            >
+              <Link
+                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                to="slider"
+              >
+                Slider
+              </Link>
+              <Link
+                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                to="button"
+              >
+                Button
+              </Link>
+              <Link
+                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                to="card"
+              >
+                Card
+              </Link>
+              <Link
+                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                to="form"
+              >
+                Form
+              </Link>
+            </div>
           </div>
         </div>
       </div>
