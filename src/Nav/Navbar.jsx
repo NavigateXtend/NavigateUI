@@ -2,12 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isDocOpen,setDocIsOpen] = useState(false)
-
+  const [isDocOpen, setDocIsOpen] = useState(false);
 
   return (
     <>
-      <div className="border-2 sticky top-0 w-[25%] h-screen overflow-hidden">
+      <div className="border-2 sticky top-0 w-[25%] h-screen overflow-hidden select-none">
         <div className="flex flex-col  w-full h-full group space-y-6">
           <div>
             <h1 className="text-3xl p-8 text-gray-800">
@@ -88,11 +87,13 @@ const Navbar = () => {
             {/* doc div  */}
             <div
               className={` ${
-                isDocOpen ? "" : "hidden"
+                isDocOpen
+                  ? "h-full w-full visible navVisible"
+                  : "h-0 w-0 invisible"
               } flex flex-col ml-8 text-lg space-y-2 border-l my-2 px-2 `}
             >
               <Link
-                className="hover:bg-gray-200 py-2 duration-300  px-6 hover:rounded-lg "
+                className="hover:bg-gray-200 py-2 duration-700  px-6 hover:rounded-lg "
                 to="/"
               >
                 home

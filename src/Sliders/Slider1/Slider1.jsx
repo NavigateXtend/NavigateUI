@@ -1,9 +1,6 @@
-import slide1 from "/assets/slide1.png";
-import slide2 from "/assets/slide2.png";
-import slide3 from "/assets/slide3.png";
 import { useState } from "react";
 
-export const Slider = () => {
+export const SliderMain = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
 
   const sliders = [
@@ -78,7 +75,6 @@ export const Slider = () => {
     </div>
   );
 };
-
 export const Slider1 = () => {
   return (
     <div className="max-w-7xl mx-auto h-[540px] md:h-[670px] px-10 flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
@@ -95,7 +91,7 @@ export const Slider1 = () => {
           Explore More
         </button>
       </div>
-      <Slider />
+      <SliderMain />
     </div>
   );
 };

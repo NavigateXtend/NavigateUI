@@ -7,6 +7,10 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
+.navVisible {
+  transition: height 300ms ease-in-out;
+}
+
 /* input[id="s"]:checked ~ span {
   transform: translateY(0);
   color: red;
