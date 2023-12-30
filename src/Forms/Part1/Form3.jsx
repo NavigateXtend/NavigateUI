@@ -122,15 +122,16 @@ const Form3 = () => {
 
       {/* img */}
       <div
-        className={`absolute w-1/2 left-0 top-0 z-50 min-h-full duration-300 overflow-hidden  hidden lg:block border-black ${
+        className={`absolute w-1/2 h-full left-0 top-0 z-50 min-h-full duration-300 overflow-hidden  hidden lg:block border-black ${
           register
             ? "translate-x-full left-auto rounded-bl-full rounded-br-none duration-300 border-t-2 border-s-2"
             : "rounded-br-full border-b-2 border-e-2"
         }`}
       >
         <img
+         
           src="https://source.unsplash.com/400x670/?random"
-          className="object-contain min-h-full"
+          className="object-cover h-full"
           alt=""
         />
       </div>
