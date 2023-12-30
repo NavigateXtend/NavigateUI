@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card3 = () => {
     return (
-      <div className="w-[350px] shadow-md py-8 pl-8 rounded-lg border-t border-l border-l-[#005eb6] border-t-[#005eb6] border-b-2 border-r-2 border-b-[#0084ff] border-r-[#0084ff] space-y-6">
+      <div className="max-w-[350px] my-20 md:w-[350px] shadow-md py-8 pl-8 rounded-lg border-t border-l border-l-[#005eb6] border-t-[#005eb6] border-b-2 border-r-2 border-b-[#0084ff] border-r-[#0084ff] space-y-6">
         <div className="flex justify-between items-center">
           <h1 className="w-[35%] text-4xl font-bold tracking-wider text-sky-900">
             <sup className="text-2xl font-black">$</sup>
