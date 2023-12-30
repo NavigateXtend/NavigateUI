@@ -4,12 +4,17 @@ import Slider from "./../Components/Sliders/Slider";
 import Button from "./../Components/Buttons/Button";
 import Card from "../Components/Cards/Card";
 import Form from "./../Components/Forms/Form";
+import Banner from "../Components/Banners/Banner";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
     children: [
+      {
+        path: "/banner",
+        element: <Banner />,
+      },
       {
         path: "/slider",
         element: <Slider />,
