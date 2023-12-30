@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "./../Layouts/MainLayout";
-import Button from "../Buttons/Button";
-import Card from "./../Cards/Card";
-import Form from "./../Forms/Form";
-import Slider from "../Sliders/Slider";
+import Slider from "./../Components/Sliders/Slider";
+import Button from "./../Components/Buttons/Button";
+import Card from "../Components/Cards/Card";
+import Form from "./../Components/Forms/Form";
 
 export const router = createBrowserRouter([
   {
