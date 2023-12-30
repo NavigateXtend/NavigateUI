@@ -16,8 +16,9 @@ const Card = () => {
       <Card2></Card2>
 
       {/* Card3  */}
-      <Card3>
-      </Card3>
+      <Card3></Card3>
+
+      
     </div>
   );
 };
