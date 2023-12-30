@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Slider1 = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
@@ -27,13 +27,23 @@ export const Slider1 = () => {
     }
     return setCurrentSlider(currentSlider + 1);
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      nextSlider();
+    }, 3000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currentSlider]);
   return (
     <div className="maxW-7xl mx-auto h-[540px] md:h-[670px] px-10 flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
       <div className="relative overflow-hidden">
         {/* arrow */}
         <button
           onClick={prevSlider}
-          className="absolute left-2 top-1/2 z-50 bg-white rounded-full w-12 h-12 bgWhite "
+          className="absolute left-2 top-1/2 z-50 bg-white rounded-full w-12 h-12 bgWhite"
         >
           <svg
             viewBox="0 0 24 24"
@@ -48,14 +58,13 @@ export const Slider1 = () => {
               strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
-              {" "}
               <path
                 d="M13 15L16 12M16 12L13 9M16 12H8M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
                 stroke="#000"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-              ></path>{" "}
+              ></path>
             </g>
           </svg>
         </button>
@@ -75,14 +84,13 @@ export const Slider1 = () => {
               strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
-              {" "}
               <path
                 d="M13 15L16 12M16 12L13 9M16 12H8M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
                 stroke="#000"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-              ></path>{" "}
+              ></path>
             </g>
           </svg>
         </button>
@@ -90,7 +98,10 @@ export const Slider1 = () => {
         {/* slider container */}
         <div
           className={`ease-linear transform duration-300 flex`}
-          style={{ transform: `translateX(-${currentSlider * 100}%)` }}
+          style={{
+            transform: `translateX(-${currentSlider * 100}%)`,
+            animation: ` 1s ease infinite`,
+          }}
         >
           {/* sliders */}
           {sliders.map((slide, inx) => (
