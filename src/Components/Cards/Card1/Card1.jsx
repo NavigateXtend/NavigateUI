@@ -4,7 +4,7 @@ const Card1 = () => {
       <div className="relative  w-[120px] h-[120px]">
         <img
           src="https://source.unsplash.com/600x600/?portrait"
-          alt=""
+          alt="portrait"
           className="w-full h-full rounded-full "
         />
         <span className="absolute bottom-4 right-0 bg-white rounded-full w-[25px] h-[25px] border-2 border-white">
