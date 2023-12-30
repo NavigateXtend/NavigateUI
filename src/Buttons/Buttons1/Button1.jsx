@@ -103,6 +103,22 @@ const Button1 = () => {
         <span className="bg-sky-700 ease-in absolute w-[55%]  translate-x-full group-hover:translate-x-0 -right-2 top-0 bottom-0 duration-300 skew-x-12 -z-10"></span>
         Button
       </button>
+      {/* 12 */}
+      <button
+        type="button"
+        className="py-2 px-5 w-40 h-16 mb-4 text-sky-700 mt-8 overflow-hidden shadow-lg border-2 hover:border-dotted hover:border-4 border-sky-700 before:block before:absolute before:translate-x-full before:inset-0 before:bg-sky-700 before:hover:translate-x-0  before:duration-300 before:rounded-s-full before:-z-10 after:-z-10 after:rounded-e-full after:duration-300 after:hover:translate-x-0 after:block after:absolute after:-translate-x-full after:inset-0 after:bg-sky-700 relative inline-block hover:text-white"
+      >
+        Submit
+      </button>
+      {/* 13 */}
+      <button className="col-span-3 text-xl w-32 h-32 text-white rounded-full duration-300  bg-sky-700 overflow-hidden relative z-10 group ">
+        <span className="bg-sky-500 group-hover:translate-x-1 group-hover:shadow-md group-hover:-translate-y-1 ease-in-out duration-300 delay-300 w-28 h-28 rounded-full absolute top-2 left-2 -z-10"></span>
+        <span className="bg-sky-400 group-hover:translate-x-2  group-hover:shadow-md group-hover:-translate-y-2 ease-in-out duration-300 delay-200 w-20 h-20 rounded-full absolute top-6 left-6 -z-10"></span>
+        <span className="bg-sky-300 group-hover:translate-x-3  group-hover:shadow-md group-hover:-translate-y-3 ease-in-out duration-300 delay-100 w-12 h-12 rounded-full absolute top-10 left-10 -z-10"></span>
+        <span className="text-sky-900 group-hover:translate-x-3  group-hover:-translate-y-3 ease-in-out duration-300 delay-50  rounded-full absolute inset-0 flex justify-center items-center -z-10">
+          Hover
+        </span>
+      </button>
     </div>
   );
 };

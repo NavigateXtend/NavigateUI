@@ -10,13 +10,6 @@ const Button2 = () => {
       </button>
       {/* 2 */}
       <button className="bg-sky-700 text-white py-2 before:bg-sky-900 before:content-['Bye'] before:absolute before:inset-0 before:translate-y-full hover:before:translate-y-0 before:duration-300 before:flex before:justify-center before:items-center overflow-hidden after:content-['Hi!'] after:absolute after:inset-0 after:translate-y-0 hover:after:-translate-y-full after:duration-300 after:flex after:justify-center after:items-center px-6 w-40 h-16 relative group"></button>
-      {/* 3 */}
-      <button
-        type="button"
-        className="py-2 px-5 w-40 h-16 mb-4 text-sky-700 mt-8 overflow-hidden shadow-lg border-2 border-dashed border-sky-700 before:block before:absolute before:translate-x-full before:inset-0 before:bg-sky-700 before:hover:translate-x-0  before:duration-300 before:rounded-s-full before:-z-10 after:-z-10 after:rounded-e-full after:duration-300 after:hover:translate-x-0 after:block after:absolute after:-translate-x-full after:inset-0 after:bg-sky-700 relative inline-block hover:text-white"
-      >
-        Submit
-      </button>
     </div>
   );
 };
