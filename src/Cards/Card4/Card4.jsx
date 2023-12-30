@@ -13,14 +13,7 @@ const Card4 = () => {
             What for?
           </a>
         </p>
-        <button className="bg-[#1b8efa] py-2 before:content-['Okay'] before:absolute before:inset-0 before:translate-y-full hover:before:translate-y-0 before:duration-300 before:flex before:justify-center before:items-center overflow-hidden after:content-['Understood!'] after:absolute after:inset-0 after:translate-y-0 hover:after:-translate-y-full after:duration-300 after:flex after:justify-center after:items-center  px-6 w-1/2 h-10 relative group">
-          {/* <span className="bg-red-500 inset-0 absolute translate-y-0 group-hover:-translate-y-full flex items-center justify-center">
-            Understood
-          </span>
-          <span className="bg-green-400 inset-0 absolute translate-y-full flex items-center justify-center">
-            ok
-          </span> */}
-        </button>
+        <button className="bg-[#1b8efa] py-2 px-6">Understood</button>
       </div>
     </div>
   );
