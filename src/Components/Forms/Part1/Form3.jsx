@@ -19,7 +19,7 @@ const Form3 = () => {
             id="name"
             type="name"
             placeholder="Jhon Doe"
-            className="p-3 block w-full drop-shadow-lg outline-none border-2  invalid:border-red-700 valid:border-black"
+            className="p-3 block w-full drop-shadow-lg outline-none border rounded-md  invalid:border-red-700 valid:border-black"
           />
           <label htmlFor="u_email" className="block">
             Email
@@ -28,7 +28,7 @@ const Form3 = () => {
             id="u_email"
             type="u_email"
             placeholder="example@example.com"
-            className="p-3 block w-full drop-shadow-lg outline-none border-2  invalid:border-red-700 valid:border-black"
+            className="p-3 block w-full drop-shadow-lg outline-none border rounded-md  invalid:border-red-700 valid:border-black"
           />
           <label htmlFor="u_password" className="block">
             Password
@@ -38,14 +38,14 @@ const Form3 = () => {
             type="u_password"
             placeholder=".............."
             min={5}
-            className="p-3 block w-full drop-shadow-lg outline-none border-2 invalid:border-red-700 valid:border-black"
+            className="p-3 block w-full drop-shadow-lg outline-none border rounded-md invalid:border-red-700 valid:border-black"
           />
         </div>
 
         {/* button type will be submit for handling form submission*/}
         <button
           type="button"
-          className="py-2 px-5 mb-4 mx-auto mt-8 shadow-lg border-2 border-black block"
+          className="py-2 px-5 mb-4 mx-auto mt-8 shadow-lg border rounded-md border-black block"
         >
           Submit
         </button>
@@ -63,7 +63,7 @@ const Form3 = () => {
         <hr />
         <button
           type="button"
-          className="py-2 px-5 mb-4 mt-8 mx-auto block shadow-lg border-2 border-black "
+          className="py-2 px-5 mb-4 mt-8 mx-auto block shadow-lg border rounded-md border-black "
         >
           <svg
             viewBox="-0.5 0 48 48"
@@ -122,14 +122,14 @@ const Form3 = () => {
 
       {/* img */}
       <div
-        className={`absolute w-1/2 h-full left-0 top-0 z-50 min-h-full duration-300 overflow-hidden  hidden lg:block ${
+        className={`absolute w-1/2 h-full top-0 z-50 min-h-full duration-300 overflow-hidden hidden lg:block  bg-sky-500 ${
           register
-            ? "translate-x-full left-auto rounded-bl-full rounded-br-none duration-300"
+            ? "translate-x-full rounded-bl-full duration-300"
             : "rounded-br-full"
         }`}
       >
         <img
-          src="https://source.unsplash.com/400x670/?random"
+          src="https://source.unsplash.com/random"
           className="object-cover h-full"
           alt=""
         />
@@ -150,7 +150,7 @@ const Form3 = () => {
             id="email"
             type="email"
             placeholder="example@example.com"
-            className="p-3 block w-full drop-shadow-lg outline-none border-2  invalid:border-red-700 valid:border-black"
+            className="p-3 block w-full drop-shadow-lg outline-none border rounded-md  invalid:border-red-700 valid:border-black"
           />
           <label htmlFor="password" className="block">
             Password
@@ -160,14 +160,14 @@ const Form3 = () => {
             type="password"
             placeholder=".............."
             min={5}
-            className="p-3 block w-full drop-shadow-lg outline-none border-2 invalid:border-red-700 valid:border-black"
+            className="p-3 block w-full drop-shadow-lg outline-none border rounded-md invalid:border-red-700 valid:border-black"
           />
         </div>
 
         {/* button type will be submit for handling form submission*/}
         <button
           type="button"
-          className="py-2 px-5 mb-4 mx-auto mt-8 shadow-lg border-2 border-black block"
+          className="py-2 px-5 mb-4 mx-auto mt-8 shadow-lg border rounded-md border-black block"
         >
           Submit
         </button>
@@ -185,7 +185,7 @@ const Form3 = () => {
         <hr />
         <button
           type="button"
-          className="py-2 px-5 mb-4 mt-8 mx-auto block shadow-lg border-2 border-black "
+          className="py-2 px-5 mb-4 mt-8 mx-auto block shadow-lg border rounded-md border-black "
         >
           <svg
             viewBox="-0.5 0 48 48"
