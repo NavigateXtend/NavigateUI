@@ -83,7 +83,7 @@ const Form1 = () => {
         {/* button type will be submit for handling form submission*/}
         <button
           type="button"
-          className="py-2 px-5 mb-4 mt-6 shadow-lg before:block before:-left-1 before:-top-1 before:bg-black before:absolute before:h-0 before:w-0 before:hover:w-[109%] before:hover:h-[109%]  before:duration-500 before:-z-40 after:block after:-right-1 after:-bottom-1 after:bg-black after:absolute after:h-0 after:w-0 after:hover:w-[108%] after:hover:h-[109%] after:duration-500 after:-z-40 bg-white relative inline-block"
+          className="py-2 px-5 mb-4 mt-6 shadow-lg before:block before:-left-1 before:-top-1 before:bg-black before:absolute before:h-0 before:w-0 before:hover:w-[109%] before:hover:h-[109%]  before:duration-500 before:-z-40 after:block after:-right-1 after:-bottom-1 after:bg-black after:absolute after:h-0 after:w-0 after:hover:w-[109%] after:hover:h-[109%] after:duration-500 after:-z-40 bg-white relative inline-block"
         >
           Submit
         </button>
