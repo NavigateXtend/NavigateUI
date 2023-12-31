@@ -28,9 +28,9 @@ const Card2 = () => {
             30% off
           </button>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center w-full">
           <img
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="https://source.unsplash.com/300x300/?smartwatch"
             alt=""
           />
