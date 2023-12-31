@@ -6,12 +6,12 @@ const MainLayout = () => {
   const [isOpen,setIsOpen] = useState(false)
   return (
     <div className="flex gap-5 ">
-      <div className={`${isOpen ? "" : "hidden"}`}>
+      <div className={`${isOpen ? "" : "hidden"} lg:block`}>
         <Navbar setIsOpen={setIsOpen}></Navbar>
       </div>
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-0 w-screen shadow-lg bg-white p-4 z-30"
+        className="fixed top-0 w-screen shadow-lg lg:hidden bg-white p-4 z-30"
       >
         <svg
           width={40}
