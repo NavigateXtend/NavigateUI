@@ -1,7 +1,7 @@
 const Card2 = () => {
   return (
     <>
-      <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-6 m-20">
+      <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-6 my-20">
         <div className="flex  justify-between">
           <div className="flex items-center gap-2">
             <svg
