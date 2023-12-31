@@ -8,7 +8,7 @@ const Form3 = () => {
       <form
         className={`p-8 w-full lg:w-1/2 ${
           register ? "translate-x-0" : "-translate-x-full"
-        }  duration-300`}
+        }  duration-500`}
       >
         <h1 className="backdrop-blur-sm text-4xl pb-4">Register</h1>
         <div className="space-y-5">
@@ -122,9 +122,9 @@ const Form3 = () => {
 
       {/* img */}
       <div
-        className={`absolute w-1/2 h-full top-0 z-50 min-h-full duration-300 overflow-hidden hidden lg:block  bg-sky-500 ${
+        className={`absolute w-1/2 h-full top-0 z-50 min-h-full duration-500 overflow-hidden hidden lg:block  bg-sky-500 ${
           register
-            ? "translate-x-full rounded-bl-full duration-300"
+            ? "translate-x-full rounded-bl-full duration-500"
             : "rounded-br-full"
         }`}
       >
@@ -137,7 +137,7 @@ const Form3 = () => {
 
       {/* login form */}
       <form
-        className={`p-8 w-full lg:w-1/2 mr-0 ml-auto duration-300 ${
+        className={`p-8 w-full lg:w-1/2 mr-0 ml-auto duration-500 ${
           register ? "translate-x-full" : ""
         }`}
       >
