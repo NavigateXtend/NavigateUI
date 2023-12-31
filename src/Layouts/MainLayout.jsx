@@ -11,7 +11,7 @@ const MainLayout = () => {
       </div>
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-0 w-screen shadow-lg lg:hidden bg-white p-4 z-30"
+        className="fixed top-0 w-screen shadow-lg lg:hidden bg-white p-4 z-[998]"
       >
         <svg
           width={40}
