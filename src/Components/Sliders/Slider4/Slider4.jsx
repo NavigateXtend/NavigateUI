@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const Slider3 = () => {
+export const Slider4 = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
 
   const sliders = [
@@ -22,10 +22,10 @@ export const Slider3 = () => {
   ];
   //   const sliderRe = sliders.toReversed();
   //   console.log(sliderRe.map((_) => _.img));
-  const prevSlider = () =>
-    setCurrentSlider((currentSlider) =>
-      currentSlider === 0 ? sliders.length - 1 : currentSlider - 1
-    );
+  //   const prevSlider = () =>
+  //     setCurrentSlider((currentSlider) =>
+  //       currentSlider === 0 ? sliders.length - 1 : currentSlider - 1
+  //     );
 
   const nextSlider = () => {
     setCurrentSlider((currentSlider) =>
@@ -34,10 +34,12 @@ export const Slider3 = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto h-[540px] md:h-[670px] flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
+    <div
+      className={`max-w-6xl mx-auto h-[540px] md:h-[670px] flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative bg-[url(${sliders[currentSlider]})] bg-cover`}
+    >
       <div className="w-full absolute left-0 h-[540px] lg:h-[670px] -z-40"></div>
       {/* arrow left */}
-      <button
+      {/* <button
         onClick={prevSlider}
         className="absolute flex justify-center items-center left-2 top-1/2 z-50 bg-white rounded-full w-6 h-6 md:w-8 md:h-8 lg:w-12 lg:h-12"
       >
@@ -60,7 +62,7 @@ export const Slider3 = () => {
             ></path>
           </g>
         </svg>
-      </button>
+      </button> */}
       {/* arrow right */}
       <button
         onClick={nextSlider}
@@ -87,7 +89,7 @@ export const Slider3 = () => {
           </g>
         </svg>
       </button>
-      <div className="h-[540px] md:h-[670px] w-2/3 ml-auto items-center flex relative ">
+      <div className="h-[540px] md:h-[670px] w-1/3 ml-auto overflow-hidden items-center flex relative ">
         {/* slider container */}
         <div
           className={`ease-linear duration-300 flex items-center gap-[%]`}
@@ -110,7 +112,7 @@ export const Slider3 = () => {
             >
               <img
                 src={slide.img}
-                className={`w-full h-full bg-gray-900 rounded-lg duration-300`}
+                className={`w-full h-full bg-gray-900 duration-300 rounded-lg`}
                 alt={slide.tags}
                 style={{
                   transform: `${
