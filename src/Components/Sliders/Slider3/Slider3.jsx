@@ -20,8 +20,6 @@ export const Slider3 = () => {
       img: "https://source.unsplash.com/600x600/?bedrooms",
     },
   ];
-  //   const sliderRe = sliders.toReversed();
-  //   console.log(sliderRe.map((_) => _.img));
   const prevSlider = () =>
     setCurrentSlider((currentSlider) =>
       currentSlider === 0 ? sliders.length - 1 : currentSlider - 1
