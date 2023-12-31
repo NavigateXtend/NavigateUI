@@ -1,5 +1,3 @@
-import "../button.css";
-
 const Button1 = () => {
   return (
     <div className="space-y-3 flex flex-wrap  md:grid  md:grid-cols-3 gap-5 justify-center md:justify-items-center items-center">
