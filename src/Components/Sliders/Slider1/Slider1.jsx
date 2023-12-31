@@ -13,20 +13,20 @@ export const Slider1 = () => {
     {
       img: "https://source.unsplash.com/1200x1200/?nature/?3",
     },
+    {
+      img: "https://source.unsplash.com/1200x1200/?nature/?4",
+    },
   ];
 
-  const prevSlider = () => {
-    if (currentSlider === 0) {
-      return setCurrentSlider(sliders.length - 1);
-    }
-    return setCurrentSlider(currentSlider - 1);
-  };
-  const nextSlider = () => {
-    if (currentSlider === sliders.length - 1) {
-      return setCurrentSlider(0);
-    }
-    return setCurrentSlider(currentSlider + 1);
-  };
+  const prevSlider = () =>
+    setCurrentSlider((currentSlider) =>
+      currentSlider === 0 ? sliders.length - 1 : currentSlider - 1
+    );
+
+  const nextSlider = () =>
+    setCurrentSlider((currentSlider) =>
+      currentSlider === sliders.length - 1 ? 0 : currentSlider + 1
+    );
   // if you don't want to change the slider automatically then you can just remove the useEffect
   useEffect(() => {
     const intervalId = setInterval(() => {
