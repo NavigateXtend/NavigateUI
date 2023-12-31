@@ -6,25 +6,22 @@ export const Slider3 = () => {
   const sliders = [
     {
       img: "https://source.unsplash.com/600x600/?bedroom",
-      tags: "Room",
     },
     {
       img: "https://source.unsplash.com/600x600/?room",
-      tags: "Room",
     },
     {
       img: "https://source.unsplash.com/600x600/?livingrooms",
-      tags: "Room",
     },
     {
       img: "https://source.unsplash.com/600x600/?livingroom",
-      tags: "Room",
     },
     {
       img: "https://source.unsplash.com/600x600/?bedrooms",
-      tags: "Room",
     },
   ];
+  //   const sliderRe = sliders.toReversed();
+  //   console.log(sliderRe.map((_) => _.img));
   const prevSlider = () =>
     setCurrentSlider((currentSlider) =>
       currentSlider === 0 ? sliders.length - 1 : currentSlider - 1
@@ -37,7 +34,7 @@ export const Slider3 = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto h-[540px] md:h-[670px] px-10 flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
+    <div className="max-w-6xl mx-auto h-[540px] md:h-[670px] flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
       <div className="w-full absolute left-0 h-[540px] lg:h-[670px] -z-40"></div>
       {/* arrow left */}
       <button
@@ -90,11 +87,11 @@ export const Slider3 = () => {
           </g>
         </svg>
       </button>
-      <div className="h-[540px] md:h-[670px] w-2/3  ml-auto items-center flex relative ">
+      <div className="h-[540px] md:h-[670px] w-2/3 ml-auto items-center flex relative ">
         {/* slider container */}
         <div
-          className={`ease-linear duration-300 flex items-center gap-[5%]`}
-          style={{ transform: `translateX(-${currentSlider * 55}%)` }}
+          className={`ease-linear duration-300 flex items-center gap-[%]`}
+          style={{ transform: `translateX(-${currentSlider * 50}%)` }}
         >
           {/* sliders */}
           {sliders.map((slide, inx) => (
@@ -102,8 +99,8 @@ export const Slider3 = () => {
               key={inx}
               className={`${
                 currentSlider === inx
-                  ? "h-[310px] md:h-[480px] lg:h-[580px] "
-                  : "h-[260px] md:h-[380px] lg:h-[480px]"
+                  ? "h-[310px] md:h-[480px] lg:h-[580px]"
+                  : "h-[260px] md:h-[380px] lg:h-[480px] scale-95"
               } min-w-[50%] relative duration-200 ${
                 currentSlider === inx ? "" : "opacity-40"
               }`}
@@ -113,29 +110,19 @@ export const Slider3 = () => {
             >
               <img
                 src={slide.img}
-                className={`w-full h-full bg-gray-900`}
+                className={`w-full h-full bg-gray-900 duration-300`}
                 alt={slide.tags}
                 style={{
                   transform: `${
                     currentSlider - 1 === inx
-                      ? "rotateX(0deg) rotateY(-4deg)"
+                      ? "rotateX(0deg) rotateY(4deg)"
                       : currentSlider + 1 === inx
-                      ? "rotateY(4deg)"
+                      ? "rotateY(-4deg)"
                       : ""
                   }`,
                   transformStyle: "preserve-3d",
                 }}
               />
-              <div
-                className={`absolute bottom-2 md:bottom-6 left-3 md:left-6 bg-[#FFFFFFB8] duration-700 transition p-4 ${
-                  currentSlider === inx ? "opacity-1" : "opacity-0"
-                }`}
-              >
-                <h4 className="flex items-center md:gap-2 text-sm ">
-                  {"0" + (inx + 1) + " - " + slide.tags}
-                </h4>
-                <h2 className="md:text-2xl font-semibold mt-1">Inner Peace</h2>
-              </div>
             </div>
           ))}
         </div>

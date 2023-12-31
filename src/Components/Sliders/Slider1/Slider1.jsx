@@ -94,15 +94,15 @@ export const Slider1 = () => {
         {/* dots */}
 
         <div className="flex justify-center items-center rounded-full z-50 absolute bottom-4 w-full">
-          {sliders.map((s, inx) => (
+          {sliders.map((_, inx) => (
             <button
               key={inx}
               onClick={() => {
                 setCurrentSlider(inx);
               }}
-              className={`rounded-full duration-300 bg-sky-400 border-[3px] border-white ${
-                currentSlider === inx ? "w-10" : "w-3"
-              } h-3`}
+              className={`rounded-full duration-300 bg-white ${
+                currentSlider === inx ? "w-10" : "w-2"
+              } h-2`}
             ></button>
           ))}
         </div>
