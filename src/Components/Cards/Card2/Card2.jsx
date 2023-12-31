@@ -1,7 +1,7 @@
 const Card2 = () => {
   return (
     <>
-      <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-6 m-20">
+      <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-6 my-20">
         <div className="flex  justify-between">
           <div className="flex items-center gap-2">
             <svg
@@ -28,9 +28,9 @@ const Card2 = () => {
             30% off
           </button>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center w-full">
           <img
-            className="rounded-lg"
+            className="rounded-lg w-full"
             src="https://source.unsplash.com/300x300/?smartwatch"
             alt=""
           />
