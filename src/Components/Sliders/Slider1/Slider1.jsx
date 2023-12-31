@@ -13,20 +13,20 @@ export const Slider1 = () => {
     {
       img: "https://source.unsplash.com/1200x1200/?nature/?3",
     },
+    {
+      img: "https://source.unsplash.com/1200x1200/?nature/?4",
+    },
   ];
 
-  const prevSlider = () => {
-    if (currentSlider === 0) {
-      return setCurrentSlider(sliders.length - 1);
-    }
-    return setCurrentSlider(currentSlider - 1);
-  };
-  const nextSlider = () => {
-    if (currentSlider === sliders.length - 1) {
-      return setCurrentSlider(0);
-    }
-    return setCurrentSlider(currentSlider + 1);
-  };
+  const prevSlider = () =>
+    setCurrentSlider((currentSlider) =>
+      currentSlider === 0 ? sliders.length - 1 : currentSlider - 1
+    );
+
+  const nextSlider = () =>
+    setCurrentSlider((currentSlider) =>
+      currentSlider === sliders.length - 1 ? 0 : currentSlider + 1
+    );
   // if you don't want to change the slider automatically then you can just remove the useEffect
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -94,15 +94,15 @@ export const Slider1 = () => {
         {/* dots */}
 
         <div className="flex justify-center items-center rounded-full z-50 absolute bottom-4 w-full">
-          {sliders.map((s, inx) => (
+          {sliders.map((_, inx) => (
             <button
               key={inx}
               onClick={() => {
                 setCurrentSlider(inx);
               }}
-              className={`rounded-full duration-300 bg-sky-400 border-[3px] border-white ${
-                currentSlider === inx ? "w-10" : "w-3"
-              } h-3`}
+              className={`rounded-full duration-300 bg-white ${
+                currentSlider === inx ? "w-10" : "w-2"
+              } h-2`}
             ></button>
           ))}
         </div>

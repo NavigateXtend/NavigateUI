@@ -26,15 +26,12 @@ export const SliderMain = () => {
     },
   ];
 
-  const nextSlider = () => {
-    if (currentSlider === sliders.length - 1) {
-      return setCurrentSlider(0);
-    }
-    return setCurrentSlider(currentSlider + 1);
-  };
-
+  const nextSlider = () =>
+    setCurrentSlider((currentSlider) =>
+      currentSlider === sliders.length - 1 ? 0 : currentSlider + 1
+    );
   return (
-    <div className="sm:w-2/3 relative overflow-hidden">
+    <div className="sm:w-2/3 h-[540px] md:h-[670px] flex items-center relative overflow-hidden">
       {/* arrow */}
       <button
         onClick={nextSlider}
