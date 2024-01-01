@@ -33,11 +33,11 @@ const Card6 = () => {
            {/* Post Image */}
            <div className='flex flex-col gap-1'>
             <div className='w-full'>
-                <img className='w-full h-[150px]' src="/public/assets/post1.jpeg" alt="" />
+                <img className='w-full h-[150px]' src="/assets/post1.jpeg" alt="" />
             </div>
             <div className='flex gap-1 overflow-hidden'>
-                <img className='w-[49.5%] h-[150px]'src="/public/assets/post2.jpeg" alt="" />
-                <img className='w-[49.5%] h-[150px]' src="/public/assets/post3.jpeg"alt="" />
+                <img className='w-[49.5%] h-[150px]'src="/assets/Post2.jpeg" alt="" />
+                <img className='w-[49.5%] h-[150px]' src="/assets/Post3.jpeg"alt="" />
             </div>
            </div>
 
