@@ -45,7 +45,7 @@ export const Slider4 = () => {
   return (
     <div className="overflow-hidden">
       <div
-        className="max-w-6xl mx-auto h-96 md:h-[540px] lg:h-[700px] flex flex-col xl:flex-row items-center justify-center gap-5 lg:gap-10 relative bg-cover before:absolute before:bg-black/50 before:inset-0 duration-500 transform ease-linear"
+        className="max-w-5xl mx-auto h-96 md:h-[540px] lg:h-[700px] flex flex-col xl:flex-row items-center justify-center gap-5 lg:gap-10 relative bg-cover before:absolute before:bg-black/50 before:inset-0 duration-1000 transform ease-linear"
         style={{
           backgroundImage: `url(${
             currentSlider === 0
@@ -111,38 +111,33 @@ export const Slider4 = () => {
         {/* text container here */}
         <div className="h-full w-[50%] overflow-hidden items-center justify-center flex absolute left-2 lg:left-8">
           <div className={`ease-linear duration-300 flex items-center`}>
-            {sliders.map((_, inx) => {
-              return (
-                <div
-                  key={inx}
-                  className={`scale-100 ${
-                    currentSlider === inx
-                      ? "translate-x-0 duration-500"
-                      : "-translate-x-full"
-                  }  min-w-full left-0 absolute drop-shadow-lg text-white rounded-lg`}
-                >
-                  <h1 className="lg:text-3xl mb-3">{_.title}</h1>
-                  <p className="text-xs sm:text-sm md:text-base lg:text-lg">
-                    {_.des}
-                  </p>
-                </div>
-              );
-            })}
+            <div
+              className={`min-w-full left-0 absolute drop-shadow-lg text-white rounded-lg`}
+            >
+              <h1 className="lg:text-3xl mb-3">
+                {sliders[currentSlider].title}
+              </h1>
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg">
+                {sliders[currentSlider].des}
+              </p>
+            </div>
           </div>
         </div>
 
         {/* slider container */}
-        <div className="h-full w-[47%] ml-auto overflow-hidden items-center flex absolute -right-5 lg:-right-32">
+        <div className="h-full w-[47%] ml-auto overflow-hidden items-center flex absolute -right-5 md:-right-16 lg:-right-32 z-50 px-4">
           <div
-            className={`ease-linear duration-300 flex items-center`}
-            style={{ transform: `translateX(-${currentSlider * 44}%)` }}
+            className={`ease-linear duration-500 flex gap-[4%] items-center`}
+            style={{ transform: `translateX(-${currentSlider * 48}%)` }}
           >
             {/* sliders */}
             {sliders.map((slide, inx) => (
               <img
                 key={inx}
                 src={slide.img}
-                className={`h-[180px] sm:h-[200px] md:h-[350px] scale-95  min-w-[44%] drop-shadow-lg shadow-xl bg-black/50 duration-300 rounded-lg`}
+                className={`h-[180px] sm:h-[200px] md:h-[350px] min-w-[44%] ${
+                  currentSlider - 1 === inx ? "scale-0" : "scale-100 delay-500"
+                } drop-shadow-lg shadow-lg shadow-black bg-black/50 duration-300 rounded-lg z-50`}
                 alt={slide.tags}
               />
             ))}
