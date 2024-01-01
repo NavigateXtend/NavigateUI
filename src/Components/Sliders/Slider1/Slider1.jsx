@@ -92,8 +92,7 @@ export const Slider1 = () => {
           </svg>
         </button>
         {/* dots */}
-
-        <div className="flex justify-center items-center rounded-full z-50 absolute bottom-4 w-full">
+        <div className="flex justify-center items-center rounded-full z-50 absolute bottom-4 w-full gap-1">
           {sliders.map((_, inx) => (
             <button
               key={inx}

@@ -3,7 +3,7 @@ import Navbar from "../Nav/Navbar";
 import { useState } from "react";
 
 const MainLayout = () => {
-  const [isOpen,setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex gap-5 ">
       <div className={`${isOpen ? "" : "hidden"} lg:block`}>
@@ -11,7 +11,7 @@ const MainLayout = () => {
       </div>
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-0 w-screen shadow-lg lg:hidden bg-white p-4 z-30"
+        className="fixed top-0 w-screen shadow-lg lg:hidden bg-white p-4 z-[998]"
       >
         <svg
           width={40}
@@ -57,8 +57,8 @@ const MainLayout = () => {
       </div>
       <div
         onClick={() => setIsOpen(false)}
-        className={`w-screen  lg:w-[75%] my-20  mx-auto ${
-          isOpen ? "opacity-30 duration-500" : " duration-500 opacity-100"
+        className={`w-screen  lg:w-[75%] my-20 mx-auto ${
+          isOpen ? "opacity-30 duration-500" : "duration-500 opacity-100"
         } lg:opacity-100  `}
       >
         <Outlet />

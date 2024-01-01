@@ -1,8 +1,6 @@
-import "../button.css";
-
 const Button1 = () => {
   return (
-    <div className="space-y-3 grid grid-cols-1 md:grid-cols-3 gap-5 justify-items-center items-center">
+    <div className="space-y-3 flex flex-wrap  md:grid  md:grid-cols-3 gap-5 justify-center md:justify-items-center items-center">
       {/* 1 */}
       <button className="text-xl w-32 h-16 bg-sky-700 hover:scale-95 text-white duration-300">
         Hover
