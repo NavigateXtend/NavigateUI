@@ -25,9 +25,9 @@ const Card = () => {
       {/* Card 5  */}
       <Card5></Card5>
       {/* Card 6  */}
-      <CodeBox value={'700px'}>
+      
       <Card6></Card6>
-      </CodeBox>
+     
       
       
     </div>

@@ -1,24 +1,17 @@
 
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const JSXCode = () => {
+
+
+const JSXCode = ({codeStr}) => {
 
     return (
-        <div>
-            <pre>
-  <code>
-    {`
-    function YourComponent() {
-      return (
-        <div>
-          <h1>Hello, World!</h1>
-          <p>This is JSX code.</p>
-        </div>
-      );
-    }
-    `}
-  </code>
-</pre>
-        </div>
+        
+             <SyntaxHighlighter  language="jsx" style={atomDark}>
+      {codeStr}
+    </SyntaxHighlighter>
+       
     );
 };
 
