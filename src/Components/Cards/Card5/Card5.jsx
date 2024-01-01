@@ -106,7 +106,7 @@ const Card5 = () => {
             </div>
           </div>
           <div>
-            <button className="text-sm font-bold  bg-[#0d87f8] font-sans text-white py-3 px-6 rounded-full">
+            <button className="text-sm font-bold  text-[#0d87f8]  overflow-hidden shadow-lg border border-[#0d87f8] before:block before:absolute before:translate-x-full before:inset-0 before:bg-[#0d87f8] before:hover:translate-x-0  before:duration-300 before:rounded-s-full before:-z-10 after:-z-10 after:rounded-e-full after:duration-300 after:hover:translate-x-0 after:block after:absolute after:-translate-x-full after:inset-0 after:bg-[#0d87f8] relative inline-block hover:text-white py-3 px-6 rounded-full">
               {" "}
               SEND MESSAGE
             </button>
