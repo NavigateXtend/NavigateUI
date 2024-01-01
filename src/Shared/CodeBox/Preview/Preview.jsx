@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Preview = () => {
+const Preview = ({children}) => {
     return (
-        <div>
-            Preview
+        <div className=''>
+            {children}
         </div>
     );
 };

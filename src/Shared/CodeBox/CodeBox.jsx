@@ -3,7 +3,7 @@ import JSXCode from "./JSXCode/JSXCode";
 import Preview from "./Preview/Preview";
 
 
-const CodeBox = () => {
+const CodeBox = ({children}) => {
    
     const [tabNum,setTabNum] = useState(0)
     
@@ -11,7 +11,7 @@ const CodeBox = () => {
         {
             item:0,
             name:'Preview',
-            component:<Preview></Preview>
+            component:<Preview>{children}</Preview>
         },
         {
             item:1,
@@ -23,9 +23,14 @@ const CodeBox = () => {
 
 
     return (
-        <div className="w-[90%]  rounded-md h-fit px-4 py-3  ">
+        <div className="w-[90%]  rounded-md h-fit px-4 py-3 my-20 ">
            <div className="flex gap-2">
-             {totalConfig?.map((item,ind) => <div onClick={()=>{setTabNum(ind)}} className={`${tabNum == ind ? 'bg-gray-200 shadow-xl rounded-t-xl ':''}  px-3 py-2`}>{item.name}</div>)}
+             {totalConfig?.map((item,ind) => <div onClick={()=>{setTabNum(ind)}} className={`${tabNum == ind ? 'bg-white  border-gray-200 border-b-0 rounded-t-xl ':'border-white'} border  px-3 py-2`}>{item.name}</div>)}
+           </div>
+           <div className={`px-4 py-10    flex justify-center  border rounded-b-lg rounded-tr-lg`}>
+             {
+                 totalConfig[tabNum].component
+             }
            </div>
         </div>
     );

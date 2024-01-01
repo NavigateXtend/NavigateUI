@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card6 = () => {
     return (
-        <div className='max-w-[350px] font-sans my-20  shadow-lg  rounded-lg  space-y-6'>
+        <div className='max-w-[350px]  font-sans border   shadow-lg  rounded-lg  space-y-6'>
            
            <div className='px-4 py-4 flex gap-10 justify-between items-center'>
 
