@@ -5,6 +5,7 @@ import Button from "./../Components/Buttons/Button";
 import Card from "../Components/Cards/Card";
 import Form from "./../Components/Forms/Form";
 import Banner from "../Components/Banners/Banner";
+import CodeBox from "../Shared/CodeBox/CodeBox";
 
 export const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
         path: "/form",
         element: <Form />,
       },
+      {
+        path:"/new",
+        element:<CodeBox></CodeBox>
+      }
     ],
   },
 ]);
