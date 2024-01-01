@@ -21,7 +21,7 @@ const Card = () => {
       <Card3></Card3>
       {/* Card 4  */}
       <Card4></Card4>
-      {/* Card 5  */}f
+      {/* Card 5  */}
       <Card5></Card5>
       {/* Card 6  */}
       <Card6></Card6>
