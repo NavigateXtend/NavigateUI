@@ -59,7 +59,7 @@ const MainLayout = () => {
         onClick={() => setIsOpen(false)}
         className={`w-screen lg:w-[70%] my-20 mx-auto ${
           isOpen ? "opacity-30 duration-500" : "duration-500 opacity-100"
-        } lg:opacity-100  `}
+        } lg:opacity-100`}
       >
         <Outlet />
       </div>
