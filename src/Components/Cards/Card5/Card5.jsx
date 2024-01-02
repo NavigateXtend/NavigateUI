@@ -111,7 +111,7 @@ const Card5 = () => {
 
   return (
     <CodeBox codeStr={codeStr}>
-      <div className="flex flex-col md:flex-row my-20">
+      <div className="flex flex-col md:flex-row my-20 justify-center">
         <div className="relative max-w-[350px] group">
           <img
             className="rounded-lg transform scale-105"

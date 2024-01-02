@@ -26,7 +26,23 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
+.copy-button {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #f2f1f1;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 100;
+  right: 0;
+  right: 8px;
+  border-radius: 4px;
+}
 
+.copy-button:hover {
+  background-color: #ccc;
+}
 
 /* input[id="s"]:checked ~ span {
   transform: translateY(0);
