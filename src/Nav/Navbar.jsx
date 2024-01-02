@@ -7,7 +7,7 @@ const Navbar = ({ setIsOpen }) => {
 
   return (
     <>
-      <div className="border-r fixed lg:left-0 lg:sticky px-5 lg:px-0 w-[330px] inset-0 bg-white z-[999] top-0  h-screen  select-none">
+      <div className="border-r overflow-y-scroll fixed lg:left-0 lg:sticky px-5 lg:px-0 w-[330px] inset-0 bg-white z-[999] top-0  h-screen  select-none">
         <div className="flex flex-col  w-full h-full group space-y-6">
           <div>
             <h1 className="text-3xl p-8 text-gray-800">
@@ -207,6 +207,13 @@ const Navbar = ({ setIsOpen }) => {
                 to="form"
               >
                 Form
+              </Link>
+              <Link
+                onClick={() => setIsOpen(false)}
+                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                to="accordion"
+              >
+                Accordion
               </Link>
             </div>
           </div>
