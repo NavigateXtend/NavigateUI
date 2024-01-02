@@ -127,14 +127,14 @@ export const Slider2 = () => {
       <div className="max-w-7xl mx-auto h-[540px] md:h-[670px] px-10 flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
         <div className="bg-[#f3f9fc] w-full absolute left-0 h-[540px] lg:h-[670px] -z-40"></div>
         <div className="w-full lg:w-1/3 text-center lg:text-left space-y-2 lg:space-y-5 py-5">
-          <h1 className="text-2xl lg:text-[40px] font-bold">
+          <h1 className="text-sm sm:text-lg md:text-2xl lg:text-[40px] font-bold">
             50+ Beautiful rooms inspiration
           </h1>
-          <p className="text-[#616161]">
+          <p className="text-[#616161] text-xs sm:text-sm ">
             Our designer already made a lot of beautiful prototipe of rooms that
             inspire you
           </p>
-          <button className="font-bold py-2 lg:py-3 hover:scale-95 duration-300 px-4 lg:px-10 text-white bg-[#2f9fb8]">
+          <button className="font-bold py-2 lg:py-3 text-xs md:text-lg lg:text-xl hover:scale-95 duration-300 px-4 lg:px-10 text-white bg-[#2f9fb8]">
             Explore More
           </button>
         </div>

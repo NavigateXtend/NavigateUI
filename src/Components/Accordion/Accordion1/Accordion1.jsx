@@ -63,31 +63,33 @@ const Accordion1 = () => {
               className="flex justify-between items-center py-4 w-full h-full "
             >
               <span className="text-xl">{PerAccordion.title}</span>
-              <svg
-                className="fill-[#00A2FF] shrink-0 ml-8"
-                width="16"
-                height="16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  y="7"
+              <span className="p-2 rounded-full bg-blue-100 ">
+                <svg
+                  className="fill-[#00A2FF] mr-7 shrink-0 ml-8"
                   width="16"
-                  height="2"
-                  rx="1"
-                  className={`transform origin-center transition duration-200 ease-out ${
-                    isOpen === idx && "!rotate-180"
-                  }`}
-                />
-                <rect
-                  y="7"
-                  width="16"
-                  height="2"
-                  rx="1"
-                  className={`transform origin-center rotate-90 transition duration-200 ease-out ${
-                    isOpen === idx && "!rotate-180"
-                  }`}
-                />
-              </svg>
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    y="7"
+                    width="16"
+                    height="2"
+                    rx="1"
+                    className={`transform origin-center transition duration-200 ease-out ${
+                      isOpen === idx && "!rotate-180"
+                    }`}
+                  />
+                  <rect
+                    y="7"
+                    width="16"
+                    height="2"
+                    rx="1"
+                    className={`transform origin-center rotate-90 transition duration-200 ease-out ${
+                      isOpen === idx && "!rotate-180"
+                    }`}
+                  />
+                </svg>
+              </span>
             </button>
             <div
               className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600  ${
