@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import CodeBox from "../../../Shared/CodeBox/CodeBox";
 
-export const Slider1 = () => {
+export const Slider1 = ({ size }) => {
   const codeStr = `import { useEffect, useState } from "react";
 
 export const Slider1 = () => {
@@ -22,7 +22,7 @@ export const Slider1 = () => {
   }, [currentSlider]);
 
   return (
-     <div className="max-w-7xl mx-auto h-[540px] md:h-[670px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 px-10">
+     <div className="max-w-7xl mx-auto h-[340px] md:h-[670px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 px-10">
         <div className="relative overflow-hidden">
           {/* arrow */}
           <div className="absolute w-full h-full flex items-center justify-between z-50 px-5">
@@ -42,7 +42,7 @@ export const Slider1 = () => {
           {/* slider container */}
           <div className="ease-linear duration-300 flex transform-gpu relative" style={{transform: \`translateX(-\${currentSlider * 100}%)\`,}>
             {/* sliders */}
-            {sliderImages.map((slide, inx) => <div key={inx} className="min-w-full duration-200"><img src={slide.img} className="w-full h-[540px] md:h-[670px] object-cover" alt={\`Slider - \${inx + 1}\`}/></div>)}
+            {sliderImages.map((slide, inx) => <div key={inx} className="min-w-full duration-200"><img src={slide.img} className="w-full h-[340px] md:h-[670px] object-cover" alt={\`Slider - \${inx + 1}\`}/></div>)}
           </div>
         </div>
       </div>
@@ -88,7 +88,7 @@ export const Slider1 = () => {
   }, [currentSlider]);
   return (
     <CodeBox codeStr={codeStr}>
-      <div className="max-w-7xl mx-auto h-[540px] md:h-[670px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 px-10">
+      <div className="max-w-full min-w-[300px] resizable-code-box  mx-auto h-[240px] md:h-[470px] lg:h-[700px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 px-10">
         <div className="relative overflow-hidden">
           <div className="absolute w-full h-full flex items-center justify-between z-50 px-5">
             {/* arrow left */}
@@ -169,7 +169,7 @@ export const Slider1 = () => {
               <div key={inx} className="min-w-full duration-200">
                 <img
                   src={slide.img}
-                  className="w-full h-[540px] md:h-[670px] object-cover"
+                  className="w-full h-[340px] md:h-[670px] object-cover"
                   alt={`Slider - ${inx + 1}`}
                 />
               </div>
