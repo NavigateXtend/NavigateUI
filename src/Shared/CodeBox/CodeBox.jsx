@@ -39,7 +39,7 @@ const CodeBox = ({ children, codeStr }) => {
       <div
         className={`${
           tabNum == 1
-            ? "py-0 bg-[#1D1F21] h-[600px] overflow-y-scroll overflow-x-hidden"
+            ? "py-0 bg-[#1D1F21] h-full  overflow-hidden"
             : "flex px-4 py-10 justify-center"
         } border rounded-b-lg rounded-tr-lg w-full`}
       >
