@@ -3,23 +3,23 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   scrollbar-width: 15px;
 }
 
-/* Chrome, Edge, and Safari */
 ::-webkit-scrollbar {
   background: #b0e0ff;
 }
 
 ::-webkit-scrollbar-track {
-  background: #b0e0ff;
+  background: #cdebff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #005a9a;
+  background: #36a9fc;
   border: 4px solid #b0e0ff;
-}
+  border-radius: 100px;
+} */
 
 body {
   font-family: "Roboto Slab", serif;

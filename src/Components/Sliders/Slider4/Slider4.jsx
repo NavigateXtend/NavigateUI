@@ -163,6 +163,7 @@ export const Slider4 = () => {
         <div className="w-[47%] ml-auto overflow-hidden items-center md:flex absolute -right-5 md:-right-16 lg:-right-32 z-50 px-4 py-10">
           <div
             className="ease-linear duration-300 flex gap-[4%] items-center"
+
             style={{ transform: `translateX(-${currentSlider * 48}%)` }}
           >
             {/* sliders */}

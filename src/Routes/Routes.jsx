@@ -5,12 +5,20 @@ import Button from "./../Components/Buttons/Button";
 import Card from "../Components/Cards/Card";
 import Form from "./../Components/Forms/Form";
 import Banner from "../Components/Banners/Banner";
+import CodeBox from "../Shared/CodeBox/CodeBox";
+import Accordion from "../Components/Accordion/Accordion";
+import Home from "../Home/Home";
+
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
     children: [
+      {
+        path:'/',
+        element:<Home></Home>
+      },
       {
         path: "/banner",
         element: <Banner />,
@@ -31,6 +39,14 @@ export const router = createBrowserRouter([
         path: "/form",
         element: <Form />,
       },
+      {
+        path: "/accordion",
+        element: <Accordion />,
+      },
+      {
+        path:"/new",
+        element:<CodeBox></CodeBox>
+      }
     ],
   },
 ]);
