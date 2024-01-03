@@ -27,24 +27,24 @@ const CodeBox = ({ children, codeStr }) => {
   ];
 
   return (
-    <div className="w-[90%] rounded-md h-fit px-4 py-3 my-20">
-      <div className="flex gap-2 items-center justify-between">
-        <div className="flex">
-          {totalConfig?.map((item, inx) => (
-            <div
-              key={inx}
-              onClick={() => {
-                setTabNum(inx);
-              }}
-              className={`${
-                tabNum === inx
-                  ? "bg-white border-gray-200 border-b-0 rounded-t-xl"
-                  : "border-white"
-              } border px-3 py-2 cursor-pointer select-none`}
-            >
-              {item.name}
-            </div>
-          ))}
+
+       <div className="w-[90%] mx-auto rounded-md h-fit px-4 py-3 my-20">
+      <div className="flex gap-2">
+        {totalConfig?.map((item, inx) => (
+          <div
+            key={inx}
+            onClick={() => {
+              setTabNum(inx);
+            }}
+            className={`${
+              tabNum === inx
+                ? "bg-white border-gray-200 border-b-0 rounded-t-xl"
+                : "border-white"
+            } border px-3 py-2 cursor-pointer select-none`}
+          >
+            {item.name}
+          </div>
+        ))}
         </div>
         <CopyToClipboard text={codeStr} onCopy={handleCopy}>
           <button className="copy-button border px-3 py-2 rounded-t-lg hover:bg-gray-300">
