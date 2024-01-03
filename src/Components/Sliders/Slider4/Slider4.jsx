@@ -5,7 +5,7 @@ const codeStr = `import { useState } from "react";
 
 export const Slider4 = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
-  const sliders = [{img: "https://source.unsplash.com/1200x1200/?nature", title: "Escape 1", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x1200/?hill", title: "Escape 2", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x1200/?mountain", title: "Escape 3", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x1200/?river", title: "Escape 4", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x1200/?sea", title: "Escape 5", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",},];
+  const sliders = [{img: "https://source.unsplash.com/1200x640/?nature", title: "Escape 1", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?hill", title: "Escape 2", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?mountain", title: "Escape 3", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?river", title: "Escape 4", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?sea", title: "Escape 5", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",},];
 
   const prevSlider = () => setCurrentSlider((currentSlider) => currentSlider === 0 ? sliders.length - 1 : currentSlider - 1);
   const nextSlider = () => setCurrentSlider((currentSlider) => currentSlider === sliders.length - 1 ? 0 : currentSlider + 1);
@@ -47,27 +47,27 @@ export const Slider4 = () => {
 
   const sliders = [
     {
-      img: "https://source.unsplash.com/1200x1200/?nature",
+      img: "https://source.unsplash.com/1200x640/?nature",
       title: "Escape 1",
       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
     },
     {
-      img: "https://source.unsplash.com/1200x1200/?hill",
+      img: "https://source.unsplash.com/1200x640/?hill",
       title: "Escape 2",
       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
     },
     {
-      img: "https://source.unsplash.com/1200x1200/?mountain",
+      img: "https://source.unsplash.com/1200x640/?mountain",
       title: "Escape 3",
       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
     },
     {
-      img: "https://source.unsplash.com/1200x1200/?river",
+      img: "https://source.unsplash.com/1200x640/?river",
       title: "Escape 4",
       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
     },
     {
-      img: "https://source.unsplash.com/1200x1200/?sea",
+      img: "https://source.unsplash.com/1200x640/?sea",
       title: "Escape 5",
       des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
     },
@@ -87,7 +87,7 @@ export const Slider4 = () => {
   return (
     <CodeBox codeStr={codeStr}>
       <div
-        className="w-full h-96 md:h-[540px] lg:h-[700px] flex flex-col xl:flex-row items-center justify-center gap-5 lg:gap-10 relative bg-cover before:absolute before:bg-black/50 before:inset-0 duration-1000 transform ease-linear z-50"
+        className="w-full h-96 md:h-[540px] lg:h-[640px] flex flex-col xl:flex-row items-center justify-center gap-5 lg:gap-10 relative bg-cover before:absolute before:bg-black/50 before:inset-0 duration-1000 transform ease-linear z-50"
         style={{
           backgroundImage: `url(${
             currentSlider === 0
@@ -152,23 +152,18 @@ export const Slider4 = () => {
         </div>
 
         {/* text container here */}
-        <div className="h-full w-[50%] overflow-hidden items-center justify-center flex absolute left-2 lg:left-8 ">
-          <div className="ease-linear duration-300 flex items-center">
-            <div className="min-w-full left-0 absolute drop-shadow-lg text-white rounded-lg">
-              <h1 className="lg:text-3xl mb-3">
-                {sliders[currentSlider].title}
-              </h1>
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg">
-                {sliders[currentSlider].des}
-              </p>
-            </div>
-          </div>
+        <div className="w-1/2 px-4 left-0 absolute drop-shadow-lg text-white rounded-lg">
+          <h1 className="lg:text-3xl mb-3">{sliders[currentSlider].title}</h1>
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg">
+            {sliders[currentSlider].des}
+          </p>
         </div>
 
         {/* slider container */}
-        <div className="w-[47%]  ml-auto overflow-hidden items-center md:flex absolute -right-5 md:-right-16 lg:-right-32 z-50 px-4 py-10">
+        <div className="w-[47%] ml-auto overflow-hidden items-center md:flex absolute -right-5 md:-right-16 lg:-right-32 z-50 px-4 py-10">
           <div
-            className="ease-linear duration-500 flex gap-[4%] items-center"
+            className="ease-linear duration-300 flex gap-[4%] items-center"
+
             style={{ transform: `translateX(-${currentSlider * 48}%)` }}
           >
             {/* sliders */}
@@ -176,10 +171,10 @@ export const Slider4 = () => {
               <img
                 key={inx}
                 src={slide.img}
-                className={`h-[180px] sm:h-[200px] md:h-[350px] min-w-[44%] ${
+                className={`h-[180px] sm:h-[200px] md:h-[320px] min-w-[44%] ${
                   currentSlider - 1 === inx ? "scale-0" : "scale-100 delay-500"
                 } drop-shadow-lg shadow-lg shadow-black bg-black/50 duration-300 rounded-lg z-50 `}
-                alt={slide.tags}
+                alt={slide.title}
               />
             ))}
           </div>
