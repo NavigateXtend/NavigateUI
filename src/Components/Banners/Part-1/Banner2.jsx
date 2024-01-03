@@ -15,26 +15,26 @@ const Banner2 = () => {
               Show Now
             </button>
           </div>
-          <div className="relative w-[420px] px-3 h-[420px] rounded-lg  before:absolute before:w-20 before:h-20 before:border-8  before:border-dashed before:rounded- hover:before:animate-[spin_8s_linear_infinite] before:-left-10 before:-top-10 after:absolute after:w-20 after:h-20 after:border-8  after:border-dashed after:rounded- hover:after:animate-[spin_8s_linear_infinite] after:-right-10 after:-bottom-10 group">
+          <div className="relative w-[420px] px-3 h-[420px] rounded-lg before:absolute before:w-20 before:h-20 before:border-8 before:border-dashed before:rounded- hover:before:animate-[spin_8s_linear_infinite] before:-left-10 before:-top-10 after:absolute after:w-20 after:h-20 after:border-8  after:border-dashed after:rounded- hover:after:animate-[spin_8s_linear_infinite] after:-right-10 after:-bottom-10 group">
             <img
               src="https://source.unsplash.com/200x200/?techs"
               alt="img"
-              className="rounded-lg absolute top-0 left-0 z-20 bg-gray-900 w-[200px] h-[200px]   group-hover:scale-105 duration-300"
+              className="rounded-lg absolute top-0 left-0 z-20 bg-black/30 w-[200px] h-[200px] group-hover:scale-105 duration-300"
             />
             <img
               src="https://source.unsplash.com/200x200/?laptop"
               alt="img"
-              className="rounded-lg absolute right-0 bottom-0 z-20 bg-gray-900 w-[200px] h-[200px]   group-hover:scale-105 duration-300"
+              className="rounded-lg absolute right-0 bottom-0 z-20 bg-black/30 w-[200px] h-[200px] group-hover:scale-105 duration-300"
             />
             <img
               src="https://source.unsplash.com/200x200/?mobile"
               alt="img"
-              className="rounded-lg absolute left-0 bottom-0 z-20 bg-gray-900 w-[200px] h-[200px]   group-hover:scale-105 duration-300"
+              className="rounded-lg absolute left-0 bottom-0 z-20 bg-black/30 w-[200px] h-[200px] group-hover:scale-105 duration-300"
             />
             <img
               src="https://source.unsplash.com/200x200/?electronics"
               alt="img"
-              className="rounded-lg absolute right-0 top-0 z-20 bg-gray-900 w-[200px] h-[200px]   group-hover:scale-105 duration-300"
+              className="rounded-lg absolute right-0 top-0 z-20 bg-black/30 w-[200px] h-[200px] group-hover:scale-105 duration-300"
             />
           </div>
         </div>
