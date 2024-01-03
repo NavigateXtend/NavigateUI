@@ -1,7 +1,7 @@
 import CodeBox from "./../../../Shared/CodeBox/CodeBox";
 const Button1 = () => {
   return (
-    <div className="md:grid md:grid-cols-1 gap-5 justify-center md:justify-items-center items-start">
+    <div className="flex flex-col gap-5 justify-center items-start">
       <CodeBox
         codeStr={`<button className="text-xl w-32 h-16 bg-sky-700 hover:scale-95 text-white duration-300">Button</button>
 <button className="text-xl w-32 h-16 before:block before:absolute hover:before:bg-sky-700 before:w-0 before:h-0 hover:before:h-20 hover:before:w-40 before:-bottom-2 before:-right-2 before:duration-500 before:rounded-xl before:-z-10  relative inline-block transform hover:text-white text-sky-700 bg-transparent border-2 overflow-hidden border-sky-700 duration-500">Button</button>

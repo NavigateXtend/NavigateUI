@@ -111,10 +111,10 @@ const Card5 = () => {
 
   return (
     <CodeBox codeStr={codeStr}>
-      <div className="flex flex-col md:flex-row justify-center">
-        <div className="relative max-w-[350px] group">
+      <div className="flex flex-col md:flex-row my-20 justify-center items-center mx-auto">
+        <div className="relative sm:w-[350px] group">
           <img
-            className="rounded-lg transform scale-105"
+            className="rounded-lg transform scale-105 w-full h-full bg-black/70"
             src="https://source.unsplash.com/350x350/?men"
             alt="img"
           />
@@ -186,7 +186,7 @@ const Card5 = () => {
             </svg>
           </span>
         </div>
-        <div className=" space-y-12 max-w-[350px] rounded-tr-lg rounded-br-lg md:w-[350px] text-center p-10 shadow-[0px_7px_30px_2px_rgba(100,100,111,0.2)]">
+        <div className="space-y-12 max-w-[350px] rounded-tr-lg rounded-br-lg md:w-[350px] text-center p-10 shadow-[0px_7px_30px_2px_rgba(100,100,111,0.2)]">
           <div className="space-y-1">
             <h2 className="text-3xl font-medium text-gray-700 text-center font-sans">
               Dima Bolver
