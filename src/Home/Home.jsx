@@ -5,15 +5,11 @@ import Banner from "./Banner/Banner";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
+  
 
   return (
     <div className="flex gap-5  ">
-      <div
-        className={`${isOpen ? "" : "hidden"} ${
-          location.pathname == "/" ? "" : "lg:block"
-        } `}
-      >
+      <div className={` ${isOpen ? "fixed z-[999]" : "hidden"}`}>
         <Navbar setIsOpen={setIsOpen}></Navbar>
       </div>
       <div
@@ -69,11 +65,11 @@ const Home = () => {
       </div>
       <div
         onClick={() => setIsOpen(false)}
-        className={`w-full   my-10 mx-auto ${
+        className={`w-full  my-10 mx-auto ${
           isOpen ? "opacity-30 duration-500" : "duration-500 opacity-100"
         } lg:opacity-100`}
       >
-        <Banner></Banner>
+        <Banner isOpen={isOpen}></Banner>
       </div>
     </div>
   );
