@@ -3,11 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   scrollbar-width: 15px;
 }
 
-/* Chrome, Edge, and Safari */
 ::-webkit-scrollbar {
   background: #b0e0ff;
 }
@@ -20,7 +19,7 @@
   background: #36a9fc;
   border: 4px solid #b0e0ff;
   border-radius: 100px;
-}
+} */
 
 body {
   font-family: "Roboto Slab", serif;
