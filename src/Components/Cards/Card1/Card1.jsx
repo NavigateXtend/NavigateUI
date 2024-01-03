@@ -5,7 +5,7 @@ const Card1 = () => {
   return (
     <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-4 my-10 flex flex-col justify-center items-center">
       <div className="relative w-[120px] h-[120px]">
-        <img src="https://source.unsplash.com/600x600/?portrait" alt="portrait" className="w-full h-full rounded-full"/>
+        <img src="https://source.unsplash.com/600x600/?portrait" alt="portrait" className="w-full h-full rounded-full bg-black/30"/>
         <span className="absolute bottom-4 right-0 bg-white rounded-full w-[25px] h-[25px] border-2 border-white">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50" fill="#2AC07B"><path d="M43.171,10.925L24.085,33.446l-9.667-9.015l1.363-1.463l8.134,7.585L41.861,9.378C37.657,4.844,31.656,2,25,2 C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23C48,19.701,46.194,14.818,43.171,10.925z"></path></svg>
         </span>
@@ -45,11 +45,11 @@ const Card1 = () => {
   return (
     <CodeBox codeStr={codeStr}>
       <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-4 my-10 flex flex-col justify-center items-center mx-auto bg-white">
-        <div className="relative  w-[120px] h-[120px]">
+        <div className="relative w-[120px] h-[120px]">
           <img
-            src="https://source.unsplash.com/600x600/?portrait"
+            src="https://source.unsplash.com/120x120/?portrait"
             alt="portrait"
-            className="w-full h-full rounded-full "
+            className="w-full h-full rounded-full bg-black/30"
           />
           <span className="absolute bottom-4 right-0 bg-white rounded-full w-[25px] h-[25px] border-2 border-white">
             <svg

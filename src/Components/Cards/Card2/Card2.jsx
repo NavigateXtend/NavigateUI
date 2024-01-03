@@ -11,8 +11,8 @@ const Card2 = () => {
           </div>
           <button className="bg-orange-600 text-white px-2 py-1 rounded-xl">30% off</button>
         </div>
-        <div className="flex justify-center w-full">
-          <img className="rounded-lg w-full" src="https://source.unsplash.com/300x300/?smartwatch" alt="watch"/>
+        <div className="flex justify-center w-full h-48 lg:h-[280px]">
+          <img className="rounded-lg bg-black/40 w-full h-full" src="https://source.unsplash.com/300x300/?smartwatch" alt="img"/>
         </div>
         <div className="text-center w-[85%] mx-auto font-semibold space-y-2">
           <h6>Waterproof Sport Smart Watch Monitor for IOS & Android</h6>
@@ -57,18 +57,22 @@ const Card2 = () => {
             30% off
           </button>
         </div>
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center w-full h-48 lg:h-[280px]">
           <img
-            className="rounded-lg w-full"
+            className="rounded-lg bg-black/40 w-full h-full"
             src="https://source.unsplash.com/300x300/?smartwatch"
-            alt=""
+            alt="img"
           />
         </div>
         <div className="text-center w-[85%] mx-auto font-semibold space-y-2">
-          <h6>Waterproof Sport Smart Watch Monitor for IOS & Android</h6>
-          <p className="text-gray-400 text-sm font-semibold">Smart watches</p>
+          <h6 className="text-sm md:text-base lg:text-lg">
+            Waterproof Sport Smart <br /> Watch Monitor for IOS & Android
+          </h6>
+          <p className="text-gray-400 text-xs md:text-sm font-semibold">
+            Smart watches
+          </p>
         </div>
-        <div className="flex items-center justify-center gap-6">
+        <div className="flex items-center justify-center flex-wrap gap-6 text-sm md:text-base">
           <button className="px-4 py-2 rounded-lg bg-[#03CC9C] text-white font-semibold font-sans">
             Buy now
           </button>
