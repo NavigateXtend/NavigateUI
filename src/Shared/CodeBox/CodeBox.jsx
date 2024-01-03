@@ -18,7 +18,7 @@ const CodeBox = ({ children, codeStr }) => {
   ];
 
   return (
-    <div className="w-[90%] rounded-md h-fit px-4 py-3 my-20">
+    <div className="w-[90%] mx-auto rounded-md h-fit px-4 py-3 my-20">
       <div className="flex gap-2">
         {totalConfig?.map((item, inx) => (
           <div
