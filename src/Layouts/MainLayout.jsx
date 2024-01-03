@@ -9,56 +9,75 @@ const MainLayout = () => {
    
 
   return (
-
     <div className="flex gap-5 ">
-      <div className={`${isOpen ? "" : "hidden"} ${location.pathname == '/' ? '':'lg:block'} `}>
+      <div
+        className={`${isOpen ? "" : "hidden"} ${
+          location.pathname == "/" ? "" : "lg:block"
+        } `}
+      >
         <Navbar setIsOpen={setIsOpen}></Navbar>
       </div>
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-0 w-screen shadow-lg  bg-white p-4 z-[998]"
+        className="fixed flex items-center justify-between top-0 w-screen shadow-lg  bg-white p-4 z-[998]"
       >
-        <svg
-          width={40}
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >  
-          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            <g id="Menu / Menu_Alt_03">
-              <path
-                id="Vector1"
-                d="M5 17H13"
-                stroke="#0095FF" // Red
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-              <path
-                id="Vector2"
-                d="M5 12H19"
-                stroke="#000000" // Green
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
-              <path
-                id="Vector3"
-                d="M5 7H13"
-                stroke="#0095FF" // Blue
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              ></path>
+        <span className="w-[30%]">
+          <svg
+            width={40}
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g id="Menu / Menu_Alt_03">
+                <path
+                  id="Vector1"
+                  d="M5 17H13"
+                  stroke="#0095FF" // Red
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  id="Vector2"
+                  d="M5 12H19"
+                  stroke="#000000" // Green
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+                <path
+                  id="Vector3"
+                  d="M5 7H13"
+                  stroke="#0095FF" // Blue
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>
+              </g>
             </g>
-          </g>
-        </svg>
+          </svg>
+        </span>
+        <div className="w-[70%] flex items-center gap-4">
+          <h1 className="text-xl">
+            <span className="text-[#0d87f8]">W</span>elcome Back
+          </h1>
+          <div className="relative">
+            <input
+              id="email"
+              type="email"
+              placeholder="Search..."
+              className="p-3 block w-full pl-10 border rounded-full drop-shadow-sm outline-none"
+            />
+            
+          </div>
+        </div>
       </div>
       <div
         onClick={() => setIsOpen(false)}
