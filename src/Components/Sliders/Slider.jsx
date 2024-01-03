@@ -2,6 +2,7 @@ import { Slider1 } from "./Slider1/Slider1";
 import { Slider2 } from "./Slider2/Slider2";
 import { Slider3 } from "./Slider3/Slider3";
 import { Slider4 } from "./Slider4/Slider4";
+import { Slider5 } from "./Slider5/Slider5";
 
 const Slider = () => {
   return (
@@ -10,6 +11,7 @@ const Slider = () => {
       <Slider2></Slider2>
       <Slider3></Slider3>
       <Slider4></Slider4>
+      <Slider5></Slider5>
     </div>
   );
 };
