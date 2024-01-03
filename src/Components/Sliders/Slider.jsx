@@ -6,7 +6,7 @@ import { Slider5 } from "./Slider5/Slider5";
 
 const Slider = () => {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center">
       <Slider1></Slider1>
       <Slider2></Slider2>
       <Slider3></Slider3>
