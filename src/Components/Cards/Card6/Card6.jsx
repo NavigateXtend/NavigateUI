@@ -7,7 +7,7 @@ const Card6 = () => {
       <div className="px-4 py-4 flex gap-10 justify-between items-center">
         {/* Avatar image  */}
         <div className="flex gap-3 items-center">
-          <img className="w-[60px] rounded-full" src="https://source.unsplash.com/100x100/?portrait" alt="portrait"/>
+          <img className="w-16 h-16 rounded-full bg-black/40" src="https://source.unsplash.com/100x100/?portrait" alt="portrait"/>
           <div className="flex flex-col">
             <h2 className="text-xl font-semibold">Yoan Lee</h2>
             <p className="text-gray-400">2 days ago</p>
@@ -23,11 +23,11 @@ const Card6 = () => {
       {/* Post Image */}
       <div className="flex flex-col gap-1">
         <div className="w-full">
-          <img className="w-full h-[150px]" src="https://source.unsplash.com/400x200/?arts" alt="img"/>
+          <img className="w-full h-[150px] bg-black/40" src="https://source.unsplash.com/400x200/?arts" alt="img"/>
         </div>
         <div className="flex gap-1 overflow-hidden">
-          <img className="w-[49.5%] h-[150px]" src="https://source.unsplash.com/201x201/?arts" alt="img"/>
-          <img className="w-[49.5%] h-[150px]" src="https://source.unsplash.com/202x202/?arts" alt=""/>
+          <img className="w-[49.5%] h-[150px] bg-black/40" src="https://source.unsplash.com/201x201/?arts" alt="img"/>
+          <img className="w-[49.5%] h-[150px] bg-black/40" src="https://source.unsplash.com/202x202/?arts" alt=""/>
         </div>
       </div>
       {/* Post content */}
@@ -59,7 +59,7 @@ const Card6 = () => {
           {/* Avatar image  */}
           <div className="flex gap-3 items-center">
             <img
-              className="w-[60px] rounded-full"
+              className="w-16 h-16 rounded-full bg-black/40"
               src="https://source.unsplash.com/100x100/?portrait"
               alt="portrait"
             />
@@ -114,19 +114,19 @@ const Card6 = () => {
         <div className="flex flex-col gap-1">
           <div className="w-full">
             <img
-              className="w-full h-[150px]"
+              className="w-full h-[150px] bg-black/40"
               src="https://source.unsplash.com/400x200/?arts"
               alt=""
             />
           </div>
           <div className="flex gap-1 overflow-hidden">
             <img
-              className="w-[49.5%] h-[150px]"
+              className="w-[49.5%] h-[150px] bg-black/40"
               src="https://source.unsplash.com/201x201/?arts"
               alt=""
             />
             <img
-              className="w-[49.5%] h-[150px]"
+              className="w-[49.5%] h-[150px] bg-black/40 bg-black/40"
               src="https://source.unsplash.com/202x202/?arts"
               alt=""
             />
