@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ setIsOpen }) => {
   const [isDocOpen, setDocIsOpen] = useState(true);
   const [isComponentOpen, setComponentIsOpen] = useState(true);
 
   return (
     <>
-      <div className="border-r sticky top-0 w-[25%] h-screen overflow-hidden select-none">
+      <div className="border-r overflow-y-scroll fixed lg:left-0 lg:sticky px-5 lg:px-0 w-[330px] inset-0 bg-white z-[999] top-0  h-screen  select-none">
         <div className="flex flex-col  w-full h-full group space-y-6">
           <div>
             <h1 className="text-3xl p-8 text-gray-800">
@@ -86,22 +86,28 @@ const Navbar = () => {
             </div>
             {/* doc div  */}
             <div
-              className={` ${
-                isDocOpen ? "" : "hidden"
-              } flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 `}
+              className={`grid  transition-all  duration-300 ease-in-out text-slate-600    ${
+                isDocOpen
+                  ? "grid-rows-[1fr] opacity-100"
+                  : "grid-rows-[0fr] opacity-0"
+              }`}
             >
-              <Link
-                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                to="/"
-              >
-                Introduction
-              </Link>
-              <Link
-                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                to="button"
-              >
-                Quick Start
-              </Link>
+              <div className="overflow-hidden flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 ">
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  className="hover:bg-sky-50  py-2 duration-300  px-6 hover:rounded-lg "
+                  to="/"
+                >
+                  Introduction
+                </Link>
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  className="hover:bg-sky-50 py-2  duration-300  px-6 hover:rounded-lg "
+                  to="button"
+                >
+                  Quick Start
+                </Link>
+              </div>
             </div>
             {/* Component  */}
             <div
@@ -167,40 +173,56 @@ const Navbar = () => {
 
             {/* Component div */}
             <div
-              className={`${
-                isComponentOpen ? "" : "hidden"
-              } flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 `}
+              className={`grid  transition-all  duration-300 ease-in-out text-slate-600    ${
+                isComponentOpen
+                  ? "grid-rows-[1fr] opacity-100"
+                  : "grid-rows-[0fr] opacity-0"
+              }`}
             >
-              <Link
-                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                to="banner"
-              >
-                Banner
-              </Link>
-              <Link
-                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                to="slider"
-              >
-                Slider
-              </Link>
-              <Link
-                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                to="button"
-              >
-                Button
-              </Link>
-              <Link
-                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                to="card"
-              >
-                Card
-              </Link>
-              <Link
-                className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                to="form"
-              >
-                Form
-              </Link>
+              <div className="overflow-hidden flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 ">
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                  to="banner"
+                >
+                  Banner
+                </Link>
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                  to="slider"
+                >
+                  Slider
+                </Link>
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                  to="button"
+                >
+                  Button
+                </Link>
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                  to="card"
+                >
+                  Card
+                </Link>
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                  to="form"
+                >
+                  Form
+                </Link>
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                  to="accordion"
+                >
+                  Accordion
+                </Link>
+              </div>
             </div>
           </div>
         </div>
