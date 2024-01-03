@@ -62,7 +62,7 @@ const MainLayout = () => {
       </div>
       <div
         onClick={() => setIsOpen(false)}
-        className={`w-full lg:w-[70%]  my-20 mx-auto ${
+        className={`w-full lg:w-[70%]  overflow-x-hidden my-20 mx-auto ${
           isOpen ? "opacity-30 duration-500" : "duration-500 opacity-100"
         } lg:opacity-100`}
       >
