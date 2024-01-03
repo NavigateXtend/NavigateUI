@@ -103,7 +103,7 @@ const Navbar = ({ setIsOpen }) => {
                 <Link
                   onClick={() => setIsOpen(false)}
                   className="hover:bg-sky-50 py-2  duration-300  px-6 hover:rounded-lg "
-                  to="button"
+                  to="/Components/button"
                 >
                   Quick Start
                 </Link>
@@ -183,42 +183,42 @@ const Navbar = ({ setIsOpen }) => {
                 <Link
                   onClick={() => setIsOpen(false)}
                   className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                  to="accordion"
+                  to="/Components/accordion"
                 >
                   Accordion
                 </Link>
                 <Link
                   onClick={() => setIsOpen(false)}
                   className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                  to="banner"
+                  to="/Components/banner"
                 >
                   Banner
                 </Link>
                 <Link
                   onClick={() => setIsOpen(false)}
                   className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                  to="button"
+                  to="/Components/button"
                 >
                   Button
                 </Link>
                 <Link
                   onClick={() => setIsOpen(false)}
                   className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                  to="card"
+                  to="/Components/card"
                 >
                   Card
                 </Link>
                 <Link
                   onClick={() => setIsOpen(false)}
                   className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                  to="form"
+                  to="/Components/form"
                 >
                   Form
                 </Link>
                 <Link
                   onClick={() => setIsOpen(false)}
                   className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                  to="slider"
+                  to="/Components/slider"
                 >
                   Slider
                 </Link>

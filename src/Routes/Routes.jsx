@@ -12,39 +12,39 @@ import Home from "../Home/Home";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+        path:'/',
+        element:<Home></Home>
+  },
+  {
+    path: "/Components",
     element: <MainLayout />,
     children: [
       {
-        path:'/',
-        element:<Home></Home>
-      },
-      {
-        path: "/banner",
+        path: "banner",
         element: <Banner />,
       },
       {
-        path: "/slider",
+        path: "slider",
         element: <Slider />,
       },
       {
-        path: "/button",
+        path: "button",
         element: <Button />,
       },
       {
-        path: "/card",
+        path: "card",
         element: <Card />,
       },
       {
-        path: "/form",
+        path: "form",
         element: <Form />,
       },
       {
-        path: "/accordion",
+        path: "accordion",
         element: <Accordion />,
       },
       {
-        path:"/new",
+        path:"new",
         element:<CodeBox></CodeBox>
       }
     ],
