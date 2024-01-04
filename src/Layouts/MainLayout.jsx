@@ -4,12 +4,10 @@ import { useState } from "react";
 
 const MainLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation()
-  
-   
+  const location = useLocation();
 
   return (
-    <div className="flex gap-5 ">
+    <div className="flex gap-5">
       <div
         className={`${isOpen ? "" : "hidden"} ${
           location.pathname == "/" ? "" : "lg:block"
@@ -75,7 +73,6 @@ const MainLayout = () => {
               placeholder="Search..."
               className="p-3 block w-full pl-10 border rounded-full drop-shadow-sm outline-none"
             />
-            
           </div>
         </div>
       </div>

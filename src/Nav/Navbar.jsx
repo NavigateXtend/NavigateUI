@@ -7,8 +7,8 @@ const Navbar = ({ setIsOpen }) => {
 
   return (
     <>
-      <div className="border-r overflow-y-scroll fixed lg:left-0 lg:sticky px-5 lg:px-0 w-[330px] inset-0 bg-white z-[999] top-0  h-screen  select-none">
-        <div className="flex flex-col  w-full h-full group space-y-6">
+      <div className="border-r overflow-y-scroll fixed lg:left-0 lg:sticky px-5 lg:px-0 w-[330px] inset-0 bg-white z-[999] top-0 h-screen select-none">
+        <div className="flex flex-col w-full h-full group space-y-6">
           <div>
             <h1 className="text-3xl p-8 text-gray-800">
               <span className="text-[#0095FF]">U</span>nifyUI
@@ -53,7 +53,7 @@ const Navbar = ({ setIsOpen }) => {
               </div>
               <svg
                 className={`${
-                  isDocOpen ? "duration-300 " : "-rotate-180 duration-300 "
+                  isDocOpen ? "duration-300" : "-rotate-180 duration-300 "
                 }`}
                 width={35}
                 viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ const Navbar = ({ setIsOpen }) => {
             </div>
             {/* doc div  */}
             <div
-              className={`grid  transition-all  duration-300 ease-in-out text-slate-600    ${
+              className={`grid transition-all duration-300 ease-in-out text-slate-600    ${
                 isDocOpen
                   ? "grid-rows-[1fr] opacity-100"
                   : "grid-rows-[0fr] opacity-0"

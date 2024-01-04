@@ -10,6 +10,11 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+Routes
+Nav
+Shared
+Layouts
+Home
 *.local
 
 # Editor directories and files
