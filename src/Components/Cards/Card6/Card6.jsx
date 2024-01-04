@@ -159,7 +159,7 @@ const Card6 = () => {
 
   return (
     <CodeBox codeStr={codeStr}>
-      <div className="max-w-[350px] font-sans border shadow-lg rounded-lg mx-auto">
+      <div className="max-w-[350px] font-sans border shadow-lg rounded-lg mx-auto my-6">
         <div className="px-4 py-4 flex gap-10 justify-between items-center">
           {/* Avatar image  */}
           <div className="flex gap-3 items-center">
