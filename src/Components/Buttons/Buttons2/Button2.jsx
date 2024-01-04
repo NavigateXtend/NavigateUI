@@ -20,6 +20,18 @@ const Button2 = () => {
           </button>
           {/* 2 */}
           <button className="bg-sky-700 text-white py-2 before:bg-sky-900 before:content-['Bye'] before:absolute before:inset-0 before:translate-y-full hover:before:translate-y-0 before:duration-300 before:flex before:justify-center before:items-center overflow-hidden after:content-['Hi!'] after:absolute after:inset-0 after:translate-y-0 hover:after:-translate-y-full after:duration-300 after:flex after:justify-center after:items-center px-6 w-40 h-16 relative group"></button>
+          {/* 3 */}
+          <button>
+            <label
+              htmlFor="check"
+              className="flex flex-col gap-[5px] p-3 rounded-lg hover:bg-black/10 cursor-pointer"
+            >
+              <input type="checkbox" id="check" className="peer/check hidden" />
+              <span className="w-10 h-1 inline-block bg-sky-700 peer-checked/check:rotate-45 peer-checked/check:translate-y-2 duration-300"></span>
+              <span className="w-10 h-1 inline-block bg-sky-700 peer-checked/check:scale-0 duration-300"></span>
+              <span className="w-10 h-1 inline-block bg-sky-700 peer-checked/check:-rotate-45 peer-checked/check:-translate-y-2 duration-300"></span>
+            </label>
+          </button>
         </div>
       </div>
     </CodeBox>
