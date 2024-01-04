@@ -1,6 +1,8 @@
-# UnifyUI - React and Tailwind CSS Components Library
+# Unify UI - React and Tailwind CSS Components Library
 
 Welcome to UnifyUI, your go-to source for amazing React and Tailwind CSS components! UnifyUI is a carefully crafted library that brings together a collection of high-quality and customizable UI components for React projects.
+
+## [Unify UI](https://unifyui.vercel.app/)
 
 ## Features
 
