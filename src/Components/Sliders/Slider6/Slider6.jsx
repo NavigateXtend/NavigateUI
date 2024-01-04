@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
-    const codeStr = `export const Slider6 = () => {
+import { useState } from "react";
+import CodeBox from "../../../Shared/CodeBox/CodeBox";
+const codeStr = `export const Slider6 = () => {
 
   const [isOpen, setIsOpen] = useState(null);
 
@@ -37,13 +37,34 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
   );
 };`;
 
- const Slider6 = () => {
-
+const Slider6 = () => {
   const [isOpen, setIsOpen] = useState(null);
 
-  const toggle = ({ currentIdx }) => setIsOpen((prevIdx) => (prevIdx == currentIdx ? null : currentIdx));
- 
-  const sliders = [{img: "https://source.unsplash.com/1200x640/?snow-fall",title: "Winter",des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",},{img: "https://source.unsplash.com/1200x640/?Spring",title: "Spring",des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",},{img: "https://source.unsplash.com/1200x640/?sea-beach",title: "Summer",des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",},{img: "https://source.unsplash.com/1200x640/?Autumn",title: "Autumn",des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",},];
+  const toggle = ({ currentIdx }) =>
+    setIsOpen((prevIdx) => (prevIdx == currentIdx ? null : currentIdx));
+
+  const sliders = [
+    {
+      img: "https://source.unsplash.com/1200x640/?snow-fall",
+      title: "Winter",
+      des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
+    },
+    {
+      img: "https://source.unsplash.com/1200x640/?Spring",
+      title: "Spring",
+      des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
+    },
+    {
+      img: "https://source.unsplash.com/1200x640/?sea-beach",
+      title: "Summer",
+      des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
+    },
+    {
+      img: "https://source.unsplash.com/1200x640/?Autumn",
+      title: "Autumn",
+      des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",
+    },
+  ];
   return (
     <CodeBox codeStr={codeStr}>
       <div className="flex justify-center gap-1 md:gap-4">
@@ -86,6 +107,4 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
   );
 };
 
-export default Slider6
-
- 
+export default Slider6;
