@@ -3,7 +3,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr = `export const Card7 = () => {
     return (
-      <div className="w-[300px] space-y-8 shadow-lg my-20 relative p-8">
+      <div className=" md:w-[300px] space-y-8 shadow-lg my-20 relative p-8">
         {/* top part  */}
         <div>
           <img className="w-[60px] border h-[60px] object-cover rounded-full p-2 bg-slate-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox/2048px-MetaMask_Fox.svg.png" alt=""/>
@@ -14,7 +14,7 @@ const codeStr = `export const Card7 = () => {
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" width="120" height="120" x="0" y="0" viewBox="0 0 512 512" style={{ enableBackground: "new 0 0 512 512" }} xmlSpace="preserve" className=""><defs><linearGradient id="skyGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style={{ stopColor: "#0095FF", stopOpacity: 1 }}/><stop offset="100%" style={{ stopColor: "#87CEFA", stopOpacity: 1 }}/></linearGradient></defs><g> <path d="M384 0H149.333c-41.237 0-74.667 33.429-74.667 74.667v426.667a10.668 10.668 0 0 0 6.592 9.856c1.291.538 2.676.813 4.075.811a10.663 10.663 0 0 0 7.552-3.115l120.448-120.619C260.48 434.795 325.44 499.2 332.416 507.136c3.261 4.906 9.882 6.24 14.788 2.979a10.67 10.67 0 0 0 3.964-4.835 6.53 6.53 0 0 0 .832-3.947v-448c0-17.673 14.327-32 32-32 5.891 0 10.667-4.776 10.667-10.667S389.891 0 384 0z" style={{ fill: "url(#skyGradient)" }}/> <path d="M394.667 0c23.564 0 42.667 19.103 42.667 42.667v32c0 5.891-4.776 10.667-10.667 10.667H352V42.667C352 19.103 371.103 0 394.667 0z" style={{ fill: "#1976d2" }}/></g></svg>
               {/* Price  */}
               <div className="absolute top-8 left-7 text-white text-xl font-semibold flex flex-col">
-                <span className="">
+                <span>
                   <sub className="font-normal text-sm">$</sub>
                   <span>99</span>
                 </span>
@@ -55,7 +55,7 @@ const codeStr = `export const Card7 = () => {
 const Card7 = () => {
     return (
       <CodeBox codeStr={codeStr}>
-        <div className="w-[300px] mx-auto space-y-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] my-20 relative p-8">
+        <div className="md:w-[300px] mx-auto space-y-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] my-20 relative p-8">
           {/* top part  */}
           <div>
             <img
@@ -111,7 +111,7 @@ const Card7 = () => {
                 </svg>
                 {/* Price  */}
                 <div className="absolute top-8 left-7 text-white text-xl font-semibold flex flex-col">
-                  <span className="">
+                  <span>
                     <sub className="font-normal text-sm">$</sub>
                     <span>99</span>
                   </span>
