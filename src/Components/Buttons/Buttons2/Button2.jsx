@@ -50,7 +50,7 @@ const Button2 = () => {
 `}
       >
         <div className="flex flex-wrap gap-4 justify-evenly items-center">
-          {/* button 19 */}
+          {/* button 19,20,21 */}
           <button className="py-2 w-40 h-16 px-6 mb-4 mt-6 bg-sky-700 hover:bg-sky-600 duration-300 text-white flex items-center justify-center overflow-hidden hover:overflow-visible relative group">
             <svg
               viewBox="0 0 1024 1024"
@@ -106,6 +106,7 @@ const Button2 = () => {
             <span className="absolute w-12 group-hover:w-[88%] duration-300 flex group-hover:justify-start rounded-full inset-2 bg-sky-300 group-hover:bg-sky-500 group-hover:duration-500 -z-10"></span>
             Explore
           </button>
+          <button className="w-36 h-16 shadow-[0px_0px_30px_2px_#0d87f8]"></button>
         </div>
       </CodeBox>
     </div>
