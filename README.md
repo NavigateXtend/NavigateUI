@@ -10,8 +10,18 @@ Welcome to UnifyUI, your go-to source for amazing React and Tailwind CSS compone
 - **Easy to Customize:** Tailor the components to match your project's design system with simple and intuitive customization options.
 - **Documentation:** Comprehensive documentation is provided for each component, making it easy for developers to understand and use them.
 
-## Getting Started
-
+## Contact Us 
+- **MH Lehri:** 
+  -  [Linkedin](https://www.linkedin.com/in/mahmud-hassan-lehri/)
+  -  [FaceBook](https://www.facebook.com/mahmudhassanlehri)
+    
+- **Shiyam Sarker:** 
+  -  [Linkedin](https://www.linkedin.com/in/shiyam-sarker/)
+  -  [FaceBook](https://www.facebook.com/shiyamsarker/)
+    
+- **Mohammad Arif:** 
+  -  [Linkedin](https://www.linkedin.com/in/shiyam-sarker/)
+  -  [FaceBook](https://www.linkedin.com/in/mohammad-arif-khan-504b27210/)
 
 
 
