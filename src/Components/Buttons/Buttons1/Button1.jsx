@@ -3,19 +3,38 @@ const Button1 = () => {
   return (
     <div className="flex flex-col gap-5 justify-center items-start">
       <CodeBox
-        codeStr={`<button className="text-xl w-32 h-16 bg-sky-700 hover:scale-95 text-white duration-300">Button</button>
+        codeStr={`<button className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#00A5FF] rounded-full shadow-md group"><span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#00A5FF] group-hover:translate-x-0 ease"><svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span><span className="absolute flex items-center justify-center w-full h-full text-[#00A5FF] transition-all duration-300 transform group-hover:translate-x-full ease">Button Text</span><span className="relative invisible">Button Text</span></button>
 <button className="text-xl w-32 h-16 before:block before:absolute hover:before:bg-sky-700 before:w-0 before:h-0 hover:before:h-20 hover:before:w-40 before:-bottom-2 before:-right-2 before:duration-500 before:rounded-xl before:-z-10  relative inline-block transform hover:text-white text-sky-700 bg-transparent border-2 overflow-hidden border-sky-700 duration-500">Button</button>
 <button className="border-2 text-xl text-sky-700 w-32 h-16 border-sky-700 hover:before:bg-sky-700 before:w-full before:h-0 hover:before:h-full hover:before:-z-10 hover:before:absolute before:absolute relative before:top-0 hover:before:left-0 before:duration-500 hover:text-white transform origin-top before:block">Button</button>`}
       >
         <div className="flex flex-wrap gap-4 justify-evenly items-center">
           {/* 1,2,3 */}
-          <button className="text-xl w-32 h-16 bg-sky-700 active:scale-95 text-white rounded-lg">
+          <button className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-[#00A5FF] rounded-full shadow-md group">
+            <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#00A5FF] group-hover:translate-x-0 ease">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </span>
+            <span className="absolute flex items-center justify-center w-full h-full text-[#00A5FF] transition-all duration-300 transform group-hover:translate-x-full ease">
+              Button Text
+            </span>
+            <span className="relative invisible">Button Text</span>
+          </button>
+          <button className="text-xl w-32 h-16 before:block before:absolute hover:before:bg-[#0095FF] before:w-0 before:h-0 hover:before:h-20 hover:before:w-40 before:-bottom-2 before:-right-2 before:duration-500 before:rounded-xl before:-z-10  relative inline-block transform hover:text-white text-[#0095FF] bg-transparent border-2 overflow-hidden border-[#0095FF] duration-500 ">
             Button
           </button>
-          <button className="text-xl w-32 h-16 before:block before:absolute hover:before:bg-sky-700 before:w-0 before:h-0 hover:before:h-20 hover:before:w-40 before:-bottom-2 before:-right-2 before:duration-500 before:rounded-xl before:-z-10  relative inline-block transform hover:text-white text-sky-700 bg-transparent border-2 overflow-hidden border-sky-700 duration-500 ">
-            Button
-          </button>
-          <button className="border-2 text-xl text-sky-700 w-32 h-16 border-sky-700 hover:before:bg-sky-700 before:w-full before:h-0 hover:before:h-full hover:before:-z-10 hover:before:absolute before:absolute relative before:top-0 hover:before:left-0 before:duration-500 hover:text-white transform origin-top  before:block">
+          <button className="border-2 text-xl text-[#0095FF] w-32 h-16 border-[#0095FF] hover:before:bg-[#0095FF] before:w-full before:h-0 hover:before:h-full hover:before:-z-10 hover:before:absolute before:absolute relative before:top-0 hover:before:left-0 before:duration-500 hover:text-white transform origin-top  before:block">
             Button
           </button>
         </div>
