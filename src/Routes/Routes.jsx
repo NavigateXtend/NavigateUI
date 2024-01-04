@@ -6,34 +6,45 @@ import Card from "../Components/Cards/Card";
 import Form from "./../Components/Forms/Form";
 import Banner from "../Components/Banners/Banner";
 import CodeBox from "../Shared/CodeBox/CodeBox";
+import Accordion from "../Components/Accordion/Accordion";
+import Home from "../Home/Home";
+
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+        path:'/',
+        element:<Home></Home>
+  },
+  {
+    path: "/Components",
     element: <MainLayout />,
     children: [
       {
-        path: "/banner",
+        path: "banner",
         element: <Banner />,
       },
       {
-        path: "/slider",
+        path: "slider",
         element: <Slider />,
       },
       {
-        path: "/button",
+        path: "button",
         element: <Button />,
       },
       {
-        path: "/card",
+        path: "card",
         element: <Card />,
       },
       {
-        path: "/form",
+        path: "form",
         element: <Form />,
       },
       {
-        path:"/new",
+        path: "accordion",
+        element: <Accordion />,
+      },
+      {
+        path:"new",
         element:<CodeBox></CodeBox>
       }
     ],

@@ -1,7 +1,7 @@
 import CodeBox from "./../../../Shared/CodeBox/CodeBox";
 const Button1 = () => {
   return (
-    <div className="md:grid md:grid-cols-1 gap-5 justify-center md:justify-items-center items-start">
+    <div className="flex flex-col gap-5 justify-center items-start">
       <CodeBox
         codeStr={`<button className="text-xl w-32 h-16 bg-sky-700 hover:scale-95 text-white duration-300">Button</button>
 <button className="text-xl w-32 h-16 before:block before:absolute hover:before:bg-sky-700 before:w-0 before:h-0 hover:before:h-20 hover:before:w-40 before:-bottom-2 before:-right-2 before:duration-500 before:rounded-xl before:-z-10  relative inline-block transform hover:text-white text-sky-700 bg-transparent border-2 overflow-hidden border-sky-700 duration-500">Button</button>
@@ -146,13 +146,16 @@ const Button1 = () => {
         </div>
       </CodeBox>
 
+
+      {/* circle buttons  */}
+
       <CodeBox
         codeStr={`
 <button className="text-xl w-32 h-32 text-white rounded-full duration-300  bg-sky-700 overflow-hidden relative z-10 group"><span className="bg-sky-500 group-hover:translate-x-1 group-hover:shadow-md group-hover:-translate-y-1 ease-in-out duration-300 delay-300 w-28 h-28 rounded-full absolute top-2 left-2 -z-10"></span><span className="bg-sky-400 group-hover:translate-x-2  group-hover:shadow-md group-hover:-translate-y-2 ease-in-out duration-300 delay-200 w-20 h-20 rounded-full absolute top-6 left-6 -z-10"></span><span className="bg-sky-300 group-hover:translate-x-3  group-hover:shadow-md group-hover:-translate-y-3 ease-in-out duration-300 delay-100 w-12 h-12 rounded-full absolute top-10 left-10 -z-10"></span><span className="text-sky-900 group-hover:translate-x-3  group-hover:-translate-y-3 ease-in-out duration-300 delay-50  rounded-full absolute inset-0 flex justify-center items-center -z-10">Button</span></button>
-
+<button className="group w-[50px] h-[50px]  relative"><span className="group-hover:shadow-[0px_0px_30px_2px_#0d87f8] group-hover:rotate-180 duration-500 z-30 absolute flex justify-center items-center bg-gradient-to-tr from-[#0d87f8] to-[#70c4ff] bottom-0 left-1/2 transform -translate-x-1/2 rounded-full w-[40px] h-[40px] bg-white"><svg width={25} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <g id="SVGRepo_bgCarrier" strokeWidth="0"></g> <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g> <g id="SVGRepo_iconCarrier"> <g id="style=linear"> <g id="add"> <path id="vector" d="M11.998 5.84424L11.998 18.1604" stroke="#9EE6FD" strokeWidth="2" strokeLinecap="round"></path> <path id="vector_2" d="M18.1561 12.002L5.83998 12.0019" stroke="#9EE6FD" strokeWidth="2" strokeLinecap="round" ></path> </g> </g> </g> </svg> </span> <span className="bg-gradient-to-tr bottom-0 left-1/2  transform -translate-x-1/2  from-[#0d87f8]/80 to-[#70c4ff]/80 duration-300  absolute   rounded-full  z-20 w-0 h-0   group-hover:w-[50px] group-hover:h-[50px]"></span> <span className="bg-gradient-to-tr bottom-0 left-1/2 from-[#0d87f8]/50 to-[#70c4ff]/50 transform -translate-x-1/2 duration-500  absolute  rounded-full  z-20 w-0 h-0  group-hover:w-[60px] group-hover:h-[60px] hover:duration-300 "></span> </button>
 `}
       >
-        <div className="flex flex-wrap gap-4 justify-center items-center">
+        <div className="flex flex-wrap  justify-around items-center">
           {/* 13 */}
           <button className="text-xl w-32 h-32 text-white rounded-full duration-300  bg-sky-700 overflow-hidden relative z-10 group ">
             <span className="bg-sky-500 group-hover:translate-x-1 group-hover:shadow-md group-hover:-translate-y-1 ease-in-out duration-300 delay-300 w-28 h-28 rounded-full absolute top-2 left-2 -z-10"></span>
@@ -161,6 +164,46 @@ const Button1 = () => {
             <span className="text-sky-900 group-hover:translate-x-3 group-hover:-translate-y-3 ease-in-out duration-300 delay-50  rounded-full absolute inset-0 flex justify-center items-center -z-10">
               Button
             </span>
+          </button>
+
+          <button className="group w-[50px] h-[50px]   relative">
+            <span className="group-hover:shadow-[0px_0px_30px_2px_#0d87f8] group-hover:rotate-180 duration-500 z-30 absolute flex justify-center items-center bg-gradient-to-tr from-[#0d87f8] to-[#70c4ff] bottom-0 left-1/2 transform -translate-x-1/2    rounded-full w-[40px] h-[40px] bg-white">
+              <svg
+                width={25}
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g id="style=linear">
+                    <g id="add">
+                      <path
+                        id="vector"
+                        d="M11.998 5.84424L11.998 18.1604"
+                        stroke="#9EE6FD"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      ></path>
+                      <path
+                        id="vector_2"
+                        d="M18.1561 12.002L5.83998 12.0019"
+                        stroke="#9EE6FD"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            <span className="bg-gradient-to-tr bottom-0 left-1/2  transform -translate-x-1/2  from-[#0d87f8]/80 to-[#70c4ff]/80 duration-300  absolute   rounded-full  z-20 w-0 h-0   group-hover:w-[50px] group-hover:h-[50px]"></span>
+            <span className="bg-gradient-to-tr bottom-0 left-1/2 from-[#0d87f8]/50 to-[#70c4ff]/50 transform -translate-x-1/2 duration-500  absolute  rounded-full  z-20 w-0 h-0  group-hover:w-[60px] group-hover:h-[60px] hover:duration-300 "></span>
           </button>
         </div>
       </CodeBox>
