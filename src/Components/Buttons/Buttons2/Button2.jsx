@@ -106,7 +106,22 @@ const Button2 = () => {
             <span className="absolute w-12 group-hover:w-[88%] duration-300 flex group-hover:justify-start rounded-full inset-2 bg-sky-300 group-hover:bg-sky-500 group-hover:duration-500 -z-10"></span>
             Explore
           </button>
-          <button className="w-36 h-16 shadow-[0px_0px_30px_2px_#0d87f8]"></button>
+          <button>
+            <label
+              htmlFor="check2"
+              className="flex flex-col gap-[5px] cursor-pointer relative w-10 h-10 group"
+            >
+              <input
+                type="checkbox"
+                id="check2"
+                className="peer/check2 hidden"
+              />
+              <span className="w-[43.5px] h-1 rounded-lg inline-block group-hover:bg-sky-400 bg-sky-700 peer-checked/check2:rotate-[30deg] peer-checked/check2:-translate-y-[10px] peer-checked/check2:translate-x-[2px] duration-300 absolute inset-0 top-full"></span>
+              <span className="w-[43.5px] h-1 rounded-lg inline-block group-hover:bg-sky-400 bg-sky-700 peer-checked/check2:scale-0 rotate-90 peer-checked/check2:translate-y-2 duration-300 absolute inset-0 -left-1/2 top-1/2"></span>
+              <span className="w-[43.5px] h-1 rounded-lg inline-block group-hover:bg-sky-400 bg-sky-700 peer-checked/check2:-rotate-[30deg] peer-checked/check2:translate-y-[10px] peer-checked/check2:translate-x-[2px] duration-300 absolute inset-0 bottom-1/2"></span>
+              <span className="w-[43.5px] h-1 rounded-lg inline-block group-hover:bg-sky-400 bg-sky-700 rotate-90 duration-300 absolute inset-0 left-1/2 top-1/2"></span>
+            </label>
+          </button>{" "}
         </div>
       </CodeBox>
     </div>
