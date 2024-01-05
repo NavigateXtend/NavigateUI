@@ -220,7 +220,7 @@ const Navbar = ({ setIsOpen }) => {
                   className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
                   to="/Components/loading"
                 >
-                  Loading
+                  Loaders
                 </Link>
                 <Link
                   onClick={() => setIsOpen(false)}
