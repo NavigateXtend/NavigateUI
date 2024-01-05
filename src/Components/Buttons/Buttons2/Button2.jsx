@@ -127,17 +127,19 @@ const Button2 = () => {
       </CodeBox>
       <CodeBox
         codeStr={`
+<button className="flex items-center relative w-36 border-2 border-sky-500 text-sky-500 p-4 rounded-lg group"><span>Get Start</span><span className="absolute w-1/6 right-3 group-hover:w-5/6 box-content duration-300 flex justify-center bg-white rounded-lg"><svg viewBox="0 0 24 24" fill="none" className="w-10" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#0ea5e9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path></g></svg></span></button>
+
 `}
       >
         <div className="flex flex-wrap gap-4 justify-evenly items-center">
           {/* button 22,23,24 */}
-          <button className="flex items-center relative w-28">
+          <button className="flex items-center relative w-36 border-2 border-sky-500 text-sky-500 p-4 rounded-lg group">
             <span>Get Start</span>
-            <span className="absolute right-0">
+            <span className="absolute w-1/6 right-3 group-hover:w-5/6 box-content duration-300 flex justify-center bg-white rounded-lg">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
-                className="w-8"
+                className="w-10"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
