@@ -32,7 +32,7 @@ const Card = () => {
       <Card7></Card7>
       {/* Card 8  */}
       <Card8></Card8>
-
+      
     </div>
   );
 };
