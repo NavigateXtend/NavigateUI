@@ -1,9 +1,9 @@
-import Part1 from "./Part1/Part1";
+import Loading1 from "./Part1/Loading1";
 
 const Loading = () => {
   return (
     <div>
-      <Part1 />
+      <Loading1 />
     </div>
   );
 };
