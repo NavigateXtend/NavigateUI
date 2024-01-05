@@ -18,6 +18,11 @@ const Loading1 = () => {
         <div className="w-2 h-5 animate-[ping_1.8s_linear_infinite] bg-sky-600"></div>
         <div className="w-2 h-5 animate-[ping_2s_linear_infinite] bg-sky-600"></div>
       </div>
+      <div className="w-10 h-10 flex gap-1 items-center justify-center">
+        <div className="w-2 h-2 animate-[bounce_1s_linear_infinite] bg-sky-600 rounded-full"></div>
+        <div className="w-2 h-2 animate-[bounce_1.2s_linear_infinite] bg-sky-600 rounded-full"></div>
+        <div className="w-2 h-2 animate-[bounce_1.4s_linear_infinite] bg-sky-600 rounded-full"></div>
+      </div>
     </div>
   );
 };
