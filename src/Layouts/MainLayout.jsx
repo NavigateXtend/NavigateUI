@@ -66,14 +66,6 @@ const MainLayout = () => {
           <h1 className="text-xl">
             <span className="text-[#0d87f8]">W</span>elcome Back
           </h1>
-          <div className="relative">
-            <input
-              id="email"
-              type="email"
-              placeholder="Search..."
-              className="p-3 block w-full pl-10 border rounded-full drop-shadow-sm outline-none"
-            />
-          </div>
         </div>
       </div>
       <div
