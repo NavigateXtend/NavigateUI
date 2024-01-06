@@ -8,6 +8,11 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+src/Home
+src/Nav
+src/Routes
+src/Shared
+src/Layout
 dist
 dist-ssr
 *.local
