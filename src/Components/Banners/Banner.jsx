@@ -1,6 +1,7 @@
 import React from "react";
-import Banner1 from "./Part-1/Banner1";
-import Banner2 from "./Part-1/Banner2";
+import Banner1 from "./Banner1/Banner1";
+import Banner2 from "./Banner2/Banner2";
+
 
 const Banner = () => {
   return (
