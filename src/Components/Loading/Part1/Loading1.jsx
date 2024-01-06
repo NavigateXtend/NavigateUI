@@ -76,7 +76,7 @@ const Loading1 = () => {
             </div>
           </div>
           <div className=" w-12 h-12">
-            <div className="grid grid-cols-2 h-full w-full overflow-hidden shadow-lg rounded-full animate-spin">
+            <div className="grid grid-cols-2 h-full w-full overflow-hidden rounded-full animate-spin">
               <span className="h-6 w-6 rounded-tl-full bg-transparent"></span>
               <span className="h-6 w-6 rounded-tr-full bg-sky-500"></span>
               <span className="h-6 w-6 rounded-bl-full bg-sky-500"></span>
