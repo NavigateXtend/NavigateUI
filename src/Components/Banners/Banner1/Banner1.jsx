@@ -1,4 +1,4 @@
-import CodeBox from "./../../../Shared/CodeBox/CodeBox";
+import CodeBox from "../../../Shared/CodeBox/CodeBox";
 const Banner1 = () => {
   const codeStr = `export const Banner1 = () => {
   return (
