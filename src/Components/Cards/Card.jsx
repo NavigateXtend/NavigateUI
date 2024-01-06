@@ -7,6 +7,7 @@ import Card5 from "./Card5/Card5";
 import Card6 from "./Card6/Card6";
 import Card7 from "./Card7/Card7";
 import Card8 from "./Card8/Card8";
+import Card9 from "./Card9/Card9";
 
 
 const Card = () => {
@@ -32,7 +33,8 @@ const Card = () => {
       <Card7></Card7>
       {/* Card 8  */}
       <Card8></Card8>
-
+      {/* Card 9  */}
+      <Card9></Card9>
     </div>
   );
 };
