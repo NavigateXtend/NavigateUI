@@ -10,6 +10,9 @@ import Accordion from "../Components/Accordion/Accordion";
 import Home from "../Home/Home";
 import Loading from "./../Components/Loading/Loading";
 
+
+
+
 export const router = createBrowserRouter([
   {
     path: "/",

@@ -27,7 +27,7 @@ const CodeBox = ({ children, codeStr }) => {
   ];
 
   return (
-    <div className="w-[90%] rounded-md h-fit px-4 py-3 my-20">
+    <div className={`w-full rounded-md h-fit  px-4 py-3 my-20`}>
       <div className="flex gap-2 items-center justify-between">
         <div className="flex">
           {totalConfig?.map((item, inx) => (
@@ -125,8 +125,8 @@ const CodeBox = ({ children, codeStr }) => {
       <div
         className={`${
           tabNum == 1
-            ? "py-0 bg-[#1D1F21] h-full overflow-hidden"
-            : "flex px-4 py-10 justify-center"
+            ? " px-0  bg-[#1D1F21] h-full overflow-hidden"
+            : "flex py-10 justify-center"
         } border rounded-b-lg w-full`}
       >
         {totalConfig[tabNum].component}
