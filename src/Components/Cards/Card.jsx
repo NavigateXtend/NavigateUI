@@ -1,4 +1,3 @@
-import CodeBox from "../../Shared/CodeBox/CodeBox";
 import Card1 from "./Card1/Card1";
 import Card2 from "./Card2/Card2";
 import Card3 from "./Card3/Card3";
@@ -35,6 +34,7 @@ const Card = () => {
       <Card8></Card8>
       {/* Card 9  */}
       <Card9></Card9>
+      
     </div>
   );
 };
