@@ -2,7 +2,7 @@ import CodeBox from "../../../Shared/CodeBox/CodeBox";
 
 const codeStr = `export const Card8 = () => {
     return (
-      <div className="max-w-[300] md:w-[350px] my-20 p-6 md:p-8 shadow-md rounded-2xl space-y-8"> 
+      <div className="max-w-[300px] md:w-[350px] my-20 p-6 md:p-8 shadow-md rounded-2xl space-y-8"> 
       {/* profile image & bg  */}
         <div className="relative">
           <img className="w-full h-full rounded-2xl bg-gray-500" src="https://source.unsplash.com/350x150/?northern lights" alt=""/>
@@ -35,7 +35,7 @@ const Card8 = () => {
 
     return (
       <CodeBox codeStr={codeStr}>
-        <div className="max-w-[350px] md:w-[350px] mx-auto my-20 px-6 py-8 shadow-md rounded-2xl space-y-8">
+        <div className="max-w-[350px] md:max-w-[350px] mx-auto my-20 px-6 py-8 shadow-md rounded-2xl space-y-8">
           {/* profile image & bg  */}
           <div className="relative ">
             <img
