@@ -32,7 +32,7 @@ const Card9 = () => {
  
      return (
          <CodeBox codeStr={codeStr}>
- 
+
          <div className='lg:w-[310px] mx-auto md:w-[270px] w-[240px] '>
          <div className='lg:w-[310px] bg-gray-400 lg:h-[200px] md:h-[180px] h-[160px] rounded-3xl md:w-[270px] w-[240px]'>
              <img className='w-full h-full bg-gray-400 rounded-3xl' src={'https://source.unsplash.com/201x201/?furniture'} alt="" />
@@ -62,7 +62,8 @@ const Card9 = () => {
              <h2 className='lg:text-xl sm:text-lg text-base font-bold text-gray-800'>$20.00</h2>
              <button className='bg-[#0e82c5] text-white p-2 rounded-full font-semibold md:text-base sm:text-sm text-[12px] '>Add to</button>
          </div>
-     </div>    
+     </div>      
+                
          </CodeBox>
          
      );
