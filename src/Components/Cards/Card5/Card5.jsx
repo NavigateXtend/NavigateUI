@@ -1,7 +1,7 @@
 import CodeBox from "../../../Shared/CodeBox/CodeBox";
 
 const Card5 = () => {
-  const codeStr = `const Card5 = () => {
+  const codeStr = `Card5 = () => {
      return (
        <div className=" flex  flex-col md:flex-row  my-20">
          <div className="relative max-w-[350px] group">
@@ -107,7 +107,9 @@ const Card5 = () => {
          </div>
        </div>  
      );
- };`;
+ };
+ export default Card5;
+ `;
 
   return (
     <CodeBox codeStr={codeStr}>

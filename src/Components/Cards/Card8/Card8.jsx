@@ -1,6 +1,6 @@
 import CodeBox from "../../../Shared/CodeBox/CodeBox";
 
-const codeStr = `export const Card8 = () => {
+const codeStr = `const Card8 = () => {
     return (
       <div className="max-w-[300px] md:w-[350px] my-20 p-6 md:p-8 shadow-md rounded-2xl space-y-8"> 
       {/* profile image & bg  */}
@@ -30,7 +30,9 @@ const codeStr = `export const Card8 = () => {
         </div>
       </div>
     );
-};`;
+};
+export default Card8;
+`;
 const Card8 = () => {
 
     return (
