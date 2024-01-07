@@ -51,7 +51,7 @@ const Banner3 = () => {
 
 
   return (
-    <CodeBox>
+    <CodeBox codeStr={codeStr}>
     <div className="min-h-[600px] sm:px-2 px-3 mx-3 max-h-[800px] py-20 rounded-t-2xl bg-[#2A3342]">
       <div className="flex justify-center flex-col">
         {/* Beautiful announcement line */}
