@@ -4,11 +4,13 @@ import Slider from "./../Components/Sliders/Slider";
 import Button from "./../Components/Buttons/Button";
 import Card from "../Components/Cards/Card";
 import Form from "./../Components/Forms/Form";
-import Banner from "../Components/Banners/Banner";
 import CodeBox from "../Shared/CodeBox/CodeBox";
 import Accordion from "../Components/Accordion/Accordion";
 import Home from "../Home/Home";
 import Loading from "./../Components/Loading/Loading";
+import Hero from './../Components/Hero/Hero';
+
+
 
 
 
@@ -23,8 +25,8 @@ export const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        path: "banner",
-        element: <Banner />,
+        path: "hero",
+        element: <Hero></Hero>,
       },
       {
         path: "slider",
