@@ -1,7 +1,7 @@
 import React from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
-const codeStr = `export const Card10 = () => {
+const codeStr = `const Card10 = () => {
     const items = [
         { id: 1, name: 'Item 1', deliveryDate: '7th january', price: '$10.99', imgToFetch: 'bed' },
         { id: 2, name: 'Item 2', deliveryDate: '17th december', price: '$20.99', imgToFetch: 'furniture' },
@@ -49,9 +49,11 @@ const codeStr = `export const Card10 = () => {
             </div>
         </div>
     );
-};`
+};
+export default Card10;
+`;
 
-export const Card10 = () => {
+const Card10 = () => {
     const items = [
         { id: 1, name: 'Item 1', deliveryDate: '7th january', price: '$10.99', imgToFetch: 'bed' },
         { id: 2, name: 'Item 2', deliveryDate: '17th december', price: '$20.99', imgToFetch: 'furniture' },
