@@ -1,7 +1,7 @@
 import CodeBox from "../../../Shared/CodeBox/CodeBox";
 
 
-const Banner1 = () => {
+const Hero1 = () => {
 
    const codeStr = `
    <div className="min-h-[600px] sm:px-2 px-3 mx-3 max-h-[800px] py-20 rounded-t-2xl bg-[#2A3342]">
@@ -91,4 +91,4 @@ const Banner1 = () => {
   );
 };
 
-export default Banner1;
+export default Hero1;
