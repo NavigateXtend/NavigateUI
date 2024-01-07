@@ -190,9 +190,9 @@ const Navbar = ({ setIsOpen }) => {
                 <Link
                   onClick={() => setIsOpen(false)}
                   className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
-                  to="/Components/banner"
+                  to="/Components/hero"
                 >
-                  Banner
+                  Hero
                 </Link>
                 <Link
                   onClick={() => setIsOpen(false)}
@@ -214,6 +214,13 @@ const Navbar = ({ setIsOpen }) => {
                   to="/Components/form"
                 >
                   Form
+                </Link>
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                  to="/Components/loading"
+                >
+                  Loaders
                 </Link>
                 <Link
                   onClick={() => setIsOpen(false)}

@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 
 const Banner = ({ isOpen }) => {
   return (
-    <div className={`${isOpen ? 'opacity-30 duration-300' : "opacity-100 duration-300"}`}>
+    <div
+      className={`${
+        isOpen ? "opacity-30 duration-300" : "opacity-100 duration-300"
+      }`}
+    >
       <div className="flex flex-col items-center justify-center text-center mt-14 mb-8 md:my-20 px-4 md:px-0">
         <h2 className="text-3xl md:text-4xl font-semibold leading-[52px] md:leading-[60px] max-w-[600px] text-gray-800">
           <span className="">

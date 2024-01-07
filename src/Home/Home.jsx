@@ -5,10 +5,9 @@ import Banner from "./Banner/Banner";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
 
   return (
-    <div className="flex gap-5  ">
+    <div className="flex gap-5">
       <div className={` ${isOpen ? "fixed z-[999]" : "hidden"}`}>
         <Navbar setIsOpen={setIsOpen}></Navbar>
       </div>
