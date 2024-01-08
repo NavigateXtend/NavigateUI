@@ -31,8 +31,8 @@ const Card11 = () => {
                     <div className="text-lg font-semibold  ">$99.99</div>
                 </div>
                 <div className="flex gap-4">
-                    <button className="bg-black text-white px-4 py-2 rounded-md">Add to Cart</button>
-                    <button className="border border-black px-4 py-2 rounded-md">View Details</button>
+                <button className="bg-slate-800 text-white px-6 py-2 rounded-lg font-semibold md:text-base sm:text-sm text-[12px] hover:bg-slate-950">Add to Cart</button>
+                    <button className="border border-black bg-white hover:bg-gray-200 px-4 py-2 rounded-md">View Details</button>
                 </div>
             </div>
         </CodeBox>
