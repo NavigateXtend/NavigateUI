@@ -7,7 +7,6 @@ export const Slider8 = () => {
     const [currentSlider, setCurrentSlider] = useState(2);
 
     const sliders = [{img: 'https://source.unsplash.com/1200x640/?snow-fall'},{img: 'https://source.unsplash.com/1200x640/?Spring'},{img: 'https://source.unsplash.com/1200x640/?mountain'},{img: 'https://source.unsplash.com/1200x640/?river'},{img: 'https://source.unsplash.com/1200x640/?Autumn'}];
-
     const prevSlider = () => {setCurrentSlider((currentSlider) => (currentSlider === 0 ? sliders.length - 1 : currentSlider - 1));};
     const nextSlider = () => {setCurrentSlider((currentSlider) => (currentSlider === sliders.length - 1 ? 0 : currentSlider + 1));};
 

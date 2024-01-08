@@ -1,6 +1,7 @@
 import Card1 from "./Card1/Card1";
 import Card10 from "./Card10/Card10";
 import Card11 from "./Card11/Card11";
+import Card12 from "./Card12/Card12";
 import Card2 from "./Card2/Card2";
 import Card3 from "./Card3/Card3";
 import Card4 from "./Card4/Card4";
@@ -38,6 +39,8 @@ const Card = () => {
           <Card10></Card10>
           {/* Card 11  */}
           <Card11></Card11>
+          {/* Card 12  */}
+          <Card12></Card12>
       </div>
   );
 };
