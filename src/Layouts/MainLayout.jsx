@@ -4,12 +4,10 @@ import { useState } from "react";
 
 const MainLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation()
-  
-   
+  const location = useLocation();
 
   return (
-    <div className="flex gap-5 ">
+    <div className="flex gap-5">
       <div
         className={`${isOpen ? "" : "hidden"} ${
           location.pathname == "/" ? "" : "lg:block"
@@ -68,7 +66,6 @@ const MainLayout = () => {
           <h1 className="text-xl">
             <span className="text-[#0d87f8]">W</span>elcome Back
           </h1>
-
         </div>
       </div>
       <div

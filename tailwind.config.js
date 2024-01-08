@@ -8,6 +8,15 @@ export default {
           "0%, 100%": { transform: "translateX(0)" },
           "50%": { transform: "translateX(100%)" },
         },
+        marquee: {
+          "0%": {
+            transform: "translateX(2000px)",
+          },
+
+          to: {
+            transform: "translateX(0)",
+          },
+        },
       },
     },
   },
