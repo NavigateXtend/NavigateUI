@@ -1,6 +1,6 @@
 import CodeBox from "../../../Shared/CodeBox/CodeBox";
 
-const Card1 = () => {
+export const Card1 = () => {
   const codeStr = `const Card = () => {
   return (
     <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-4 my-10 flex flex-col justify-center items-center">
@@ -283,5 +283,5 @@ const Card1 = () => {
     </CodeBox>
   );
 };
+// export default Card1
 
-export default Card1;
