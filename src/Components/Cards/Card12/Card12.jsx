@@ -13,20 +13,20 @@ const Card12 = () => {
     const [selectedColor, setSelectedColor] = useState('black');
     const [selectedSize, setSelectedSize] = useState('m');
     return (
-        <div className="rounded-lg border bg-card  shadow-sm w-full max-w-md mx-auto">
+        <div className="rounded-lg border shadow-sm w-full max-w-md mx-auto">
             {/* Product Title */}
             <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="text-2xl font-semibold ">Classic Leather Jacket</h3>
-                <p className="text-sm ">Made with genuine leather, our Classic Leather Jacket is the perfect addition to every wardrobe.</p>
+                <p className="text-sm text-gray-500">Made with genuine leather, our Classic Leather Jacket is the perfect addition to every wardrobe.</p>
             </div>
             {/* Category and price */}
-            <div className="p-6 flex flex-col gap-4">
+            <div className="px-6 py-4 flex flex-col gap-4">
                 <div className="flex justify-between items-end">
-                    <h2 className="text-2xl font-bold text-center">$199.99</h2>
-                    <p className="text-sm text-gray-500 text-center">Category: Clothing</p>
+                    <h2 className="text-2xl font-medium text-center">$199.99</h2>
+                    <p className="text-sm rounded-lg text-center p-2 bg-gray-700 text-white">Category: Clothing</p>
                 </div>
                 <div className="">
-                    <img className="rounded-lg h-[350px]  bg-gray-600 object-cover w-full " height={200} src="https://source.unsplash.com/200x200/?jacket" width={200} />
+                    <img className="rounded-lg h-[350px]  bg-gray-600 object-cover w-full " src="https://source.unsplash.com/350x350/?jacket" />
                 </div>
                 {/* Color chossing option */}
                 <div>
@@ -59,14 +59,14 @@ const Card12 = () => {
             </div>
             </div>
             <div className="flex items-center p-6">
-                <button className="bg-slate-700 text-white px-6 py-2 w-full rounded-lg font-semibold md:text-base sm:text-sm text-[12px] hover:bg-slate-900">Add to Cart</button>
+                <button className="bg-gray-900 text-white px-6 py-2 w-full rounded-lg font-semibold md:text-base sm:text-sm text-[12px] hover:bg-slate-900">Add to Cart</button>
             </div>
         </div>
     );
 };
 
 export default Card12;
-`
+`;
 
 const Card12 = () => {
     // Color and size array
@@ -77,20 +77,20 @@ const Card12 = () => {
     const [selectedSize, setSelectedSize] = useState('m');
     return (
         <CodeBox codeStr={codestr}>
-        <div className="rounded-lg border bg-card  shadow-sm w-full max-w-md mx-auto">
+        <div className="rounded-lg shadow-lg border bg-card   w-full max-w-md mx-auto">
             {/* Product Title */}
-            <div className="flex flex-col space-y-1.5 p-6">
+            <div className="flex flex-col space-y-1.5 px-6 pt-6">
                 <h3 className="text-2xl font-semibold ">Classic Leather Jacket</h3>
-                <p className="text-sm ">Made with genuine leather, our Classic Leather Jacket is the perfect addition to every wardrobe.</p>
+                <p className="text-sm text-gray-500">Made with genuine leather, our Classic Leather Jacket is the perfect addition to every wardrobe.</p>
             </div>
             {/* Category and price */}
             <div className="p-6 flex flex-col gap-4">
                 <div className="flex justify-between items-end">
-                    <h2 className="text-2xl font-bold text-center">$199.99</h2>
-                    <p className="text-sm text-gray-500 text-center">Category: Clothing</p>
+                    <h2 className="text-2xl font-medium text-center">$199.99</h2>
+                    <p className="text-sm rounded-lg text-center p-2 bg-gray-700 text-white">Category: Clothing</p>
                 </div>
                 <div className="">
-                    <img className="rounded-lg h-[350px]  bg-gray-600 object-cover w-full " height={200} src="https://source.unsplash.com/200x200/?jacket" width={200} />
+                    <img className="rounded-lg h-[300px]  bg-gray-600 object-cover w-full" src="https://source.unsplash.com/350x350/?jacket" />
                 </div>
                 {/* Color chossing option */}
                 <div>
@@ -123,7 +123,7 @@ const Card12 = () => {
                 </div>
             </div>
             <div className="flex items-center p-6">
-                <button className="bg-slate-700 text-white px-6 py-2 w-full rounded-lg font-semibold md:text-base sm:text-sm text-[12px] hover:bg-slate-900">Add to Cart</button>
+                <button className="bg-gray-900 text-white px-6 py-2 w-full rounded-lg font-semibold md:text-base sm:text-sm text-[12px] hover:bg-slate-900">Add to Cart</button>
             </div>
         </div>      
         </CodeBox>
