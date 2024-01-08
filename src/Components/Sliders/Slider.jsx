@@ -9,7 +9,7 @@ import { Slider8 } from './Slider8/Slider8';
 
 const Slider = () => {
     return (
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col items-center justify-center">
             <Slider1></Slider1>
             <Slider2></Slider2>
             <Slider3></Slider3>

@@ -31,12 +31,12 @@ export default Card9;
 export const Card9 = () => {
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="max-[350px] md:w-[350px] bg-slate-300/20 px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md">
+            <div className="max-[350px] mx-auto space-y-6 rounded-2xl bg-slate-300/20 px-6 py-4 shadow-md md:w-[350px]">
                 {/* Card Image */}
-                <img className="w-[350px] h-[190px] bg-gray-400 rounded-2xl" src={'https://source.unsplash.com/350x190/?furniture'} alt="" />
+                <img className="h-[190px] w-[350px] rounded-2xl bg-gray-400" src={'https://source.unsplash.com/350x190/?furniture'} alt="" />
                 {/* Card Heading */}
                 <div className="space-y-2">
-                    <h2 className="text-slate-800 font-medium md:text-xl sm:text-lg ">Stylish chair</h2>
+                    <h2 className="font-medium text-slate-800 sm:text-lg md:text-xl ">Stylish chair</h2>
                     {/* rating  */}
                     <div className="flex gap-1">
                         {[...Array(5)].map((_, index) => (
@@ -58,9 +58,9 @@ export const Card9 = () => {
                     </div>
                 </div>
                 {/* Price and action button */}
-                <div className="mt-5 flex justify-between items-center">
-                    <h2 className="md:text-xl text-gray-700 font-medium">$20.00</h2>
-                    <button className="bg-slate-800 text-white px-6 py-2 rounded-lg font-semibold md:text-base sm:text-sm text-[12px] hover:bg-slate-900">Add to Cart</button>
+                <div className="mt-5 flex items-center justify-between">
+                    <h2 className="font-medium text-gray-700 md:text-xl">$20.00</h2>
+                    <button className="rounded-lg bg-slate-800 px-6 py-2 text-[12px] font-semibold text-white hover:bg-slate-900 sm:text-sm md:text-base">Add to Cart</button>
                 </div>
             </div>
         </CodeBox>

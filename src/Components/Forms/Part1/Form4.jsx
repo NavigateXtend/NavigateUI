@@ -48,15 +48,15 @@ const Form3 = () => {
     const [register, setRegister] = useState(false);
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="w-full mx-auto lg:w-[800px] bg-white flex items-center group relative overflow-hidden shadow-xl">
+            <div className="group relative mx-auto flex w-full items-center overflow-hidden bg-white shadow-xl lg:w-[800px]">
                 {/* register form */}
-                <form className={`p-8 w-full lg:w-1/2 ${register ? 'translate-x-0' : '-translate-x-full'} duration-500`}>
-                    <h1 className="backdrop-blur-sm text-4xl pb-4">Register</h1>
+                <form className={`w-full p-8 lg:w-1/2 ${register ? 'translate-x-0' : '-translate-x-full'} duration-500`}>
+                    <h1 className="pb-4 text-4xl backdrop-blur-sm">Register</h1>
                     <div className="space-y-5">
                         <label htmlFor="name" className="block">
                             Name
                         </label>
-                        <input id="name" type="name" placeholder="Jhon Doe" className="p-3 block w-full drop-shadow-lg outline-none border rounded-md  invalid:border-red-700 valid:border-black" />
+                        <input id="name" type="name" placeholder="Jhon Doe" className="block w-full rounded-md border p-3 outline-none drop-shadow-lg  valid:border-black invalid:border-red-700" />
                         <label htmlFor="u_email" className="block">
                             Email
                         </label>
@@ -64,7 +64,7 @@ const Form3 = () => {
                             id="u_email"
                             type="u_email"
                             placeholder="example@example.com"
-                            className="p-3 block w-full drop-shadow-lg outline-none border rounded-md  invalid:border-red-700 valid:border-black"
+                            className="block w-full rounded-md border p-3 outline-none drop-shadow-lg  valid:border-black invalid:border-red-700"
                         />
                         <label htmlFor="u_password" className="block">
                             Password
@@ -74,12 +74,12 @@ const Form3 = () => {
                             type="u_password"
                             placeholder=".............."
                             min={5}
-                            className="p-3 block w-full drop-shadow-lg outline-none border rounded-md invalid:border-red-700 valid:border-black"
+                            className="block w-full rounded-md border p-3 outline-none drop-shadow-lg valid:border-black invalid:border-red-700"
                         />
                     </div>
 
                     {/* button type will be submit for handling form submission*/}
-                    <button type="button" className="py-2 px-5 mb-4 mx-auto mt-8 shadow-lg border rounded-md border-black block">
+                    <button type="button" className="mx-auto mb-4 mt-8 block rounded-md border border-black px-5 py-2 shadow-lg">
                         Submit
                     </button>
                     <p className="mb-3 text-center">
@@ -94,8 +94,8 @@ const Form3 = () => {
                         </Link>
                     </p>
                     <hr />
-                    <button type="button" className="py-2 px-5 mb-4 mt-8 mx-auto block shadow-lg border rounded-md border-black ">
-                        <svg viewBox="-0.5 0 48 48" version="1.1" className="w-6 inline-block mr-3" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000">
+                    <button type="button" className="mx-auto mb-4 mt-8 block rounded-md border border-black px-5 py-2 shadow-lg ">
+                        <svg viewBox="-0.5 0 48 48" version="1.1" className="mr-3 inline-block w-6" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
@@ -135,16 +135,16 @@ const Form3 = () => {
 
                 {/* img */}
                 <div
-                    className={`absolute w-1/2 h-full top-0 z-50 min-h-full duration-500 overflow-hidden hidden lg:block  bg-sky-500 ${
+                    className={`absolute top-0 z-50 hidden h-full min-h-full w-1/2 overflow-hidden bg-sky-500 duration-500  lg:block ${
                         register ? 'translate-x-full rounded-bl-full duration-500' : 'rounded-br-full'
                     }`}
                 >
-                    <img src="https://source.unsplash.com/random" className="object-cover h-full" alt="" />
+                    <img src="https://source.unsplash.com/random" className="h-full object-cover" alt="" />
                 </div>
 
                 {/* login form */}
-                <form className={`p-8 w-full lg:w-1/2 mr-0 ml-auto duration-500 ${register ? 'translate-x-full' : ''}`}>
-                    <h1 className="backdrop-blur-sm text-4xl pb-4">Login</h1>
+                <form className={`ml-auto mr-0 w-full p-8 duration-500 lg:w-1/2 ${register ? 'translate-x-full' : ''}`}>
+                    <h1 className="pb-4 text-4xl backdrop-blur-sm">Login</h1>
                     <div className="space-y-5">
                         <label htmlFor="email" className="block">
                             Email
@@ -153,7 +153,7 @@ const Form3 = () => {
                             id="email"
                             type="email"
                             placeholder="example@example.com"
-                            className="p-3 block w-full drop-shadow-lg outline-none border rounded-md  invalid:border-red-700 valid:border-black"
+                            className="block w-full rounded-md border p-3 outline-none drop-shadow-lg  valid:border-black invalid:border-red-700"
                         />
                         <label htmlFor="password" className="block">
                             Password
@@ -163,12 +163,12 @@ const Form3 = () => {
                             type="password"
                             placeholder=".............."
                             min={5}
-                            className="p-3 block w-full drop-shadow-lg outline-none border rounded-md invalid:border-red-700 valid:border-black"
+                            className="block w-full rounded-md border p-3 outline-none drop-shadow-lg valid:border-black invalid:border-red-700"
                         />
                     </div>
 
                     {/* button type will be submit for handling form submission*/}
-                    <button type="button" className="py-2 px-5 mb-4 mx-auto mt-8 shadow-lg border rounded-md border-black block">
+                    <button type="button" className="mx-auto mb-4 mt-8 block rounded-md border border-black px-5 py-2 shadow-lg">
                         Submit
                     </button>
                     <p className="mb-3 text-center">
@@ -183,8 +183,8 @@ const Form3 = () => {
                         </Link>
                     </p>
                     <hr />
-                    <button type="button" className="py-2 px-5 mb-4 mt-8 mx-auto block shadow-lg border rounded-md border-black ">
-                        <svg viewBox="-0.5 0 48 48" version="1.1" className="w-6 inline-block mr-3" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000">
+                    <button type="button" className="mx-auto mb-4 mt-8 block rounded-md border border-black px-5 py-2 shadow-lg ">
+                        <svg viewBox="-0.5 0 48 48" version="1.1" className="mr-3 inline-block w-6" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#000000">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">

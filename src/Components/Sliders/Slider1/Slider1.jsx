@@ -84,12 +84,12 @@ export const Slider1 = () => {
     }, [currentSlider]);
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="max-w-full min-w-[300px] resizable-code-box  mx-auto h-[240px] md:h-[470px] lg:h-[700px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 px-10">
+            <div className="resizable-code-box mx-auto flex  h-[240px] min-w-[300px] max-w-full flex-col items-center gap-5 overflow-hidden px-10 md:h-[470px] lg:h-[700px] lg:flex-row lg:gap-10">
                 <div className="relative overflow-hidden">
-                    <div className="absolute w-full h-full flex items-center justify-between z-50 px-5">
+                    <div className="absolute z-50 flex h-full w-full items-center justify-between px-5">
                         {/* arrow left */}
-                        <button onClick={prevSlider} className="flex justify-center items-center bg-white rounded-full w-6 h-6 md:w-8 md:h-8">
-                            <svg viewBox="0 0 1024 1024" className="w-4 h-4 md:w-6 md:h-6 icon" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                        <button onClick={prevSlider} className="flex h-6 w-6 items-center justify-center rounded-full bg-white md:h-8 md:w-8">
+                            <svg viewBox="0 0 1024 1024" className="icon h-4 w-4 md:h-6 md:w-6" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                                 <g id="SVGRepo_iconCarrier">
@@ -101,8 +101,8 @@ export const Slider1 = () => {
                             </svg>
                         </button>
                         {/* arrow right */}
-                        <button onClick={nextSlider} className="flex justify-center items-center bg-white rounded-full w-6 h-6 md:w-8 md:h-8">
-                            <svg viewBox="0 0 1024 1024" className="w-4 h-4 md:w-6 md:h-6 icon" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(180)">
+                        <button onClick={nextSlider} className="flex h-6 w-6 items-center justify-center rounded-full bg-white md:h-8 md:w-8">
+                            <svg viewBox="0 0 1024 1024" className="icon h-4 w-4 md:h-6 md:w-6" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(180)">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                                 <g id="SVGRepo_iconCarrier">
@@ -115,20 +115,20 @@ export const Slider1 = () => {
                         </button>
                     </div>
                     {/* dots */}
-                    <div className="flex justify-center items-center rounded-full z-50 absolute bottom-4 w-full gap-1">
+                    <div className="absolute bottom-4 z-50 flex w-full items-center justify-center gap-1 rounded-full">
                         {sliderImages.map((_, inx) => (
                             <button
                                 key={inx}
                                 onClick={() => {
                                     setCurrentSlider(inx);
                                 }}
-                                className={`rounded-full duration-300 bg-white ${currentSlider === inx ? 'w-10' : 'w-2'} h-2`}
+                                className={`rounded-full bg-white duration-300 ${currentSlider === inx ? 'w-10' : 'w-2'} h-2`}
                             ></button>
                         ))}
                     </div>
                     {/* slider container */}
                     <div
-                        className="ease-linear duration-300 flex transform-gpu relative"
+                        className="relative flex transform-gpu duration-300 ease-linear"
                         style={{
                             transform: `translateX(-${currentSlider * 100}%)`
                         }}
@@ -136,7 +136,7 @@ export const Slider1 = () => {
                         {/* sliders */}
                         {sliderImages.map((slide, inx) => (
                             <div key={inx} className="min-w-full duration-200">
-                                <img src={slide.img} className="w-full h-[340px] md:h-[670px] object-cover" alt={`Slider - ${inx + 1}`} />
+                                <img src={slide.img} className="h-[340px] w-full object-cover md:h-[670px]" alt={`Slider - ${inx + 1}`} />
                             </div>
                         ))}
                     </div>
