@@ -6,27 +6,9 @@ import { useEffect, useState } from 'react';
 
 export const Slider7 = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
-
-    const sliderImages = [
-        {
-            img: 'https://source.unsplash.com/600x600/?nature/?1'
-        },
-        {
-            img: 'https://source.unsplash.com/600x600/?nature/?3'
-        },
-        {
-            img: 'https://source.unsplash.com/600x600/?nature/?5'
-        },
-        {
-            img: 'https://source.unsplash.com/600x600/?nature/?2'
-        },
-        {
-            img: 'https://source.unsplash.com/600x600/?nature/?4'
-        }
-    ];
-
+    // The slider images array
+    const sliderImages = [ {img: 'https://source.unsplash.com/600x600/?nature/?1'},{img: 'https://source.unsplash.com/600x600/?nature/?3'},{img: 'https://source.unsplash.com/600x600/?nature/?5'},{img: 'https://source.unsplash.com/600x600/?nature/?2'},{img: 'https://source.unsplash.com/600x600/?nature/?4'}];
     const prevSlider = () => setCurrentSlider((currentSlider) => (currentSlider === 0 ? sliderImages.length - 2 : currentSlider - 1));
-
     const nextSlider = () => setCurrentSlider((currentSlider) => (currentSlider === sliderImages.length - 2 ? 0 : currentSlider + 1));
     // if you don't want to change the slider automatically then you can just remove the useEffect
     useEffect(() => {
@@ -37,7 +19,6 @@ export const Slider7 = () => {
     }, [currentSlider]);
 
     return (
-        <CodeBox codeStr={codeStr}>
             <div className="max-w-full min-w-[300px] resizable-code-box  mx-auto h-[240px] md:h-[470px] lg:h-[700px] flex flex-col lg:flex-row items-center overflow-hidden gap-5 lg:gap-10 px-10">
                 <div className="relative overflow-hidden">
                     <div className="absolute w-full h-full flex items-center justify-between z-50 px-5">
@@ -52,25 +33,22 @@ export const Slider7 = () => {
                     </div>
                     {/* slider container */}
                     <div className="ease-linear duration-300 flex transform-gpu relative snap-center"
-                        style={{transform: `translateX(-${currentSlider * 50}%)`}}>
+                        style={{transform: \`translateX(-\${currentSlider * 50}%)\`}}>
                         {/* sliders */}
                         {sliderImages.map((slide, inx) => (
-                            <img key={inx} src={slide.img} className="min-w-[50%] h-[200px] md:h-[470px] object-cover border-8 border-transparent" alt={`Slider - ${inx + 1}`} />
+                            <img key={inx} src={slide.img} className="min-w-[50%] h-[200px] md:h-[470px] object-cover border-8 border-transparent" alt={\`Slider - \${inx + 1}\`} />
                         ))}
                     </div>
                 </div>
             </div>
-        </CodeBox>
     );
 };
 
-`
+`;
+console.log(codeStr);
 
 export const Slider7 = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
-
-
-
 
     const sliderImages = [
         {
