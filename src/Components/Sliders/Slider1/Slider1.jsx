@@ -53,16 +53,19 @@ export const Slider1 = () => {
 
     const sliderImages = [
         {
-            img: 'https://source.unsplash.com/1200x1200/?nature/?1'
+            img: 'https://source.unsplash.com/1200x640/?nature'
         },
         {
-            img: 'https://source.unsplash.com/1200x1200/?nature/?2'
+            img: 'https://source.unsplash.com/1200x640/?hill'
         },
         {
-            img: 'https://source.unsplash.com/1200x1200/?nature/?3'
+            img: 'https://source.unsplash.com/1200x640/?mountain'
         },
         {
-            img: 'https://source.unsplash.com/1200x1200/?nature/?4'
+            img: 'https://source.unsplash.com/1200x640/?river'
+        },
+        {
+            img: 'https://source.unsplash.com/1200x640/?sea'
         }
     ];
 
