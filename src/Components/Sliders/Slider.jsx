@@ -5,6 +5,7 @@ import { Slider4 } from './Slider4/Slider4';
 import { Slider5 } from './Slider5/Slider5';
 import Slider6 from './Slider6/Slider6';
 import { Slider7 } from './Slider7/Slider7';
+import { Slider8 } from './Slider8/Slider8';
 
 const Slider = () => {
     return (
@@ -16,7 +17,7 @@ const Slider = () => {
             <Slider5></Slider5>
             <Slider6></Slider6>
             <Slider7></Slider7>
-            {/* <Slider7></Slider7> */}
+            <Slider8></Slider8>
         </div>
     );
 };
