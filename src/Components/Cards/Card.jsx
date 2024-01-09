@@ -11,6 +11,7 @@ import Card7 from "./Card7/Card7";
 import Card8 from "./Card8/Card8";
 import Card9 from "./Card9/Card9";
 import { Card1 } from './Card1/Card1';
+import Card13 from "./Card13/Card13";
 
 
 const Card = () => {
@@ -42,6 +43,8 @@ const Card = () => {
           <Card11></Card11>
           {/* Card 12  */}
           <Card12></Card12>
+          {/* Card 13  */}
+          <Card13></Card13>
       </div>
   );
 };
