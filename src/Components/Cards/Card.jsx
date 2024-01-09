@@ -1,4 +1,4 @@
-import Card1 from "./Card1/Card1";
+
 import Card10 from "./Card10/Card10";
 import Card11 from "./Card11/Card11";
 import Card12 from "./Card12/Card12";
@@ -10,6 +10,7 @@ import Card6 from "./Card6/Card6";
 import Card7 from "./Card7/Card7";
 import Card8 from "./Card8/Card8";
 import Card9 from "./Card9/Card9";
+import { Card1 } from './Card1/Card1';
 
 
 const Card = () => {
