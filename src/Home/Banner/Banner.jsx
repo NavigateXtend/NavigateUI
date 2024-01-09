@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Banner = ({ isOpen }) => {
@@ -33,5 +34,9 @@ const Banner = ({ isOpen }) => {
         </div>
     );
 };
+
+Banner.propTypes = {
+    isOpen:PropTypes.bool
+}
 
 export default Banner;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -113,5 +114,7 @@ const Navbar = ({ setIsOpen }) => {
         </>
     );
 };
-
+Navbar.propTypes = {
+    setIsOpen:PropTypes.func
+};
 export default Navbar;

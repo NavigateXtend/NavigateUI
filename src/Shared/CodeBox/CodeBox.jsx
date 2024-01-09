@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 import JSXCode from './JSXCode/JSXCode';
@@ -92,5 +93,8 @@ const CodeBox = ({ children, codeStr }) => {
         </div>
     );
 };
-
+CodeBox.propTypes = {
+    children: PropTypes.node,
+    codeStr:PropTypes.string
+}
 export default CodeBox;

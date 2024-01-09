@@ -1,4 +1,3 @@
-import React from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr = `const Card10 = () => {
@@ -72,7 +71,7 @@ const Card10 = () => {
                 </div>
                 <hr />
                 {/*  Cart  map */}
-                {items.map((item, idx) => (
+                {items.map((item) => (
                     <div key={item?.id} className="flex  items-center justify-between border-b pb-6">
                         <div className="flex flex-wrap items-center gap-4">
                             <img className="h-[75px] w-[75px] rounded-lg bg-slate-500" src={`https://source.unsplash.com/75x75/?${item?.imgToFetch}`} alt="" />
