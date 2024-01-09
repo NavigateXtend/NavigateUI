@@ -1,6 +1,9 @@
 import Form1 from "./Part1/Form1";
 import Form2 from "./Part1/Form2";
 import Form3 from "./Part1/Form3";
+import Form4 from "./Part1/Form4";
+
+
 
 const Form = () => {
   return (
@@ -19,9 +22,15 @@ const Form = () => {
       </>
       <>
         <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">
-          @Switchable Login & Register Form
+          @Simple Login Form 3
         </h1>
         <Form3></Form3>
+      </>
+      <>
+        <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">
+          @Switchable Login & Register Form
+        </h1>
+        <Form4></Form4>
       </>
     </div>
   );

@@ -1,7 +1,7 @@
 import CodeBox from "../../../Shared/CodeBox/CodeBox";
 
 const Card5 = () => {
-  const codeStr = `const Card5 = () => {
+  const codeStr = `Card5 = () => {
      return (
        <div className=" flex  flex-col md:flex-row  my-20">
          <div className="relative max-w-[350px] group">
@@ -107,7 +107,9 @@ const Card5 = () => {
          </div>
        </div>  
      );
- };`;
+ };
+ export default Card5;
+ `;
 
   return (
     <CodeBox codeStr={codeStr}>
@@ -186,25 +188,31 @@ const Card5 = () => {
             </svg>
           </span>
         </div>
-        <div className="space-y-12 max-w-[350px] rounded-tr-lg rounded-br-lg md:w-[350px] text-center p-10 shadow-[0px_7px_30px_2px_rgba(100,100,111,0.2)]">
+        <div className="space-y-12 min-w-[250px] max-w-[350px] rounded-tr-lg rounded-br-lg md:w-[350px] text-center p-10 shadow-[0px_7px_30px_2px_rgba(100,100,111,0.2)]">
           <div className="space-y-1">
-            <h2 className="text-3xl font-medium text-gray-700 text-center font-sans">
+            <h2 className="text-2xl lg:text-3xl font-medium text-gray-700 text-center font-sans">
               Dima Bolver
             </h2>
             <p className="font-sans  text-gray-500">@dimablover</p>
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex  flex-wrap justify-between items-center">
             <div className="space-y-1">
               <p className="text-gray-500 text-sm  font-sans">Shots</p>
-              <p className="text-3xl tracking-wider text-gray-700">23</p>
+              <p className="text-2xl lg:text-3xl tracking-wider text-gray-700">
+                23
+              </p>
             </div>
             <div className="space-y-1">
               <p className="text-gray-500 text-sm font-sans">Following</p>
-              <p className="text-3xl tracking-wider text-gray-700">314</p>
+              <p className="text-2xl lg:text-3xl tracking-wider text-gray-700">
+                314
+              </p>
             </div>
             <div className="space-y-1">
               <p className="text-gray-500 text-sm font-sans">Followers</p>
-              <p className="text-3xl tracking-wider text-gray-700">487</p>
+              <p className="text-2xl lg:text-3xl tracking-wider text-gray-700">
+                487
+              </p>
             </div>
           </div>
           <div>
