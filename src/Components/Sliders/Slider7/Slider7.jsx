@@ -45,7 +45,7 @@ export const Slider7 = () => {
 };
 
 `;
-console.log(codeStr);
+
 
 export const Slider7 = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
