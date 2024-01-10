@@ -7,9 +7,22 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+
 node_modules
+src/Home/
+src/Layouts/
+src/Nav/
+src/Routes/
+src/Shared/
+index.css
+main.jsx
 dist
 dist-ssr
+Routes
+Nav
+Shared
+Layouts
+Home
 *.local
 
 # Editor directories and files
