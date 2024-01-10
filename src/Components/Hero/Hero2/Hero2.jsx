@@ -49,7 +49,7 @@ const Hero2 = () => {
     return (
         <CodeBox codeStr={codeStr}>
 <section className="w-full py-12 md:py-24 flex justify-center flex-col lg:py-32 bg-gradient-to-b from-#52C2FF to-white">
-  <div className="container px-4 md:px-6">
+  <div className=" px-4 md:px-6">
     <div className="flex flex-col items-center space-y-4 text-center text-black">
       {/* Text content */}
       <div className="space-y-2">
@@ -68,7 +68,7 @@ const Hero2 = () => {
     </div>
   </div>
   {/* Feature Cards */}
-  <div className="container px-4 md:px-6 mt-16 flex flex-wrap justify-center items-center gap-9">
+  <div className=" px-4 md:px-6 mt-16 flex flex-wrap justify-center items-center gap-9">
     <div className="flex flex-col items-center text-center text-black">
       <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="h-10 w-10 mb-4"><circle cx={12} cy={12} r={10} /><line x1={2} x2={22} y1={12} y2={12} /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
       <h3 className="text-lg font-semibold">Global Reach</h3>
