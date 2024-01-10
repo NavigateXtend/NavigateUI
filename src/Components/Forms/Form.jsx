@@ -2,6 +2,7 @@ import Form1 from "./Part1/Form1";
 import Form2 from "./Part1/Form2";
 import Form3 from "./Part1/Form3";
 import Form4 from "./Part1/Form4";
+import Form5 from "./Part1/Form5";
 
 
 
@@ -28,10 +29,17 @@ const Form = () => {
       </>
       <>
         <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">
+          @Simple Register Fomr
+        </h1>
+        <Form5></Form5>
+      </>
+      <>
+        <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">
           @Switchable Login & Register Form
         </h1>
         <Form4></Form4>
       </>
+     
     </div>
   );
 };
