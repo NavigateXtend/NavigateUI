@@ -197,8 +197,8 @@ const Button1 = () => {
                 </g>
               </svg>
             </span>
-            <span className="bg-gradient-to-tr bottom-0 left-1/2  transform -translate-x-1/2  from-[#0d87f8]/80 to-[#70c4ff]/80 duration-300  absolute   rounded-full  z-20 w-0 h-0   group-hover:w-[50px] group-hover:h-[50px]"></span>
-            <span className="bg-gradient-to-tr bottom-0 left-1/2 from-[#0d87f8]/50 to-[#70c4ff]/50 transform -translate-x-1/2 duration-500  absolute  rounded-full  z-20 w-0 h-0  group-hover:w-[60px] group-hover:h-[60px] hover:duration-300 "></span>
+            <span className="bg-gradient-to-tr bottom-0 left-1/2 transform -translate-x-1/2 from-[#0d87f8]/80 to-[#70c4ff]/80 duration-300  absolute rounded-full z-20 w-0 h-0 group-hover:w-[50px] group-hover:h-[50px]"></span>
+            <span className="bg-gradient-to-tr bottom-0 left-1/2 from-[#0d87f8]/50 to-[#70c4ff]/50 transform -translate-x-1/2 duration-500 absolute rounded-full z-20 w-0 h-0 group-hover:w-[60px] group-hover:h-[60px] hover:duration-300"></span>
           </button>
           {/* 15 */}
           <button>

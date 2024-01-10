@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CodeBox from "../../../Shared/CodeBox/CodeBox";
-const codeStr = `import { useState } from "react";
+const codeStr = `export const Slider6 = () => {
 
 export const Slider6 = () => {
   const [isOpen, setIsOpen] = useState(null);

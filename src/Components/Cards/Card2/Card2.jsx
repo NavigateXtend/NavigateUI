@@ -1,7 +1,7 @@
 import CodeBox from "../../../Shared/CodeBox/CodeBox";
 
 const Card2 = () => {
-  const codeStr = `export const Card = () => {
+  const codeStr = `const Card = () => {
   return (
       <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-6 my-20">
         <div className="flex justify-between">
@@ -28,6 +28,7 @@ const Card2 = () => {
       </div>
   );
 };
+export default Card2;
 `;
   return (
     <CodeBox codeStr={codeStr}>
