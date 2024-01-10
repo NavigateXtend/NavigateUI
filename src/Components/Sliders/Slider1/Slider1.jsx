@@ -52,21 +52,11 @@ export const Slider1 = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
 
     const sliderImages = [
-        {
-            img: 'https://source.unsplash.com/1200x640/?nature'
-        },
-        {
-            img: 'https://source.unsplash.com/1200x640/?hill'
-        },
-        {
-            img: 'https://source.unsplash.com/1200x640/?mountain'
-        },
-        {
-            img: 'https://source.unsplash.com/1200x640/?river'
-        },
-        {
-            img: 'https://source.unsplash.com/1200x640/?sea'
-        }
+        'https://source.unsplash.com/1200x640/?nature',
+        'https://source.unsplash.com/1200x640/?hill',
+        'https://source.unsplash.com/1200x640/?mountain',
+        'https://source.unsplash.com/1200x640/?river',
+        'https://source.unsplash.com/1200x640/?sea'
     ];
 
     const prevSlider = () => setCurrentSlider((currentSlider) => (currentSlider === 0 ? sliderImages.length - 1 : currentSlider - 1));
@@ -134,9 +124,12 @@ export const Slider1 = () => {
                         }}
                     >
                         {/* sliders */}
-                        {sliderImages.map((slide, inx) => (
-                            <div key={inx} className="min-w-full duration-200">
-                                <img src={slide.img} className="w-full h-[340px] md:h-[670px] object-cover" alt={`Slider - ${inx + 1}`} />
+                        {sliderImages.map((_, inx) => (
+                            <div
+                                key={inx}
+                                className="min-w-full duration-200 before:content-['Image'] before:bg-black/20 before:absolute before:flex before:justify-center before:items-center before:text-3xl before:text-black/40 before:-z-10 before:inset-0 relative"
+                            >
+                                <img src={_} className="w-full h-[340px] md:h-[670px] object-cover" alt={`Slider - ${inx + 1}`} />
                             </div>
                         ))}
                     </div>
