@@ -4,7 +4,7 @@ import CodeBox from "../../../Shared/CodeBox/CodeBox";
 const Card6 = () => {
 
     const codeStr = `
-    export const Card6 = () => {
+const Card6 = () => {
   return (<div className="max-w-[350px] font-sans border shadow-lg rounded-lg mx-auto">
         <div className="px-4 py-4 flex gap-10 justify-between items-center">
           {/* Avatar image  */}
@@ -154,7 +154,10 @@ const Card6 = () => {
       </div>
    
     );
- }`
+ };
+ export default Card6;
+ 
+ `;
 
 
   return (

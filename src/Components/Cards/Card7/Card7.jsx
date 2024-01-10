@@ -1,7 +1,7 @@
 import React from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
-const codeStr = `export const Card7 = () => {
+const codeStr = `const Card7 = () => {
     return (
       <div className=" md:w-[300px] space-y-8 shadow-lg my-20 relative p-8">
         {/* top part  */}
@@ -50,6 +50,7 @@ const codeStr = `export const Card7 = () => {
       </div>
     );
 };
+export default Card7;
 `;
 
 const Card7 = () => {

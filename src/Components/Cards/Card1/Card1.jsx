@@ -1,7 +1,7 @@
 import CodeBox from "../../../Shared/CodeBox/CodeBox";
 
-const Card1 = () => {
-  const codeStr = `export const Card = () => {
+export const Card1 = () => {
+  const codeStr = `const Card = () => {
   return (
     <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-4 my-10 flex flex-col justify-center items-center">
       <div className="relative w-[120px] h-[120px]">
@@ -41,7 +41,9 @@ const Card1 = () => {
       <button className="hover:bg-[#31B6BF] hover:text-white w-[80%] py-2 rounded-full hover:shadow-xl text-gray-400 shadow-[0px_0px_10px_#E2DADA] duration-500">View Profile</button>
     </div>
     )
-  };`;
+  };
+  export default Card1;
+  `;
   return (
     <CodeBox codeStr={codeStr}>
       <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-4 my-10 flex flex-col justify-center items-center mx-auto bg-white">
@@ -281,5 +283,5 @@ const Card1 = () => {
     </CodeBox>
   );
 };
+// export default Card1
 
-export default Card1;
