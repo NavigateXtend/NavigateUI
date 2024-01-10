@@ -3,13 +3,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr = `
 import { useState } from 'react';
-const sliders = [
-    'https://source.unsplash.com/1200x640/?snow-fall',
-    'https://source.unsplash.com/1200x640/?Spring',
-    'https://source.unsplash.com/1200x640/?mountain',
-    'https://source.unsplash.com/1200x640/?river',
-    'https://source.unsplash.com/1200x640/?Autumn'
-];
+const sliders = ['https://source.unsplash.com/1200x640/?snow-fall','https://source.unsplash.com/1200x640/?Spring','https://source.unsplash.com/1200x640/?mountain','https://source.unsplash.com/1200x640/?river','https://source.unsplash.com/1200x640/?Autumn'];
 export const Slider8 = () => {
     const [currentSlider, setCurrentSlider] = useState(2);
     const nextSlider = () => setCurrentSlider((currentSlider) => (currentSlider === sliders.length - 1 ? 0 : currentSlider + 1));
