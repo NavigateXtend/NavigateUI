@@ -3,7 +3,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr =`const Accordion3 = () => {
 
-    // add you array of object data 
+    // add your array of object data 
     const array=[1,2,3,4]
 
     // toggle state and function 
@@ -51,7 +51,7 @@ export default Accordion3;`
 
 const Accordion3 = () => {
 
-    // add you array of object data 
+    // add your array of object data 
     const array=[1,2,3,4]
 
     // toggle state and function 
