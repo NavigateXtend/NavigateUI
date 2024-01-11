@@ -4,12 +4,17 @@ import Form3 from "./Part1/Form3";
 import Form4 from "./Part1/Form4";
 import Form5 from "./Part1/Form5";
 import Form6 from "./Part1/Form6";
+import Form7 from "./Part1/Form7";
 
 
 
 const Form = () => {
   return (
       <div className="grid grid-cols-1 space-y-10">
+          <>
+              <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">Signup Form With photo upload section</h1>
+              <Form7></Form7>
+          </>
           <>
               <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">Login Form With Social Icons</h1>
               <Form6></Form6>
