@@ -93,7 +93,7 @@ const Accordion4 = () => {
                         {/* body / content  */}
                         <div className={`grid overflow-hidden transition-all duration-300 ease-in-out   ${isOpen === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                             <div className="overflow-hidden">
-                                <div className={` pb-4 pr-4 pl-14 md:pl-16 bg-${data.color}-50 text-${data.color}-900  border-l-[3px] border-${data?.color}-500  text-sm  `}>{data?.description}</div>
+                                <div className={` pb-6 pr-4 pl-14 md:pl-16 bg-${data.color}-50 text-${data.color}-900  border-l-[3px] border-${data?.color}-500  text-sm  `}>{data?.description}</div>
                             </div>
                         </div>
                     </div>
