@@ -5,6 +5,7 @@ import Form4 from "./Part1/Form4";
 import Form5 from "./Part1/Form5";
 import Form6 from "./Part1/Form6";
 import Form7 from "./Part1/Form7";
+import Form8 from "./Part1/Form8";
 
 
 
@@ -14,6 +15,10 @@ const Form = () => {
           <>
               <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">Signup Form With photo upload section</h1>
               <Form7></Form7>
+          </>
+          <>
+              <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">Signin Form with signin with google button</h1>
+              <Form8></Form8>
           </>
           <>
               <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">Login Form With Social Icons</h1>
