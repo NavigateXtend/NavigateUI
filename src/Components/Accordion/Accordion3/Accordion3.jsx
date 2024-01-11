@@ -77,7 +77,8 @@ const Accordion3 = () => {
                             </div>
                             {/* main accordion div  */}
                             <div>
-                                <div className="max-w-[450px] bg-sky-50 shadow-md border-t-[12px] p-3 border-[#355E72] ">
+                                <div className="max-w-[450px] bg-sky-50 shadow-md border-t-[12px] p-3 border-[#355E72] relative">
+                                    <span className="h-0 w-0 border-b-[40px] border-b-transparent border-r-[40px] border-r-[#355E72] absolute top-0 right-0"></span>
                                     <h1 className="text-[#355E72] text-xl text-center">This is my title</h1>
                                 </div>
                                 <div
