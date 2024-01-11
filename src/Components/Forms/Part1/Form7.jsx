@@ -146,7 +146,7 @@ const codeStr = `const Form7 = () => {
                                         </div>
                                         {/* signup button  */}
                                         <div>
-                                            <button className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border text-black bg-froly-500 dark:text-white hover:bg-froly-600 active:bg-froly-700 disabled:bg-froly-200 disabled:text-froly-800 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                                            <button className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border text-black bg-[#f73c60] dark:text-white hover:bg-[#e41a4b] active:bg-[#c10f3f] disabled:bg-[#ffccd3] disabled:text-[#a1103b] disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                                                 Sign Up
                                             </button>
                                         </div>
@@ -309,7 +309,7 @@ const Form7 = () => {
                                         </div>
                                         {/* signup button  */}
                                         <div>
-                                            <button className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border text-black bg-froly-500 dark:text-white hover:bg-froly-600 active:bg-froly-700 disabled:bg-froly-200 disabled:text-froly-800 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                                            <button className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#f73c60] text-white hover:bg-[#e41a4b] active:bg-[#c10f3f] disabled:bg-[#ffccd3] disabled:text-[#a1103b] disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                                                 Sign Up
                                             </button>
                                         </div>
