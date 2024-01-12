@@ -3,7 +3,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr =`const Accordion3 = () => {
 
-    // add you array of object data 
+    // add your array of object data 
     const array=[1,2,3,4]
 
     // toggle state and function 
@@ -51,7 +51,7 @@ export default Accordion3;`
 
 const Accordion3 = () => {
 
-    // add you array of object data 
+    // add your array of object data 
     const array=[1,2,3,4]
 
     // toggle state and function 
@@ -77,7 +77,8 @@ const Accordion3 = () => {
                             </div>
                             {/* main accordion div  */}
                             <div>
-                                <div className="max-w-[450px] bg-sky-50 shadow-md border-t-[12px] p-3 border-[#355E72] ">
+                                <div className="max-w-[450px] bg-sky-50 shadow-md border-t-[12px] p-3 border-[#355E72] relative">
+                                    <span className="h-0 w-0 border-b-[40px] border-b-transparent border-r-[40px] border-r-[#355E72] absolute top-0 right-0"></span>
                                     <h1 className="text-[#355E72] text-xl text-center">This is my title</h1>
                                 </div>
                                 <div
