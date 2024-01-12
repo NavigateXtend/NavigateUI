@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
-
 const codeStr = `const Accordion4 = () => {
     const [isOpen, setIsOpen] = useState(null);
 
@@ -44,13 +43,13 @@ const codeStr = `const Accordion4 = () => {
     );
 };
 
-export default Accordion4;`
+export default Accordion4;`;
 
 const Accordion4 = () => {
     const [isOpen, setIsOpen] = useState(null);
 
     const handleToggle = (idx) => setIsOpen((prevIdx) => (prevIdx === idx ? null : idx));
-    
+
     const datas = [
         {
             title: 'Connected Devices',
@@ -147,7 +146,7 @@ const Accordion4 = () => {
                         <div className={`grid overflow-hidden transition-all duration-300 ease-in-out   ${isOpen === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                             <div className="overflow-hidden">
                                 <div
-                                    className={` pb-6 pr-4 pl-14 md:pl-16 border-l-[3px] text-sm  ${
+                                    className={`pb-6 pr-4 pl-14 md:pl-16 border-l-[3px] text-sm  ${
                                         idx === 0
                                             ? 'text-green-900 bg-green-50 border-green-500'
                                             : idx === 1
