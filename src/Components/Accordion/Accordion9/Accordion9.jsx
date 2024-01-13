@@ -15,16 +15,16 @@ const accordionData = [{title: 'heading', subtitle: 'Hi!~ How are you doing?', c
                 {accordionData.map((_, idx) => (
                     <div key={idx} className="flex">
                         {/* toggle item */}
-                        <button onClick={() => handleToggle(idx)} className={`h-full flex justify-around flex-col items-center w-14 ${_.colorBg} text-white rounded-lg relative`}>
-                            {isActive === idx && <span className={`w-0 h-0 ${_.colorBorder} border-r-[20px] border-b-[20px] border-r-transparent absolute rotate-[225deg] left-10 top-4`}></span>}
+                        <button onClick={() => handleToggle(idx)} className={\`h-full flex justify-around flex-col items-center w-14 \${_.colorBg} text-white rounded-lg relative\`}>
+                            {isActive === idx && <span className={\`w-0 h-0 \${_.colorBorder} border-r-[20px] border-b-[20px] border-r-transparent absolute rotate-[225deg] left-10 top-4\`}></span>}
                             <p>{idx + 1}</p>
                             <p className="rotate-[270deg]">Example</p>
                         </button>
                         {/* container */}
                         <div
-                            className={`grid place-content-center bg-gray-200 shadow-md rounded-lg ${
+                            className={\`grid place-content-center bg-gray-200 shadow-md rounded-lg \${
                                 isActive === idx ? 'w-56 px-5 opacity scale-1' : 'w-0 opacity-0 scale-0'
-                            } text-black ml-2 duration-300 ease-in-out inline-block`}
+                            } text-black ml-2 duration-300 ease-in-out inline-block\`}
                         >
                             <h2 className="lg:text-2xl font-black">{_.title}</h2>
                             <p className="text-black/60">{_.subtitle}</p>
