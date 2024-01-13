@@ -8,6 +8,7 @@ import Accordion from '../Components/Accordion/Accordion';
 import Home from '../Home/Home';
 import Loading from './../Components/Spinner/Loading';
 import Hero from './../Components/Hero/Hero';
+import Skeleton from '../Components/Skeleton/Skeleton';
 
 export const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ export const router = createBrowserRouter([
             {
                 path: 'hero',
                 element: <Hero></Hero>
+            },
+            {
+                path: 'skeleton',
+                element: <Skeleton></Skeleton>
             },
             {
                 path: 'spinner',

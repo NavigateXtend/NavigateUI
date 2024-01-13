@@ -67,7 +67,7 @@ const Form1 = () => {
                                 <input
                                     className="flex h-10 w-full px-3 py-2 text-sm  file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-gray-100  border border-gray-300  rounded-md"
                                     id="first-name"
-                                    placeholder="Enter your first name"
+                                    placeholder="Enter first name"
                                 />
                             </div>
                             <div className="space-y-2">
@@ -77,7 +77,7 @@ const Form1 = () => {
                                 <input
                                     className="flex h-10 w-full px-3 py-2 text-sm  file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 bg-gray-100  border border-gray-300  rounded-md"
                                     id="last-name"
-                                    placeholder="Enter your last name"
+                                    placeholder="Enter last name"
                                 />
                             </div>
                         </div>

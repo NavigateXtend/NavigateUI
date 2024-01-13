@@ -13,7 +13,7 @@ const Navbar = ({ setIsOpen }) => {
                 <div className="flex flex-col w-full h-full group space-y-6">
                     <div>
                         <h1 className="text-3xl p-8 text-gray-800">
-                            <span className="text-[#0095FF] font-black">U</span>nifyUI
+                            <span className="text-[#0095FF] font-black">N</span>avigateUI
                         </h1>
                         <hr />
                     </div>
