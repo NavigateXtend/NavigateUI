@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const navComponentsItems = ['Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Hero', 'Modal', 'Skeleton', 'Spinner'];
+const navComponentsItems = ['Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Hero', 'Skeleton', 'Spinner'];
 
 const Navbar = ({ setIsOpen }) => {
     const [isDocOpen, setDocIsOpen] = useState(true);

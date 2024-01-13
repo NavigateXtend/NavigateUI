@@ -10,8 +10,9 @@ import Card6 from "./Card6/Card6";
 import Card7 from "./Card7/Card7";
 import Card8 from "./Card8/Card8";
 import Card9 from "./Card9/Card9";
-import { Card1 } from './Card1/Card1';
 import Card13 from "./Card13/Card13";
+import Card1 from "./Card1/Card1";
+
 
 
 const Card = () => {
