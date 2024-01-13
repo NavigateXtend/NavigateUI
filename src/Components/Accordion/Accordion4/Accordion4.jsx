@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr = `const Accordion4 = () => {
