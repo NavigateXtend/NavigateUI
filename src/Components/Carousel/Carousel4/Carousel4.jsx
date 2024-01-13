@@ -3,7 +3,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr = `import { useState } from "react";
 
-export const Slider4 = () => {
+export const Carousel4 = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
   const sliders = [{img: "https://source.unsplash.com/1200x640/?nature", title: "Escape 1", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?hill", title: "Escape 2", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?mountain", title: "Escape 3", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?river", title: "Escape 4", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?sea", title: "Escape 5", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",},];
   const prevSlider = () => setCurrentSlider((currentSlider) => currentSlider === 0 ? sliders.length - 1 : currentSlider - 1);
@@ -36,7 +36,7 @@ export const Slider4 = () => {
   )};
 `;
 
-export const Slider4 = () => {
+export const Carousel4 = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
 
     const sliders = [

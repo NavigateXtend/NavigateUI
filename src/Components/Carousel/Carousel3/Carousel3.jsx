@@ -3,7 +3,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr = `import { useState } from "react";
 
-export const Slider3 = () => {
+export const Carousel3 = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
   const sliderImages = [{img: "https://source.unsplash.com/600x600/?bedroom",}, {img: "https://source.unsplash.com/600x600/?room",}, {img: "https://source.unsplash.com/600x600/?livingrooms",}, {img: "https://source.unsplash.com/600x600/?livingroom",}, {img: "https://source.unsplash.com/600x600/?bedrooms",},];
 
@@ -34,7 +34,7 @@ export const Slider3 = () => {
 };
 `;
 
-export const Slider3 = () => {
+export const Carousel3 = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
 
     const sliders = [

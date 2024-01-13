@@ -4,7 +4,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 const codeStr = `
 import { useEffect, useState } from 'react';
 
-export const Slider7 = () => {
+export const Carousel7 = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
     // The slider images array
     const sliderImages = [ {img: 'https://source.unsplash.com/600x600/?nature/?1'},{img: 'https://source.unsplash.com/600x600/?nature/?3'},{img: 'https://source.unsplash.com/600x600/?nature/?5'},{img: 'https://source.unsplash.com/600x600/?nature/?2'},{img: 'https://source.unsplash.com/600x600/?nature/?4'}];
@@ -47,7 +47,7 @@ export const Slider7 = () => {
 `;
 console.log(codeStr);
 
-export const Slider7 = () => {
+export const Carousel7 = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
 
     const sliderImages = [

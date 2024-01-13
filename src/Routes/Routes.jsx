@@ -1,12 +1,12 @@
 import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from './../Layouts/MainLayout';
-import Slider from './../Components/Sliders/Slider';
-import Button from './../Components/Buttons/Button';
-import Card from '../Components/Cards/Card';
-import Form from './../Components/Forms/Form';
+import Carousel from '../Components/Carousel/Carousel';
+import Button from './../Components/Button/Button';
+import Card from '../Components/Card/Card';
+import Form from './../Components/Form/Form';
 import Accordion from '../Components/Accordion/Accordion';
 import Home from '../Home/Home';
-import Loading from './../Components/Loading/Loading';
+import Loading from './../Components/Spinner/Loading';
 import Hero from './../Components/Hero/Hero';
 
 export const router = createBrowserRouter([
@@ -19,16 +19,16 @@ export const router = createBrowserRouter([
         element: <MainLayout />,
         children: [
             {
-                path: 'hero',
-                element: <Hero></Hero>
-            },
-            {
-                path: 'carousel',
-                element: <Slider />
+                path: 'accordion',
+                element: <Accordion />
             },
             {
                 path: 'button',
                 element: <Button />
+            },
+            {
+                path: 'carousel',
+                element: <Carousel />
             },
             {
                 path: 'card',
@@ -39,8 +39,8 @@ export const router = createBrowserRouter([
                 element: <Form />
             },
             {
-                path: 'accordion',
-                element: <Accordion />
+                path: 'hero',
+                element: <Hero></Hero>
             },
             {
                 path: 'spinner',

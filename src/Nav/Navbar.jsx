@@ -86,9 +86,14 @@ const Navbar = ({ setIsOpen }) => {
                         {/* Component div */}
                         <div className={`grid  transition-all  duration-300 ease-in-out text-slate-600    ${isComponentOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                             <div className="overflow-hidden flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 ">
-                                {navComponentsItems.map((_, i) => (
-                                    <Link key={i} onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to={`/components/${_.toLowerCase()}`}>
-                                        {_}
+                                {navComponentsItems.map((componentName, i) => (
+                                    <Link
+                                        key={i}
+                                        onClick={() => setIsOpen(false)}
+                                        className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg "
+                                        to={`/components/${componentName.toLowerCase()}`}
+                                    >
+                                        {componentName}
                                     </Link>
                                 ))}
                             </div>

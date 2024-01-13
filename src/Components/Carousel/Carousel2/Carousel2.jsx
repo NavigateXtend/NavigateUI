@@ -3,7 +3,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr = `import { useState } from "react";
 
-export const SliderMain = () => {
+export const CarouselMain = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
   const sliders = [{img: "https://source.unsplash.com/600x600/?bedroom", tags: "Room",}, {img: "https://source.unsplash.com/600x600/?room", tags: "Room",}, {img: "https://source.unsplash.com/600x600/?livingrooms", tags: "Room",}, {img: "https://source.unsplash.com/600x600/?livingroom", tags: "Room",}, {img: "https://source.unsplash.com/600x600/?bedrooms", tags: "Room",},];
   const nextSlider = () => setCurrentSlider((currentSlider) => currentSlider === sliders.length - 1 ? 0 : currentSlider + 1);
@@ -24,7 +24,7 @@ export const SliderMain = () => {
   );
 };
 
-export const Slider2 = () => {
+export const Carousel2 = () => {
   return (
     <div className="max-w-7xl mx-auto h-[540px] md:h-[670px] px-10 flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
       <div className="bg-[#f3f9fc] w-full absolute left-0 h-[540px] lg:h-[670px] -z-40"></div>
@@ -35,13 +35,13 @@ export const Slider2 = () => {
         <p className="text-[#616161]"> Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
         <button className="font-bold py-2 lg:py-3 hover:scale-95 duration-300 px-4 lg:px-10 text-white bg-[#2f9fb8]">Explore More</button>
       </div>
-      <SliderMain />
+      <CarouselMain />
     </div>
   );
 };
 `;
 
-export const SliderMain = () => {
+export const CarouselMain = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
 
     const sliders = [
@@ -95,7 +95,7 @@ export const SliderMain = () => {
         </div>
     );
 };
-export const Slider2 = () => {
+export const Carousel2 = () => {
     return (
         <CodeBox codeStr={codeStr}>
             <div className="max-w-7xl mx-auto h-[540px] md:h-[670px] px-10 flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
@@ -105,7 +105,7 @@ export const Slider2 = () => {
                     <p className="text-[#616161] text-xs sm:text-sm ">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
                     <button className="font-bold py-2 lg:py-3 text-xs md:text-lg lg:text-xl hover:scale-95 duration-300 px-4 lg:px-10 text-white bg-[#2f9fb8]">Explore More</button>
                 </div>
-                <SliderMain />
+                <CarouselMain />
             </div>
         </CodeBox>
     );
