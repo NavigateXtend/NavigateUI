@@ -26,7 +26,7 @@ const Form = () => {
                 <Form1></Form1>
             </>
             <>
-                <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">@Simple Register Fomr</h1>
+                <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">@Simple Register FormForm</h1>
                 <Form5></Form5>
             </>
             <>
