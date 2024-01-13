@@ -105,6 +105,9 @@ const Navbar = ({ setIsOpen }) => {
                                 <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/slider">
                                     Slider
                                 </Link>
+                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/skeleton">
+                                    Skeleton
+                                </Link>
                             </div>
                         </div>
                     </div>
