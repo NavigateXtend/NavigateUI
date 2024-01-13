@@ -13,6 +13,9 @@ components for React projects.
 -   **Easy to Customize:** Tailor the components to match your project's design system with simple and intuitive customization options.
 -   **Documentation:** Comprehensive documentation is provided for each component, making it easy for developers to understand and use them.
 
+## Note : 
+Please make sure that you have installed React, React Router DOM, and Tailwind CSS.
+
 ## Contact Us
 
 -   **MH Lehri:**
