@@ -3,7 +3,7 @@
 Welcome to NavigateUI, your go-to source for amazing React and Tailwind CSS components! NavigateUI is a carefully crafted library that brings together a collection of high-quality and customizable UI
 components for React projects.
 
-## [NavigateUI Live Preview Click Here](https://NavigateUI.vercel.app)
+## [NavigateUI Live Preview Click Here](https://navigateui.vercel.app)
 
 ## Features
 
