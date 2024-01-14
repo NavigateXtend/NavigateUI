@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Form1 from './Part1/Form1';
 import Form2 from './Part1/Form2';
 import Form3 from './Part1/Form3';
@@ -6,6 +7,14 @@ import Form5 from './Part1/Form5';
 import Form6 from './Part1/Form6';
 
 const Form = () => {
+   // For starting the scroll form the top
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
+
     return (
         <div className="grid grid-cols-1 space-y-10">
             <>
@@ -28,7 +37,6 @@ const Form = () => {
                 <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">@Simple Login Form 3</h1>
                 <Form3></Form3>
             </>
-
             <>
                 <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">@Switchable Login & Register Form</h1>
                 <Form4></Form4>

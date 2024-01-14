@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Accordion1 from './Accordion1/Accordion1';
 import Accordion10 from './Accordion10/Accordion10';
 import Accordion2 from './Accordion2/Accordion2';
@@ -8,6 +9,16 @@ import Accordion8 from './Accordion8/Accordion8';
 import Accordion9 from './Accordion9/Accordion9';
 
 const Accordion = () => {
+
+
+    // For starting the scroll form the top
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
+
     return (
         <div>
             {/* accordion 1  */}
