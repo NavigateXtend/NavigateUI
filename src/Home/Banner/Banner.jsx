@@ -12,10 +12,10 @@ const Banner = ({ isOpen }) => {
                 </h2>
                 <p className="mt-4 text-base md:text-lg text-gray-600 max-w-[500px]">Elevate your React projects with beautifully crafted components designed for TailwindCSS.</p>
                 <div className="mt-6 space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row items-center md:items-start">
-                    <Link to="/components/button" className="w-full flex  gap-2 md:w-auto px-6 py-3 bg-[#0095FF] text-white rounded-md hover:bg-[#2c6e9c] transition duration-300">
+                    <Link to="/components/accordion" className="w-full flex  gap-2 md:w-auto px-6 py-3 bg-[#0095FF] text-white rounded-md hover:bg-[#2c6e9c] transition duration-300">
                         <img className="w-6" src="/assets/Component.png" alt="" /> See Components
                     </Link>
-                    <Link to="/components/button" className="w-full md:w-auto px-6 py-3 bg-gray-200  rounded-md hover:bg-gray-300 transition duration-300">
+                    <Link to="/components/accordion" className="w-full md:w-auto px-6 py-3 bg-gray-200  rounded-md hover:bg-gray-300 transition duration-300">
                         Documentation
                     </Link>
                 </div>
