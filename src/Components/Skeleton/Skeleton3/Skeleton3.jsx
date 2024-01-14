@@ -44,23 +44,23 @@ const Skeleton3 = () => {
         
         {/* Profile Name & Role Skeleton */}
         <div className="pt-8 text-center space-y-1">
-          <div className="h-6 w-2/3 bg-gray-300 mb-2"></div>
-          <div className="h-4 w-full bg-gray-300"></div>
+          <div className="h-6 w-2/3 rounded bg-gray-300 mb-2"></div>
+          <div className="h-4 w-full rounded bg-gray-300"></div>
         </div>
   
         {/* Post, Followers, Following Skeleton */}
         <div className="flex flex-wrap px-4 md:px-8 justify-between items-center">
           <div className="text-center">
-            <div className="h-6 w-6 bg-gray-300"></div>
-            <div className="h-4 w-1/2 bg-gray-300 mt-1"></div>
+            <div className="h-6 w-6 rounded bg-gray-300"></div>
+            <div className="h-4 w-1/2 rounded bg-gray-300 mt-1"></div>
           </div>
           <div className="text-center">
-            <div className="h-6 w-6 bg-gray-300"></div>
-            <div className="h-4 w-1/2 bg-gray-300 mt-1"></div>
+            <div className="h-6 w-6 rounded bg-gray-300"></div>
+            <div className="h-4 w-1/2 rounded bg-gray-300 mt-1"></div>
           </div>
           <div className="text-center">
-            <div className="h-6 w-6 bg-gray-300"></div>
-            <div className="h-4 w-1/2 bg-gray-300 mt-1"></div>
+            <div className="h-6 w-6 rounded bg-gray-300"></div>
+            <div className="h-4 w-1/2 rounded bg-gray-300 mt-1"></div>
           </div>
         </div>
       </div>
