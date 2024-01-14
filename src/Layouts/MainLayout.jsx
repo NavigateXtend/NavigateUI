@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from '../Nav/Navbar';
 import { useState } from 'react';
-import { Analytics } from '@vercel/analytics/react';
+
 
 const MainLayout = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -56,7 +56,7 @@ const MainLayout = () => {
             <div onClick={() => setIsOpen(false)} className={`w-full lg:w-[70%]  overflow-x-hidden my-20 mx-auto ${isOpen ? 'opacity-30 duration-500' : 'duration-500 opacity-100'} lg:opacity-100`}>
                 <Outlet />
 
-                <Analytics />
+                {/* <Analytics /> */}
             </div>
         </div>
     );
