@@ -1,7 +1,7 @@
 import React from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
-const codeStr = `const AvatarType1 = () => {
+const codeStr = `const AvatarType2 = () => {
     return (
         // you can remove the blur by removing hover:blur-[2px] duration-500 these classes 
         <div className="flex flex-wrap justify-between">
@@ -12,19 +12,19 @@ const codeStr = `const AvatarType1 = () => {
     );
 };
 
-export default AvatarType1;`;
+export default AvatarType2;`;
 
-const AvatarType1 = () => {
+const AvatarType2 = () => {
     return (
         // you can remove the blur by removing hover:blur-[2px] duration-500 these classes
         <CodeBox codeStr={codeStr}>
             <div className="flex items-center flex-wrap justify-around">
-                <img className="w-[80px] h-[80px] object-cover rounded-lg hover:blur-[2px] duration-500" src="https://source.unsplash.com/300x300/?profile" alt="" />
-                <img className="w-[100px] h-[100px] object-cover rounded-lg hover:blur-[2px] duration-500" src="https://source.unsplash.com/300x300/?profile" alt="" />
-                <img className="w-[120px] h-[120px] object-cover rounded-lg hover:blur-[2px] duration-500" src="https://source.unsplash.com/300x300/?profile" alt="" />
+                <img className="w-[80px] h-[80px] object-cover rounded-full hover:blur-[2px] duration-500" src="https://source.unsplash.com/300x300/?profile" alt="" />
+                <img className="w-[110px] h-[110px] object-cover rounded-full hover:blur-[2px] duration-500" src="https://source.unsplash.com/300x300/?profile" alt="" />
+                <img className="w-[130px] h-[130px] object-cover rounded-full hover:blur-[2px] duration-500" src="https://source.unsplash.com/300x300/?profile" alt="" />
             </div>
         </CodeBox>
     );
 };
 
-export default AvatarType1;
+export default AvatarType2;
