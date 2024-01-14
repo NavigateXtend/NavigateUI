@@ -18,26 +18,35 @@ const Button2 = () => {
                     </button>
                     <button className="bg-sky-700 text-white py-2 before:bg-sky-900 before:content-['Bye'] before:absolute before:inset-0 before:translate-y-full hover:before:translate-y-0 before:duration-300 before:flex before:justify-center before:items-center overflow-hidden after:content-['Hi!'] after:absolute after:inset-0 after:translate-y-0 hover:after:-translate-y-full after:duration-300 after:flex after:justify-center after:items-center px-6 w-40 h-16 relative group"></button>
                     <button className="bg-sky-600 flex items-center justify-center text-white font-bold text-lg overflow-hidden group">
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['U'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
+                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['N'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
                             E
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['N'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
+                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['A'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
                             X
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['I'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
+                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['V'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
                             P
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['F'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
+                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['I'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
                             L
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['Y'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
+                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['G'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
                             O
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['U'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
+                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['A'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
                             R
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['I'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
+                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['T'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
                             E
+                        </span>
+                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['E'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
+                            -
+                        </span>
+                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['U'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
+                            U
+                        </span>
+                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['I'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
+                            I
                         </span>
                     </button>
                 </div>

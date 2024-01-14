@@ -7,7 +7,7 @@ import Form5 from './Part1/Form5';
 import Form6 from './Part1/Form6';
 
 const Form = () => {
-    // For starting the scroll form the top
+   // For starting the scroll form the top
     useEffect(() => {
         window.scrollTo({
             top: 0,
@@ -26,7 +26,7 @@ const Form = () => {
                 <Form1></Form1>
             </>
             <>
-                <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">@Simple Register Fomr</h1>
+                <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">@Simple Register Form</h1>
                 <Form5></Form5>
             </>
             <>
@@ -37,7 +37,6 @@ const Form = () => {
                 <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">@Simple Login Form 3</h1>
                 <Form3></Form3>
             </>
-
             <>
                 <h1 className="text-xl italic font-bold opacity-70 underline m-0 p-0">@Switchable Login & Register Form</h1>
                 <Form4></Form4>
