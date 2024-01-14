@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+const navComponentsItems = ['Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Hero', 'Skeleton', 'Spinner'];
+
 const Navbar = ({ setIsOpen }) => {
     const [isDocOpen, setDocIsOpen] = useState(true);
     const [isComponentOpen, setComponentIsOpen] = useState(true);
@@ -11,7 +13,7 @@ const Navbar = ({ setIsOpen }) => {
                 <div className="flex flex-col w-full h-full group space-y-6">
                     <div>
                         <h1 className="text-3xl p-8 text-gray-800">
-                            <span className="text-[#0095FF] font-black">N</span>avigateUI
+                            <span className="text-[#0095FF] font-medium">N</span>avigateUI
                         </h1>
                         <hr />
                     </div>
@@ -48,12 +50,12 @@ const Navbar = ({ setIsOpen }) => {
                             </svg>
                         </div>
                         {/* doc div  */}
-                        <div className={`grid transition-all duration-300 ease-in-out text-slate-600    ${isDocOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+                        <div className={`grid transition-all duration-300 ease-in-out text-slate-600 ${isDocOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                             <div className="overflow-hidden flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 ">
                                 <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50  py-2 duration-300  px-6 hover:rounded-lg " to="/">
                                     Introduction
                                 </Link>
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2  duration-300  px-6 hover:rounded-lg " to="/Components/button">
+                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/button">
                                     Quick Start
                                 </Link>
                             </div>
@@ -84,30 +86,16 @@ const Navbar = ({ setIsOpen }) => {
                         {/* Component div */}
                         <div className={`grid  transition-all  duration-300 ease-in-out text-slate-600    ${isComponentOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                             <div className="overflow-hidden flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 ">
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/accordion">
-                                    Accordion
-                                </Link>
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/hero">
-                                    Hero
-                                </Link>
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/button">
-                                    Button
-                                </Link>
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/card">
-                                    Card
-                                </Link>
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/form">
-                                    Form
-                                </Link>
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/loading">
-                                    Loaders
-                                </Link>
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/slider">
-                                    Slider
-                                </Link>
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/skeleton">
-                                    Skeleton
-                                </Link>
+                                {navComponentsItems.map((componentName, i) => (
+                                    <Link
+                                        key={i}
+                                        onClick={() => setIsOpen(false)}
+                                        className="hover:bg-sky-50 py-2 duration-300 px-6 hover:rounded-lg "
+                                        to={`/components/${componentName.toLowerCase()}`}
+                                    >
+                                        {componentName}
+                                    </Link>
+                                ))}
                             </div>
                         </div>
                     </div>

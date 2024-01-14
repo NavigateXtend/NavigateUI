@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@mdx-js/react": "^3.0.0",
+    "@vercel/analytics": "^1.1.1",
+    "axios": "^1.6.5",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",

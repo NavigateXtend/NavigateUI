@@ -23,8 +23,8 @@ const accordionData = [{title: 'heading', subtitle: 'Hi!~ How are you doing?', c
                         {/* container */}
                         <div
                             className={\`grid place-content-center bg-gray-200 shadow-md rounded-lg \${
-                                isActive === idx ? 'w-56 px-5 opacity scale-1' : 'w-0 opacity-0 scale-0'
-                            } text-black ml-2 duration-300 ease-in-out inline-block\`}
+                                isActive === idx ? 'w-56 px-5 opacity-1 scale-1' : 'w-0 opacity-0 scale-0'
+                            } text-black ml-2 duration-300 ease-in-out\`}
                         >
                             <h2 className="lg:text-2xl font-black">{_.title}</h2>
                             <p className="text-black/60">{_.subtitle}</p>
@@ -90,8 +90,8 @@ const Accordion9 = () => {
                         {/* container */}
                         <div
                             className={`grid place-content-center bg-gray-200 shadow-md rounded-lg ${
-                                isActive === idx ? 'w-56 px-5 opacity scale-1' : 'w-0 opacity-0 scale-0'
-                            } text-black ml-2 duration-300 ease-in-out inline-block`}
+                                isActive === idx ? 'w-56 px-5 opacity-1 scale-1' : 'w-0 opacity-0 scale-0'
+                            } text-black ml-2 duration-300 ease-in-out`}
                         >
                             <h2 className="lg:text-2xl font-black">{_.title}</h2>
                             <p className="text-black/60">{_.subtitle}</p>
