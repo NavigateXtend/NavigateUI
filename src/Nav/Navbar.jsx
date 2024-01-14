@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const navComponentsItems = ['Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Hero', 'Skeleton', 'Spinner'];
 
@@ -87,14 +87,14 @@ const Navbar = ({ setIsOpen }) => {
                         <div className={`grid  transition-all  duration-300 ease-in-out text-slate-600    ${isComponentOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                             <div className="overflow-hidden flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 ">
                                 {navComponentsItems.map((componentName, i) => (
-                                    <Link
+                                    <NavLink
                                         key={i}
                                         onClick={() => setIsOpen(false)}
-                                        className="hover:bg-sky-50 py-2 duration-300 px-6 hover:rounded-lg "
+                                        className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'px-6 bg-sky-400 text-white  py-2 rounded-lg duration-300' : 'hover:bg-sky-50 px-6 py-2 hover:rounded-lg')}
                                         to={`/components/${componentName.toLowerCase()}`}
                                     >
                                         {componentName}
-                                    </Link>
+                                    </NavLink>
                                 ))}
                             </div>
                         </div>
