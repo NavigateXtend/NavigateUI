@@ -26,7 +26,7 @@ const Skeleton2 = () => {
     `
     return (
         <CodeBox codeStr={codestr}>
-        <div className="w-[400px] md:w-[350px] bg-slate-300/20 px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md animate-pulse">
+        <div className="max:w-[400px] md:w-[350px] bg-slate-300/20 px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md animate-pulse">
         {/* Card Image Skeleton */}
         <div className="w-full h-[190px] bg-gray-400 rounded-2xl"></div>
   
