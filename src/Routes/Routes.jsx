@@ -9,6 +9,7 @@ import Home from '../Home/Home';
 import Loading from './../Components/Spinner/Loading';
 import Hero from './../Components/Hero/Hero';
 import Skeleton from '../Components/Skeleton/Skeleton';
+import Avatar from '../Components/Avatar/Avatar';
 
 export const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
             {
                 path: 'accordion',
                 element: <Accordion />
+            },
+            {
+                path: 'avatar',
+                element: <Avatar />
             },
             {
                 path: 'button',

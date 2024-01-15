@@ -24,36 +24,36 @@ const Accordion = () => {
             {/* accordion 1  */}
 
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-20 text-slate-700"> # Basic Accordion</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Basic Accordion</h1>
                 <Accordion1></Accordion1>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-20 text-slate-700"> # Dark theme Accordion</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Dark theme Accordion</h1>
                 <Accordion2></Accordion2>
             </div>
 
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-20 text-slate-700"> # Accordion 3</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 3</h1>
                 <Accordion3></Accordion3>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-20 text-slate-700"> # Accordion 4</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 4</h1>
                 <Accordion4></Accordion4>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-20 text-slate-700"> # Accordion 5</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 5</h1>
                 <Accordion5></Accordion5>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-20 text-slate-700"> # Accordion 8</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 8</h1>
                 <Accordion8></Accordion8>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-20 text-slate-700"> # Accordion 9</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 9</h1>
                 <Accordion9></Accordion9>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-20 text-slate-700"> # Accordion 10</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 10</h1>
                 <Accordion10></Accordion10>
             </div>
         </div>
