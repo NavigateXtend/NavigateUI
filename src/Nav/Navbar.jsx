@@ -90,7 +90,9 @@ const Navbar = ({ setIsOpen }) => {
                                     <NavLink
                                         key={i}
                                         onClick={() => setIsOpen(false)}
-                                        className={({ isActive, isPending }) => (isPending ? 'pending' : isActive ? 'px-6 bg-sky-400 text-white  py-2 rounded-lg duration-300' : 'hover:bg-sky-50 px-6 py-2 hover:rounded-lg')}
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? 'pending' : isActive ? 'px-6 bg-[#0095FF] text-white  py-2 rounded-lg duration-300' : 'hover:bg-sky-50 px-6 py-2 hover:rounded-lg'
+                                        }
                                         to={`/components/${componentName.toLowerCase()}`}
                                     >
                                         {componentName}
