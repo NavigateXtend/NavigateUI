@@ -7,10 +7,9 @@ import Accordion4 from './Accordion4/Accordion4';
 import Accordion5 from './Accordion5/Accordion5';
 import Accordion8 from './Accordion8/Accordion8';
 import Accordion9 from './Accordion9/Accordion9';
+import { Accordion6 } from './Accordion6/Accordion6';
 
 const Accordion = () => {
-
-
     // For starting the scroll form the top
     useEffect(() => {
         window.scrollTo({
@@ -33,27 +32,39 @@ const Accordion = () => {
             </div>
 
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 3</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Listed Accordion</h1>
                 <Accordion3></Accordion3>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 4</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Colorful Accordion 4</h1>
                 <Accordion4></Accordion4>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 5</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Menu Accordion 5</h1>
                 <Accordion5></Accordion5>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 8</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800">
+                    # Image Slider Accordion <span className="text-red-500 text-xs">(responsive pending)</span>
+                </h1>
+                <Accordion6></Accordion6>
+            </div>
+            <div>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800">
+                    # Accordion 8 <span className="text-red-500 text-xs">(responsive pending)</span>
+                </h1>
                 <Accordion8></Accordion8>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 9</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800">
+                    # Xylophone Accordion <span className="text-red-500 text-xs">(responsive pending)</span>
+                </h1>
                 <Accordion9></Accordion9>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 10</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800">
+                    # Accordion 10 <span className="text-red-500 text-xs">(responsive pending)</span>
+                </h1>
                 <Accordion10></Accordion10>
             </div>
         </div>
