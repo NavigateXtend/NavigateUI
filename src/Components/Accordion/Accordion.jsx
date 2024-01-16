@@ -7,6 +7,7 @@ import Accordion4 from './Accordion4/Accordion4';
 import Accordion5 from './Accordion5/Accordion5';
 import Accordion8 from './Accordion8/Accordion8';
 import Accordion9 from './Accordion9/Accordion9';
+import { Accordion11 } from './Accordion11/Accordion11';
 
 const Accordion = () => {
 
@@ -33,28 +34,32 @@ const Accordion = () => {
             </div>
 
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 3</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion  With Index</h1>
                 <Accordion3></Accordion3>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 4</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # ColorFull Accordion </h1>
                 <Accordion4></Accordion4>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 5</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Menu Accordion</h1>
                 <Accordion5></Accordion5>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 8</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Vertical Accordion</h1>
                 <Accordion8></Accordion8>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 9</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Vertical Menu Accordion</h1>
                 <Accordion9></Accordion9>
             </div>
             <div>
-                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion 10</h1>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Drawer Accordion</h1>
                 <Accordion10></Accordion10>
+            </div>
+            <div>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion With Image Slide</h1>
+                <Accordion11></Accordion11>
             </div>
         </div>
     );
