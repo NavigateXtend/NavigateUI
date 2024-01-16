@@ -8,6 +8,7 @@ import Accordion5 from './Accordion5/Accordion5';
 import Accordion8 from './Accordion8/Accordion8';
 import Accordion9 from './Accordion9/Accordion9';
 import { Accordion11 } from './Accordion11/Accordion11';
+import Accordion6 from './Accordion6/Accordion6';
 
 const Accordion = () => {
 
@@ -44,6 +45,10 @@ const Accordion = () => {
             <div>
                 <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Menu Accordion</h1>
                 <Accordion5></Accordion5>
+            </div>
+            <div>
+                <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Accordion with image</h1>
+                <Accordion6></Accordion6>
             </div>
             <div>
                 <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"> # Vertical Accordion</h1>
