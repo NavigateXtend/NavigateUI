@@ -41,7 +41,7 @@ return (
         {/* slider container */}
         <div className="ease-linear duration-300 flex transform-gpu relative" style={{transform: \`translateX(-\${currentSlider * 100}%)\`,}>
           {/* sliders */}
-          {sliderImages.map((slide, inx) => <div key={inx} className="min-w-full duration-200"><img src={slide.img} className="w-full h-[340px] md:h-[670px] object-cover" alt={\`Slider - \${inx + 1}\`}/></div>)}
+          {sliderImages.map((slide, inx) => <div key={inx} className="min-w-full duration-200"><img src={slide.img} className="w-full h-72 sm:h-96 md:h-[670px] object-cover" alt={\`Slider - \${inx + 1}\`}/></div>)}
         </div>
       </div>
     </div>
@@ -129,7 +129,7 @@ export const Carousel1 = () => {
                                 key={inx}
                                 className="min-w-full duration-200 before:content-['Image'] before:bg-black/20 before:absolute before:flex before:justify-center before:items-center before:text-3xl before:text-black/40 before:-z-10 before:inset-0 relative"
                             >
-                                <img src={_} className="w-full h-[340px] md:h-[670px] object-cover" alt={`Slider - ${inx + 1}`} />
+                                <img src={_} className="w-full h-72 sm:h-96 md:h-[670px] object-cover" alt={`Slider - ${inx + 1}`} />
                             </div>
                         ))}
                     </div>
