@@ -6,6 +6,8 @@ import { Carousel4 } from './Carousel4/Carousel4';
 import { Carousel5 } from './Carousel5/Carousel5';
 import { Carousel7 } from './Carousel7/Carousel7';
 import { Carousel8 } from './Carousel8/Carousel8';
+import { Carousel9 } from './Carousel9/Carousel9';
+
 
 const Slider = () => {
     // For starting the scroll form the top
@@ -25,6 +27,7 @@ const Slider = () => {
             <Carousel5></Carousel5>
             <Carousel7></Carousel7>
             <Carousel8></Carousel8>
+            <Carousel9></Carousel9>
         </div>
     );
 };
