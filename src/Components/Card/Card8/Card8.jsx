@@ -34,7 +34,6 @@ const codeStr = `const Card8 = () => {
 export default Card8;
 `;
 const Card8 = () => {
-
     return (
       <CodeBox codeStr={codeStr}>
         <div className="max-w-[350px] md:max-w-[350px] mx-auto my-20 px-6 py-8 shadow-md rounded-2xl space-y-8">
