@@ -1,7 +1,7 @@
 import React from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
-const codeStr = `const Form6 = () => {
+const codeStr = `const Form1 = () => {
     return (
         <div className="w-full max-w-md p-8 space-y-3 rounded-xl border dark:bg-gray-900 dark:text-gray-100 font-sans">
             <h1 className="text-2xl font-bold text-center">Login</h1>
@@ -46,9 +46,9 @@ const codeStr = `const Form6 = () => {
     );
 };
 
-export default Form6;`;
+export default Form1;`;
 
-const Form6 = () => {
+const Form1 = () => {
     return (
         <CodeBox codeStr={codeStr}>
             <div className="w-full max-w-md p-8 space-y-3 rounded-xl border dark:bg-gray-900 dark:text-gray-100 font-sans mx-auto">
@@ -118,4 +118,4 @@ const Form6 = () => {
     );
 };
 
-export default Form6;
+export default Form1;
