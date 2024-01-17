@@ -21,6 +21,7 @@ Please make sure that you have installed React, React Router DOM, and Tailwind C
 -   **MH Lehri:**
     -   [Linkedin](https://www.linkedin.com/in/mahmud-hassan-lehri/)
     -   [FaceBook](https://www.facebook.com/mahmudhassanlehri)
+    -   [GitHub](https://github.com/mhlehri)
 -   **Shiyam Sarker:**
     -   [Linkedin](https://www.linkedin.com/in/shiyam-sarker/)
     -   [FaceBook](https://www.facebook.com/shiyamsarker/)
