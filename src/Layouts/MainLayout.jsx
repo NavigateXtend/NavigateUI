@@ -1,7 +1,31 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from '../Nav/Navbar';
 import { useState } from 'react';
+import { Analytics } from '@vercel/analytics/react';
+import axios from 'axios';
+import ReactGA4 from 'react-ga4';
 
+const TRACKING_ID = 'G-06XXTXVLLF'; // YOUR_OWN_TRACKING_ID
+ReactGA4.initialize(TRACKING_ID); // Replace with your Measurement ID
+
+const API_TOKEN = '1939Tfj40pdfX59SEOMHMXfh'; // Replace with your actual token
+const ANALYTICS_ENDPOINT = 'https://api.vercel.com/v12/analytics/projects/prj_Fz98ud2fkRVpT0Jv0fslhJPD8Ppn/visitors'; // Replace with your project ID
+
+axios
+    .get(ANALYTICS_ENDPOINT, {
+        headers: {
+            Authorization: `Bearer ${API_TOKEN}`
+        }
+    })
+    .then((response) => {
+        const totalVisitors = response.data.total; // Assuming the response structure
+        // Display totalVisitors in your UI element (e.g., using React, Vue, or plain JavaScript)
+        console.log(totalVisitors);
+    })
+    .catch((error) => {
+        // Handle errors gracefully
+        console.log('error: ' + error);
+    });
 
 const MainLayout = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +36,7 @@ const MainLayout = () => {
             <div className={`${isOpen ? '' : 'hidden'} ${location.pathname == '/' ? '' : 'lg:block'} `}>
                 <Navbar setIsOpen={setIsOpen}></Navbar>
             </div>
-            <div onClick={() => setIsOpen(!isOpen)} className="fixed flex items-center justify-between top-0 w-screen shadow-lg  bg-white p-4 z-[998]">
+            <div onClick={() => setIsOpen(!isOpen)} className="fixed flex items-center justify-between top-0 w-screen shadow-md bg-white p-4 z-[998]">
                 <span className="w-[30%]">
                     <svg width={40} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -56,7 +80,7 @@ const MainLayout = () => {
             <div onClick={() => setIsOpen(false)} className={`w-full lg:w-[70%]  overflow-x-hidden my-20 mx-auto ${isOpen ? 'opacity-30 duration-500' : 'duration-500 opacity-100'} lg:opacity-100`}>
                 <Outlet />
 
-                {/* <Analytics /> */}
+                <Analytics />
             </div>
         </div>
     );
