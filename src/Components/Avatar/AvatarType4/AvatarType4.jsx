@@ -33,7 +33,7 @@ const AvatarType4 = () => {
             <div className="flex items-center flex-wrap justify-around">
                 <div className="relative group">
                     <img className="w-[80px] h-[80px] border-2 border-blue-300 bg-slate-500 object-cover rounded-full" src="https://source.unsplash.com/300x300/?profile" alt="" />
-                    <div className="bg-blue-100 w-5 h-5 p-[3px] rounded-full flex justify-center items-center absolute top-1 right-0 group-hover:w-full group-hover:h-full group-hover:top-0 group-hover:right-0 group-hover:bg-blue-100890 duration-500 transition-all">
+                    <div className="bg-blue-100 w-5 h-5 p-[3px] rounded-full flex justify-center items-center absolute top-1 right-0 group-hover:w-full group-hover:h-full group-hover:top-0 group-hover:right-0 group-hover:bg-blue-100/80 duration-500 transition-all">
                         <svg width={15} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
