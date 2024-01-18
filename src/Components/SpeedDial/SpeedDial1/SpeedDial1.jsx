@@ -132,7 +132,7 @@ export const SpeedDial1 = () => {
                     </div>
                 </div>
                 {/* + icon  */}
-                <div className="w-16 h-16 bg-[#0095FF] rounded-full flex justify-center items-center hover:rotate-[135deg] hover:bg-[#0095FF]/80 duration-500">
+                <div className="w-16 h-16 bg-[#0095FF] rounded-full flex justify-center items-center group-hover:rotate-[135deg] hover:bg-[#0095FF]/80 duration-500">
                     <svg width={30} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
