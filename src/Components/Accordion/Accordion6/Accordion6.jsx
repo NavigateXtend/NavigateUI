@@ -106,7 +106,7 @@ const Accordion6 = () => {
                             <div>
                                 <img
                                     className={`w-14 h-14 bg-[#18181B] rounded-2xl border-2 p-0.5 ${
-                                        idx === 0 ? 'border-green-500' : idx === 1 ? 'border-yellow-400' : idx === 2 ? 'border-[#0095FF]' : 'border-white'
+                                        idx === 0 ? 'border-green-500' : idx === 1 ? 'border-yellow-500' : idx === 2 ? 'border-[#0095FF]' : 'border-white'
                                     }`}
                                     src={`https://source.unsplash.com/600x600/?profile/${idx}`}
                                     alt=""

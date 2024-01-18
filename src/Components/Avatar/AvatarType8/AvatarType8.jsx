@@ -41,7 +41,7 @@ const AvatarType8 = () => {
             <div className="flex items-center flex-wrap justify-around">
                 {/* Small Size  */}
                 <div className="relative group">
-                    <img className="w-[80px] h-[80px] p-[2px] bg--200 object-cover rounded-full border-2 border-[#EB2B79]" src="https://source.unsplash.com/300x300/?profile" alt="" />
+                    <img className="w-[80px] h-[80px] p-[2px] bg-rose-200 object-cover rounded-full border-2 border-[#EB2B79]" src="https://source.unsplash.com/300x300/?profile" alt="" />
                     <div className="h-5 w-5 bg-white absolute rounded-full bottom-2 right-0 border border-[#EB2B79] flex justify-center items-center ">
                         <svg width={14} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>

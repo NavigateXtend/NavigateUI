@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import AvatarType1 from './AvatarType1/AvatarType1';
 import AvatarType2 from './AvatarType2/AvatarType2';
 import AvatarType3 from './AvatarType3/AvatarType3';

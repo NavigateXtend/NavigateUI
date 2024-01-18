@@ -11,6 +11,7 @@ import Hero from './../Components/Hero/Hero';
 import Skeleton from '../Components/Skeleton/Skeleton';
 import Avatar from '../Components/Avatar/Avatar';
 import Modal from '../Components/Modal/Modal';
+import SpeedDial from '../Components/SpeedDial/SpeedDial';
 
 export const router = createBrowserRouter([
     {
@@ -22,12 +23,12 @@ export const router = createBrowserRouter([
         element: <MainLayout />,
         children: [
             {
-                path: 'accordion',
-                element: <Accordion />
-            },
-            {
                 path: 'avatar',
                 element: <Avatar />
+            },
+            {
+                path: 'accordion',
+                element: <Accordion />
             },
             {
                 path: 'button',
@@ -52,6 +53,10 @@ export const router = createBrowserRouter([
             {
                 path: 'modal',
                 element: <Modal />
+            },
+            {
+                path: 'speed dial',
+                element: <SpeedDial></SpeedDial>
             },
             {
                 path: 'skeleton',
