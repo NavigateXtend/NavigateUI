@@ -5,7 +5,7 @@ import Form3 from './Form3/Form3';
 import Form4 from './Form4/Form4';
 import Form5 from './Form5/Form5';
 import Form6 from './Form6/Form6';
-import Form7 from './Part1/Form7';
+import Form7 from './Form7/Form7';
 
 const Form = () => {
     // For starting the scroll form the top

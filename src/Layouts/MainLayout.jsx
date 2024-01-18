@@ -36,7 +36,7 @@ const MainLayout = () => {
             <div className={`${isOpen ? '' : 'hidden'} ${location.pathname == '/' ? '' : 'lg:block'} `}>
                 <Navbar setIsOpen={setIsOpen}></Navbar>
             </div>
-            <div onClick={() => setIsOpen(!isOpen)} className="fixed flex items-center justify-between top-0 w-screen shadow-md bg-white p-4 z-[998]">
+            <div onClick={() => setIsOpen(!isOpen)} className="fixed flex items-center justify-between top-0 w-screen shadow-md bg-white p-4 z-[98]">
                 <span className="w-[30%]">
                     <svg width={40} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
