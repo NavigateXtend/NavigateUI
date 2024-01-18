@@ -1,15 +1,14 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-const navComponentsItems = ["Avatar",'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Hero', 'Speed Dial', 'Skeleton', 'Spinner'];
-
+const navComponentsItems = ['Avatar', 'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Hero', 'Modal', 'Speed Dial', 'Skeleton', 'Spinner'];
 const Navbar = ({ setIsOpen }) => {
     const [isDocOpen, setDocIsOpen] = useState(true);
     const [isComponentOpen, setComponentIsOpen] = useState(true);
 
     return (
         <>
-            <div className="border-r overflow-y-scroll fixed lg:left-0 lg:sticky px-5 lg:px-0 w-[330px] inset-0 bg-white z-[999] top-0 h-screen select-none">
+            <div className="border-r overflow-y-scroll fixed lg:left-0 lg:sticky px-5 lg:px-0 w-[330px] inset-0 bg-white z-[99] top-0 h-screen select-none">
                 <div className="flex flex-col w-full h-full group space-y-6">
                     <div>
                         <h1 className="text-3xl p-8 text-gray-800">

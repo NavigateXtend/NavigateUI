@@ -10,6 +10,7 @@ import Loading from './../Components/Spinner/Loading';
 import Hero from './../Components/Hero/Hero';
 import Skeleton from '../Components/Skeleton/Skeleton';
 import Avatar from '../Components/Avatar/Avatar';
+import Modal from '../Components/Modal/Modal';
 import SpeedDial from '../Components/SpeedDial/SpeedDial';
 
 export const router = createBrowserRouter([
@@ -47,7 +48,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'hero',
-                element: <Hero></Hero>
+                element: <Hero />
+            },
+            {
+                path: 'modal',
+                element: <Modal />
             },
             {
                 path: 'speed dial',
@@ -55,7 +60,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'skeleton',
-                element: <Skeleton></Skeleton>
+                element: <Skeleton />
             },
             {
                 path: 'spinner',

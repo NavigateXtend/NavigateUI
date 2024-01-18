@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const Skeleton4 = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
     const codeStr = `
 <div className=" p-6 rounded-md shadow-md">
     <div className="animate-pulse">
@@ -26,6 +31,8 @@ const Skeleton4 = () => {
                     <div className="w-full h-16 rounded-lg bg-gray-300 mb-4"></div>
                 </div>
             </div>
+
+  
         </CodeBox>
     );
 };
