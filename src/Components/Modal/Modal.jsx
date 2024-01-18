@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Modal1 from './Modal1/Modal1';
+import Modal2 from './Modal2/Modal2';
 
 const Modal = () => {
     // For starting the scroll form the top
@@ -13,6 +14,7 @@ const Modal = () => {
     return (
         <div>
             <Modal1 />
+            <Modal2 />
         </div>
     );
 };
