@@ -1,7 +1,7 @@
 import CodeBox from "../../../Shared/CodeBox/CodeBox";
 
 const Card2 = () => {
-  const codeStr = `const Card = () => {
+  const codeStr = `const Card2 = () => {
   return (
       <div className="px-4 py-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-6 my-20 mx-auto">
           <div className="flex justify-center w-full h-48 lg:h-[280px] relative">

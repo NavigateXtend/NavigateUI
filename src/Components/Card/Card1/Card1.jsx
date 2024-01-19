@@ -1,5 +1,5 @@
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
-const codeStr = `const Card = () => {
+const codeStr = `const Card1 = () => {
 
 
   const svgs = [
