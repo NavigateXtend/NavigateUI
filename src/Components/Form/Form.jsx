@@ -18,9 +18,9 @@ const Form = () => {
 
     return (
         <div className="grid grid-cols-1 space-y-10">
-            {/* <h1 className="text-xl">Login Form With Social Icons</h1>
+            <h1 className="text-xl">Login Form With Social Icons</h1>
             <Form1></Form1>
-            <h1 className="text-xl">@Simple Login Form</h1>
+            {/* <h1 className="text-xl">@Simple Login Form</h1>
             <Form2></Form2>
             <h1 className="text-xl">#Form</h1>
             <Form3></Form3>
