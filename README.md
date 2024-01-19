@@ -16,7 +16,7 @@ components for React projects.
 ## Note : 
 Please make sure that you have installed React, React Router DOM, and Tailwind CSS.
 
-## Join our community [Discord 🚀](https://discord.com/invite/d95JQBUX)
+## [![My Skills](https://skillicons.dev/icons?i=discord)](https://skillicons.dev) Join our community [Discord 🚀](https://discord.com/invite/d95JQBUX) 
 
 ## Contact Us
 
