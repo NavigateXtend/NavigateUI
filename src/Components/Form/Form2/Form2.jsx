@@ -2,7 +2,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const Form2 = () => {
     const codestr = `
-export const Form2 = () => {
+export const Form = () => {
     return (
             <div className=" mx-auto max-w-md border  border-gray-200 rounded-lg shadow-lg p-6 bg-white  hover:shadow-xl  ">
                 <div className="flex flex-col p-6 space-y-1">

@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import AvatarType1 from './AvatarType1/AvatarType1';
 import AvatarType2 from './AvatarType2/AvatarType2';
 import AvatarType3 from './AvatarType3/AvatarType3';
@@ -9,6 +9,12 @@ import AvatarType7 from './AvatarType7/AvatarType7';
 import AvatarType8 from './AvatarType8/AvatarType8';
 
 const Avatar = () => {
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, []);
     return (
         <div>
             {/* square avatar  */}
