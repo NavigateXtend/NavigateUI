@@ -1,61 +1,71 @@
-import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "./../Layouts/MainLayout";
-import Slider from "./../Components/Sliders/Slider";
-import Button from "./../Components/Buttons/Button";
-import Card from "../Components/Cards/Card";
-import Form from "./../Components/Forms/Form";
-import CodeBox from "../Shared/CodeBox/CodeBox";
-import Accordion from "../Components/Accordion/Accordion";
-import Home from "../Home/Home";
-import Loading from "./../Components/Loading/Loading";
+import { createBrowserRouter } from 'react-router-dom';
+import MainLayout from './../Layouts/MainLayout';
+import Carousel from '../Components/Carousel/Carousel';
+import Button from './../Components/Button/Button';
+import Card from '../Components/Card/Card';
+import Form from './../Components/Form/Form';
+import Accordion from '../Components/Accordion/Accordion';
+import Home from '../Home/Home';
+import Loading from './../Components/Spinner/Loading';
 import Hero from './../Components/Hero/Hero';
-
-
-
-
-
+import Skeleton from '../Components/Skeleton/Skeleton';
+import Avatar from '../Components/Avatar/Avatar';
+import Modal from '../Components/Modal/Modal';
+import SpeedDial from '../Components/SpeedDial/SpeedDial';
 
 export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home></Home>,
-  },
-  {
-    path: "/Components",
-    element: <MainLayout />,
-    children: [
-      {
-        path: "hero",
-        element: <Hero></Hero>,
-      },
-      {
-        path: "slider",
-        element: <Slider />,
-      },
-      {
-        path: "button",
-        element: <Button />,
-      },
-      {
-        path: "card",
-        element: <Card />,
-      },
-      {
-        path: "form",
-        element: <Form />,
-      },
-      {
-        path: "accordion",
-        element: <Accordion />,
-      },
-      {
-        path: "loading",
-        element: <Loading />,
-      },
-      {
-        path: "new",
-        element: <CodeBox></CodeBox>,
-      },
-    ],
-  },
+    {
+        path: '/',
+        element: <Home></Home>
+    },
+    {
+        path: '/components',
+        element: <MainLayout />,
+        children: [
+            {
+                path: 'avatar',
+                element: <Avatar />
+            },
+            {
+                path: 'accordion',
+                element: <Accordion />
+            },
+            {
+                path: 'button',
+                element: <Button />
+            },
+            {
+                path: 'carousel',
+                element: <Carousel />
+            },
+            {
+                path: 'card',
+                element: <Card />
+            },
+            {
+                path: 'form',
+                element: <Form />
+            },
+            {
+                path: 'hero',
+                element: <Hero />
+            },
+            {
+                path: 'modal',
+                element: <Modal />
+            },
+            {
+                path: 'speed dial',
+                element: <SpeedDial></SpeedDial>
+            },
+            {
+                path: 'skeleton',
+                element: <Skeleton />
+            },
+            {
+                path: 'spinner',
+                element: <Loading />
+            }
+        ]
+    }
 ]);
