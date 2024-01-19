@@ -17,7 +17,7 @@ export const Modal1 = () => {
                     </div>
                 </div>
             </div>
-    );`;
+    )}`;
 
 const Modal1 = () => {
     const [openModal, setOpenModal] = useState(false);
