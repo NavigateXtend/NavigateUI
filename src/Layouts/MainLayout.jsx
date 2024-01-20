@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import axios from 'axios';
 import ReactGA4 from 'react-ga4';
+import ScrollToTop from '../Components/ScrollToTop/ScrollToTop';
 
 const TRACKING_ID = 'G-06XXTXVLLF'; // YOUR_OWN_TRACKING_ID
 ReactGA4.initialize(TRACKING_ID); // Replace with your Measurement ID
@@ -82,6 +83,9 @@ const MainLayout = () => {
 
                 <Analytics />
             </div>
+
+            {/* Scroll to top */}
+            <ScrollToTop />
         </div>
     );
 };
