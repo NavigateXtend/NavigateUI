@@ -23,7 +23,7 @@ const Modal = () => {
             <Modal3 />
             <Modal4 />
             <Modal5 />
-            <Modal6></Modal6>
+            <Modal6 />
         </div>
     );
 };

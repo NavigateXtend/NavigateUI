@@ -15,6 +15,7 @@
     "axios": "^1.6.5",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
+    "next": "^14.1.0",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
