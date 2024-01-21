@@ -11,8 +11,8 @@ const codeStr = `const Card11 = () => {
                 <div className="text-lg font-semibold  ">$99.99</div>
             </div>
             <div className="flex gap-4">
-                <button className="bg-black text-white px-4 py-2 rounded-md">Add to Cart</button>
-                <button className="border border-black px-4 py-2 rounded-md">View Details</button>
+                <button className="px-6 py-2 bg-slate-800 text-white rounded-lg font-semibold md:text-base sm:text-sm text-[12px] hover:bg-slate-950">Add to Cart</button>
+                    <button className="px-4 py-2 bg-white hover:bg-gray-800 hover:text-white border-black border duration-300 rounded-md">View Details</button>
             </div>
         </div>
     );
@@ -31,8 +31,8 @@ const Card11 = () => {
                     <div className="text-lg font-semibold  ">$99.99</div>
                 </div>
                 <div className="flex gap-4">
-                <button className="bg-slate-800 text-white px-6 py-2 rounded-lg font-semibold md:text-base sm:text-sm text-[12px] hover:bg-slate-950">Add to Cart</button>
-                    <button className="border border-black bg-white hover:bg-gray-200 px-4 py-2 rounded-md">View Details</button>
+                    <button className="px-6 py-2 bg-slate-800 hover:bg-slate-950 text-white duration-300 rounded-lg font-semibold md:text-base sm:text-sm text-[12px] ">Add to Cart</button>
+                    <button className="px-4 py-2 bg-white hover:bg-gray-200  border-black   border  duration-300 rounded-md">View Details</button>
                 </div>
             </div>
         </CodeBox>

@@ -22,10 +22,10 @@ const Form = () => {
             <Form1></Form1>
             {/* <h1 className="text-xl">@Simple Login Form</h1>
             <Form2></Form2>
-            <h1 className="text-xl">#Form</h1>
-            <Form3></Form3>
+            {/* <h1 className="text-xl">#Form</h1>
+            <Form3></Form3> */}
             <h1 className="text-xl">@Simple Form</h1>
-            <Form4></Form4> */}
+            <Form4></Form4>
             <h1 className="text-xl">@Simple Login Form</h1>
             <Form5></Form5>
             <h1 className="text-xl">@Simple Login Form</h1>

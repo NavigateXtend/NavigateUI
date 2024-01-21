@@ -21,11 +21,11 @@ const Banner = ({ isOpen }) => {
                 </div>
                 <div className="flex flex-col md:flex-row justify-center mt-8  md:mt-12 space-y-4 md:space-y-0 md:space-x-8">
                     <div className="w-full md:w-auto card px-14 py-10 bg-gray-100">
-                        <h3 className="text-xl md:text-2xl font-semibold ">200 Components</h3>
+                        <h3 className="text-xl md:text-2xl font-semibold ">80+ Components</h3>
                         <p className="text-sm md:text-base text-gray-600">Explore a vast collection of ready-to-use components.</p>
                     </div>
                     <div className="w-full md:w-auto card px-14 py-10 bg-gray-100">
-                        <h3 className="text-xl md:text-2xl font-semibold ">7 Categories</h3>
+                        <h3 className="text-xl md:text-2xl font-semibold ">11 Categories</h3>
                         <p className="text-sm md:text-base text-gray-600">Organized components for seamless integration.</p>
                     </div>
                 </div>

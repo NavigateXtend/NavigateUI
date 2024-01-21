@@ -19,7 +19,7 @@ export const Modal = () => {
                     </div>
                 </div>
             </div>
-    );`;
+    )}`;
 
 const Modal3 = () => {
     const [openModal, setOpenModal] = useState(false);

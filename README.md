@@ -16,16 +16,10 @@ components for React projects.
 ## Note : 
 Please make sure that you have installed React, React Router DOM, and Tailwind CSS.
 
+## Join our community [Discord 🚀](https://discord.com/invite/d95JQBUX) 
+
 ## Contact Us
 
--   **MH Lehri:**
-    -   [Linkedin](https://www.linkedin.com/in/mahmud-hassan-lehri/)
-    -   [FaceBook](https://www.facebook.com/mahmudhassanlehri)
--   **Shiyam Sarker:**
-    -   [Linkedin](https://www.linkedin.com/in/shiyam-sarker/)
-    -   [FaceBook](https://www.facebook.com/shiyamsarker/)
-    -   [GitHub](https://github.com/shiyam-sarker10)
--   **Mohammad Arif:**
-    -   [Linkedin](https://www.linkedin.com/in/mohammad-arif-khan-504b27210/)
-    -   [FaceBook](https://web.facebook.com/profile.php?id=100052356673540)
-    -   [GitHub](https://github.com/Mohammadarifcoding)
+-   **Shiyam Sarker:**    -   [Linkedin](https://www.linkedin.com/in/shiyam-sarker/)     -   [FaceBook](https://www.facebook.com/shiyamsarker/)    -   [GitHub](https://github.com/shiyam-sarker10)
+-   **Mohammad Arif:**     -   [Linkedin](https://www.linkedin.com/in/mohammad-arif-khan-504b27210/)    -   [FaceBook](https://web.facebook.com/profile.php?id=100052356673540)    -   [GitHub](https://github.com/Mohammadarifcoding)
+-   **MH Lehri:**     -   [Linkedin](https://www.linkedin.com/in/mahmud-hassan-lehri/)    -   [FaceBook](https://www.facebook.com/mahmudhassanlehri)
