@@ -3,6 +3,7 @@ import Skeleton1 from './Skeleton1/Skeleton1';
 import Skeleton2 from './Skeleton2/Skeleton2';
 import Skeleton3 from './Skeleton3/Skeleton3';
 import Skeleton4 from './Skeleton4/Skeleton4';
+import Skeleton5 from './Skeleton5/Skeleton5';
 
 const Skeleton = () => {
     // For starting the scroll form the top
@@ -30,6 +31,10 @@ const Skeleton = () => {
             <>
                 <h1 className="md:text-xl sm:text-lg text-base  italic font-bold opacity-70 underline m-0 py-0 px-3">Ecommerce Card Skeleton</h1>
                 <Skeleton3></Skeleton3>
+            </>
+            <>
+                <h1 className="md:text-xl sm:text-lg text-base  italic font-bold opacity-70 underline m-0 py-0 px-3">Social media post skeleton</h1>
+                <Skeleton5></Skeleton5>
             </>
             
         </div>
