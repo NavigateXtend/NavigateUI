@@ -27,10 +27,13 @@ const codeStr = `const Card8 = () => {
                 <h5 className="font-medium text-xl">217</h5>
                 <p className="text-sm  text-gray-400">Following</p>
             </div>
-            <button className="hover:bg-[#0095FF] hover:scale-95 font-medium hover:text-white w-[80%] py-2 rounded-full hover:shadow-xl   text-gray-400 shadow-[0px_0px_10px_#E2DADA] t duration-500">
-                    View Profile
-                </button>
         </div>
+        <div className="flex justify-center">
+            <button className="hover:bg-[#0095FF] hover:scale-95 font-medium hover:text-white w-[80%] py-2 rounded-full hover:shadow-xl   text-gray-400 shadow-[0px_0px_10px_#E2DADA] t duration-500">
+                Follow
+            </button>
+        </div>
+
       </div>
     );
 };
