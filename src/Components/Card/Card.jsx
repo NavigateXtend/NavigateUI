@@ -12,6 +12,7 @@ import Card9 from './Card9/Card9';
 import Card13 from './Card13/Card13';
 import Card1 from './Card1/Card1';
 import { useEffect } from 'react';
+import Card14 from './Card14/Card14';
 
 const Card = () => {
     // For starting the scroll form the top
@@ -52,6 +53,8 @@ const Card = () => {
             <Card12></Card12>
             {/* Card 13  */}
             <Card13></Card13>
+            {/* Card 14  */}
+            <Card14></Card14>
         </div>
     );
 };
