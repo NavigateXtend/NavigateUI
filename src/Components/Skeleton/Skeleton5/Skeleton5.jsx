@@ -1,4 +1,3 @@
-import React from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const Skeleton5 = () => {
@@ -19,7 +18,7 @@ const Skeleton5 = () => {
                         <div className="w-[90%] rounded-full bg-gray-300 h-[15px]"></div>
                     </div>
                 </div>
-                
+
                 {/* Dark Theme Skeleton */}
                 <div className="max-w-[700px] w-full animate-pulse bg-[#657287] flex justify-center flex-col items-start mx-auto p-6 rounded-md shadow-xl">
                     {/* User profile  Skeleton */}

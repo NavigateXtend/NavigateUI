@@ -12,6 +12,7 @@ import Skeleton from '../Components/Skeleton/Skeleton';
 import Avatar from '../Components/Avatar/Avatar';
 import Modal from '../Components/Modal/Modal';
 import SpeedDial from '../Components/SpeedDial/SpeedDial';
+import Tooltip from '../Components/Tooltip/Tooltip';
 
 export const router = createBrowserRouter([
     {
@@ -65,6 +66,10 @@ export const router = createBrowserRouter([
             {
                 path: 'spinner',
                 element: <Loading />
+            },
+            {
+                path:'tooltip',
+                element:<Tooltip></Tooltip>
             }
         ]
     }

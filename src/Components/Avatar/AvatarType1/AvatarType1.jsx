@@ -1,4 +1,3 @@
-import React from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr = `const AvatarType1 = () => {
