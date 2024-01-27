@@ -19,7 +19,7 @@ Please make sure that you have installed React, React Router DOM, and Tailwind C
 ## Feedbacks:
 If you face any problems and if you have any recommendations or suggestions, let us know in our discord community.
 
-## Join our community [Discord 🚀](https://discord.com/invite/d95JQBUX) 
+## Join our community [Discord 🚀](https://discord.gg/ezphnpnEXx) 
 
 ## Contact Us
 
