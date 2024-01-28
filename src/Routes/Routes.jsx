@@ -9,6 +9,10 @@ import Home from '../Home/Home';
 import Loading from './../Components/Spinner/Loading';
 import Hero from './../Components/Hero/Hero';
 import Skeleton from '../Components/Skeleton/Skeleton';
+import Avatar from '../Components/Avatar/Avatar';
+import Modal from '../Components/Modal/Modal';
+import SpeedDial from '../Components/SpeedDial/SpeedDial';
+import Tooltip from '../Components/Tooltip/Tooltip';
 
 export const router = createBrowserRouter([
     {
@@ -19,6 +23,10 @@ export const router = createBrowserRouter([
         path: '/components',
         element: <MainLayout />,
         children: [
+            {
+                path: 'avatar',
+                element: <Avatar />
+            },
             {
                 path: 'accordion',
                 element: <Accordion />
@@ -41,15 +49,27 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'hero',
-                element: <Hero></Hero>
+                element: <Hero />
+            },
+            {
+                path: 'modal',
+                element: <Modal />
+            },
+            {
+                path: 'speed dial',
+                element: <SpeedDial></SpeedDial>
             },
             {
                 path: 'skeleton',
-                element: <Skeleton></Skeleton>
+                element: <Skeleton />
             },
             {
                 path: 'spinner',
                 element: <Loading />
+            },
+            {
+                path:'tooltip',
+                element:<Tooltip></Tooltip>
             }
         ]
     }

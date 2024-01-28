@@ -1,4 +1,3 @@
-import React from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr = `const Card10 = () => {
@@ -61,7 +60,7 @@ const Card10 = () => {
         { id: 4, name: 'Item 4', deliveryDate: '24th February', price: '$10.99', imgToFetch: 'golf set' },
         { id: 4, name: 'Item 5', deliveryDate: '21th February', price: '$50.99', imgToFetch: 'i phone' }
     ];
-   
+
     return (
         <CodeBox codeStr={codeStr}>
             <div className="bg-gray-250 shadow-md max-w-[800px md:w-[700px] p-8 my-20 space-y-6 mx-auto">
