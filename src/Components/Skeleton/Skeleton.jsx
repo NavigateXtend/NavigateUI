@@ -5,6 +5,7 @@ import Skeleton3 from './Skeleton3/Skeleton3';
 import Skeleton4 from './Skeleton4/Skeleton4';
 import Skeleton5 from './Skeleton5/Skeleton5';
 import Skeleton6 from './Skeleton6/Skeleton6';
+import Skeleton7 from './Skeleton7/Skeleton7';
 
 const Skeleton = () => {
     // For starting the scroll form the top
@@ -40,6 +41,10 @@ const Skeleton = () => {
             <>
                 <h1 className="md:text-2xl text-xl font-semibold px-4 mt-10 text-slate-800"># Profile Card Skeleton</h1>
                 <Skeleton6></Skeleton6>
+            </>
+            <>
+                <h1 className="md:text-2xl text-xl font-semibold px-4 mt-10 text-slate-800"># Profile Card dark theme Skeleton</h1>
+                <Skeleton7></Skeleton7>
             </>
             
         </div>
