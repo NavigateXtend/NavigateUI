@@ -15,12 +15,13 @@ const Hero = () => {
     }, []);
 
     return (
-        <div className="space-y-5">
+        <div className="">
             <Hero1></Hero1>
             <Hero2></Hero2>
             <Hero3></Hero3>
             <Hero4></Hero4>
             <Hero5></Hero5>
+            
         </div>
     );
 };
