@@ -13,6 +13,7 @@ import Avatar from '../Components/Avatar/Avatar';
 import Modal from '../Components/Modal/Modal';
 import SpeedDial from '../Components/SpeedDial/SpeedDial';
 import Tooltip from '../Components/Tooltip/Tooltip';
+import Footer from '../Components/Footer/Footer';
 
 export const router = createBrowserRouter([
     {
@@ -68,8 +69,12 @@ export const router = createBrowserRouter([
                 element: <Loading />
             },
             {
-                path:'tooltip',
-                element:<Tooltip></Tooltip>
+                path: 'tooltip',
+                element: <Tooltip></Tooltip>
+            },
+            {
+                path: 'footer',
+                element: <Footer />
             }
         ]
     }
