@@ -127,7 +127,7 @@ export const SpeedDial1 = () => {
     return (
         <CodeBox codeStr={codeStr}>
             <div className="h-[400px] relative">
-                <div className="group flex flex-col items-center justify-center w-max mx-auto absolute top-0 left-[50%] translate-x-1/2">
+                <div className="group flex flex-col items-center justify-center w-max mx-auto absolute top-0 left-[50%]">
                     {/* + icon  */}
                     <div className="flex justify-center w-16 h-16 bg-[#0095FF] rounded-full items-center group-hover:rotate-[135deg] hover:bg-[#0095FF]/80 duration-500">
                         <svg width={30} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +144,7 @@ export const SpeedDial1 = () => {
                         {svgs?.map((svg, idx) => (
                             <div
                                 key={idx}
-                                className={`flex justify-center items-center w-10 h-10 hover:bg-slate-200 bg-slate-50 rounded-full scale-0 group-hover:scale-100 duration-300 shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] opacity-0 group-hover:opacity-100 ${
+                                className={`w-10 h-10 rounded-full scale-0 group-hover:scale-100 duration-300 shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] opacity-0 group-hover:opacity-100 ${
                                     idx === 0
                                         ? 'delay-[400ms] group-hover:delay-100'
                                         : idx === 1
@@ -156,7 +156,7 @@ export const SpeedDial1 = () => {
                                         : 'delay-[400ms] group-hover:delay-100'
                                 }`}
                             >
-                                {svg?.svg}
+                                <div className="w-full h-full bg-white hover:bg-slate-200 flex justify-center items-center rounded-full duration-300">{svg?.svg}</div>
                             </div>
                         ))}
                     </div>
