@@ -5,7 +5,7 @@ import Footer3 from './Footer3/Footer3';
 import Footer4 from './Footer4/Footer4';
 import Footer5 from './Footer5/Footer5';
 import Footer6 from './Footer6/Footer6';
-import Footer7 from './Footer7.jsx/Footer7';
+import Footer7 from './Footer7/Footer7';
 
 const Footer = () => {
     // For starting the scroll form the top
