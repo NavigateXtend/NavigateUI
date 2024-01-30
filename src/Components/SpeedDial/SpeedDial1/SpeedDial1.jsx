@@ -9,7 +9,7 @@ const codeStr = `export const SpeedDial1 = () => {
     ];
     return (
         <div className="h-[400px] relative">
-            <div className="group flex flex-col items-center justify-center w-max mx-auto absolute top-0 left-[50%] -translate-x-1/2">
+            <div className="group flex flex-col items-center justify-center w-max mx-auto absolute top-0 left-[50%] translate-x-1/2">
                 {/* + icon  */}
                 <div className="flex justify-center w-16 h-16 bg-[#0095FF] rounded-full items-center group-hover:rotate-[135deg] hover:bg-[#0095FF]/80 duration-500">
                     <svg width={30} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <g id="SVGRepo_bgCarrier" strokeWidth="0"></g> <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g> <g id="SVGRepo_iconCarrier"><path d="M4 12H20M12 4V20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path></g></svg>
@@ -127,7 +127,7 @@ export const SpeedDial1 = () => {
     return (
         <CodeBox codeStr={codeStr}>
             <div className="h-[400px] relative">
-                <div className="group flex flex-col items-center justify-center w-max mx-auto absolute top-0 left-[50%] -translate-x-1/2">
+                <div className="group flex flex-col items-center justify-center w-max mx-auto absolute top-0 left-[50%] translate-x-1/2">
                     {/* + icon  */}
                     <div className="flex justify-center w-16 h-16 bg-[#0095FF] rounded-full items-center group-hover:rotate-[135deg] hover:bg-[#0095FF]/80 duration-500">
                         <svg width={30} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
