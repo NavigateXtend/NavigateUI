@@ -14,6 +14,7 @@ import Modal from '../Components/Modal/Modal';
 import SpeedDial from '../Components/SpeedDial/SpeedDial';
 import Tooltip from '../Components/Tooltip/Tooltip';
 import Footer from '../Components/Footer/Footer';
+import Table from '../Components/Table/Table';
 
 export const router = createBrowserRouter([
     {
@@ -75,6 +76,10 @@ export const router = createBrowserRouter([
             {
                 path: 'footer',
                 element: <Footer />
+            },
+            {
+                path:'table',
+                element:<Table></Table>
             }
         ]
     }
