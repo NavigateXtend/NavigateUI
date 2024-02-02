@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { SpeedDial1 } from './SpeedDial1/SpeedDial1';
-import { SpeedDial2 } from './SpeedDial2/SpeedDial2';
-import { SpeedDial3 } from './SpeedDial3/SpeedDial3';
-import { SpeedDial4 } from './SpeedDial4/SpeedDial4';
-import { SpeedDial5 } from './SpeedDial5/SpeedDial5';
+import SpeedDial1 from './SpeedDial1/SpeedDial1';
+import SpeedDial2 from './SpeedDial2/SpeedDial2';
+import SpeedDial3 from './SpeedDial3/SpeedDial3';
+import SpeedDial4 from './SpeedDial4/SpeedDial4';
+import SpeedDial5 from './SpeedDial5/SpeedDial5';
 
 
 
