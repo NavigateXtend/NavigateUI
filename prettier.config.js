@@ -1,4 +1,4 @@
-{
+  export default{
     "singleQuote": true,
     "printWidth": 200,
     "proseWrap": "always",
@@ -7,5 +7,6 @@
     "trailingComma": "none",
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
-    "semi": true
+    "semi": true,
+    "plugins": ["prettier-plugin-tailwindcss"]
   }
