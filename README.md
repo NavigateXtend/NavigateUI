@@ -1,4 +1,4 @@
-# Navigate UI - React and Tailwind CSS Components Library
+# ```Navigate UI``` - React and Tailwind CSS Components Library
 
 Welcome to NavigateUI, your go-to source for amazing React and Tailwind CSS components! NavigateUI is a carefully crafted library that brings together a collection of high-quality and customizable UI
 components for React projects.
