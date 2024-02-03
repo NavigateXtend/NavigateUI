@@ -32,8 +32,8 @@ const Table1 = () => {
     `;
     return (
         <CodeBox codeStr={codestr}>
-            <div className="overflow-x-auto ">
-                <table className="min-w-[90%] shadow-md  border mx-auto border-gray-100  my-6">
+            <div className="overflow-x-auto rounded-lg">
+                <table className="min-w-[90%] shadow-md rounded-lg  border mx-auto border-gray-100  my-6">
                     <thead>
                         <tr className="bg-[#333333] text-white">
                             <th className="py-3 px-6 text-left border-b">Name</th>
