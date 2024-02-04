@@ -1,4 +1,4 @@
-# Navigate UI - React and Tailwind CSS Components Library
+# ```Navigate UI``` - React and Tailwind CSS Components Library
 
 Welcome to NavigateUI, your go-to source for amazing React and Tailwind CSS components! NavigateUI is a carefully crafted library that brings together a collection of high-quality and customizable UI
 components for React projects.
@@ -19,10 +19,11 @@ Please make sure that you have installed React, React Router DOM, and Tailwind C
 ## Feedbacks:
 If you face any problems and if you have any recommendations or suggestions, let us know in our discord community.
 
-## Join our community [Discord 🚀](https://discord.com/invite/d95JQBUX) 
+## Join our community [Discord 🚀](https://discord.gg/ezphnpnEXx) 
 
 ## Contact Us
 
 -   **Shiyam Sarker:**    -   [Linkedin](https://www.linkedin.com/in/shiyam-sarker/)     -   [FaceBook](https://www.facebook.com/shiyamsarker/)    -   [GitHub](https://github.com/shiyam-sarker10)
 -   **Mohammad Arif:**     -   [Linkedin](https://www.linkedin.com/in/mohammad-arif-khan-504b27210/)    -   [FaceBook](https://web.facebook.com/profile.php?id=100052356673540)    -   [GitHub](https://github.com/Mohammadarifcoding)
+-   **Nasif Ahmed:**  -  [Linkedin](https://www.linkedin.com/in/nasif2ahmed/)  -  [Facebook](https://www.facebook.com/nasif.ahmed1)  -  [Github](https://github.com/NasifAhmed)
 -   **MH Lehri:**     -   [Linkedin](https://www.linkedin.com/in/mahmud-hassan-lehri/)    -   [FaceBook](https://www.facebook.com/mahmudhassanlehri)  -  [Twitter](https://twitter.com/mh_lehri)

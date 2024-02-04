@@ -18,11 +18,17 @@ const Modal = () => {
     return (
         <div>
             {/* todo: modal's codebox code update */}
+            <h1  className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Simple modal with a question</h1>
             <Modal1 />
+            <h1  className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Simple modal with a cross button</h1>
             <Modal2 />
+            <h1  className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Simple notification design modal</h1>
             <Modal3 />
+            <h1  className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Login from in modal</h1>
             <Modal4 />
+            <h1  className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Simple Image modal</h1>
             <Modal5 />
+            <h1  className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Full screen modal with payment </h1>
             <Modal6 />
         </div>
     );

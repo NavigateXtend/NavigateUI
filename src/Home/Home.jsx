@@ -1,6 +1,7 @@
 import Navbar from '../Nav/Navbar';
 import { useState } from 'react';
 import Banner from './Banner/Banner';
+// import WhyNavigate from './WhyNavigate/WhyNavigate';
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +52,8 @@ const Home = () => {
             </div>
             <div onClick={() => setIsOpen(false)} className={`w-full  my-10 mx-auto ${isOpen ? 'opacity-30 duration-500' : 'duration-500 opacity-100'} lg:opacity-100`}>
                 <Banner isOpen={isOpen}></Banner>
+               {/* <WhyNavigate isOpen={isOpen}></WhyNavigate> */}
+
             </div>
         </div>
     );
