@@ -1,8 +1,8 @@
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
 
 const Button2 = () => {
     return (
-        <div className="flex flex-col gap-5 justify-center items-start">
+        <div className="flex flex-col items-start justify-center gap-5">
             <CodeBox
                 codeStr={`
 <button className="py-2 w-40 h-16 px-6 mb-4 mt-6 text-sky-700 shadow-lg before:block before:-left-1 before:-top-1 before:bg-sky-700 before:absolute before:h-0 before:w-0 before:hover:w-[100%] before:hover:h-[100%]  before:duration-500 before:-z-40 after:block after:-right-1 after:-bottom-1 after:bg-sky-700 after:absolute after:h-0 after:w-0 after:hover:w-[100%] after:hover:h-[100%] after:duration-500 after:-z-40 bg-white relative inline-block">Button</button>
@@ -11,41 +11,41 @@ const Button2 = () => {
 
 `}
             >
-                <div className="flex flex-wrap gap-4 justify-evenly items-center">
+                <div className="flex flex-wrap items-center justify-evenly gap-4">
                     {/* button 16,17,18*/}
-                    <button className="py-2 w-40 h-16 px-6 mb-4 mt-6 text-sky-700 shadow-lg before:block before:-left-1 before:-top-1 before:bg-sky-700 before:absolute before:h-0 before:w-0 before:hover:w-[100%] before:hover:h-[100%]  before:duration-500 before:-z-40 after:block after:-right-1 after:-bottom-1 after:bg-sky-700 after:absolute after:h-0 after:w-0 after:hover:w-[100%] after:hover:h-[100%] after:duration-500 after:-z-40 bg-white relative inline-block">
+                    <button className="relative mb-4 mt-6 inline-block h-16 w-40 bg-white px-6 py-2 text-sky-700 shadow-lg before:absolute before:-left-1 before:-top-1 before:-z-40 before:block before:h-0  before:w-0 before:bg-sky-700 before:duration-500 after:absolute after:-bottom-1 after:-right-1 after:-z-40 after:block after:h-0 after:w-0 after:bg-sky-700 after:duration-500 before:hover:h-[100%] before:hover:w-[100%] after:hover:h-[100%] after:hover:w-[100%]">
                         Button
                     </button>
-                    <button className="bg-sky-700 text-white py-2 before:bg-sky-900 before:content-['Bye'] before:absolute before:inset-0 before:translate-y-full hover:before:translate-y-0 before:duration-300 before:flex before:justify-center before:items-center overflow-hidden after:content-['Hi!'] after:absolute after:inset-0 after:translate-y-0 hover:after:-translate-y-full after:duration-300 after:flex after:justify-center after:items-center px-6 w-40 h-16 relative group"></button>
-                    <button className="bg-sky-600 flex items-center justify-center text-white font-bold text-lg overflow-hidden group">
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['N'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
+                    <button className="group relative h-16 w-40 overflow-hidden bg-sky-700 px-6 py-2 text-white before:absolute before:inset-0 before:flex before:translate-y-full before:items-center before:justify-center before:bg-sky-900 before:duration-300 before:content-['Bye'] after:absolute after:inset-0 after:flex after:translate-y-0 after:items-center after:justify-center after:duration-300 after:content-['Hi!'] hover:before:translate-y-0 hover:after:-translate-y-full"></button>
+                    <button className="group flex items-center justify-center overflow-hidden bg-sky-600 text-lg font-bold text-white">
+                        <span className="relative inline-block bg-sky-900 px-[10px] py-4 duration-500 after:absolute after:inset-0 after:flex after:-translate-y-full after:items-center after:justify-center after:content-['N'] group-hover:translate-y-full">
                             E
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['A'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
+                        <span className="relative inline-block bg-sky-900 px-[10px] py-4 duration-500 after:absolute after:inset-0 after:flex after:translate-y-full after:items-center after:justify-center after:bg-sky-400 after:content-['A'] group-hover:-translate-y-full">
                             X
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['V'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
+                        <span className="relative inline-block bg-sky-900 px-[10px] py-4 duration-500 after:absolute after:inset-0 after:flex after:-translate-y-full after:items-center after:justify-center after:content-['V'] group-hover:translate-y-full">
                             P
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['I'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
+                        <span className="relative inline-block bg-sky-900 px-[10px] py-4 duration-500 after:absolute after:inset-0 after:flex after:translate-y-full after:items-center after:justify-center after:bg-sky-400 after:content-['I'] group-hover:-translate-y-full">
                             L
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['G'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
+                        <span className="relative inline-block bg-sky-900 px-[10px] py-4 duration-500 after:absolute after:inset-0 after:flex after:-translate-y-full after:items-center after:justify-center after:content-['G'] group-hover:translate-y-full">
                             O
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['A'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
+                        <span className="relative inline-block bg-sky-900 px-[10px] py-4 duration-500 after:absolute after:inset-0 after:flex after:translate-y-full after:items-center after:justify-center after:bg-sky-400 after:content-['A'] group-hover:-translate-y-full">
                             R
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['T'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
+                        <span className="relative inline-block bg-sky-900 px-[10px] py-4 duration-500 after:absolute after:inset-0 after:flex after:-translate-y-full after:items-center after:justify-center after:content-['T'] group-hover:translate-y-full">
                             E
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['E'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
+                        <span className="relative inline-block bg-sky-900 px-[10px] py-4 duration-500 after:absolute after:inset-0 after:flex after:translate-y-full after:items-center after:justify-center after:bg-sky-400 after:content-['E'] group-hover:-translate-y-full">
                             -
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['U'] after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:-translate-y-full group-hover:translate-y-full duration-500">
+                        <span className="relative inline-block bg-sky-900 px-[10px] py-4 duration-500 after:absolute after:inset-0 after:flex after:-translate-y-full after:items-center after:justify-center after:content-['U'] group-hover:translate-y-full">
                             U
                         </span>
-                        <span className="inline-block bg-sky-900 px-[10px] py-4 after:content-['I'] after:bg-sky-400 after:absolute after:inset-0 relative after:flex after:justify-center after:items-center after:translate-y-full group-hover:-translate-y-full duration-500">
+                        <span className="relative inline-block bg-sky-900 px-[10px] py-4 duration-500 after:absolute after:inset-0 after:flex after:translate-y-full after:items-center after:justify-center after:bg-sky-400 after:content-['I'] group-hover:-translate-y-full">
                             I
                         </span>
                     </button>
@@ -60,12 +60,12 @@ const Button2 = () => {
 </label></button>
 `}
             >
-                <div className="flex flex-wrap gap-4 justify-evenly items-center">
+                <div className="flex flex-wrap items-center justify-evenly gap-4">
                     {/* button 19,20,21 */}
-                    <button className="py-2 w-40 h-16 px-6 mb-4 mt-6 bg-sky-700 hover:bg-sky-600 duration-300 text-white flex items-center justify-center overflow-hidden hover:overflow-visible relative group">
+                    <button className="group relative mb-4 mt-6 flex h-16 w-40 items-center justify-center overflow-hidden bg-sky-700 px-6 py-2 text-white duration-300 hover:overflow-visible hover:bg-sky-600">
                         <svg
                             viewBox="0 0 1024 1024"
-                            className="icon rotate-45 group-hover:duration-700 absolute w-12 -translate-x-full translate-y-full scale-0 group-hover:scale-100 group-hover:translate-x-8 group-hover:-translate-y-8 duration-150"
+                            className="icon absolute w-12 -translate-x-full translate-y-full rotate-45 scale-0 duration-150 group-hover:-translate-y-8 group-hover:translate-x-8 group-hover:scale-100 group-hover:duration-700"
                             version="1.1"
                             xmlns="http://www.w3.org/2000/svg"
                             fill="#000000"
@@ -97,17 +97,17 @@ const Button2 = () => {
                         </svg>
                         <span className="duration-500">Explore</span>
                     </button>
-                    <button className="w-36 h-16 border-2 border-sky-300 text-sky-800 font-black rounded-full hover:text-white duration-300 relative group">
-                        <span className="absolute w-12 group-hover:w-[88%] duration-300 flex group-hover:justify-start rounded-full inset-2 bg-sky-300 group-hover:bg-sky-500 group-hover:duration-500 -z-10"></span>
+                    <button className="group relative h-16 w-36 rounded-full border-2 border-sky-300 font-black text-sky-800 duration-300 hover:text-white">
+                        <span className="absolute inset-2 -z-10 flex w-12 rounded-full bg-sky-300 duration-300 group-hover:w-[88%] group-hover:justify-start group-hover:bg-sky-500 group-hover:duration-500"></span>
                         Explore
                     </button>
                     <button>
-                        <label htmlFor="check2" className="flex flex-col gap-[5px] cursor-pointer relative w-10 h-10 group">
+                        <label htmlFor="check2" className="group relative flex h-10 w-10 cursor-pointer flex-col gap-[5px]">
                             <input type="checkbox" id="check2" className="peer/check2 hidden" />
-                            <span className="w-full h-1 rounded-lg inline-block group-hover:bg-sky-400 bg-sky-700 peer-checked/check2:rotate-[30deg] peer-checked/check2:-translate-y-[9px] peer-checked/check2:translate-x-[3px] duration-300 absolute inset-0 top-[40px]"></span>
-                            <span className="w-full h-1 rounded-lg inline-block group-hover:bg-sky-400 bg-sky-700 peer-checked/check2:scale-0 rotate-90 peer-checked/check2:translate-y-2 duration-300 absolute inset-0 -left-1/2 top-[20px]"></span>
-                            <span className="w-full h-1 rounded-lg inline-block group-hover:bg-sky-400 bg-sky-700 peer-checked/check2:-rotate-[30deg] peer-checked/check2:translate-y-[9px] peer-checked/check2:translate-x-[3px] duration-300 absolute inset-0"></span>
-                            <span className="w-full h-1 rounded-lg inline-block group-hover:bg-sky-400 bg-sky-700 rotate-90 duration-300 absolute inset-0 left-1/2 top-[20px]"></span>
+                            <span className="absolute inset-0 top-[40px] inline-block h-1 w-full rounded-lg bg-sky-700 duration-300 group-hover:bg-sky-400 peer-checked/check2:-translate-y-[9px] peer-checked/check2:translate-x-[3px] peer-checked/check2:rotate-[30deg]"></span>
+                            <span className="absolute inset-0 -left-1/2 top-[20px] inline-block h-1 w-full rotate-90 rounded-lg bg-sky-700 duration-300 group-hover:bg-sky-400 peer-checked/check2:translate-y-2 peer-checked/check2:scale-0"></span>
+                            <span className="absolute inset-0 inline-block h-1 w-full rounded-lg bg-sky-700 duration-300 group-hover:bg-sky-400 peer-checked/check2:translate-x-[3px] peer-checked/check2:translate-y-[9px] peer-checked/check2:-rotate-[30deg]"></span>
+                            <span className="absolute inset-0 left-1/2 top-[20px] inline-block h-1 w-full rotate-90 rounded-lg bg-sky-700 duration-300 group-hover:bg-sky-400"></span>
                         </label>
                     </button>
                 </div>
@@ -118,11 +118,11 @@ const Button2 = () => {
 
 `}
             >
-                <div className="flex flex-wrap gap-4 justify-evenly items-center">
+                <div className="flex flex-wrap items-center justify-evenly gap-4">
                     {/* button 22,23,24 */}
-                    <button className="flex items-center relative w-36 border-2 border-sky-500 text-sky-500 p-4 rounded-lg group">
+                    <button className="group relative flex w-36 items-center rounded-lg border-2 border-sky-500 p-4 text-sky-500">
                         <span>Get Start</span>
-                        <span className="absolute w-1/6 right-3 group-hover:w-5/6 box-content duration-300 flex justify-center bg-white rounded-lg">
+                        <span className="absolute right-3 box-content flex w-1/6 justify-center rounded-lg bg-white duration-300 group-hover:w-5/6">
                             <svg viewBox="0 0 24 24" fill="none" className="w-10" xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -134,7 +134,7 @@ const Button2 = () => {
                     </button>
                     <button
                         type="button"
-                        className="flex items-center gap-3 justify-center p-2 lg:p-3  bg-transparent hover:bg-gradient-to-tr from-[#58bfff]  to-[#01bea5] text-black  hover:text-white  rounded-none  outline outline-2    hover:outline-none hover:scale-105  delay-75 ease-linear"
+                        className="flex items-center justify-center gap-3 rounded-none bg-transparent  from-[#58bfff] to-[#01bea5] p-2  text-black outline  outline-2  delay-75  ease-linear hover:scale-105    hover:bg-gradient-to-tr hover:text-white  hover:outline-none lg:p-3"
                     >
                         Explore
                     </button>

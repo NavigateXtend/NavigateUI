@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import JSXCode from './JSXCode/JSXCode';
 import Preview from './Preview/Preview';
@@ -27,8 +28,8 @@ const CodeBox = ({ children, codeStr }) => {
     ];
 
     return (
-        <div className={`w-full rounded-md h-fit  px-4 py-3 my-20`}>
-            <div className="flex gap-2 items-center justify-between">
+        <div className={`my-20 h-fit w-full  rounded-md px-4 py-3`}>
+            <div className="flex items-center justify-between gap-2">
                 <div className="flex">
                     {totalConfig?.map((item, inx) => (
                         <div
@@ -36,17 +37,17 @@ const CodeBox = ({ children, codeStr }) => {
                             onClick={() => {
                                 setTabNum(inx);
                             }}
-                            className={`${tabNum === inx ? ' border-gray-200 border-b-0 rounded-t-xl' : 'border-transparent'} border px-3 py-2 cursor-pointer select-none`}
+                            className={`${tabNum === inx ? ' rounded-t-xl border-b-0 border-gray-200' : 'border-transparent'} cursor-pointer select-none border px-3 py-2`}
                         >
                             {item.name}
                         </div>
                     ))}
                 </div>
                 <CopyToClipboard text={codeStr} onCopy={handleCopy}>
-                    <button className="copy-button border px-3 py-2 rounded-t-lg hover:bg-gray-300">
+                    <button className="copy-button rounded-t-lg border px-3 py-2 hover:bg-gray-300">
                         {isCopied ? (
                             <>
-                                <svg viewBox="0 -0.5 25 25" fill="none" className="w-8 inline-block" xmlns="http://www.w3.org/2000/svg">
+                                <svg viewBox="0 -0.5 25 25" fill="none" className="inline-block w-8" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
@@ -66,7 +67,7 @@ const CodeBox = ({ children, codeStr }) => {
                             </>
                         ) : (
                             <>
-                                <svg viewBox="0 -0.5 25 25" fill="none" className="w-8 inline-block" xmlns="http://www.w3.org/2000/svg">
+                                <svg viewBox="0 -0.5 25 25" fill="none" className="inline-block w-8" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
@@ -88,7 +89,7 @@ const CodeBox = ({ children, codeStr }) => {
                     </button>
                 </CopyToClipboard>
             </div>
-            <div className={`${tabNum == 1 ? 'px-0 bg-[#1D1F21] h-full overflow-hidden' : 'flex py-10 justify-center'} border rounded-b-lg w-full`}>{totalConfig[tabNum].component}</div>
+            <div className={`${tabNum == 1 ? 'h-full overflow-hidden bg-[#1D1F21] px-0' : 'flex justify-center py-10'} w-full rounded-b-lg border`}>{totalConfig[tabNum].component}</div>
         </div>
     );
 };

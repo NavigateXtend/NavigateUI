@@ -1,4 +1,6 @@
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import React from 'react';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
+import Image from 'next/image';
 
 const codeStr = `const Card7 = () => {
     return (
@@ -56,17 +58,19 @@ export default Card7;
 const Card7 = () => {
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="md:w-[300px] mx-auto space-y-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] my-20 relative p-8">
+            <div className="relative mx-auto my-20 space-y-8 p-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] md:w-[300px]">
                 {/* top part  */}
                 <div>
-                    <img
-                        className="w-[60px] border h-[60px] object-cover rounded-full p-2 bg-slate-100 duration-300 hover:scale-105"
+                    <Image
+                        width={60}
+                        height={60}
+                        className="h-[60px] w-[60px] rounded-full border bg-slate-100 object-cover p-2 duration-300 hover:scale-105"
                         src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL2pvYjk2OC1lbGVtZW50LTAxMi14LmpwZw.jpg"
                         alt=""
                     />
                     {/* Price Ribbon SVG  */}
-                    <div className="absolute -top-4 -right-[20px] ">
-                        <div className="w-full h-full relative">
+                    <div className="absolute -right-[20px] -top-4 ">
+                        <div className="relative h-full w-full">
                             {/* svg  */}
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -98,9 +102,9 @@ const Card7 = () => {
                                 </g>
                             </svg>
                             {/* Price  */}
-                            <div className="absolute top-8 left-7 text-white text-xl font-semibold flex flex-col">
+                            <div className="absolute left-7 top-8 flex flex-col text-xl font-semibold text-white">
                                 <span>
-                                    <sub className="font-normal text-sm">$</sub>
+                                    <sub className="text-sm font-normal">$</sub>
                                     <span>99</span>
                                 </span>
                                 <span className="text-xs font-normal">/month</span>
@@ -109,10 +113,10 @@ const Card7 = () => {
                     </div>
                 </div>
                 <div className="space-y-4">
-                    <p className="text-gray-500 capitalize">most popular</p>
+                    <p className="capitalize text-gray-500">most popular</p>
                     <h3 className="text-2xl font-bold text-slate-800">Advence</h3>
                     <ul className="space-y-3">
-                        <li className="flex items-center gap-2 text-sm text-sky-900 font-semibold">
+                        <li className="flex items-center gap-2 text-sm font-semibold text-sky-900">
                             <svg width={20} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -132,7 +136,7 @@ const Card7 = () => {
                             </svg>
                             Custom profile an more
                         </li>
-                        <li className="flex items-center gap-2 text-sm text-sky-900 font-semibold">
+                        <li className="flex items-center gap-2 text-sm font-semibold text-sky-900">
                             <svg width={20} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -152,7 +156,7 @@ const Card7 = () => {
                             </svg>
                             Custom emoji anywhere
                         </li>
-                        <li className="flex items-center gap-2 text-sm text-sky-900 font-semibold">
+                        <li className="flex items-center gap-2 text-sm font-semibold text-sky-900">
                             <svg width={20} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -173,9 +177,9 @@ const Card7 = () => {
                             HD video streaming
                         </li>
                     </ul>
-                    <div className="pt-4 flex justify-center">
-                        <button className="w-full h-16 border-2 border-sky-300 text-sky-800 font-black rounded-full hover:text-white duration-300 relative group">
-                            <span className="absolute w-12 group-hover:w-[93%] duration-300 flex group-hover:justify-start rounded-full inset-2 bg-sky-300 group-hover:bg-sky-500 group-hover:duration-500 -z-10"></span>
+                    <div className="flex justify-center pt-4">
+                        <button className="group relative h-16 w-full rounded-full border-2 border-sky-300 font-black text-sky-800 duration-300 hover:text-white">
+                            <span className="absolute inset-2 -z-10 flex w-12 rounded-full bg-sky-300 duration-300 group-hover:w-[93%] group-hover:justify-start group-hover:bg-sky-500 group-hover:duration-500"></span>
                             Purchases
                         </button>
                     </div>

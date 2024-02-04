@@ -1,4 +1,4 @@
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
 
 const Hero2 = () => {
     const codeStr = `
@@ -44,7 +44,7 @@ const Hero2 = () => {
 
     return (
         <CodeBox codeStr={codeStr}>
-            <section className="w-full py-12 md:py-24 flex justify-center flex-col lg:py-32 bg-gradient-to-b from-#52C2FF to-white">
+            <section className="from-#52C2FF flex w-full flex-col justify-center bg-gradient-to-b to-white py-12 md:py-24 lg:py-32">
                 <div className=" px-4 md:px-6">
                     <div className="flex flex-col items-center space-y-4 text-center text-black">
                         {/* Text content */}
@@ -63,7 +63,7 @@ const Hero2 = () => {
                     </div>
                 </div>
                 {/* Feature Cards */}
-                <div className=" px-4 md:px-6 mt-16 flex flex-wrap justify-center items-center gap-9">
+                <div className=" mt-16 flex flex-wrap items-center justify-center gap-9 px-4 md:px-6">
                     <div className="flex flex-col items-center text-center text-black">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ const Hero2 = () => {
                             strokeWidth={2}
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            className="h-10 w-10 mb-4"
+                            className="mb-4 h-10 w-10"
                         >
                             <circle cx={12} cy={12} r={10} />
                             <line x1={2} x2={22} y1={12} y2={12} />
@@ -95,7 +95,7 @@ const Hero2 = () => {
                             strokeWidth={2}
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            className="h-10 w-10 mb-4"
+                            className="mb-4 h-10 w-10"
                         >
                             <path d="M6 16.326A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 .5 8.973" />
                             <path d="m13 12-3 5h4l-3 5" />
@@ -114,7 +114,7 @@ const Hero2 = () => {
                             strokeWidth={2}
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            className="h-10 w-10 mb-4"
+                            className="mb-4 h-10 w-10"
                         >
                             <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
                         </svg>
