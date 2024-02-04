@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-const navComponentsItems = ['Avatar', 'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Hero', 'Modal', 'Speed Dial', 'Skeleton','Tooltip','Spinner'];
+const navComponentsItems = ['Avatar', 'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Hero', 'Modal', 'Speed Dial', 'Skeleton', 'Tooltip', 'Spinner'];
 const Navbar = ({ setIsOpen }) => {
     const [isDocOpen, setDocIsOpen] = useState(true);
     const [isComponentOpen, setComponentIsOpen] = useState(true);
@@ -51,10 +51,10 @@ const Navbar = ({ setIsOpen }) => {
                         {/* doc div  */}
                         <div className={`grid transition-all duration-300 ease-in-out text-slate-600 ${isDocOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                             <div className="overflow-hidden flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 ">
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50  py-2 duration-300  px-6 hover:rounded-lg " to="/">
+                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50  py-2 duration-300  px-6 hover:rounded-lg " href="/">
                                     Introduction
                                 </Link>
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/button">
+                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " href="/Components/button">
                                     Quick Start
                                 </Link>
                             </div>
@@ -92,7 +92,7 @@ const Navbar = ({ setIsOpen }) => {
                                         className={({ isActive, isPending }) =>
                                             isPending ? 'pending' : isActive ? 'px-6 bg-[#0095FF] text-white  py-2 rounded-lg duration-300' : 'hover:bg-sky-50 px-6 py-2 hover:rounded-lg'
                                         }
-                                        to={`/components/${componentName.toLowerCase()}`}
+                                        href={`/components/${componentName.toLowerCase()}`}
                                     >
                                         {componentName}
                                     </NavLink>
