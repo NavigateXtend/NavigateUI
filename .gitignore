@@ -35,12 +35,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-
-/src/Home/
-/src/Layouts/
-/src/Nav/
-/src/Routes/
-/src/Shared/
 /index.css
 /main.jsx
 dist
