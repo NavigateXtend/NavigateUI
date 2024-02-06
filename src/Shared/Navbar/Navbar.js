@@ -1,12 +1,13 @@
 import Link from 'next/link';
+
 const Navbar = () => {
     return (
-        <nav className="relative z-[99] border-b border-black bg-white">
+        <nav className="relative z-[99] border-b bg-transparent backdrop-blur-md">
             <div className="item-center mx-auto flex max-w-7xl justify-between py-4">
                 <div className="text-2xl font-bold">NavigateUI</div>
                 <ul className="flex gap-10">
                     <li>
-                        <Link href="/components/accordion">Components</Link>
+                        <Link href="/components/avatar">Components</Link>
                     </li>
                     <li>
                         <Link href="/block">Blocks</Link>

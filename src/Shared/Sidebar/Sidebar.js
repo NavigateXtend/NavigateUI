@@ -3,15 +3,16 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
-const navComponentsItems = ['Avatar', 'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'footer', 'Hero', 'Modal', 'Speed Dial', 'Skeleton', 'Tooltip', 'Spinner'];
+const navComponentsItems = ['Avatar', 'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Footer', 'Hero', 'Modal', 'Speed Dial', 'Skeleton', 'Tooltip', 'Spinner'];
 const Navbar = () => {
     const [isDocOpen, setDocIsOpen] = useState(true);
     const [isComponentOpen, setComponentIsOpen] = useState(true);
     const path = usePathname();
     const pathname = path.replace('/components/', '');
+    console.log(pathname);
 
     return (
-        <div className="sidebar fixed z-[90] w-[330px] select-none overflow-y-scroll bg-white px-5">
+        <div className="sidebar fixed z-[90] w-[330px] select-none overflow-y-scroll px-5">
             <div className="group flex h-full w-full flex-col space-y-6">
                 {/* container   */}
                 <div className="flex flex-col px-4 font-sans text-lg text-gray-600 duration-300">
@@ -51,7 +52,7 @@ const Navbar = () => {
                             <Link className="px-6  py-2 duration-300  hover:rounded-lg hover:bg-sky-50 " href="/">
                                 Introduction
                             </Link>
-                            <Link className="px-6 py-2 duration-300  hover:rounded-lg hover:bg-sky-50 " href="/Components/button">
+                            <Link className="px-6 py-2 duration-300  hover:rounded-lg hover:bg-sky-50 " href="/Components/avatar">
                                 Quick Start
                             </Link>
                         </div>
@@ -85,7 +86,7 @@ const Navbar = () => {
                             {navComponentsItems.map((componentName, i) => (
                                 <Link
                                     key={i}
-                                    className={`rounded-lg ${pathname === componentName ? 'bg-[#38bdf8] text-white' : 'hover:bg-sky-50'} rounded-lg px-6 py-2  duration-300
+                                    className={`rounded-lg ${pathname === componentName.toLowerCase() ? 'bg-sky-500 text-white' : 'hover:bg-sky-50'} rounded-md px-6 py-2  duration-300
                                     `}
                                     href={`/components/${componentName.toLowerCase()}`}
                                 >
