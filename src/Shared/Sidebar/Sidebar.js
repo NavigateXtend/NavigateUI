@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
-const navComponentsItems = ['Avatar', 'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Footer', 'Hero', 'Modal', 'Speed Dial', 'Skeleton', 'Tooltip', 'Spinner'];
+const navComponentsItems = ['Avatar', 'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Footer', 'Hero', 'Modal', 'Speed Dial', 'Skeleton', 'Spinner', 'Table', 'Tooltip'];
 const Navbar = () => {
     const [isDocOpen, setDocIsOpen] = useState(true);
     const [isComponentOpen, setComponentIsOpen] = useState(true);
