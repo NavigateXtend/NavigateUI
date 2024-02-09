@@ -1,11 +1,11 @@
 'use client';
-import { useCallback, useEffect, useState } from 'react';
 import CodeBox from '@/Shared/CodeBox/CodeBox';
 import Image from 'next/image';
+import { useCallback, useEffect, useState } from 'react';
 
 const codeStr = `import { useCallback, useEffect, useState } from "react";
 
-export const Carousel1 = () => {
+export const Carousel = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
   const sliderImages = ['https://source.unsplash.com/1200x670/?nature','https://source.unsplash.com/1200x670/?hill','https://source.unsplash.com/1200x670/?mountain','https://source.unsplash.com/1200x670/?river','https://source.unsplash.com/1200x670/?sea'];
   const prevSlider = () => setCurrentSlider((currentSlider) => currentSlider === 0 ? sliderImages.length - 1 : currentSlider - 1);
