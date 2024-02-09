@@ -1,4 +1,4 @@
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
 
 const codestr = `
 <div className="relative flex justify-center my-10 h-10  group">
