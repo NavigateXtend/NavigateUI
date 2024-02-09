@@ -1,11 +1,11 @@
 import Spinner1 from '@/Components/Spinner/Part1/Spinner1';
 
-const Spinner = () => {
+function page() {
     return (
         <div>
             <Spinner1 />
         </div>
     );
-};
+}
 
-export default Spinner;
+export default page;

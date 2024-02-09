@@ -12,7 +12,7 @@ const Navbar = () => {
     console.log(pathname);
 
     return (
-        <div className="sidebar fixed z-[90] w-[330px] select-none overflow-y-scroll px-5">
+        <div className="sidebar fixed z-[90] w-[330px] select-none overflow-y-scroll px-5 pb-7">
             <div className="group flex h-full w-full flex-col space-y-6">
                 {/* container   */}
                 <div className="flex flex-col px-4 font-sans text-lg text-gray-600 duration-300">

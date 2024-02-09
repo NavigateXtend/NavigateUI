@@ -1,4 +1,5 @@
 import CodeBox from '@/Shared/CodeBox/CodeBox';
+import Image from 'next/image';
 
 const Spinner1 = () => {
     return (
@@ -75,7 +76,7 @@ const Spinner1 = () => {
                             <div className="relative -left-[2px] -top-[1.4px] h-[58px] w-[58px] rounded-full bg-white"></div>
                         </div>
                     </div>
-                    <div className=" h-12 w-12">
+                    <div className="h-12 w-12">
                         <div className="grid h-full w-full animate-spin grid-cols-2 overflow-hidden rounded-full">
                             <span className="h-6 w-6 rounded-tl-full bg-transparent"></span>
                             <span className="h-6 w-6 rounded-tr-full bg-sky-500"></span>
