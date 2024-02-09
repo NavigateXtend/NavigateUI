@@ -1,4 +1,4 @@
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
 
 const codeStr = `const SpeedDial1 = () => {
     const svgs = [
@@ -128,10 +128,10 @@ const SpeedDial1 = () => {
     ];
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="h-[300px] relative">
-                <div className="group flex flex-col items-center justify-center w-max mx-auto absolute top-0 left-[50%] -translate-x-1/2">
+            <div className="relative h-[300px]">
+                <div className="group absolute left-[50%] top-0 mx-auto flex w-max -translate-x-1/2 flex-col items-center justify-center">
                     {/* + icon  */}
-                    <div className="flex justify-center w-16 h-16 bg-[#0095FF] rounded-full items-center group-hover:rotate-[135deg] hover:bg-[#0095FF]/80 duration-500">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#0095FF] duration-500 hover:bg-[#0095FF]/80 group-hover:rotate-[135deg]">
                         <svg width={30} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             {' '}
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g> <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>{' '}
@@ -141,24 +141,24 @@ const SpeedDial1 = () => {
                         </svg>
                     </div>
                     {/* icon container  */}
-                    <div className="space-y-4 duration-500 h-0 group-hover:my-4 group-hover:h-full ">
+                    <div className="h-0 space-y-4 duration-500 group-hover:my-4 group-hover:h-full ">
                         {/* Icon Map */}
                         {svgs?.map((svg, idx) => (
                             <div
                                 key={idx}
-                                className={`w-10 h-10 rounded-full scale-0 group-hover:scale-100 duration-300 shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] opacity-0 group-hover:opacity-100 ${
+                                className={`h-10 w-10 scale-0 rounded-full opacity-0 shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] duration-300 group-hover:scale-100 group-hover:opacity-100 ${
                                     idx === 0
                                         ? 'delay-[400ms] group-hover:delay-100'
                                         : idx === 1
-                                        ? 'delay-300 group-hover:delay-200'
-                                        : idx === 2
-                                        ? 'delay-200 group-hover:delay-300'
-                                        : idx === 3
-                                        ? 'delay-100 group-hover:delay-[400ms]'
-                                        : 'delay-[400ms] group-hover:delay-100'
+                                          ? 'delay-300 group-hover:delay-200'
+                                          : idx === 2
+                                            ? 'delay-200 group-hover:delay-300'
+                                            : idx === 3
+                                              ? 'delay-100 group-hover:delay-[400ms]'
+                                              : 'delay-[400ms] group-hover:delay-100'
                                 }`}
                             >
-                                <div className="w-full h-full bg-white hover:bg-slate-200 flex justify-center items-center rounded-full duration-300">{svg?.svg}</div>
+                                <div className="flex h-full w-full items-center justify-center rounded-full bg-white duration-300 hover:bg-slate-200">{svg?.svg}</div>
                             </div>
                         ))}
                     </div>

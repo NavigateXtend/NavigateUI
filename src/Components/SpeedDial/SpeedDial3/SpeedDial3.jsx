@@ -1,4 +1,4 @@
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import CodeBox from "@/Shared/CodeBox/CodeBox";
 
 const codeStr = `const SpeedDial3 = () => {
     const svgs = [

@@ -1,5 +1,7 @@
+'use client';
 import { useState } from 'react';
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
+import Image from 'next/image';
 
 const codeStr = `import { useState } from "react";
 
@@ -83,19 +85,17 @@ export const Carousel4 = () => {
         setCurrentSlider((currentSlider) => (currentSlider === sliders.length - 1 ? 0 : currentSlider + 1));
     };
 
-    const isSmallScreen = window.innerWidth <= 768;
-
     return (
         <CodeBox codeStr={codeStr}>
             <div
-                className="w-full h-72 sm:h-96 md:h-[540px] lg:h-[640px] xl:h-[780px] flex flex-col xl:flex-row items-center justify-center gap-5 lg:gap-10 relative bg-cover before:absolute before:bg-black/50 before:inset-0 transform duration-1000 ease-linear z-50 overflow-hidden"
+                className="relative z-50 flex h-72 w-full transform flex-col items-center justify-center gap-5 overflow-hidden bg-cover duration-1000 ease-linear before:absolute before:inset-0 before:bg-black/50 sm:h-96 md:h-[540px] lg:h-[640px] lg:gap-10 xl:h-[780px] xl:flex-row"
                 style={{ backgroundImage: `url(${currentSlider === 0 ? sliders[sliders.length - 1].img : sliders[currentSlider - 1].img})` }}
             >
                 {/* arrow */}
-                <div className="absolute bottom-1/4 flex gap-3 z-50 px-5">
+                <div className="absolute bottom-1/4 z-50 flex gap-3 px-5">
                     {/* arrow left */}
-                    <button onClick={prevSlider} className="flex justify-center items-center hover:bg-white/30 rounded-full w-6 h-6 md:w-8 md:h-8">
-                        <svg viewBox="0 0 1024 1024" className="w-4 h-4 md:w-6 md:h-6 icon" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <button onClick={prevSlider} className="flex h-6 w-6 items-center justify-center rounded-full hover:bg-white/30 md:h-8 md:w-8">
+                        <svg viewBox="0 0 1024 1024" className="icon h-4 w-4 md:h-6 md:w-6" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
@@ -107,8 +107,8 @@ export const Carousel4 = () => {
                         </svg>
                     </button>
                     {/* arrow right */}
-                    <button onClick={nextSlider} className="flex justify-center items-center hover:bg-white/30 rounded-full w-6 h-6 md:w-8 md:h-8">
-                        <svg viewBox="0 0 1024 1024" className="w-4 h-4 md:w-6 md:h-6 icon" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(180)">
+                    <button onClick={nextSlider} className="flex h-6 w-6 items-center justify-center rounded-full hover:bg-white/30 md:h-8 md:w-8">
+                        <svg viewBox="0 0 1024 1024" className="icon h-4 w-4 md:h-6 md:w-6" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(180)">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
@@ -121,21 +121,23 @@ export const Carousel4 = () => {
                     </button>
                 </div>
                 {/* text container here */}
-                <div className="w-1/2 px-4 left-0 absolute drop-shadow-lg text-white rounded-lg">
-                    <h1 className="lg:text-3xl mb-3">{sliders[currentSlider].title}</h1>
+                <div className="absolute left-0 w-1/2 rounded-lg px-4 text-white drop-shadow-lg">
+                    <h1 className="mb-3 lg:text-3xl">{sliders[currentSlider].title}</h1>
                     <p className="text-xs sm:text-sm md:text-base lg:text-lg">{sliders[currentSlider].des}</p>
                 </div>
                 {/* slider container */}
-                <div className="w-1/2 ml-auto overflow-hidden  absolute -right-5 lg:-right-16 z-50 px-4 py-10">
-                    <div className="ease-linear duration-300 flex gap-4 items-center" style={{ transform: `translateX(-${currentSlider * (isSmallScreen ? 98 : 200)}px)` }}>
+                <div className="absolute -right-5 z-50  ml-auto w-1/2 overflow-hidden px-4 py-10 lg:-right-16">
+                    <div className="flex items-center gap-4 duration-300 ease-linear" style={{ transform: `translateX(-${currentSlider * 200}px)` }}>
                         {/* sliders */}
                         {sliders.map((slide, inx) => (
-                            <img
+                            <Image
+                                width={1200}
+                                height={640}
                                 key={inx}
                                 src={slide.img}
-                                className={`h-[180px] sm:h-[200px] lg:h-[320px] min-w-[90px] lg:min-w-[184px] ${
+                                className={`h-[180px] min-w-[90px] sm:h-[200px] lg:h-[320px] lg:min-w-[184px] ${
                                     currentSlider - 1 === inx ? 'scale-0' : 'scale-100 delay-500'
-                                } drop-shadow-lg shadow-lg shadow-black bg-black/50 duration-300 rounded-lg z-50 `}
+                                } z-50 rounded-lg bg-black/50 shadow-lg shadow-black drop-shadow-lg duration-300 `}
                                 alt={slide.title}
                             />
                         ))}

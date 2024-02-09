@@ -1,4 +1,4 @@
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
 
 const codeStr = `const Card13 = () => {
     return (
@@ -16,8 +16,8 @@ const codeStr = `const Card13 = () => {
 const Card13 = () => {
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="w-[350px] mx-auto border/10 my-20 p-6 md:p-8 rounded-2xl shadow-lg">
-                <div className="space-y-6 flex flex-col justify-center items-center">
+            <div className="border/10 mx-auto my-20 w-[350px] rounded-2xl p-6 shadow-lg md:p-8">
+                <div className="flex flex-col items-center justify-center space-y-6">
                     <svg width={75} viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -28,8 +28,8 @@ const Card13 = () => {
                             ></path>
                         </g>
                     </svg>
-                    <h6 className="font-medium text-center text-slate-700">You have enough points to redeem Keep going.!</h6>
-                    <button className="text-white bg-[#16BAC5] px-6 py-2 rounded-full ">Redeem now</button>
+                    <h6 className="text-center font-medium text-slate-700">You have enough points to redeem Keep going.!</h6>
+                    <button className="rounded-full bg-[#16BAC5] px-6 py-2 text-white ">Redeem now</button>
                     <button className="text-slate-500">Redeem later</button>
                 </div>
             </div>
