@@ -1,5 +1,6 @@
+'use client';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
 import { useState } from 'react';
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
 const codeStr = `import { useState } from "react";
 export const Accordion1 = () => {
 const [isOpen, setIsOpen] = useState(null);
@@ -49,19 +50,19 @@ const Accordion1 = () => {
 
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="border rounded-lg font-sans mx-4">
+            <div className="mx-4 rounded-lg border font-sans">
                 {accordions.map((PerAccordion, idx) => (
-                    <div key={idx} className="p-4 border-b">
-                        <button onClick={() => toggle(idx)} className="flex justify-between items-center py-4 w-full h-full ">
+                    <div key={idx} className="border-b p-4">
+                        <button onClick={() => toggle(idx)} className="flex h-full w-full items-center justify-between py-4 ">
                             <span className="text-xl">{PerAccordion.title}</span>
-                            <span className="p-2 rounded-full bg-blue-100 ">
-                                <svg className="fill-[#00A2FF] mr-7 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                                    <rect y="7" width="16" height="2" rx="1" className={`transform origin-center transition duration-200 ease-out ${isOpen === idx && '!rotate-180'}`} />
-                                    <rect y="7" width="16" height="2" rx="1" className={`transform origin-center rotate-90 transition duration-200 ease-out ${isOpen === idx && '!rotate-180'}`} />
+                            <span className="rounded-full bg-blue-100 p-2 ">
+                                <svg className="ml-8 mr-7 shrink-0 fill-[#00A2FF]" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="7" width="16" height="2" rx="1" className={`origin-center transform transition duration-200 ease-out ${isOpen === idx && '!rotate-180'}`} />
+                                    <rect y="7" width="16" height="2" rx="1" className={`origin-center rotate-90 transform transition duration-200 ease-out ${isOpen === idx && '!rotate-180'}`} />
                                 </svg>
                             </span>
                         </button>
-                        <div className={`grid overflow-hidden transition-all duration-300 ease-in-out text-slate-600 ${isOpen === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+                        <div className={`grid overflow-hidden text-slate-600 transition-all duration-300 ease-in-out ${isOpen === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                             <div className="overflow-hidden">{PerAccordion.description}</div>
                         </div>
                     </div>

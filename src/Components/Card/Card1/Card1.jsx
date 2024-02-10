@@ -1,4 +1,5 @@
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
+import Image from 'next/image';
 const codeStr = `const Card1 = () => {
 
 
@@ -203,41 +204,41 @@ const Card1 = () => {
 
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-4 my-10 flex flex-col justify-center items-center mx-auto bg-white">
-                <div className="relative group">
-                    <img className="w-[110px] h-[110px] bg-slate-500 object-cover rounded-full" src="https://source.unsplash.com/300x300/?profile" alt="" />
-                    <span className="h-5 w-5 bg-green-500 absolute rounded-full bottom-3 right-0 border-[3px] border-white"></span>
-                    <span className="h-5 w-5 bg-green-500 absolute rounded-full bottom-3 right-0 animate-ping"></span>
+            <div className="mx-auto my-10 flex max-w-[350px] flex-col items-center justify-center space-y-4 rounded-xl bg-white p-8 font-sans shadow-lg">
+                <div className="group relative">
+                    <Image width={110} height={110} className="h-[110px] w-[110px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/300x300/?profile" alt="profile" />
+                    <span className="absolute bottom-3 right-0 h-5 w-5 rounded-full border-[3px] border-white bg-green-500"></span>
+                    <span className="absolute bottom-3 right-0 h-5 w-5 animate-ping rounded-full bg-green-500"></span>
                 </div>
-                <div className="text-center space-y-1">
+                <div className="space-y-1 text-center">
                     <h1 className="text-2xl text-gray-700">Nullify</h1>
-                    <p className="text-gray-400 text-sm">UI/UX Designer</p>
+                    <p className="text-sm text-gray-400">UI/UX Designer</p>
                 </div>
-                <div className="flex justify-between w-full py-2">
-                    <div className="text-center space-y-1">
+                <div className="flex w-full justify-between py-2">
+                    <div className="space-y-1 text-center">
                         <p className="text-gray-500">Posts</p>
-                        <p className="text-xl font-mono text-gray-700">11</p>
+                        <p className="font-mono text-xl text-gray-700">11</p>
                     </div>
-                    <div className="text-center space-y-1">
+                    <div className="space-y-1 text-center">
                         <p className="text-gray-500">Following</p>
-                        <p className="text-xl font-mono text-gray-700">250</p>
+                        <p className="font-mono text-xl text-gray-700">250</p>
                     </div>
-                    <div className="text-center space-y-1 ">
+                    <div className="space-y-1 text-center ">
                         <p className="text-gray-500">Followers</p>
-                        <p className="text-xl font-mono text-gray-700">11</p>
+                        <p className="font-mono text-xl text-gray-700">11</p>
                     </div>
                 </div>
                 {/* bio  */}
-                <p className="text-center text-sm text-gray-500 pb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore error ipsum officiis debitis quo odio?</p>
+                <p className="pb-2 text-center text-sm text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore error ipsum officiis debitis quo odio?</p>
                 {/* social icons  */}
                 <div className="flex justify-between gap-4 py-2">
                     {svgs?.map((svg, idx) => (
-                        <div key={idx} className="transform hover:scale-150 duration-300 shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] rounded-full">
+                        <div key={idx} className="transform rounded-full shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] duration-300 hover:scale-150">
                             {svg?.svg}
                         </div>
                     ))}
                 </div>
-                <button className="hover:bg-[#0095FF] hover:scale-95 font-medium hover:text-white w-[80%] py-2 rounded-full hover:shadow-xl   text-gray-400 shadow-[0px_0px_10px_#E2DADA] t duration-500">
+                <button className="t w-[80%] rounded-full py-2 font-medium text-gray-400 shadow-[0px_0px_10px_#E2DADA] duration-500   hover:scale-95 hover:bg-[#0095FF] hover:text-white hover:shadow-xl">
                     View Profile
                 </button>
             </div>

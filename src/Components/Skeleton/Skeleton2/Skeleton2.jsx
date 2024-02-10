@@ -1,4 +1,4 @@
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
 
 const Skeleton2 = () => {
     const codestr = `
@@ -25,9 +25,9 @@ const Skeleton2 = () => {
     `;
     return (
         <CodeBox codeStr={codestr}>
-            <div className="max-w-[400px] md:w-[350px] bg-slate-300/20 px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md animate-pulse">
+            <div className="mx-auto max-w-[400px] animate-pulse space-y-6 rounded-2xl bg-slate-300/20 px-6 py-4 shadow-md md:w-[350px]">
                 {/* Card Image Skeleton */}
-                <div className="w-full h-[190px] bg-gray-400 rounded-2xl"></div>
+                <div className="h-[190px] w-full rounded-2xl bg-gray-400"></div>
 
                 {/* Card Heading and Rating Skeleton */}
                 <div className="space-y-2">
@@ -42,9 +42,9 @@ const Skeleton2 = () => {
                 </div>
 
                 {/* Price and Add to Cart Button Skeleton */}
-                <div className="mt-5 flex justify-between items-center font-medium">
+                <div className="mt-5 flex items-center justify-between font-medium">
                     <div className="h-6 w-1/4 rounded bg-gray-300"></div>
-                    <div className="h-10 w-24  bg-gray-700 rounded-lg"></div>
+                    <div className="h-10 w-24  rounded-lg bg-gray-700"></div>
                 </div>
             </div>
         </CodeBox>

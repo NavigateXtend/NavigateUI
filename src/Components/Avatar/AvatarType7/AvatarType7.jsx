@@ -1,4 +1,5 @@
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
+import Image from 'next/image';
 
 const codeStr = `const AvatarType7 = () => {
     return (
@@ -31,11 +32,17 @@ export default AvatarType7;
 const AvatarType7 = () => {
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="flex items-center flex-wrap justify-around">
+            <div className="flex flex-wrap items-center justify-around">
                 {/* Small Size  */}
-                <div className="relative group">
-                    <img className="w-[80px] h-[80px] p-[2px] bg-sky-200 object-cover rounded-full border-2 border-[#0095FF]" src="https://source.unsplash.com/300x300/?profile" alt="" />
-                    <div className="h-5 w-5 bg-white absolute rounded-full bottom-2 right-0 border border-[#0095FF] flex justify-center items-center p-[2px]">
+                <div className="group relative">
+                    <Image
+                        width={80}
+                        height={80}
+                        className="h-[80px] w-[80px] rounded-full border-2 border-[#0095FF] bg-sky-200 object-cover p-[2px]"
+                        src="https://source.unsplash.com/300x300/?profile"
+                        alt="avatar"
+                    />
+                    <div className="absolute bottom-2 right-0 flex h-5 w-5 items-center justify-center rounded-full border border-[#0095FF] bg-white p-[2px]">
                         <svg width={10} viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#0095FF">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -56,9 +63,15 @@ const AvatarType7 = () => {
                     </div>
                 </div>
                 {/* Medium Size  */}
-                <div className="relative group">
-                    <img className="w-[110px] h-[110px] p-[2px] bg-sky-200 object-cover rounded-full border-[3px] border-[#0095FF]" src="https://source.unsplash.com/300x300/?profile" alt="" />
-                    <div className="h-7 w-7 bg-white absolute rounded-full bottom-3 right-0 border-2 border-[#0095FF]  flex justify-center items-center p-1.5">
+                <div className="group relative">
+                    <Image
+                        width={110}
+                        height={110}
+                        className="h-[110px] w-[110px] rounded-full border-[3px] border-[#0095FF] bg-sky-200 object-cover p-[2px]"
+                        src="https://source.unsplash.com/300x300/?profile"
+                        alt="avatar"
+                    />
+                    <div className="absolute bottom-3 right-0 flex h-7 w-7 items-center justify-center rounded-full  border-2 border-[#0095FF] bg-white p-1.5">
                         <svg width={12} viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#0095FF">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -79,9 +92,15 @@ const AvatarType7 = () => {
                     </div>
                 </div>
                 {/* Large Size  */}
-                <div className="relative group">
-                    <img className="w-[130px] h-[130px] p-[2px] bg-sky-200 object-cover rounded-full border-4 border-[#0095FF]" src="https://source.unsplash.com/300x300/?profile" alt="" />
-                    <div className="h-8 w-8 bg-white absolute rounded-full bottom-2 right-0 border-2 border-[#0095FF]  flex justify-center items-center p-[7px]">
+                <div className="group relative">
+                    <Image
+                        width={130}
+                        height={130}
+                        className="h-[130px] w-[130px] rounded-full border-4 border-[#0095FF] bg-sky-200 object-cover p-[2px]"
+                        src="https://source.unsplash.com/300x300/?profile"
+                        alt="avatar"
+                    />
+                    <div className="absolute bottom-2 right-0 flex h-8 w-8 items-center justify-center rounded-full  border-2 border-[#0095FF] bg-white p-[7px]">
                         <svg width={20} viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" fill="#0095FF">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
