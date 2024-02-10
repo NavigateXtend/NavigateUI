@@ -15,9 +15,9 @@ const Navbar = () => {
         <div className="sidebar fixed z-[90] w-[330px] select-none overflow-y-scroll px-5 pb-7">
             <div className="group flex h-full w-full flex-col space-y-6">
                 {/* container   */}
-                <div className="flex flex-col px-4 font-sans text-lg text-gray-600 duration-300">
+                <div className="flex flex-col px-4 pt-10 font-sans text-lg text-gray-600 duration-300">
                     {/* Docs  */}
-                    <div onClick={() => setDocIsOpen(!isDocOpen)} className="flex  items-center justify-between rounded-lg px-6 py-2 duration-300 hover:bg-sky-50">
+                    <div onClick={() => setDocIsOpen(!isDocOpen)} className="flex  items-center justify-between rounded-lg px-6 py-2 text-white duration-300 hover:bg-sky-50 hover:text-black">
                         <div className="flex items-center gap-4">
                             <svg width={25} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#0095FF]">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -47,18 +47,21 @@ const Navbar = () => {
                         </svg>
                     </div>
                     {/* doc div  */}
-                    <div className={`grid text-slate-600 transition-all duration-300 ease-in-out ${isDocOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+                    <div className={`grid text-slate-600  transition-all duration-300 ease-in-out ${isDocOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
                         <div className="my-2 ml-8 flex flex-col space-y-2 overflow-hidden border-l  px-6 text-lg ">
-                            <Link className="px-6  py-2 duration-300  hover:rounded-lg hover:bg-sky-50 " href="/">
+                            <Link className="px-6  py-2 text-white  duration-300  hover:rounded-lg  hover:bg-sky-500 hover:text-white" href="/">
                                 Introduction
                             </Link>
-                            <Link className="px-6 py-2 duration-300  hover:rounded-lg hover:bg-sky-50 " href="/Components/avatar">
+                            <Link className="px-6 py-2 text-white  duration-300  hover:rounded-lg  hover:bg-sky-500 hover:text-white" href="/Components/avatar">
                                 Quick Start
                             </Link>
                         </div>
                     </div>
                     {/* Component  */}
-                    <div onClick={() => setComponentIsOpen(!isComponentOpen)} className="flex  items-center justify-between rounded-lg px-6 py-2 duration-300 hover:bg-sky-50">
+                    <div
+                        onClick={() => setComponentIsOpen(!isComponentOpen)}
+                        className="flex  items-center justify-between rounded-lg px-6 py-2 text-white duration-300 hover:bg-sky-50 hover:text-black"
+                    >
                         <div className="flex items-center gap-4">
                             <svg width={25} fill="#0095FF" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -86,7 +89,7 @@ const Navbar = () => {
                             {navComponentsItems.map((componentName, i) => (
                                 <Link
                                     key={i}
-                                    className={`rounded-lg ${pathname === componentName.toLowerCase() ? 'bg-sky-500 text-white' : 'hover:bg-sky-50'} rounded-md px-6 py-2  duration-300
+                                    className={`rounded-lg ${pathname === componentName.toLowerCase() ? 'bg-sky-500 text-white' : 'text-white hover:bg-sky-500'} rounded-md px-6 py-2  duration-300
                                     `}
                                     href={`/components/${componentName.toLowerCase()}`}
                                 >
