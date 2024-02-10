@@ -7,8 +7,19 @@ const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="flex gap-5 bg-slate-900">
-            <div className={` ${isOpen ? 'fixed z-[999]' : 'hidden'}`}>
+        <div
+            style={{
+                background: `radial-gradient(at 18% 99%, #0f172a 0px, transparent 50%) repeat scroll 0% 0%, 
+        radial-gradient(at 97% 8%, #0f172a 0px, transparent 50%) repeat scroll 0% 0%, 
+        radial-gradient(at 79% 82%, #0f172a 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 96% 10%, #0f172a 0px, transparent 50%) repeat scroll 0% 0%,    
+        radial-gradient(at 42% 20%, #0f172a 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 4% 49%, #0f172a 0px, transparent 50%) repeat scroll 0% 0%, #0384C6 radial-gradient(at 57% 33%, #0384C6 0px, #0f172a 50%) repeat scroll 0% 0%`,
+                backgroundAttachment: 'fixed'
+            }}
+            className="flex gap-5 min-h-[100vh]"
+        >
+            <div className={` ${isOpen ? 'fixed z-[999]' : 'hidden'} `}>
                 <Navbar setIsOpen={setIsOpen}></Navbar>
             </div>
             <div onClick={() => setIsOpen(!isOpen)} className="fixed top-0 z-[998] flex w-screen gap-5 bg-slate-900 p-4">
