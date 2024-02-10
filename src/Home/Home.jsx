@@ -7,11 +7,11 @@ const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="flex gap-5">
+        <div className="flex gap-5 bg-slate-900">
             <div className={` ${isOpen ? 'fixed z-[999]' : 'hidden'}`}>
                 <Navbar setIsOpen={setIsOpen}></Navbar>
             </div>
-            <div onClick={() => setIsOpen(!isOpen)} className="fixed top-0 w-screen flex gap-5 bg-white p-4 z-[998]">
+            <div onClick={() => setIsOpen(!isOpen)} className="fixed top-0 z-[998] flex w-screen gap-5 bg-slate-900 p-4">
                 <svg width={40} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -44,16 +44,16 @@ const Home = () => {
                         </g>
                     </g>
                 </svg>
-                <div>
-                    <h1 className="text-3xl  text-gray-800">
-                        <span className="text-[#0095FF]">N</span>avigate <span className="text-[#0095FF]">U</span>I
+                <div className="">
+                    <h1 className="flex text-3xl  text-[#727d95]">
+                        <img className="max-w-[45px]" src="/assets/Logo.png" alt="" />
+                        <span className="text-[#38BDF8]">N</span>avigate <span className="text-[#38BDF8]">U</span>I
                     </h1>
                 </div>
             </div>
-            <div onClick={() => setIsOpen(false)} className={`w-full  my-10 mx-auto ${isOpen ? 'opacity-30 duration-500' : 'duration-500 opacity-100'} lg:opacity-100`}>
+            <div onClick={() => setIsOpen(false)} className={`mx-auto  my-10 w-full ${isOpen ? 'opacity-30 duration-500' : 'opacity-100 duration-500'} lg:opacity-100`}>
                 <Banner isOpen={isOpen}></Banner>
-               {/* <WhyNavigate isOpen={isOpen}></WhyNavigate> */}
-
+                {/* <WhyNavigate isOpen={isOpen}></WhyNavigate> */}
             </div>
         </div>
     );

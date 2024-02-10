@@ -1,25 +1,27 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-const navComponentsItems = ['Avatar', 'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Hero', 'Modal', 'Speed Dial','Table', 'Skeleton', 'Tooltip', 'Spinner', 'Footer'];
+const navComponentsItems = ['Avatar', 'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Hero', 'Modal', 'Speed Dial', 'Table', 'Skeleton', 'Tooltip', 'Spinner', 'Footer'];
 const Navbar = ({ setIsOpen }) => {
     const [isDocOpen, setDocIsOpen] = useState(true);
     const [isComponentOpen, setComponentIsOpen] = useState(true);
 
     return (
         <>
-            <div className="border-r overflow-y-scroll fixed lg:left-0 lg:sticky px-5 lg:px-0 w-[330px] inset-0 bg-white z-[99] top-0 h-screen select-none">
-                <div className="flex flex-col w-full h-full group space-y-6">
+            <div className="fixed inset-0 top-0 z-[99] h-screen w-[330px] select-none overflow-y-scroll border-r bg-white px-5 lg:sticky lg:left-0 lg:px-0">
+                <div className="group flex h-full w-full flex-col space-y-6">
                     <div>
-                        <h1 className="text-3xl p-8 text-gray-800">
-                            <span className="text-[#0095FF] font-medium">N</span>avigateUI
+                        <h1 className="p-8 text-3xl text-gray-800">
+                            
+                            <span className="font-medium text-[#0095FF]">N</span>avigateUI
                         </h1>
+                        
                         <hr />
                     </div>
                     {/* container   */}
-                    <div className="flex flex-col text-lg text-gray-600 font-sans px-4 duration-300 ">
+                    <div className="flex flex-col px-4 font-sans text-lg text-gray-600 duration-300 ">
                         {/* Docs  */}
-                        <div onClick={() => setDocIsOpen(!isDocOpen)} className="py-2  flex items-center justify-between px-6 hover:bg-sky-50 rounded-lg duration-300">
+                        <div onClick={() => setDocIsOpen(!isDocOpen)} className="flex  items-center justify-between rounded-lg px-6 py-2 duration-300 hover:bg-sky-50">
                             <div className="flex items-center gap-4">
                                 <svg width={25} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#0095FF]">
                                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -49,18 +51,18 @@ const Navbar = ({ setIsOpen }) => {
                             </svg>
                         </div>
                         {/* doc div  */}
-                        <div className={`grid transition-all duration-300 ease-in-out text-slate-600 ${isDocOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
-                            <div className="overflow-hidden flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 ">
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50  py-2 duration-300  px-6 hover:rounded-lg " to="/">
+                        <div className={`grid text-slate-600 transition-all duration-300 ease-in-out ${isDocOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+                            <div className="my-2 ml-8 flex flex-col space-y-2 overflow-hidden border-l  px-6 text-lg ">
+                                <Link onClick={() => setIsOpen(false)} className="px-6  py-2 duration-300  hover:rounded-lg hover:bg-sky-50 " to="/">
                                     Introduction
                                 </Link>
-                                <Link onClick={() => setIsOpen(false)} className="hover:bg-sky-50 py-2 duration-300  px-6 hover:rounded-lg " to="/Components/button">
+                                <Link onClick={() => setIsOpen(false)} className="px-6 py-2 duration-300  hover:rounded-lg hover:bg-sky-50 " to="/Components/button">
                                     Quick Start
                                 </Link>
                             </div>
                         </div>
                         {/* Component  */}
-                        <div onClick={() => setComponentIsOpen(!isComponentOpen)} className="py-2  flex items-center justify-between px-6 hover:bg-sky-50 rounded-lg duration-300">
+                        <div onClick={() => setComponentIsOpen(!isComponentOpen)} className="flex  items-center justify-between rounded-lg px-6 py-2 duration-300 hover:bg-sky-50">
                             <div className="flex items-center gap-4">
                                 <svg width={25} fill="#0095FF" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -83,14 +85,14 @@ const Navbar = ({ setIsOpen }) => {
                         </div>
 
                         {/* Component div */}
-                        <div className={`grid  transition-all  duration-300 ease-in-out text-slate-600    ${isComponentOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
-                            <div className="overflow-hidden flex flex-col ml-8 text-lg space-y-2 border-l  my-2 px-6 ">
+                        <div className={`grid  text-slate-600  transition-all duration-300 ease-in-out    ${isComponentOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
+                            <div className="my-2 ml-8 flex flex-col space-y-2 overflow-hidden border-l  px-6 text-lg ">
                                 {navComponentsItems.map((componentName, i) => (
                                     <NavLink
                                         key={i}
                                         onClick={() => setIsOpen(false)}
                                         className={({ isActive, isPending }) =>
-                                            isPending ? 'pending' : isActive ? 'px-6 bg-[#0095FF] text-white  py-2 rounded-lg duration-300' : 'hover:bg-sky-50 px-6 py-2 hover:rounded-lg'
+                                            isPending ? 'pending' : isActive ? 'rounded-lg bg-[#0095FF] px-6  py-2 text-white duration-300' : 'px-6 py-2 hover:rounded-lg hover:bg-sky-50'
                                         }
                                         to={`/components/${componentName.toLowerCase()}`}
                                     >
