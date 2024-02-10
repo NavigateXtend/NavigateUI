@@ -29,7 +29,7 @@ const CodeBox = ({ children, codeStr }) => {
 
     return (
         <div className={`my-10 h-fit w-[1000px] overflow-hidden rounded-md`}>
-            <div className="item-center relative m-0 flex border-collapse justify-between gap-2 rounded-t-md bg-[#1e293c] text-sky-300">
+            <div className="item-center relative m-0 flex border-collapse justify-between gap-2 rounded-t-md bg-[#314669] text-sky-100">
                 <div className="absolute inset-0 z-40 border-b-2 border-sky-100/40"></div>
                 <div className="item-center flex">
                     {totalConfig?.map((item, inx) => (
