@@ -39,7 +39,7 @@ const codeStr = `export const Accordion2 = () => {
                         : idx === 2
                         ? "text-amber-500"
                         : idx === 3
-                        ? "text-[#CA1353]"
+                        ? "text-[#f54885]
                         : "text-gray-500"
                     }\`}
                   >
@@ -221,7 +221,7 @@ const Accordion2 = () => {
                                 <p className="text-lg font-medium text-white">{data?.title}</p>
                                 <p className="text-gray-400">
                                     {data?.subTitle} {/*give color based on condition */}
-                                    <span className={`${idx === 0 ? 'text-[#0095FF]' : idx === 1 ? 'text-white' : idx === 2 ? 'text-amber-500' : idx === 3 ? 'text-[#CA1353]' : 'text-gray-500'}`}>
+                                    <span className={`${idx === 0 ? 'text-[#0095FF]' : idx === 1 ? 'text-white' : idx === 2 ? 'text-amber-500' : idx === 3 ? 'text-[#f54885]' : 'text-gray-500'}`}>
                                         {data.coloredText}
                                     </span>
                                 </p>

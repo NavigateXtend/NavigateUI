@@ -23,8 +23,8 @@ const accordionData = [{title: 'heading', subtitle: 'Hi!~ How are you doing?', c
                         </button>
                         {/* container */}
                         <div className={\`grid place-content-center  \${isActive === idx ? 'w-56 px-5 opacity-1 scale-1' : 'w-0 opacity-0 scale-0'} text-black duration-300 ease-in-out\`}>
-                            <h2 className="lg:text-2xl font-black">{_.title}</h2>
-                            <p className="text-black/60">{_.subtitle}</p>
+                        <h2 className="font-black lg:text-2xl text-white">{_.title}</h2>
+                        <p className="text-gray-200">{_.subtitle}</p>
                         </div>
                     </div>
                 ))}
@@ -86,8 +86,8 @@ const Accordion8 = () => {
                         </button>
                         {/* container */}
                         <div className={`grid place-content-center  ${isActive === idx ? 'opacity-1 scale-1 w-56 px-5' : 'w-0 scale-0 opacity-0'} text-black duration-300 ease-in-out`}>
-                            <h2 className="font-black lg:text-2xl">{_.title}</h2>
-                            <p className="text-black/60">{_.subtitle}</p>
+                            <h2 className="font-black lg:text-2xl text-white">{_.title}</h2>
+                            <p className="text-gray-200">{_.subtitle}</p>
                         </div>
                     </div>
                 ))}
