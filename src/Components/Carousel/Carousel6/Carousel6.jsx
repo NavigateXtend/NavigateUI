@@ -1,5 +1,7 @@
+'use client';
 import { useEffect, useState } from 'react';
 import CodeBox from './../../../Shared/CodeBox/CodeBox';
+import Image from 'next/image';
 
 const codeStr = `import { useEffect, useState } from 'react';
 
@@ -48,30 +50,32 @@ export const Carousel6 = () => {
     useEffect(() => {
         const intervalId = setInterval(() => setCurrentSlider(currentSlider === sliders.length - 1 ? 0 : currentSlider + 1), 5000);
         return () => clearInterval(intervalId);
-    }, [currentSlider]);
+    }, [currentSlider, sliders.length]);
 
     return (
         <CodeBox codeStr={codeStr}>
             <div className="flex flex-row-reverse justify-between">
                 <div
-                    className="w-full h-72 sm:h-96 md:h-[540px] flex flex-col items-center justify-center gap-5 lg:gap-10 bg-cover bg-center before:absolute before:bg-black/50 before:inset-0 transform duration-1000 ease-linear rounded-lg overflow-hidden"
+                    className="flex h-72 w-full transform flex-col items-center justify-center gap-5 overflow-hidden rounded-lg bg-cover bg-center duration-1000 ease-linear before:absolute before:inset-0 before:bg-black/50 sm:h-96 md:h-[540px] lg:gap-10"
                     style={{ backgroundImage: `url(${sliders[currentSlider].img})` }}
                 >
                     {/* text container here */}
-                    <div className="drop-shadow-lg text-white text-center px-5">
-                        <h1 className="text-xl lg:text-3xl font-semibold mb-3">{sliders[currentSlider].title}</h1>
+                    <div className="px-5 text-center text-white drop-shadow-lg">
+                        <h1 className="mb-3 text-xl font-semibold lg:text-3xl">{sliders[currentSlider].title}</h1>
                         <p className="text-sm md:text-base lg:text-lg">{sliders[currentSlider].des}</p>
                     </div>
                 </div>
                 {/* slider container */}
-                <div className="flex flex-col justify-center items-center gap-3 p-2">
+                <div className="flex flex-col items-center justify-center gap-3 p-2">
                     {/* sliders */}
                     {sliders.map((slide, inx) => (
-                        <img
+                        <Image
+                            width={1200}
+                            height={640}
                             onClick={() => setCurrentSlider(inx)}
                             key={inx}
                             src={slide.img}
-                            className={`w-10 md:w-20 h-6 sm:h-8 md:h-12 bg-black/20 ${currentSlider === inx ? 'border-2 border-black p-px' : ''} rounded-md md:rounded-lg box-content cursor-pointer`}
+                            className={`h-6 w-10 bg-black/20 sm:h-8 md:h-12 md:w-20 ${currentSlider === inx ? 'border-2 border-black p-px' : ''} box-content cursor-pointer rounded-md md:rounded-lg`}
                             alt={slide.title}
                         />
                     ))}

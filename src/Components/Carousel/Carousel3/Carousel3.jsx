@@ -1,5 +1,7 @@
+'use client';
 import { useState } from 'react';
-import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import CodeBox from '@/Shared/CodeBox/CodeBox';
+import Image from 'next/image';
 
 const codeStr = `import { useState } from "react";
 
@@ -66,11 +68,11 @@ export const Carousel3 = () => {
 
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="max-w-6xl mx-auto h-[540px] md:h-[670px] flex flex-col xl:flex-row items-center overflow-hidden gap-5 lg:gap-10 relative">
-                <div className="absolute w-full h-full flex items-center justify-between z-50 px-5">
+            <div className="relative mx-auto flex h-[540px] max-w-6xl flex-col items-center gap-5 overflow-hidden md:h-[670px] lg:gap-10 xl:flex-row">
+                <div className="absolute z-50 flex h-full w-full items-center justify-between px-5">
                     {/* arrow left */}
-                    <button onClick={prevSlider} className="flex justify-center items-center bg-white rounded-full w-6 h-6 md:w-8 md:h-8">
-                        <svg viewBox="0 0 1024 1024" className="w-4 h-4 md:w-6 md:h-6 icon" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                    <button onClick={prevSlider} className="flex h-6 w-6 items-center justify-center rounded-full bg-white md:h-8 md:w-8">
+                        <svg viewBox="0 0 1024 1024" className="icon h-4 w-4 md:h-6 md:w-6" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
@@ -82,8 +84,8 @@ export const Carousel3 = () => {
                         </svg>
                     </button>
                     {/* arrow right */}
-                    <button onClick={nextSlider} className="flex justify-center items-center bg-white rounded-full w-6 h-6 md:w-8 md:h-8">
-                        <svg viewBox="0 0 1024 1024" className="w-4 h-4 md:w-6 md:h-6 icon" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(180)">
+                    <button onClick={nextSlider} className="flex h-6 w-6 items-center justify-center rounded-full bg-white md:h-8 md:w-8">
+                        <svg viewBox="0 0 1024 1024" className="icon h-4 w-4 md:h-6 md:w-6" xmlns="http://www.w3.org/2000/svg" fill="#000000" transform="rotate(180)">
                             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
@@ -96,21 +98,23 @@ export const Carousel3 = () => {
                     </button>
                 </div>
                 {/* slider container */}
-                <div className="h-[540px] md:h-[670px] w-2/3 ml-auto relative ease-linear duration-300 flex items-center" style={{ transform: `translateX(-${currentSlider * 50}%)` }}>
+                <div className="relative ml-auto flex h-[540px] w-2/3 items-center duration-300 ease-linear md:h-[670px]" style={{ transform: `translateX(-${currentSlider * 50}%)` }}>
                     {/* sliders */}
                     {sliders.map((slide, inx) => (
                         <div
                             key={inx}
                             className={`${
-                                currentSlider === inx ? 'h-[240px] sm:h-[310px] md:h-[480px] lg:h-[580px]' : 'h-[220px] sm:h-[260px] md:h-[380px] lg:h-[480px] scale-95 opacity-40'
-                            } min-w-[50%] relative duration-200`}
+                                currentSlider === inx ? 'h-[240px] sm:h-[310px] md:h-[480px] lg:h-[580px]' : 'h-[220px] scale-95 opacity-40 sm:h-[260px] md:h-[380px] lg:h-[480px]'
+                            } relative min-w-[50%] duration-200`}
                             style={{
                                 perspective: '200px'
                             }}
                         >
-                            <img
+                            <Image
+                                width={600}
+                                height={600}
                                 src={slide.img}
-                                className="w-full h-full bg-gray-900 rounded-lg duration-300"
+                                className="h-full w-full rounded-lg bg-gray-900 duration-300"
                                 alt={slide.tags}
                                 style={{
                                     transform: `${currentSlider - 1 === inx ? 'rotateY(4deg)' : currentSlider + 1 === inx ? 'rotateY(-4deg)' : ''}`,

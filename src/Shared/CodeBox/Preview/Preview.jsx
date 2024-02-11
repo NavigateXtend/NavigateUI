@@ -1,7 +1,5 @@
-import React from 'react';
-
 const Preview = ({ children }) => {
-    return <div className="w-full h-full">{children}</div>;
+    return <div className="h-full w-full border p-5 border-sky-500">{children}</div>;
 };
 
 export default Preview;
