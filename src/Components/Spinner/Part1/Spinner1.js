@@ -64,16 +64,10 @@ const Spinner1 = () => {
 <div className=" w-12 h-12"><div className="grid grid-cols-2 h-full w-full overflow-hidden shadow-lg rounded-full animate-spin"><span className="h-6 w-6 rounded-tl-full bg-transparent"></span><span className="h-6 w-6 rounded-tr-full bg-sky-500"></span><span className="h-6 w-6 rounded-bl-full bg-sky-500"></span><span className="h-6 w-6 rounded-br-full"></span></div></div>
 `}
             >
-                <div className="flex flex-wrap items-center justify-evenly ">
+                <div className="flex flex-nowrap items-center justify-evenly ">
                     <div className="flex h-20 w-20 animate-[spin_1.8s_linear_infinite] items-center justify-center rounded-full border-l-2 border-green-500">
                         <div className="flex h-16 w-16 animate-[spin_1.8s_linear_infinite] items-center justify-center rounded-full border-b-2 border-indigo-500">
                             <div className="h-10 w-10 animate-[spin_1.8s_linear_infinite]  rounded-full border-r-2 border-sky-500"></div>
-                        </div>
-                    </div>
-
-                    <div className="animate-[spin_1.8s_linear_infinite]">
-                        <div className="z-30 h-14 w-14 animate-[ping_1.4s_linear_infinite]  rounded-lg border bg-sky-500">
-                            <div className="relative -left-[2px] -top-[1.4px] h-[58px] w-[58px] rounded-full bg-white"></div>
                         </div>
                     </div>
                     <div className="h-12 w-12">
