@@ -12,7 +12,7 @@ const codeStr = `const Card10 = () => {
     ];
    
     return (
-        <div className="bg-gray-250 shadow-md max-w-[800px md:w-[700px] p-8 my-20 space-y-6">
+        <div className="bg-gray-250 shadow-md max-w-[800px] bg-white md:w-[700px] p-8 my-20 space-y-6">
             {/* top part  */}
             <div className="flex justify-between items-center">
                 <h4 className="text-xl font-medium text-slate-800 uppercase">order</h4>
@@ -65,7 +65,7 @@ const Card10 = () => {
 
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="bg-gray-250 max-w-[800px mx-auto my-20 space-y-6 p-8 shadow-md md:w-[700px]">
+            <div className="bg-gray-250 max-w-[800px] bg-white mx-auto my-20 space-y-6 p-8 shadow-md md:w-[700px]">
                 {/* top part  */}
                 <div className="flex items-center justify-between">
                     <h4 className="text-xl font-medium uppercase text-slate-800">order</h4>
