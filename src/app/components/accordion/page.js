@@ -1,6 +1,7 @@
 import Accordion1 from '@/Components/Accordion/Accordion1/Accordion1';
 import Accordion10 from '@/Components/Accordion/Accordion10/Accordion10';
 import { Accordion11 } from '@/Components/Accordion/Accordion11/Accordion11';
+import Accordion12 from '@/Components/Accordion/Accordion12/Accordion12';
 import Accordion2 from '@/Components/Accordion/Accordion2/Accordion2';
 import Accordion3 from '@/Components/Accordion/Accordion3/Accordion3';
 import Accordion4 from '@/Components/Accordion/Accordion4/Accordion4';
@@ -53,6 +54,10 @@ const AccordionPage = () => {
             <div>
                 <h1 className="mt-10  px-4 text-2xl font-semibold text-gray-100"> # Accordion With Image Slide</h1>
                 <Accordion11></Accordion11>
+            </div>
+            <div>
+                <h1 className="mt-10  px-4 text-2xl font-semibold text-gray-100"> # Accordion With Image Slide</h1>
+                <Accordion12></Accordion12>
             </div>
         </div>
     );

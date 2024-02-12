@@ -1,5 +1,5 @@
 import Button1 from '@/Components/Button/Buttons1/Button1';
-import  Button2  from '@/Components/Button/Buttons2/Button2';
+import Button2 from '@/Components/Button/Buttons2/Button2';
 const Button = () => {
     return (
         <div className="w-full text-center">
