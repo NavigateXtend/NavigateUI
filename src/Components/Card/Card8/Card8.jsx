@@ -3,7 +3,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const codeStr = `const Card8 = () => {
     return (
-      <div className="max-w-[300px] md:w-[350px] my-20 p-6 md:p-8 shadow-md rounded-2xl space-y-8"> 
+      <div className="max-w-[300px] md:w-[350px] bg-white my-20 p-6 md:p-8 shadow-md rounded-2xl space-y-8"> 
       {/* profile image & bg  */}
         <div className="relative">
           <img className="w-full h-full rounded-2xl bg-gray-500" src="https://source.unsplash.com/350x150/?northern lights" alt=""/>
@@ -40,7 +40,7 @@ export default Card8;
 const Card8 = () => {
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="mx-auto my-20 max-w-[350px] space-y-8 rounded-2xl px-6 py-8 shadow-md md:max-w-[350px]">
+            <div className="mx-auto my-20 max-w-[350px] space-y-8 rounded-2xl bg-white px-6 py-8 shadow-md md:max-w-[350px]">
                 {/* profile image & bg  */}
                 <div className="relative ">
                     <Image width={350} height={150} className="h-[150px] w-[350px] rounded-2xl bg-gray-500" src="https://source.unsplash.com/350x150/?northern lights" alt="northern lights" />

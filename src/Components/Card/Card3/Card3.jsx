@@ -3,7 +3,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 const Card3 = () => {
     const codeStr = `const Card3 = () => {
   return (
-    <div className="max-w-[350px] my-20 shadow-md py-8 pl-8 rounded-lg border-t border-l border-l-[#005eb6] border-t-[#005eb6] border-b-2 border-r-2 border-b-[#0084ff] border-r-[#0084ff] space-y-6">
+    <div className="bg-white max-w-[350px] my-20 shadow-md py-8 pl-8 rounded-lg border-t border-l border-l-[#005eb6] border-t-[#005eb6] border-b-2 border-r-2 border-b-[#0084ff] border-r-[#0084ff] space-y-6">
       <div className="flex justify-between items-center">
         <h1 className="w-[35%] text-2xl md:text-4xl font-bold tracking-wider text-sky-900"><sup className="text-2xl font-black">$</sup>70<sub className="text-sm tracking-tight">/mo</sub></h1>
         <div className=" px-4 md:px-10 py-4 md:py-5  w-[65%] bg-gradient-to-r from-[#52b7ff] to-[#0084ff] rounded-tl-full rounded-bl-full">
@@ -26,7 +26,7 @@ export default Card3;
 `;
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="mx-auto my-20 max-w-[350px] space-y-6 rounded-lg border-b-2 border-l border-r-2 border-t border-b-[#0084ff] border-l-[#005eb6] border-r-[#0084ff] border-t-[#005eb6] py-8 pl-8 shadow-md">
+            <div className="bg-white mx-auto my-20 max-w-[350px] space-y-6 rounded-lg border-b-2 border-l border-r-2 border-t border-b-[#0084ff] border-l-[#005eb6] border-r-[#0084ff] border-t-[#005eb6] py-8 pl-8 shadow-md">
                 <div className="flex items-center justify-between">
                     <h1 className="w-[35%] text-2xl font-bold tracking-wider text-sky-900 md:text-4xl">
                         <sup className="text-2xl font-black">$</sup>

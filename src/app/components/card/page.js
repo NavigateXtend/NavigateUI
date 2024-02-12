@@ -3,6 +3,7 @@ import Card10 from '@/Components/Card/Card10/Card10';
 import Card11 from '@/Components/Card/Card11/Card11';
 import Card12 from '@/Components/Card/Card12/Card12';
 import Card13 from '@/Components/Card/Card13/Card13';
+import Card14 from '@/Components/Card/Card14/Card14';
 import Card2 from '@/Components/Card/Card2/Card2';
 import Card3 from '@/Components/Card/Card3/Card3';
 import Card4 from '@/Components/Card/Card4/Card4';
@@ -15,7 +16,7 @@ import Card9 from '@/Components/Card/Card9/Card9';
 const Card = () => {
     return (
         <div className="flex  items-center flex-col gap-6 px-4">
-            <h1 className="text-2xl lg:text-3xl text-center font-semibold pt-10  pb-2 text-gray-800 border-gray-700">Explore The Card Collections ✅</h1>
+            <h1 className="text-2xl lg:text-3xl text-center font-semibold pt-10  pb-2 text-gray-100 border-gray-700">Explore The Card Collections ✅</h1>
             {/* Card 1  */}
             <Card1></Card1>
             {/* Card 2  */}
@@ -42,6 +43,8 @@ const Card = () => {
             <Card12></Card12>
             {/* Card 13  */}
             <Card13></Card13>
+            {/* Card 14 */}
+            <Card14></Card14>
         </div>
     );
 };

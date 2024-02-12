@@ -120,9 +120,9 @@ const Button2 = () => {
             >
                 <div className="flex flex-wrap items-center justify-evenly gap-4">
                     {/* button 22,23,24 */}
-                    <button className="group relative flex w-36 items-center rounded-lg border-2 border-sky-500 p-4 text-sky-500">
+                    <button className="group relative flex w-36 items-center rounded-lg border-2 border-sky-500 p-4  text-sky-500">
                         <span>Get Start</span>
-                        <span className="absolute right-3 box-content flex w-1/6 justify-center rounded-lg bg-white duration-300 group-hover:w-5/6">
+                        <span className="absolute right-3 box-content flex w-1/6 justify-center rounded-lg bg-white  duration-300 group-hover:w-5/6">
                             <svg viewBox="0 0 24 24" fill="none" className="w-10" xmlns="http://www.w3.org/2000/svg">
                                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -132,12 +132,12 @@ const Button2 = () => {
                             </svg>
                         </span>
                     </button>
-                    <button
+                    {/* <button
                         type="button"
                         className="flex items-center justify-center gap-3 rounded-none bg-transparent  from-[#58bfff] to-[#01bea5] p-2  text-black outline  outline-2  delay-75  ease-linear hover:scale-105    hover:bg-gradient-to-tr hover:text-white  hover:outline-none lg:p-3"
                     >
                         Explore
-                    </button>
+                    </button> */}
                 </div>
             </CodeBox>
         </div>

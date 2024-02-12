@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const codeStr = `const Card9 = () => {
     return (
-            <div className="max-[350px] md:w-[350px] bg-slate-300/20 px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md">
+            <div className="max-[350px] md:w-[350px] bg-slate-100/70 px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md">
             {/* Card Image */}
                 <img className="w-[350px] h-[190px] bg-gray-400 rounded-2xl" src={'https://source.unsplash.com/350x200/?furniture'} alt="" />
                 {/* Card Heading */}
@@ -32,7 +32,7 @@ export default Card9;
 export const Card9 = () => {
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="max-[350px] mx-auto space-y-6 rounded-2xl bg-slate-300/20 px-6 py-4 shadow-md md:w-[350px]">
+            <div className="max-[350px] mx-auto space-y-6 rounded-2xl bg-slate-100/70 px-6 py-4 shadow-md md:w-[350px]">
                 {/* Card Image */}
                 <Image width={350} height={190} className="h-[190px] w-[350px] rounded-2xl bg-gray-400" src={'https://source.unsplash.com/350x190/?furniture'} alt="" />
                 {/* Card Heading */}

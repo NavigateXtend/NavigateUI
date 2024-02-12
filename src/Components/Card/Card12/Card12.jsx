@@ -12,7 +12,7 @@ const Card12 = () => {
     const [selectedColor, setSelectedColor] = useState('black');
     const [selectedSize, setSelectedSize] = useState('m');
     return (
-        <div className="rounded-lg border shadow-sm w-full max-w-md mx-auto">
+        <div className="rounded-lg border shadow-sm w-full max-w-md mx-auto bg-white">
             {/* Product Title */}
             <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="text-2xl font-semibold ">Classic Leather Jacket</h3>
@@ -83,7 +83,7 @@ const Card12 = () => {
 
     return (
         <CodeBox codeStr={codestr}>
-            <div className="bg-card mx-auto w-full max-w-md   rounded-lg border shadow-lg">
+            <div className="bg-card mx-auto w-full max-w-md   rounded-lg border shadow-lg bg-white">
                 {/* Product Title */}
                 <div className="flex flex-col space-y-1.5 px-6 pt-6">
                     <h3 className="text-2xl font-semibold ">Classic Leather Jacket</h3>

@@ -40,7 +40,7 @@ const codeStr = `const Accordion5 = () => {
             {accordionData?.map((data, idx) => (
                 <div key={idx}>
                     {/* header / title  */}
-                    <div onClick={() => handleToggle(idx)} className="bg-[#03BF70] p-5 flex items-center gap-6 relative cursor-pointer">
+                    <div onClick={() => handleToggle(idx)} className="relative flex cursor-pointer items-center gap-6 bg-[#2e2c2c] p-5">
                         {data?.svg}
                         <h5 className="text-white font-medium">{data?.title}</h5>
                         <span className="w-0 h-0 border-b-[15px] border-b-[#03BF70] border-r-[15px] border-r-transparent absolute -bottom-[7px] left-10 -rotate-45"></span>
@@ -139,7 +139,7 @@ const Accordion5 = () => {
                 {accordionData?.map((data, idx) => (
                     <div key={idx}>
                         {/* header / title  */}
-                        <div onClick={() => handleToggle(idx)} className="relative flex cursor-pointer items-center gap-6 bg-[#03BF70] p-5">
+                        <div onClick={() => handleToggle(idx)} className="relative flex cursor-pointer items-center gap-6 bg-[#2e2c2c] p-5">
                             {data?.svg}
                             <h5 className="font-medium text-white">{data?.title}</h5>
                             <span className="absolute -bottom-[7px] left-10 h-0 w-0 -rotate-45 border-b-[15px] border-r-[15px] border-b-[#03BF70] border-r-transparent"></span>
