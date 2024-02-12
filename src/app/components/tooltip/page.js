@@ -1,16 +1,19 @@
 import Tooltip1 from '@/Components/Tooltip/Tooltip1/Tooltip1';
 import Tooltip2 from '@/Components/Tooltip/Tooltip2/Tooltip2';
 import Tooltip3 from '@/Components/Tooltip/Tooltip3/Tooltip3';
+import Tooltip4 from '@/Components/Tooltip/Tooltip4/Tooltip4';
 
 const Tooltip = () => {
     return (
         <div>
-            <h2 className="mt-10 px-4 text-xl font-semibold text-slate-800 md:text-2xl"># Simple text tooltip</h2>
+            <h2 className="mt-10 px-4 text-xl font-semibold text-slate-800 md:text-2xl"># Tooltip from top</h2>
             <Tooltip1></Tooltip1>
-            <h2 className="mt-20 px-4 text-xl font-semibold text-slate-800  md:text-2xl"># Simple right side text tooltip</h2>
+            <h2 className="mt-20 px-4 text-xl font-semibold text-slate-800  md:text-2xl"># Tooltip from right</h2>
             <Tooltip2></Tooltip2>
-            <h2 className="mt-20 px-4 text-xl font-semibold text-slate-800  md:text-2xl"># Simple animation with text tooltip</h2>
+            <h2 className="mt-20 px-4 text-xl font-semibold text-slate-800  md:text-2xl"># Tooltip from bottom</h2>
             <Tooltip3></Tooltip3>
+            <h2 className="mt-20 px-4 text-xl font-semibold text-slate-800  md:text-2xl"># Tooltip from left</h2>
+            <Tooltip4></Tooltip4>
         </div>
     );
 };
