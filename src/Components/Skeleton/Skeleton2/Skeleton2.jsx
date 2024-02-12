@@ -2,7 +2,7 @@ import CodeBox from '@/Shared/CodeBox/CodeBox';
 
 const Skeleton2 = () => {
     const codestr = `
-    <div className="w-[400px] md:w-[350px] bg-slate-300/20 px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md animate-pulse">
+    <div className="w-[400px] md:w-[350px]  bg-slate-300/20 px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md animate-pulse">
         {/* Card Image Skeleton */}
         <div className="w-full h-[190px] bg-gray-400 rounded-2xl"></div> 
         {/* Card Heading and Rating Skeleton */}
@@ -25,7 +25,7 @@ const Skeleton2 = () => {
     `;
     return (
         <CodeBox codeStr={codestr}>
-            <div className="mx-auto max-w-[400px] animate-pulse space-y-6 rounded-2xl bg-slate-300/20 px-6 py-4 shadow-md md:w-[350px]">
+            <div className="mx-auto max-w-[400px] bg-white animate-pulse space-y-6 rounded-2xl bg-slate-300/20 px-6 py-4 shadow-md md:w-[350px]">
                 {/* Card Image Skeleton */}
                 <div className="h-[190px] w-full rounded-2xl bg-gray-400"></div>
 

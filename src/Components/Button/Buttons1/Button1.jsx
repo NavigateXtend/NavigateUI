@@ -4,13 +4,13 @@ const Button1 = () => {
         <div className="flex flex-col items-start justify-center gap-5">
             <CodeBox
                 codeStr={`<button className="text-xl w-32 h-16 bg-sky-700 hover:scale-95 text-white duration-300">Button</button>
-<button className="text-xl w-32 h-16 before:block before:absolute bg-[#e1dddd] hover:before:bg-sky-700 before:w-0 before:h-0 hover:before:h-20 hover:before:w-40 before:-bottom-2 before:-right-2 before:duration-500 before:rounded-xl before:-z-10 relative inline-block transform hover:text-white text-sky-700 bg-transparent border-2 overflow-hidden border-sky-700 duration-500">Button</button>
+<button className="text-xl w-32 h-16 before:block before:absolute bg-[#f3f0f0] hover:before:bg-sky-700 before:w-0 before:h-0 hover:before:h-20 hover:before:w-40 before:-bottom-2 before:-right-2 before:duration-500 before:rounded-xl before:-z-10 relative inline-block transform hover:text-white text-sky-700 bg-transparent border-2 overflow-hidden border-sky-700 duration-500">Button</button>
 <button className="border-2 text-xl bg-[#e1dddd] text-sky-700 w-32 h-16 border-sky-700 hover:before:bg-sky-700 before:w-full before:h-0 hover:before:h-full hover:before:-z-10 hover:before:absolute before:absolute relative before:top-0 hover:before:left-0 before:duration-500 hover:text-white transform origin-top before:block">Button</button>`}
             >
                 <div className="flex flex-wrap items-center justify-evenly gap-4">
                     {/* 1,2,3 */}
                     <button className="h-16 w-32 rounded-lg bg-sky-700 text-xl text-white hover:scale-95">Button</button>
-                    <button className="relative inline-block h-16 w-32 transform overflow-hidden border-2 border-sky-700 bg-[#e1dddd] bg-transparent text-xl text-sky-700 duration-500 before:absolute before:-bottom-2 before:-right-2 before:-z-10 before:block before:h-0 before:w-0 before:rounded-xl before:duration-500 hover:text-white hover:before:h-20 hover:before:w-40 hover:before:bg-sky-700 ">
+                    <button className="relative inline-block h-16 w-32 transform overflow-hidden border-2 border-sky-700 bg-[#f3f0f0]  bg-transparent text-xl text-sky-700 duration-500 before:absolute before:-bottom-2 before:-right-2 before:-z-10 before:block before:h-0 before:w-0 before:rounded-xl before:duration-500 hover:text-white hover:before:h-20 hover:before:w-40 hover:before:bg-sky-700 ">
                         Button
                     </button>
                     <button className="relative h-16 w-32 origin-top transform border-2 border-sky-700 bg-[#e1dddd] text-xl text-sky-700 before:absolute before:top-0 before:block before:h-0 before:w-full before:duration-500 hover:text-white hover:before:absolute hover:before:left-0 hover:before:-z-10 hover:before:h-full  hover:before:bg-sky-700">
@@ -111,7 +111,7 @@ const Button1 = () => {
                     {/* 12 */}
                     <button
                         type="button"
-                        className="relative inline-block h-16 w-40 overflow-hidden border-sky-500 px-5 py-2 text-sky-500 shadow-lg before:absolute before:inset-0 before:-z-10 before:block before:translate-x-[90%] before:rounded-s-full before:bg-sky-600 before:duration-200 after:absolute after:inset-0 after:-z-10 after:block after:-translate-x-[90%] after:rounded-e-full after:bg-sky-600 after:duration-500 hover:text-white before:hover:translate-x-0 after:hover:translate-x-0"
+                        className="relative inline-block h-16 w-40 overflow-hidden  border-sky-500 px-5 py-2 text-sky-500 shadow-lg before:absolute before:inset-0 before:-z-10 before:block before:translate-x-[90%] before:rounded-s-full before:bg-sky-600 before:duration-200 after:absolute after:inset-0 after:-z-10 after:block after:-translate-x-[90%] after:rounded-e-full after:bg-sky-600 after:duration-500 hover:text-white before:hover:translate-x-0 after:hover:translate-x-0"
                     >
                         Submit
                     </button>

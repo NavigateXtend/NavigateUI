@@ -2,7 +2,7 @@ import CodeBox from '../../../Shared/CodeBox/CodeBox';
 
 const Skeleton3 = () => {
     const codeStr = `
-    <div className="max-w-[300px] md:w-[350px] mx-auto p-6 md:p-8 shadow-md rounded-2xl space-y-8 animate-pulse">
+    <div className="max-w-[300px] md:w-[350px] bg-white mx-auto p-6 md:p-8 shadow-md rounded-2xl space-y-8 animate-pulse">
         {/* Profile Image & BG Skeleton */}
         <div className="relative">
           <div className="h-[150px] bg-gray-300 rounded-2xl"></div>
@@ -33,7 +33,7 @@ const Skeleton3 = () => {
 
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="mx-auto max-w-[300px] animate-pulse space-y-8 rounded-2xl p-6 shadow-md md:w-[350px] md:p-8">
+            <div className="mx-auto max-w-[300px] bg-white animate-pulse space-y-8 rounded-2xl p-6 shadow-md md:w-[350px] md:p-8">
                 {/* Profile Image & BG Skeleton */}
                 <div className="relative">
                     <div className="h-[150px] rounded-2xl bg-gray-300"></div>

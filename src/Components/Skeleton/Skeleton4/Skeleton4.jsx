@@ -3,7 +3,7 @@ import CodeBox from '@/Shared/CodeBox/CodeBox';
 const Skeleton4 = () => {
     const codeStr = `
                 {/* Light theme skeleton */}
-                <div className=" p-6 rounded-md shadow-md mx-auto max-w-fit">
+                <div className=" p-6 rounded-md bg-white shadow-md mx-auto max-w-fit">
                     <div className="animate-pulse">
                         {/* Product Image Skeleton */}
                         <div className="w-[300px] lg:h-52 md:h-52 h-48 rounded-lg bg-gray-300 mb-6"></div>
@@ -33,9 +33,9 @@ const Skeleton4 = () => {
 
     return (
         <CodeBox codeStr={codeStr}>
-            <div className="flex flex-col justify-center gap-4 lg:flex-row">
+            <div className="flex flex-col  justify-center gap-4 lg:flex-row">
                 {/* Light theme skeleton */}
-                <div className=" mx-auto max-w-fit rounded-md p-6 shadow-md">
+                <div className=" mx-auto max-w-fit bg-white rounded-md p-6 shadow-md">
                     <div className="animate-pulse">
                         {/* Product Image Skeleton */}
                         <div className="mb-6 h-48 w-[300px] rounded-lg bg-gray-300 md:h-52 lg:h-52"></div>

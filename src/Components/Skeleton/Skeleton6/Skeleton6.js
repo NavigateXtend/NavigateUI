@@ -2,7 +2,7 @@ import CodeBox from '@/Shared/CodeBox/CodeBox';
 
 const codestr = `
 {/* Profile card skeleton with avatar*/}
-<div className="max-w-[450px] w-full animate-pulse flex justify-between  items-center gap-6 mx-auto p-6 rounded-md shadow-xl ">
+<div className="max-w-[450px] w-full animate-pulse bg-white flex justify-between  items-center gap-6 mx-auto p-6 rounded-md shadow-xl ">
     {/* user post skeleton */}
     <div className=" flex ">
         <div className="w-32 h-32 rounded-lg bg-gray-300 animate-pulse"></div>
@@ -17,7 +17,7 @@ const codestr = `
 </div>
 
 {/* Profile card skeleton with rounded avatar*/}
-<div className="max-w-[450px] w-full animate-pulse flex justify-between  items-center gap-6 mx-auto p-6 rounded-md shadow-xl ">
+<div className="max-w-[450px] w-full animate-pulse bg-white flex justify-between  items-center gap-6 mx-auto p-6 rounded-md shadow-xl ">
     {/* user post skeleton */}
     <div className="mt-8 w-full flex justify-end flex-col items-start">
         <div className="w-[60%] rounded-lg bg-gray-300 h-7 mb-5"></div>
@@ -37,7 +37,7 @@ const Skeleton6 = () => {
         <CodeBox codeStr={codestr}>
             <div className="flex w-full flex-wrap justify-center gap-7 ">
                 {/* Profile card skeleton with avatar*/}
-                <div className="mx-auto flex w-full max-w-[450px] animate-pulse  items-center justify-between gap-6 rounded-md p-6 shadow-xl ">
+                <div className="mx-auto flex w-full max-w-[450px] bg-white animate-pulse  items-center justify-between gap-6 rounded-md p-6 shadow-xl ">
                     {/* user post skeleton */}
                     <div className=" flex ">
                         <div className="h-32 w-32 animate-pulse rounded-lg bg-gray-300"></div>
@@ -51,7 +51,7 @@ const Skeleton6 = () => {
                     </div>
                 </div>
                 {/* Profile card skeleton with rounded avatar*/}
-                <div className="mx-auto flex w-full max-w-[450px] animate-pulse  items-center justify-between gap-6 rounded-md p-6 shadow-xl ">
+                <div className="mx-auto flex w-full max-w-[450px] bg-white animate-pulse  items-center justify-between gap-6 rounded-md p-6 shadow-xl ">
                     {/* user post skeleton */}
                     <div className="mt-8 flex w-full flex-col items-start justify-end">
                         <div className="mb-5 h-7 w-[60%] rounded-lg bg-gray-300"></div>

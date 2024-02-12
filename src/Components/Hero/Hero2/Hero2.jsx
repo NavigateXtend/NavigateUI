@@ -2,7 +2,7 @@ import CodeBox from '@/Shared/CodeBox/CodeBox';
 
 const Hero2 = () => {
     const codeStr = `
- <section className="w-full py-12 md:py-24 flex justify-center flex-col lg:py-32 bg-gradient-to-b from-#52C2FF to-white">
+ <section className="w-full py-12 md:py-24 flex justify-center bg-white flex-col lg:py-32 bg-gradient-to-b from-#52C2FF to-white">
  <div className="container px-4 md:px-6">
    <div className="flex flex-col items-center space-y-4 text-center text-black">
      {/* Text content */}
@@ -44,7 +44,7 @@ const Hero2 = () => {
 
     return (
         <CodeBox codeStr={codeStr}>
-            <section className="from-#52C2FF flex w-full flex-col justify-center bg-gradient-to-b to-white py-12 md:py-24 lg:py-32">
+            <section className="from-#52C2FF flex w-full flex-col justify-center bg-white bg-gradient-to-b to-white py-12 md:py-24 lg:py-32">
                 <div className=" px-4 md:px-6">
                     <div className="flex flex-col items-center space-y-4 text-center text-black">
                         {/* Text content */}
