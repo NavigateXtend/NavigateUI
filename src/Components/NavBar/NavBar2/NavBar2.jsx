@@ -86,11 +86,11 @@ export const NavBar2 = () => {
     const dropDownMenuRef = useRef();
 
     useEffect(() => {
-        const closeDropDown = (e) => {
-            if (!dropDownMenuRef.current.contains(e.target)) {
-                setDropDownState(false);
-            }
-        };
+        // const closeDropDown = (e) => {
+        //     if (!dropDownMenuRef.current.contains(e.target)) {
+        //         setDropDownState(false);
+        //     }
+        // };
 
         document.addEventListener('mousedown', closeDropDown);
     }, []);
