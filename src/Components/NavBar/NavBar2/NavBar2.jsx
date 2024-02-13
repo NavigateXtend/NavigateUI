@@ -1,0 +1,71 @@
+import { useRef } from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
+
+export const NavBar2 = () => {
+    const [dropDownState, setDropDownState] = useState(false);
+    const dropDownMenuRef = useRef();
+
+    useEffect(() => {
+        const closeDropDown = (e) => {
+            if (!dropDownMenuRef.current.contains(e.target)) {
+                setDropDownState(false);
+            }
+        };
+
+        document.addEventListener('mousedown', closeDropDown);
+    }, []);
+
+    return (
+        <nav className="flex items-center justify-start gap-20 px-10 py-8">
+            <img src="/Logo.svg" alt="navigateui logo" />
+            <ul className="flex items-center justify-between gap-10">
+                <li className="cursor-pointer hover:text-sky-500">Home</li>
+                <li>
+                    <button ref={dropDownMenuRef} onClick={() => setDropDownState(!dropDownState)} className="relative flex cursor-pointer  hover:text-sky-500">
+                        <span>Services</span>
+                        {dropDownState ? (
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="m18 15-6-6-6 6" />
+                            </svg>
+                        ) : (
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                            >
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        )}
+                    </button>
+                    {dropDownState && (
+                        <ul className="absolute z-10 flex flex-col gap-2 bg-white py-2">
+                            <li className="cursor-pointer hover:text-sky-500">Food</li>
+                            <li className="cursor-pointer hover:text-sky-500">Transport</li>
+                            <li className="cursor-pointer hover:text-sky-500">Housing</li>
+                            <li className="cursor-pointer hover:text-sky-500">Management</li>
+                        </ul>
+                    )}
+                </li>
+                <li className="cursor-pointer hover:text-sky-500">About</li>
+                <li className="cursor-pointer hover:text-sky-500">Contact</li>
+            </ul>
+        </nav>
+    );
+};
