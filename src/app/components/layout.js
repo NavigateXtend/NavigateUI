@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <div className="flex max-w-[1440px] justify-between gap-10 2xl:mx-auto">
+        <div className="flex gap-10 2xl:mx-auto">
             <div className="w-[25%]">
                 <Sidebar />
             </div>

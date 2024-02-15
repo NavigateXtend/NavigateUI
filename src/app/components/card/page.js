@@ -13,10 +13,15 @@ import Card7 from '@/Components/Card/Card7/Card7';
 import Card8 from '@/Components/Card/Card8/Card8';
 import Card9 from '@/Components/Card/Card9/Card9';
 
+export const metadata = {
+    title: 'Card Components | Navigate UI',
+    description: 'Card tailwind components'
+};
+
 const Card = () => {
     return (
-        <div className="flex  items-center flex-col gap-6 px-4">
-            <h1 className="text-2xl lg:text-3xl text-center font-semibold pt-10  pb-2 text-gray-100 border-gray-700">Explore The Card Collections ✅</h1>
+        <div className="flex  flex-col items-center gap-6 px-4">
+            <h1 className="border-gray-700 pb-2 pt-10 text-center text-2xl  font-semibold text-gray-100 lg:text-3xl">Explore The Card Collections ✅</h1>
             {/* Card 1  */}
             <Card1></Card1>
             {/* Card 2  */}

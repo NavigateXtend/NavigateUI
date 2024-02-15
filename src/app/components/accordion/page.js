@@ -10,9 +10,14 @@ import Accordion6 from '@/Components/Accordion/Accordion6/Accordion6';
 import Accordion8 from '@/Components/Accordion/Accordion8/Accordion8';
 import Accordion9 from '@/Components/Accordion/Accordion9/Accordion9';
 
+export const metadata = {
+    title: 'Accordion Components | Navigate UI',
+    description: 'Accordion tailwind components'
+};
+
 const AccordionPage = () => {
     return (
-        <div>
+        <>
             {/* accordion 1  */}
             <div>
                 <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"> # Basic Accordion</h1>
@@ -59,7 +64,7 @@ const AccordionPage = () => {
                 <h1 className="mt-10  px-4 text-2xl font-semibold text-gray-100"> # Accordion With Image Slide</h1>
                 <Accordion12></Accordion12>
             </div>
-        </div>
+        </>
     );
 };
 

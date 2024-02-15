@@ -2,6 +2,12 @@ import Badge1 from '@/Components/Badge/Badge1/Badge1';
 import Badge2 from '@/Components/Badge/Badge2/Badge2';
 import Badge3 from '@/Components/Badge/Badge3/Badge3';
 import Badge4 from '@/Components/Badge/Badge4/Badge4';
+
+export const metadata = {
+    title: 'Badge Components | Navigate UI',
+    description: 'Badge tailwind components'
+};
+
 const page = () => {
     return (
         <div>

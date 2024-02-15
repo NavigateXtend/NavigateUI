@@ -21,7 +21,7 @@ radial-gradient(at 4% 49%, #0f172a 0px, transparent 50%) repeat scroll 0% 0%, #0
             }}
             className="relative z-[99] border-b border-b-sky-500 bg-transparent text-white backdrop-blur-md"
         >
-            <div className="item-center mx-auto flex max-w-7xl justify-between py-4">
+            <div className="item-center flex justify-between px-20 py-4">
                 <Link href="/" className="flex items-center text-2xl font-bold text-sky-500">
                     <Image src="/Logo.svg" alt="navigateui logo" width={45} height={45} />
                     NavigateUI

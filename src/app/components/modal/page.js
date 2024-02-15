@@ -5,6 +5,11 @@ import Modal4 from '@/Components/Modal/Modal4/Modal4';
 import Modal5 from '@/Components/Modal/Modal5/Modal5';
 import Modal6 from '@/Components/Modal/Modal6/Modal6';
 
+export const metadata = {
+    title: 'Modal Components | Navigate UI',
+    description: 'Modal tailwind components'
+};
+
 const Modal = () => {
     return (
         <div>

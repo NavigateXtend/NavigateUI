@@ -3,6 +3,11 @@ import Tooltip2 from '@/Components/Tooltip/Tooltip2/Tooltip2';
 import Tooltip3 from '@/Components/Tooltip/Tooltip3/Tooltip3';
 import Tooltip4 from '@/Components/Tooltip/Tooltip4/Tooltip4';
 
+export const metadata = {
+    title: 'Tooltip Components | Navigate UI',
+    description: 'Tooltip tailwind components'
+};
+
 const Tooltip = () => {
     return (
         <div>

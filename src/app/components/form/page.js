@@ -5,6 +5,11 @@ import Form6 from '@/Components/Form/Form6/Form6';
 import Form7 from '@/Components/Form/Form7/Form7';
 import Form8 from '@/Components/Form/Form8/Form8';
 
+export const metadata = {
+    title: 'Form Components | Navigate UI',
+    description: 'Form tailwind components'
+};
+
 const Form = () => {
     return (
         <div className="grid grid-cols-1 space-y-10">

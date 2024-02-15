@@ -4,6 +4,11 @@ import { InputType3 } from '@/Components/Input/InputType3/InputType3';
 import { InputType4 } from '@/Components/Input/InputType4/InputType4';
 import { InputType5 } from '@/Components/Input/InputType5/InputType5';
 
+export const metadata = {
+    title: 'Input Components | Navigate UI',
+    description: 'Input tailwind components'
+};
+
 const page = () => {
     return (
         <div>

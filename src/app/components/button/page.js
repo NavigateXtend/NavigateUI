@@ -1,5 +1,11 @@
 import Button1 from '@/Components/Button/Buttons1/Button1';
 import Button2 from '@/Components/Button/Buttons2/Button2';
+
+export const metadata = {
+    title: 'Button Components | Navigate UI',
+    description: 'Button tailwind components'
+};
+
 const Button = () => {
     return (
         <div className="w-full text-center">

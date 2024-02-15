@@ -6,6 +6,11 @@ import Skeleton5 from '@/Components/Skeleton/Skeleton5/Skeleton5';
 import Skeleton6 from '@/Components/Skeleton/Skeleton6/Skeleton6';
 import Skeleton7 from '@/Components/Skeleton/Skeleton7/Skeleton7';
 
+export const metadata = {
+    title: 'Skeleton Components | Navigate UI',
+    description: 'Skeleton tailwind components'
+};
+
 const Skeleton = () => {
     return (
         <div className="grid grid-cols-1 space-y-10">

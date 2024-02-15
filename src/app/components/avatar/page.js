@@ -7,6 +7,11 @@ import AvatarType6 from '@/Components/Avatar/AvatarType6/AvatarType6';
 import AvatarType7 from '@/Components/Avatar/AvatarType7/AvatarType7';
 import AvatarType8 from '@/Components/Avatar/AvatarType8/AvatarType8';
 
+export const metadata = {
+    title: 'Avatar Components | Navigate UI',
+    description: 'Avatar tailwind components'
+};
+
 const Avatar = () => {
     return (
         <>

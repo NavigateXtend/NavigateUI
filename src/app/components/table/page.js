@@ -2,6 +2,11 @@ import Table1 from '@/Components/Table/Table1/Table1';
 import Table2 from '@/Components/Table/Table2/Table2';
 import Table3 from '@/Components/Table/Table3/Table3';
 
+export const metadata = {
+    title: 'Table Components | Navigate UI',
+    description: 'Table tailwind components'
+};
+
 const TablePage = () => {
     return (
         <div>
