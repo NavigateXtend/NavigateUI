@@ -70,7 +70,7 @@ radial-gradient(at 4% 49%, #0f172a 0px, transparent 50%) repeat scroll 0% 0%, #0
                                 </g>
                             </svg>
                             <div className="invisible absolute -bottom-12 cursor-pointer whitespace-nowrap duration-200 group-hover:visible group-hover:-bottom-14 group-hover:duration-300">
-                                <p className="rounded-md bg-[#0EA5E9] px-3 py-2 text-white">Help with a star</p>
+                                <p className="rounded-md bg-[#0EA5E9] px-3 py-2 text-white">Give a star</p>
                                 <span className="absolute -top-2 left-[50%] h-0 w-0 -translate-x-1/2 -rotate-[45deg] border-b-[20px] border-r-[20px] border-b-transparent border-r-[#0EA5E9]"></span>
                             </div>
                         </Link>
