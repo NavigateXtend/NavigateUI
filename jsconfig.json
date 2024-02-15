@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "baseUrl": "." /* Specify the base directory for resolving imports */,
+        "paths": {
+            "@/*": ["src/*"] /* Example alias for the src directory */,
+            "@components/*": ["src/components/*"] /* Example alias for a subdirectory */
+            /* Add more aliases as needed */
+        }
+    }
+}
