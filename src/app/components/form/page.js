@@ -8,21 +8,21 @@ import Form8 from '@/Components/Form/Form8/Form8';
 const Form = () => {
     return (
         <div className="grid grid-cols-1 space-y-10">
-            <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Login Form With Social Icons</h1>
+            <h1 className="mt-10 px-4 text-lg   font-semibold text-white md:text-xl lg:text-2xl"># Login Form With Social Icons</h1>
             <Form1></Form1>
-            {/* <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Simple Login Form</h1>
+            {/* <h1 className="lg:text-2xl md:text-xl text-lg   font-semibold px-4 mt-10 text-white"># Simple Login Form</h1>
             <Form2></Form2>
-            {/* <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800">#Form</h1>
+            {/* <h1 className="lg:text-2xl md:text-xl text-lg   font-semibold px-4 mt-10 text-white">#Form</h1>
             <Form3></Form3> */}
-            <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Simple Form</h1>
+            <h1 className="mt-10 px-4 text-lg   font-semibold text-white md:text-xl lg:text-2xl"># Simple Form</h1>
             <Form4></Form4>
-            <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Simple Login Form</h1>
+            <h1 className="mt-10 px-4 text-lg   font-semibold text-white md:text-xl lg:text-2xl"># Simple Login Form</h1>
             <Form5></Form5>
-            <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Simple Login Form</h1>
+            <h1 className="mt-10 px-4 text-lg   font-semibold text-white md:text-xl lg:text-2xl"># Simple Login Form</h1>
             <Form6></Form6>
-            <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Simple Login Form</h1>
+            <h1 className="mt-10 px-4 text-lg   font-semibold text-white md:text-xl lg:text-2xl"># Simple Login Form</h1>
             <Form8></Form8>
-            <h1 className="text-2xl font-semibold px-4 mt-10 text-slate-800"># Switchable Login & Register Form</h1>
+            <h1 className="mt-10 px-4 text-lg   font-semibold text-white md:text-xl lg:text-2xl"># Switchable Login & Register Form</h1>
             <Form7></Form7>
         </div>
     );

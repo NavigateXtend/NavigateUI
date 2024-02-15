@@ -15,6 +15,10 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'images.rawpixel.com'
+            },
+            {
+                protocol:'https',
+                hostname:'i.ibb.co'
             }
         ]
     }
