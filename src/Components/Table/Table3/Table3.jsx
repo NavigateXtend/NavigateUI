@@ -127,7 +127,7 @@ const Table3 = () => {
                                 />
                             </th>
                             <th className="px-6 py-4 text-start">
-                                <img className="h-[44px] w-[44px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/300x300/?profile" />
+                                <Image className="h-[44px] w-[44px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/44x44/?profile" alt="profile" />
                             </th>
                             <th className="px-6 py-4 text-start ">Back-end Developer</th>
                             <th className="px-6 py-4 text-start">

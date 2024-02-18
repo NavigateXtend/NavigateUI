@@ -2,9 +2,9 @@ import Navbar from '@/Shared/Navbar/Navbar';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { GoogleAnalytics } from '@next/third-parties/google';
+import { sendGAEvent } from 'ga4';
 
 const TRACKING_ID = process.env.NEXT_PUBLIC_GA_tracking_id; // YOUR_OWN_TRACKING_ID
-
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
@@ -13,6 +13,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+    sendGAEvent(MEASUREMENT_ID, 'page_view');
     return (
         <html lang="en">
             <body
