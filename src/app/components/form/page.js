@@ -6,14 +6,14 @@ import Form7 from '@/Components/Form/Form7/Form7';
 import Form8 from '@/Components/Form/Form8/Form8';
 
 export const metadata = {
-    title: 'Form Components | Navigate UI',
+    title: 'Form Components',
     description: 'Form tailwind components'
 };
 
 const Form = () => {
     return (
-        <div className="grid grid-cols-1 space-y-10">
-            <h1 className="mt-10 px-4 text-lg   font-semibold text-white md:text-xl lg:text-2xl"># Login Form With Social Icons</h1>
+        <div className="flex flex-col items-center justify-center">
+            <h1 className="mt-10 px-4 text-lg  font-semibold text-white md:text-xl lg:text-2xl"># Login Form With Social Icons</h1>
             <Form1></Form1>
             {/* <h1 className="lg:text-2xl md:text-xl text-lg   font-semibold px-4 mt-10 text-white"># Simple Login Form</h1>
             <Form2></Form2>

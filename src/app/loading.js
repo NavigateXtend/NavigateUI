@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 export default function loading() {
     return (
         <div className="relative flex h-96 w-full items-center justify-center">

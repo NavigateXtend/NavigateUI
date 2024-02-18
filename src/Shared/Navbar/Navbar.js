@@ -37,7 +37,7 @@ radial-gradient(at 4% 49%, #0f172a 0px, transparent 50%) repeat scroll 0% 0%, #0
                 <ul className="flex items-center justify-center gap-5">
                     <li>
                         <Link className="group relative flex items-center gap-2" href="https://github.com/mhlehri/NavigateUI" target="_blank">
-                            <span className="flex items-center gap-1 rounded-lg bg-sky-900 p-1">
+                            <span className="flex items-center gap-1 rounded-lg bg-sky-900 p-[5px] text-sm text-sky-200">
                                 <svg className="h-5 w-5 shadow-sm" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -69,7 +69,7 @@ radial-gradient(at 4% 49%, #0f172a 0px, transparent 50%) repeat scroll 0% 0%, #0
                                     </g>
                                 </g>
                             </svg>
-                            <div className="invisible absolute -bottom-12 cursor-pointer whitespace-nowrap duration-200 group-hover:visible group-hover:-bottom-14 group-hover:duration-300">
+                            <div className="invisible absolute -bottom-14 cursor-pointer whitespace-nowrap duration-200 group-hover:visible group-hover:duration-300">
                                 <p className="rounded-md bg-[#0EA5E9] px-3 py-2 text-white">Give a star</p>
                                 <span className="absolute -top-2 left-[50%] h-0 w-0 -translate-x-1/2 -rotate-[45deg] border-b-[20px] border-r-[20px] border-b-transparent border-r-[#0EA5E9]"></span>
                             </div>
@@ -87,7 +87,7 @@ radial-gradient(at 4% 49%, #0f172a 0px, transparent 50%) repeat scroll 0% 0%, #0
                                     ></path>
                                 </g>
                             </svg>
-                            <div className="invisible absolute -bottom-12 cursor-pointer whitespace-nowrap duration-200 group-hover:visible group-hover:-bottom-14 group-hover:duration-300  ">
+                            <div className="invisible absolute  -bottom-14 cursor-pointer whitespace-nowrap duration-200 group-hover:visible group-hover:duration-300  ">
                                 <p className="rounded-md bg-[#0EA5E9] px-3 py-2 text-white">Join our community</p>
                                 <span className="absolute -top-2 left-[50%] h-0 w-0 -translate-x-1/2 -rotate-[45deg] border-b-[20px] border-r-[20px] border-b-transparent border-r-[#0EA5E9]"></span>
                             </div>

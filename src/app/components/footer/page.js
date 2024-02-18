@@ -7,13 +7,13 @@ import Footer6 from '@/Components/Footer/Footer/Footer6/Footer6';
 import Footer7 from '@/Components/Footer/Footer/Footer7/Footer7';
 
 export const metadata = {
-    title: 'Footer Components | Navigate UI',
+    title: 'Footer Components',
     description: 'Footer tailwind components'
 };
 
 const Footer = () => {
     return (
-        <div className="space-y-10">
+        <div className="flex flex-col items-center justify-center">
             <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Basic Footer</h1>
             <Footer1 />
             <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Single Column Footer</h1>

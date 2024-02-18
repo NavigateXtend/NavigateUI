@@ -14,42 +14,28 @@ import Card8 from '@/Components/Card/Card8/Card8';
 import Card9 from '@/Components/Card/Card9/Card9';
 
 export const metadata = {
-    title: 'Card Components | Navigate UI',
+    title: 'Card Components',
     description: 'Card tailwind components'
 };
 
 const Card = () => {
     return (
-        <div className="flex  flex-col items-center gap-6 px-4">
-            <h1 className="border-gray-700 pb-2 pt-10 text-center text-2xl  font-semibold text-gray-100 lg:text-3xl">Explore The Card Collections ✅</h1>
-            {/* Card 1  */}
-            <Card1></Card1>
-            {/* Card 2  */}
-            <Card2></Card2>
-            {/* Card 3  */}
-            <Card3></Card3>
-            {/* Card 4  */}
-            <Card4></Card4>
-            {/* Card 5  */}
-            <Card5></Card5>
-            {/* Card 6  */}
-            <Card6></Card6>
-            {/* Card 7  */}
-            <Card7></Card7>
-            {/* Card 8  */}
-            <Card8></Card8>
-            {/* Card 9  */}
-            <Card9></Card9>
-            {/* Card 10  */}
-            <Card10></Card10>
-            {/* Card 11  */}
-            <Card11></Card11>
-            {/* Card 12  */}
-            <Card12></Card12>
-            {/* Card 13  */}
-            <Card13></Card13>
-            {/* Card 14 */}
-            <Card14></Card14>
+        <div className="flex flex-col items-center justify-center">
+            <h1 className="border-gray-700 pb-2 pt-10 text-center text-2xl font-semibold text-gray-100 text-white lg:text-3xl">Explore The Card Collections</h1>
+            <Card1 />
+            <Card2 />
+            <Card3 />
+            <Card4 />
+            <Card5 />
+            <Card6 />
+            <Card7 />
+            <Card8 />
+            <Card9 />
+            <Card10 />
+            <Card11 />
+            <Card12 />
+            <Card13 />
+            <Card14 />
         </div>
     );
 };

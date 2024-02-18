@@ -5,14 +5,13 @@ import SpeedDial4 from '@/Components/SpeedDial/SpeedDial4/SpeedDial4';
 import SpeedDial5 from '@/Components/SpeedDial/SpeedDial5/SpeedDial5';
 
 export const metadata = {
-    title: 'Speed Dial Components | Navigate UI',
+    title: 'Speed Dial Components',
     description: 'Speed Dial tailwind components'
 };
 
 const SpeedDial = () => {
     return (
-        <div>
-            <h1>Default Speed Dial</h1>
+        <div className="flex flex-col items-center justify-center">
             <SpeedDial1 />
             <SpeedDial2 />
             <SpeedDial3 />

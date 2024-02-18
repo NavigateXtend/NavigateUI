@@ -4,13 +4,13 @@ import Badge3 from '@/Components/Badge/Badge3/Badge3';
 import Badge4 from '@/Components/Badge/Badge4/Badge4';
 
 export const metadata = {
-    title: 'Badge Components | Navigate UI',
+    title: 'Badge Components',
     description: 'Badge tailwind components'
 };
 
 const page = () => {
     return (
-        <div>
+        <div className="flex flex-col items-center justify-center">
             <h1 className="mt-10 px-4 text-lg   font-semibold text-white md:text-xl lg:text-2xl"># Simple notification badge</h1>
             <Badge1></Badge1>
             <h1 className="mt-10 px-4 text-lg   font-semibold text-white md:text-xl lg:text-2xl"># Notification badge with numbers</h1>

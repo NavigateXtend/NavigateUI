@@ -9,7 +9,7 @@ import { Carousel8 } from '@/Components/Carousel/Carousel8/Carousel8';
 import { Carousel9 } from '@/Components/Carousel/Carousel9/Carousel9';
 
 export const metadata = {
-    title: 'Carousel Components | Navigate UI',
+    title: 'Carousel Components',
     description: 'Carousel tailwind components'
 };
 
