@@ -1,9 +1,14 @@
+import ComponentsCategory from '@/Home/ComponentsCategory/ComponentsCategory';
 import Link from 'next/link';
 
 export default function Home() {
     return (
         <div>
             <div className="flex flex-col items-center justify-center px-4 pb-8 pt-14 text-center md:px-8 md:py-28 ">
+                <div className="mx-auto md:mb-10 sm:mb-8 mb-6 flex max-w-[380px] items-center gap-2 rounded-full bg-[#393E46] py-[6px] pl-1  pr-3 xsm:text-[12px] text-[10px] text-white  sm:text-sm md:text-base">
+                    <span className="rounded-full bg-sky-600 px-2 py-[3px]  sm:px-3 sm:py-1 ">New</span>
+                     Badge and tooltip category added
+                </div>
                 <h2 className="giveLineHeight max-w-[900px] space-y-1 text-2xl font-extrabold leading-[200px] text-[#FFFFFF] sm:text-3xl md:text-4xl lg:text-5xl">
                     <span className="text-[#0095FF]">NavigateUI </span> Free Component Library for Developers
                 </h2>
@@ -22,17 +27,9 @@ export default function Home() {
                         Documentation
                     </Link>
                 </div>
-                {/* <div className="mt-8 flex flex-col justify-center space-y-4  md:mt-12 md:flex-row md:space-x-8 md:space-y-0">
-                <div className="card w-full bg-gray-100 bg-gradient-to-r px-14 py-10 md:w-auto">
-                    <h3 className="text-xl font-semibold md:text-2xl ">100+ Components</h3>
-                    <p className="text-sm text-gray-600 md:text-base">Explore a vast collection of ready-to-use components.</p>
-                </div>
-                <div className="card w-full bg-gray-100 bg-gradient-to-r px-14 py-10 md:w-auto">
-                    <h3 className="text-xl font-semibold md:text-2xl ">12 Categories</h3>
-                    <p className="text-sm text-gray-600 md:text-base">Organized components for seamless integration.</p>
-                </div>
-            </div> */}
+               
             </div>
+            <ComponentsCategory></ComponentsCategory>
         </div>
     );
 }
