@@ -1,7 +1,6 @@
 'use client';
 
 import CodeBox from '@/Shared/CodeBox/CodeBox';
-import Image from 'next/image';
 import { useRef } from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -151,8 +150,8 @@ export const NavBar2 = () => {
                             </ul>
                         )}
                     </li>
-                    <li className="cursor-pointer hover:text-sky-500">About</li>
-                    <li className="cursor-pointer hover:text-sky-500">Contact</li>
+                    <li className="cursor-pointer  rounded-full px-6 py-2 text-white hover:bg-sky-600">About</li>
+                    <li className="cursor-pointer  rounded-full px-6 py-2 text-white hover:bg-sky-600">Contact</li>
                 </ul>
             </nav>
         </CodeBox>
