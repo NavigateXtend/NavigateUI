@@ -3,6 +3,7 @@ import { useState } from 'react';
 import JSXCode from './JSXCode/JSXCode';
 import Preview from './Preview/Preview';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import { sendGAEvent } from '@next/third-parties/google';
 
 const CodeBox = ({ children, codeStr }) => {
     const [tabNum, setTabNum] = useState(0);
@@ -45,7 +46,17 @@ const CodeBox = ({ children, codeStr }) => {
                     ))}
                 </div>
                 <CopyToClipboard text={codeStr} onCopy={handleCopy}>
-                    <button className="copy-button z-50 me-2 rounded-md">
+                    <button
+                        disabled={isCopied}
+                        onClick={() =>
+                            sendGAEvent({
+                                category: 'Button Clicks',
+                                action: 'Copy Button triggered',
+                                label: 'Copy JSX'
+                            })
+                        }
+                        className="copy-button z-50 me-2 rounded-md"
+                    >
                         {isCopied ? (
                             <>
                                 copied!{' '}

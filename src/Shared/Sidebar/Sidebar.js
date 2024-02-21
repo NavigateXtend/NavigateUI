@@ -3,14 +3,12 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
-const navComponentsItems = ['Avatar', 'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Footer', 'Hero', 'Modal', 'NavBar', 'Speed Dial', 'Skeleton', 'Spinner', 'Table', 'Tooltip', 'Input'];
+const navComponentsItems = ['Avatar', 'Accordion', 'Button', 'Carousel', 'Card', 'Form', 'Footer', 'Hero', 'Modal', 'NavBar', 'Speed Dial','Badge', 'Skeleton', 'Spinner', 'Table', 'Tooltip', 'Input'];
 const Navbar = () => {
     const [isDocOpen, setDocIsOpen] = useState(true);
     const [isComponentOpen, setComponentIsOpen] = useState(true);
     const path = usePathname();
     const pathname = path.replace('/components/', '');
-    console.log(pathname);
-
     return (
         <div className="sidebar fixed z-[90] w-[330px] select-none overflow-y-scroll px-5 pb-7">
             <div className="group flex h-full w-full flex-col space-y-6">
@@ -48,11 +46,11 @@ const Navbar = () => {
                     </div>
                     {/* doc div  */}
                     <div className={`grid text-slate-600  transition-all duration-300 ease-in-out ${isDocOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
-                        <div className="my-2 ml-8 flex flex-col space-y-2 overflow-hidden border-l  px-6 text-lg ">
-                            <Link className="px-6  py-2 text-white  duration-300  hover:rounded-lg  hover:bg-sky-500 hover:text-white" href="/">
+                        <div className="my-2 ml-8 flex flex-col space-y-2 overflow-hidden border-l border-sky-400  px-6 text-lg ">
+                            <Link className="px-6  py-2 text-white duration-300 hover:rounded-lg hover:bg-sky-500 hover:text-white" href="/">
                                 Introduction
                             </Link>
-                            <Link className="px-6 py-2 text-white  duration-300  hover:rounded-lg  hover:bg-sky-500 hover:text-white" href="/Components/avatar">
+                            <Link className="px-6 py-2 text-white duration-300 hover:rounded-lg hover:bg-sky-500 hover:text-white" href="/Components/avatar">
                                 Quick Start
                             </Link>
                         </div>
@@ -85,7 +83,7 @@ const Navbar = () => {
 
                     {/* Component div */}
                     <div className={`grid  text-slate-600 transition-all duration-300 ease-in-out ${isComponentOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
-                        <div className="my-2 ml-8 flex flex-col space-y-2 overflow-hidden border-l px-6 text-lg">
+                        <div className="my-2 ml-8 flex flex-col space-y-2 overflow-hidden border-l border-sky-400 px-6 text-lg">
                             {navComponentsItems.map((componentName, i) => (
                                 <Link
                                     key={i}

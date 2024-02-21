@@ -1,5 +1,6 @@
 import React from 'react';
 import CodeBox from '../../../Shared/CodeBox/CodeBox';
+import Image from 'next/image';
 
 const Table2 = () => {
     const codeStr = `
@@ -54,7 +55,7 @@ const Table2 = () => {
                     <tbody>
                         <tr className="bg-gray-50 text-black transition duration-300 hover:bg-gray-300">
                             <td className="flex justify-start px-4 py-4">
-                                <img src="https://source.unsplash.com/800x600/?microphone" alt="Product Image" className="h-16 w-16 rounded-md bg-gray-300 object-cover" />
+                                <Image width={64} height={64} src="https://source.unsplash.com/800x600/?microphone" alt="Product Image" className="h-16 w-16 rounded-md bg-gray-300 object-cover" />
                             </td>
                             <td className="border-b px-6 py-4 text-xl font-medium">Dual Speaker</td>
                             <td className="border-b px-6 py-4 text-lg font-medium">$99.99</td>
@@ -64,7 +65,7 @@ const Table2 = () => {
                         </tr>
                         <tr className="bg-gray-50 text-black transition duration-300 hover:bg-gray-300">
                             <td className="flex justify-start px-4 py-4">
-                                <img src="https://source.unsplash.com/800x600/?phone" alt="Product Image" className="h-16 w-16 rounded-md bg-gray-300 object-cover" />
+                                <Image width={64} height={64} src="https://source.unsplash.com/800x600/?phone" alt="Product Image" className="h-16 w-16 rounded-md bg-gray-300 object-cover" />
                             </td>
                             <td className="border-b px-6 py-4 text-xl font-medium">Samsung s22</td>
                             <td className="border-b px-6 py-4 text-lg font-medium">$599.99</td>

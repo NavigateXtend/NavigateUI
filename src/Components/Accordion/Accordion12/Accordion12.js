@@ -1,6 +1,7 @@
 'use client';
-import { useState } from 'react';
 import CodeBox from '@/Shared/CodeBox/CodeBox';
+import Image from 'next/image';
+import { useState } from 'react';
 
 const codeStr = `const Accordion12 = () => {
     const sliders = [
@@ -45,7 +46,7 @@ const Accordion12 = () => {
                         key={idx}
                         className={`${isOpen == idx ? 'w-[300px] opacity-100 shadow-lg' : 'w-[100px] opacity-70 grayscale'} ${idx % 2 == 0 ? 'translate-y-16' : ''} relative h-[600px] duration-500 ease-in-out`}
                     >
-                        <img className="block h-full w-full rounded-md object-cover shadow-md" src={slide?.img} alt="" />
+                        <Image height={600} width={300} className="block h-full w-full rounded-md object-cover shadow-md" src={slide?.img} alt="" />
                         <div className={`${isOpen == idx ? 'opacity-100' : 'opacity-0'} absolute bottom-0 h-1/2 w-full bg-gradient-to-t from-black to-transparent duration-500 ease-in-out`}>
                             <h1 className={`relative text-center text-2xl text-white/80 ${isOpen == idx ? 'top-[150px] opacity-100' : 'top-[200px] opacity-0'} duration-500 ease-in-out`}>
                                 {slide?.title}
