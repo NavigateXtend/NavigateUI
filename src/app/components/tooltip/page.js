@@ -11,13 +11,13 @@ export const metadata = {
 const Tooltip = () => {
     return (
         <div className="flex flex-col items-center justify-center">
-            <h2 className="mt-10 px-4 text-xl font-semibold text-slate-800 md:text-2xl"># Tooltip from top</h2>
+            <h2 className="mt-10 px-4 text-xl font-semibold text-white md:text-2xl"># Tooltip from top</h2>
             <Tooltip1 />
-            <h2 className="mt-20 px-4 text-xl font-semibold text-slate-800  md:text-2xl"># Tooltip from right</h2>
+            <h2 className="mt-20 px-4 text-xl font-semibold text-white  md:text-2xl"># Tooltip from right</h2>
             <Tooltip2 />
-            <h2 className="mt-20 px-4 text-xl font-semibold text-slate-800  md:text-2xl"># Tooltip from bottom</h2>
+            <h2 className="mt-20 px-4 text-xl font-semibold text-white  md:text-2xl"># Tooltip from bottom</h2>
             <Tooltip3 />
-            <h2 className="mt-20 px-4 text-xl font-semibold text-slate-800  md:text-2xl"># Tooltip from left</h2>
+            <h2 className="mt-20 px-4 text-xl font-semibold text-white  md:text-2xl"># Tooltip from left</h2>
             <Tooltip4 />
         </div>
     );

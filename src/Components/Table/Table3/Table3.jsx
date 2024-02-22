@@ -97,13 +97,12 @@ const Table3 = () => {
                                 />
                             </th>
                             <th className="px-6 py-4 text-start">
-                                <Image width={44} height={44} className="h-[44px] w-[44px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/300x300/?profile" alt="profile" />
+                                <Image width={44} height={44} className="h-[44px] w-[44px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/44x44/?profile" alt="profile" />
                             </th>
                             <th className="px-6 py-4 text-start ">Front-end Developer</th>
                             <th className="px-6 py-4 text-start">
                                 <button className="flex items-center rounded-full bg-blue-600 px-4 py-2 font-bold text-white shadow-md transition-all duration-300 hover:bg-blue-700">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="mr-2 h-6 w-6">
-                                        {' '}
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />{' '}
                                     </svg>
                                     Details
@@ -127,13 +126,12 @@ const Table3 = () => {
                                 />
                             </th>
                             <th className="px-6 py-4 text-start">
-                                <Image className="h-[44px] w-[44px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/44x44/?profile" alt="profile" />
+                                <Image width={44} height={44} className="h-[44px] w-[44px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/44x44/?profile" alt="profile" />
                             </th>
                             <th className="px-6 py-4 text-start ">Back-end Developer</th>
                             <th className="px-6 py-4 text-start">
                                 <button className="flex items-center rounded-full bg-blue-600 px-4 py-2 font-bold text-white shadow-md transition-all duration-300 hover:bg-blue-700">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="mr-2 h-6 w-6">
-                                        {' '}
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />{' '}
                                     </svg>
                                     Details

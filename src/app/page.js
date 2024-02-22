@@ -1,13 +1,19 @@
 import ComponentsCategory from '@/Home/ComponentsCategory/ComponentsCategory';
 import Link from 'next/link';
+export const metadata = {
+    metadataBase: new URL('https://navigateui.com'),
+    openGraph: {
+        images: '/opengraph-image.png'
+    }
+};
 
 export default function Home() {
     return (
         <div>
             <div className="flex flex-col items-center justify-center px-4 pb-8 pt-14 text-center md:px-8 md:py-28 ">
-                <div className="mx-auto md:mb-10 sm:mb-8 mb-6 flex max-w-[380px] items-center gap-2 rounded-full bg-[#393E46] py-[6px] pl-1  pr-3 xsm:text-[12px] text-[10px] text-white  sm:text-sm md:text-base">
+                <div className="xsm:text-[12px] mx-auto mb-6 flex max-w-[380px] items-center gap-2 rounded-full bg-[#393E46] py-[6px] pl-1 pr-3  text-[10px] text-white sm:mb-8 sm:text-sm  md:mb-10 md:text-base">
                     <span className="rounded-full bg-sky-600 px-2 py-[3px]  sm:px-3 sm:py-1 ">New</span>
-                     Badge and tooltip category added
+                    Badge and tooltip category added
                 </div>
                 <h2 className="giveLineHeight max-w-[900px] space-y-1 text-2xl font-extrabold leading-[200px] text-[#FFFFFF] sm:text-3xl md:text-4xl lg:text-5xl">
                     <span className="text-[#0095FF]">NavigateUI </span> Free Component Library for Developers
@@ -27,7 +33,6 @@ export default function Home() {
                         Documentation
                     </Link>
                 </div>
-               
             </div>
             <ComponentsCategory></ComponentsCategory>
         </div>

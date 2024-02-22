@@ -2,18 +2,47 @@ import Navbar from '@/Shared/Navbar/Navbar';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { GoogleAnalytics } from '@next/third-parties/google';
-import { sendGAEvent } from 'ga4';
 
-const TRACKING_ID = process.env.NEXT_PUBLIC_GA_tracking_id; // YOUR_OWN_TRACKING_ID
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
+    metadataBase: new URL('https://navigateui.com'),
     title: { default: 'Navigate UI', template: '%s - Navigate UI' },
-    description: 'UI library for tailwindCSS and react developer'
+    openGraph: {
+        images: '/opengraph-image.png'
+    },
+    description: 'Navigate to a world of free, reusable, and highly customizable Tailwind components',
+    robots: {
+        index: false,
+        follow: true,
+        nocache: true,
+        googleBot: {
+            index: true,
+            follow: false,
+            noimageindex: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1
+        }
+    },
+    // icons: {
+    //     icon: '/icon.png',
+    //     shortcut: '/shortcut-icon.png',
+    //     apple: '/apple-icon.png',
+    //     other: {
+    //         rel: 'apple-touch-icon-precomposed',
+    //         url: '/apple-touch-icon-precomposed.png'
+    //     }
+    // },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Navigate UI',
+        description: 'Navigate to a world of free, reusable, and highly customizable Tailwind components',
+        creator: '@navigateui_team'
+    }
 };
 
 export default function RootLayout({ children }) {
-    sendGAEvent(MEASUREMENT_ID, 'page_view');
     return (
         <html lang="en">
             <body
@@ -30,9 +59,11 @@ export default function RootLayout({ children }) {
                 className={`${inter.className} overflow-x-hidden`}
             >
                 <Navbar />
-                <GoogleAnalytics gaId={TRACKING_ID} />
+
                 <div className="layout overflow-y-scroll">{children}</div>
             </body>
+            <script async data-id="101444286" src="//static.getclicky.com/js"></script>
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA4_ID} />
         </html>
     );
 }

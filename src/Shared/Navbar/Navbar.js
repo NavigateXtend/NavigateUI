@@ -1,13 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
-async function getData() {
-    const res = await fetch('https://api.github.com/repos/mhlehri/navigateui', { cache: 'no-store' });
-    return res.json();
-}
+import { getStar } from './getData';
 
 async function Navbar() {
-    const data = await getData();
+    const data = await getStar();
+
     return (
         <nav
             style={{
