@@ -22,19 +22,33 @@ export const NavBar5 = () => {
 
     return (
         <CodeBox codeStr={codeStr}>
-            <nav className="flex items-center bg-sky-100 px-10 py-8">
-                <div className="flex-grow">
-                    <Image src="/Logo.svg" alt="navigateui logo" width={45} height={45} />
+            <nav className="flex items-center justify-between bg-[#393E46] px-4 py-2 text-white">
+                <div className="scale-100 cursor-pointer rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
+                    <h2>Logo</h2>
                 </div>
-                <div className="flex items-center justify-between gap-8">
+                <div className="flex items-center justify-between gap-16">
                     <ul className="flex items-center justify-between gap-10">
-                        <li className="cursor-pointer hover:text-sky-500">Home</li>
-                        <li className="cursor-pointer hover:text-sky-500">Services</li>
-                        <li className="cursor-pointer hover:text-sky-500">About</li>
-                        <li className="cursor-pointer hover:text-sky-500">Contact</li>
+                        <li className="group flex  cursor-pointer flex-col">
+                            Home
+                            <span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+                        </li>
+                        <li className="group flex  cursor-pointer flex-col">
+                            Services
+                            <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+                        </li>
+                        <li className="group flex  cursor-pointer flex-col">
+                            About
+                            <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+                        </li>
+                        <li className="group flex  cursor-pointer flex-col">
+                            Contact
+                            <span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+                        </li>
                     </ul>
-                    <button className="h-12 w-24 bg-sky-700 text-white duration-300 hover:scale-95">Log In</button>
-                    <button className="h-12 w-24 bg-sky-700 text-white duration-300 hover:scale-95">Register</button>
+                    <div className="flex items-center justify-between gap-5">
+                        <button className="rounded-full bg-sky-600 px-6 py-2 text-white transition-all duration-300 hover:scale-90">Log In</button>
+                        <button className="rounded-full bg-sky-600 px-6 py-2 text-white transition-all duration-300 hover:scale-90">Register</button>
+                    </div>
                 </div>
             </nav>
         </CodeBox>
