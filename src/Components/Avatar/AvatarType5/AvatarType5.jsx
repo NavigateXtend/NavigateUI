@@ -35,91 +35,89 @@ const codeStr = `const AvatarType5 = () => {
 export default AvatarType5;
 `;
 
-const AvatarType5 = () => {
-    return (
-        <CodeBox codeStr={codeStr}>
-            <div className="flex flex-wrap items-center justify-around">
-                <div className="group relative">
-                    <Image
-                        width={80}
-                        height={80}
-                        className="h-[80px] w-[80px] rounded-full border-4 border-white bg-slate-500 object-cover shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]"
-                        src="https://source.unsplash.com/300x300/?profile"
-                        alt="avatar"
-                    />
-                    <span className="absolute -bottom-2 left-[50%] h-5 w-5  -translate-x-1/2 rounded-full bg-white p-[2px] shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] duration-500 group-hover:-rotate-180">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#60A5FA">
-                            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <title></title>
-                                <g id="Complete">
-                                    <g data-name="add" id="add-2">
-                                        <g>
-                                            <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="12" x2="12" y1="19" y2="5"></line>
-                                            <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="5" x2="19" y1="12" y2="12"></line>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </span>
-                </div>
-                <div className="group relative">
-                    <Image
-                        width={110}
-                        height={110}
-                        className="h-[110px] w-[110px] rounded-full border-4 border-white bg-slate-500 object-cover shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]"
-                        src="https://source.unsplash.com/300x300/?profile"
-                        alt="avatar"
-                    />
-                    <span className="absolute -bottom-2 left-[50%] h-6 w-6  -translate-x-1/2 rounded-full bg-white p-[2px] shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] duration-500 group-hover:-rotate-180">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#60A5FA">
-                            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <title></title>
-                                <g id="Complete">
-                                    <g data-name="add" id="add-2">
-                                        <g>
-                                            <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="12" x2="12" y1="19" y2="5"></line>
-                                            <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="5" x2="19" y1="12" y2="12"></line>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </span>
-                </div>
-                <div className="group relative">
-                    <Image
-                        width={130}
-                        height={130}
-                        className="h-[130px] w-[130px] rounded-full border-4 border-white bg-slate-500 object-cover shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]"
-                        src="https://source.unsplash.com/300x300/?profile"
-                        alt="avatar"
-                    />
-                    <span className="absolute -bottom-4 left-[50%] h-8 w-8  -translate-x-1/2 rounded-full bg-white p-1 shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] duration-500 group-hover:-rotate-180">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#60A5FA">
-                            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
-                            <g id="SVGRepo_iconCarrier">
-                                <title></title>
-                                <g id="Complete">
-                                    <g data-name="add" id="add-2">
-                                        <g>
-                                            <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="12" x2="12" y1="19" y2="5"></line>
-                                            <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="5" x2="19" y1="12" y2="12"></line>
-                                        </g>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg>
-                    </span>
-                </div>
-            </div>
-        </CodeBox>
-    );
-};
-
-export default AvatarType5;
+export default function AvatarType5() {
+  return (
+    <CodeBox codeStr={codeStr}>
+      <div className="flex flex-wrap items-center justify-around">
+        <div className="group relative">
+          <Image
+            width={80}
+            height={80}
+            className="h-[80px] w-[80px] rounded-full border-4 border-white bg-slate-500 object-cover shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]"
+            src="https://source.unsplash.com/300x300/?profile"
+            alt="avatar"
+          />
+          <span className="absolute -bottom-2 left-[50%] h-5 w-5  -translate-x-1/2 rounded-full bg-white p-[2px] shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] duration-500 group-hover:-rotate-180">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#60A5FA">
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <title></title>
+                <g id="Complete">
+                  <g data-name="add" id="add-2">
+                    <g>
+                      <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="12" x2="12" y1="19" y2="5"></line>
+                      <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="5" x2="19" y1="12" y2="12"></line>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </div>
+        <div className="group relative">
+          <Image
+            width={110}
+            height={110}
+            className="h-[110px] w-[110px] rounded-full border-4 border-white bg-slate-500 object-cover shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]"
+            src="https://source.unsplash.com/300x300/?profile"
+            alt="avatar"
+          />
+          <span className="absolute -bottom-2 left-[50%] h-6 w-6  -translate-x-1/2 rounded-full bg-white p-[2px] shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] duration-500 group-hover:-rotate-180">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#60A5FA">
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <title></title>
+                <g id="Complete">
+                  <g data-name="add" id="add-2">
+                    <g>
+                      <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="12" x2="12" y1="19" y2="5"></line>
+                      <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="5" x2="19" y1="12" y2="12"></line>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </div>
+        <div className="group relative">
+          <Image
+            width={130}
+            height={130}
+            className="h-[130px] w-[130px] rounded-full border-4 border-white bg-slate-500 object-cover shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)]"
+            src="https://source.unsplash.com/300x300/?profile"
+            alt="avatar"
+          />
+          <span className="absolute -bottom-4 left-[50%] h-8 w-8  -translate-x-1/2 rounded-full bg-white p-1 shadow-[0px_2px_8px_0px_rgba(99,99,99,0.4)] duration-500 group-hover:-rotate-180">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#60A5FA">
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <title></title>
+                <g id="Complete">
+                  <g data-name="add" id="add-2">
+                    <g>
+                      <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="12" x2="12" y1="19" y2="5"></line>
+                      <line fill="none" stroke="#60A5FA" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="5" x2="19" y1="12" y2="12"></line>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </CodeBox>
+  );
+}

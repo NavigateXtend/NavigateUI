@@ -8,7 +8,7 @@ export const metadata = {
     description: 'Badge tailwind components'
 };
 
-const page = () => {
+export default function BadgePage() {
     return (
         <div className="flex flex-col items-center justify-center">
             <h1 className="mt-10 px-4 text-lg   font-semibold text-white md:text-xl lg:text-2xl"># Simple notification badge</h1>
@@ -21,6 +21,4 @@ const page = () => {
             <Badge4></Badge4>
         </div>
     );
-};
-
-export default page;
+}

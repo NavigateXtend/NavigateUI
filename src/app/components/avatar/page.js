@@ -12,7 +12,7 @@ export const metadata = {
     description: 'Avatar tailwind components'
 };
 
-const Avatar = () => {
+export default function Avatar() {
     return (
         <div className="flex flex-col items-center justify-center">
             <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Default square</h1>
@@ -33,6 +33,4 @@ const Avatar = () => {
             <AvatarType8 />
         </div>
     );
-};
-
-export default Avatar;
+}

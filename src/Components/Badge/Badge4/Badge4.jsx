@@ -13,14 +13,14 @@ export const Badge4 = () => {
 `;
 
 const Badge4 = () => {
-    return (
-        <CodeBox codeStr={codeStr}>
-            <div className="relative mx-auto h-fit w-fit rounded-md bg-gray-700 p-2 text-white ">
-                <h2 className=" font-medium">Notification</h2>
-                <span className="absolute -right-1 -top-1 h-[14px] w-[14px] rounded-full bg-green-500 "></span>
-            </div>
-        </CodeBox>
-    );
+  return (
+    <CodeBox codeStr={codeStr}>
+      <div className="relative mx-auto h-fit w-fit rounded-md bg-gray-700 p-2 text-white ">
+        <h2 className=" font-medium">Notification</h2>
+        <span className="absolute -right-1 -top-1 h-[14px] w-[14px] rounded-full bg-green-500 "></span>
+      </div>
+    </CodeBox>
+  );
 };
 
 export default Badge4;

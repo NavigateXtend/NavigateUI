@@ -8,7 +8,7 @@ export const metadata = {
     description: 'Tooltip tailwind components'
 };
 
-const Tooltip = () => {
+export default function TooltipPage() {
     return (
         <div className="flex flex-col items-center justify-center">
             <h2 className="mt-10 px-4 text-xl font-semibold text-white md:text-2xl"># Tooltip from top</h2>
@@ -21,6 +21,4 @@ const Tooltip = () => {
             <Tooltip4 />
         </div>
     );
-};
-
-export default Tooltip;
+}
