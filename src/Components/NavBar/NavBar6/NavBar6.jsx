@@ -65,7 +65,6 @@ export const NavBar6 = () => {
               <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
                 Contact
               </li>
-
             </ul>
           )}
         </div>

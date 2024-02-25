@@ -14,6 +14,8 @@ const navComponentsItems = [
   'Hero',
   'Modal',
   'NavBar',
+  'Progress',
+  'Selector',
   'Speed Dial',
   'Badge',
   'Skeleton',
