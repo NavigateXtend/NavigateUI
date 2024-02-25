@@ -2,8 +2,6 @@
 
 import CodeBox from '@/Shared/CodeBox/CodeBox';
 import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
 
 const codestr = `
 export const Progress1 = () => {

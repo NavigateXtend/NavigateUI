@@ -5,6 +5,7 @@ import  Progress1  from '@/Components/Progress/Progress1/Progress1';
 import  Progress2  from '@/Components/Progress/Progress2/Progress2';
 import  Progress3  from '@/Components/Progress/Progress3/Progress3';
 import  Progress4  from '@/Components/Progress/Progress4/Progress4';
+import  Progress5  from '@/Components/Progress/Progress5/Progress5';
 
 export const metadata = {
     title: 'Progress Components',
@@ -14,6 +15,8 @@ export const metadata = {
 const Progress = () => {
     return (
         <div className="flex flex-col items-center justify-center">
+            <h1 className="mt-10 px-4 text-lg  font-semibold text-white md:text-xl lg:text-2xl"># Basic progress</h1>
+            <Progress5 />
             <h1 className="mt-10 px-4 text-lg  font-semibold text-white md:text-xl lg:text-2xl"># Basic dynamic progress</h1>
             <Progress1 />
             <h1 className="mt-10 px-4 text-lg  font-semibold text-white md:text-xl lg:text-2xl"># Basic dynamic animated progress</h1>
