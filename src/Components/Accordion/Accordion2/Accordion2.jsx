@@ -70,7 +70,7 @@ const codeStr = `export const Accordion2 = () => {
     );
 };`;
 
-const Accordion2 = () => {
+export default function Accordion2() {
     const datas = [
         {
             title: 'Connected Devices',
@@ -116,14 +116,13 @@ const Accordion2 = () => {
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
-                        {' '}
                         <path
                             d="M20.91 11.12C20.91 16.01 17.36 20.59 12.51 21.93C12.18 22.02 11.82 22.02 11.49 21.93C6.63996 20.59 3.08997 16.01 3.08997 11.12V6.72997C3.08997 5.90997 3.70998 4.97998 4.47998 4.66998L10.05 2.39001C11.3 1.88001 12.71 1.88001 13.96 2.39001L19.53 4.66998C20.29 4.97998 20.92 5.90997 20.92 6.72997L20.91 11.12Z"
                             stroke="white"
                             strokeWidth="1.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                        ></path>{' '}
+                        ></path>
                         <path
                             d="M12 12.5C13.1046 12.5 14 11.6046 14 10.5C14 9.39543 13.1046 8.5 12 8.5C10.8954 8.5 10 9.39543 10 10.5C10 11.6046 10.8954 12.5 12 12.5Z"
                             stroke="white"
@@ -131,8 +130,8 @@ const Accordion2 = () => {
                             strokeMiterlimit="10"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                        ></path>{' '}
-                        <path d="M12 12.5V15.5" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>{' '}
+                        ></path>
+                        <path d="M12 12.5V15.5" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>
                     </g>
                 </svg>
             ),
@@ -147,14 +146,13 @@ const Accordion2 = () => {
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
-                        {' '}
                         <path
                             d="M12 16.99V17M12 7V14M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
                             stroke="#EEA023"
                             strokeWidth="1.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                        ></path>{' '}
+                        ></path>
                     </g>
                 </svg>
             ),
@@ -169,35 +167,26 @@ const Accordion2 = () => {
                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
-                        {' '}
                         <g>
-                            {' '}
                             <g>
-                                {' '}
-                                <path d="M0,23.6v464.8h512V23.6H0z M31.347,54.947h370.939v40.748H31.347V54.947z M480.653,457.054H31.347v-0.001V127.042h449.306 V457.054z M480.653,95.695h-47.02V54.947h47.02V95.695z"></path>{' '}
-                            </g>{' '}
-                        </g>{' '}
+                                <path d="M0,23.6v464.8h512V23.6H0z M31.347,54.947h370.939v40.748H31.347V54.947z M480.653,457.054H31.347v-0.001V127.042h449.306 V457.054z M480.653,95.695h-47.02V54.947h47.02V95.695z"></path>
+                            </g>
+                        </g>
                         <g>
-                            {' '}
                             <g>
-                                {' '}
-                                <path d="M256,150.064L100.973,428.06h310.055L256,150.064z M256,214.426l101.654,182.288H154.345L256,214.426z"></path>{' '}
-                            </g>{' '}
-                        </g>{' '}
+                                <path d="M256,150.064L100.973,428.06h310.055L256,150.064z M256,214.426l101.654,182.288H154.345L256,214.426z"></path>
+                            </g>
+                        </g>
                         <g>
-                            {' '}
                             <g>
-                                {' '}
-                                <rect x="240.327" y="268.194" width="31.347" height="71.074"></rect>{' '}
-                            </g>{' '}
-                        </g>{' '}
+                                <rect x="240.327" y="268.194" width="31.347" height="71.074"></rect>
+                            </g>
+                        </g>
                         <g>
-                            {' '}
                             <g>
-                                {' '}
-                                <rect x="240.327" y="354.67" width="31.347" height="25.67"></rect>{' '}
-                            </g>{' '}
-                        </g>{' '}
+                                <rect x="240.327" y="354.67" width="31.347" height="25.67"></rect>
+                            </g>
+                        </g>
                     </g>
                 </svg>
             ),
@@ -211,7 +200,7 @@ const Accordion2 = () => {
 
     return (
         <CodeBox codeStr={codeStr}>
-            <div className=" mx-4 rounded-lg bg-[#18181B] lg:mx-8">
+            <div className="mx-4 rounded-lg bg-[#18181B] lg:mx-8">
                 {/* title part  */}
                 {datas.map((data, idx) => (
                     <div key={idx}>
@@ -231,8 +220,7 @@ const Accordion2 = () => {
                                     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                     <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                                     <g id="SVGRepo_iconCarrier">
-                                        {' '}
-                                        <path d="M10 7L15 12L10 17" stroke="#a8a8a8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>{' '}
+                                        <path d="M10 7L15 12L10 17" stroke="#a8a8a8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                                     </g>
                                 </svg>
                             </div>
@@ -247,6 +235,4 @@ const Accordion2 = () => {
             </div>
         </CodeBox>
     );
-};
-
-export default Accordion2;
+}

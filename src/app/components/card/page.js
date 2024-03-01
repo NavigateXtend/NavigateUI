@@ -18,7 +18,7 @@ export const metadata = {
     description: 'Card tailwind components'
 };
 
-const Card = () => {
+export default function CardPage() {
     return (
         <div className="flex flex-col items-center justify-center">
             <h1 className="border-gray-700 pb-2 pt-10 text-center text-2xl font-semibold text-gray-100 text-white lg:text-3xl">Explore The Card Collections</h1>
@@ -38,6 +38,4 @@ const Card = () => {
             <Card14 />
         </div>
     );
-};
-
-export default Card;
+}

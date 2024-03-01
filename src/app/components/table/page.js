@@ -7,7 +7,7 @@ export const metadata = {
     description: 'Table tailwind components'
 };
 
-const TablePage = () => {
+export default function TablePage() {
     return (
         <div className="flex flex-col items-center justify-center">
             <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Simple Table</h1>
@@ -18,6 +18,4 @@ const TablePage = () => {
             <Table3 />
         </div>
     );
-};
-
-export default TablePage;
+}

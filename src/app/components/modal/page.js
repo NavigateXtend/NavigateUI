@@ -10,7 +10,7 @@ export const metadata = {
     description: 'Modal tailwind components'
 };
 
-const Modal = () => {
+export default function ModalPage() {
     return (
         <div className="flex flex-col items-center justify-center">
             <Modal1 />
@@ -21,6 +21,4 @@ const Modal = () => {
             <Modal6 />
         </div>
     );
-};
-
-export default Modal;
+}

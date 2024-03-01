@@ -9,7 +9,7 @@ export const metadata = {
     description: 'Hero tailwind components'
 };
 
-const Hero = () => {
+export default function HeroPage() {
     return (
         <div className="flex flex-col items-center justify-center">
             <Hero1 />
@@ -19,6 +19,4 @@ const Hero = () => {
             <Hero5 />
         </div>
     );
-};
-
-export default Hero;
+}

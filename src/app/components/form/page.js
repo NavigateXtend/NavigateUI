@@ -10,7 +10,7 @@ export const metadata = {
     description: 'Form tailwind components'
 };
 
-const Form = () => {
+export default function FormPage() {
     return (
         <div className="flex flex-col items-center justify-center">
             <h1 className="mt-10 px-4 text-lg  font-semibold text-white md:text-xl lg:text-2xl"># Login Form With Social Icons</h1>
@@ -31,6 +31,4 @@ const Form = () => {
             <Form7></Form7>
         </div>
     );
-};
-
-export default Form;
+}

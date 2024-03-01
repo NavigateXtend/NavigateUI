@@ -3,7 +3,7 @@
     "singleQuote": true,
     "printWidth": 200,
     "proseWrap": "always",
-    "tabWidth": 4,
+    "tabWidth": 2,
     "useTabs": false,
     "trailingComma": "none",
     "bracketSpacing": true,

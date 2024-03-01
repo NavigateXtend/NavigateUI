@@ -11,7 +11,7 @@ export const metadata = {
     description: 'Skeleton tailwind components'
 };
 
-const Skeleton = () => {
+export default function SkeletonPage() {
     return (
         <div className="flex flex-col items-center justify-center">
             <h1 className="m-0  px-3 py-0 text-base font-bold italic underline opacity-70 sm:text-lg md:text-xl">Avatar loading skeleton</h1>
@@ -36,6 +36,4 @@ const Skeleton = () => {
             <Skeleton7 />
         </div>
     );
-};
-
-export default Skeleton;
+}

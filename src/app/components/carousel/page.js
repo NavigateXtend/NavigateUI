@@ -13,7 +13,7 @@ export const metadata = {
     description: 'Carousel tailwind components'
 };
 
-const Slider = () => {
+export default function SliderPage() {
     return (
         <div className="flex flex-col items-center justify-center">
             <Carousel1></Carousel1>
@@ -29,6 +29,4 @@ const Slider = () => {
             <Carousel9></Carousel9>
         </div>
     );
-};
-
-export default Slider;
+}

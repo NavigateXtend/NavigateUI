@@ -9,7 +9,7 @@ export const metadata = {
     description: 'Speed Dial tailwind components'
 };
 
-const SpeedDial = () => {
+export default function SpeedDialPage() {
     return (
         <div className="flex flex-col items-center justify-center">
             <SpeedDial1 />
@@ -19,6 +19,4 @@ const SpeedDial = () => {
             <SpeedDial5 />
         </div>
     );
-};
-
-export default SpeedDial;
+}
