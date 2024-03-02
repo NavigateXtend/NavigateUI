@@ -1,11 +1,11 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
-const JSXCode = ({ codeStr }) => {
-    return (
-        <SyntaxHighlighter customStyle={{ backgroundColor: '#1e293b', margin: '0px', borderRadius: 0, border: 0, }} language="jsx" style={atomDark}>
-            {codeStr}
-        </SyntaxHighlighter>
-    );
-};
+import { railscasts } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-export default JSXCode;
+export default function JSXCode({ codeStr }) {
+  return (
+    <SyntaxHighlighter customStyle={{ background: 'transparent', maxHeight: '700px', borderRadius: '5px', border: 0 }} language="jsx" style={a11yDark}>
+      {codeStr}
+    </SyntaxHighlighter>
+  );
+}
