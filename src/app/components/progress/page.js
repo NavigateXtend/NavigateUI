@@ -6,7 +6,6 @@ import  Progress2  from '@/Components/Progress/Progress2/Progress2';
 import  Progress3  from '@/Components/Progress/Progress3/Progress3';
 import  Progress4  from '@/Components/Progress/Progress4/Progress4';
 import  Progress5  from '@/Components/Progress/Progress5/Progress5';
-import  Progress6  from '@/Components/Progress/Progress6/Progress6';
 
 export const metadata = {
     title: 'Progress Components',
@@ -31,3 +30,4 @@ const Progress = () => {
 };
 
 export default Progress;
+
