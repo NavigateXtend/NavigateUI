@@ -9,8 +9,8 @@ body {
   /* font-family: 'Poppins', sans-serif; */
   scroll-behavior: smooth;
   scrollbar-width: none;
-  background-image: linear-gradient(#1391d54a 0.5px, transparent 0.5px), linear-gradient(to right, #1a88c34c 0.5px, transparent 0.5px);
-  background-size: 100px 100px;
+  /* background-image: linear-gradient(#8bb9d230 0.5px, transparent 0.5px), linear-gradient(to right, #8bb9d230 0.5px, transparent 0.5px);
+  background-size: 100px 100px; */
 }
 
 body::-webkit-scrollbar {
@@ -22,32 +22,50 @@ body::-webkit-scrollbar {
   height: calc(100vh - 73px);
 }
 
+
 .layout::-webkit-scrollbar {
   width: 10px;
 }
 
-.layout::-webkit-scrollbar-thumb {
-  background: #0095ff;
-  /* border-radius: 100px; */
+.layout::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background: #646c72;
+  border-radius: 100px;
 }
 
-.layout::-webkit-scrollbar-track {
-  background: #2298ff51;
+.layout::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: #6a788451;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
 }
 
 .sidebar::-webkit-scrollbar {
   width: 7px;
 }
 
-.sidebar::-webkit-scrollbar-thumb {
-  opacity: 0;
-  /* border-radius: 100px; */
-  transition: opacity 0.8s ease;
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb,
+:not(*) {
+  opacity: 0 !important;
+  /* visibility: hidden; */
+  border-radius: 100px;
+  transition: opacity 3s ease;
+  transition-delay: 1s;
 }
 
 .sidebar:hover::-webkit-scrollbar-thumb {
-  background: #36a9fc2f;
-  /* border-radius: 100px; */
+  /* visibility: visible; */
+  background: #4c51556e;
+  border-radius: 100px;
   opacity: 1;
 }
 

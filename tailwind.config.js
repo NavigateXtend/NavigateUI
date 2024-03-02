@@ -22,6 +22,7 @@ module.exports = {
           xsm: '400px'
         }
       },
+
       boxShadow: {
         blue: '0 0 20px rgba(0, 149, 255, 0.5), 0 5px 15px rgba(0, 0, 0, 0.1)'
       }

@@ -1,11 +1,11 @@
 'use client';
+import { sendGAEvent } from '@next/third-parties/google';
 import { useState } from 'react';
+import CopyToClipboard from 'react-copy-to-clipboard';
 import JSXCode from './JSXCode/JSXCode';
 import Preview from './Preview/Preview';
-import CopyToClipboard from 'react-copy-to-clipboard';
-import { sendGAEvent } from '@next/third-parties/google';
 
-export default function CodeBox({ children, codeStr }) {
+export default function CodeBox({ children, codeStr, html }) {
   const [tabNum, setTabNum] = useState(0);
   // const [dark, setDark] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
@@ -30,13 +30,10 @@ export default function CodeBox({ children, codeStr }) {
   ];
 
   return (
-    <div className={"${dark ? 'dark' : null} my-10 h-fit w-full min-w-80 max-w-full rounded-md"}>
-      <div className="item-center mb-2 flex border-collapse justify-between gap-2 text-sky-100">
-        <div className={`item-center ${tabNum === 1 ? 'border-sky-500 bg-sky-900 shadow-[0px_0px_10px_#0EA5E9]' : 'border-slate-500'} relative flex rounded-xl border p-[5px] duration-300`}>
-          <div
-            className={`absolute z-40 flex h-9 w-20 items-center rounded-lg ${tabNum === 1 ? 'bg-sky-500' : 'bg-slate-500'}  duration-300`}
-            style={{ transform: `translateX(${tabNum * 100}%)` }}
-          ></div>
+    <div className={"${dark ? 'dark' : null} my-10 h-fit w-full min-w-80 max-w-full"}>
+      <div className="item-center mb-2 flex justify-between gap-2 text-sky-100">
+        <div className={`item-center ${tabNum === 1 ? 'border-sky-500' : 'border-slate-400/20'} relative flex overflow-hidden rounded-sm border-2  duration-300`}>
+          <div className={`absolute z-40 flex h-9 w-20 items-center ${tabNum === 1 ? 'bg-sky-500' : 'bg-slate-400/20'}  duration-300`} style={{ transform: `translateX(${tabNum * 100}%)` }}></div>
           {totalConfig?.map((item, inx) => (
             <div
               key={inx}
@@ -50,8 +47,7 @@ export default function CodeBox({ children, codeStr }) {
           ))}
         </div>
 
-        <div className="flex items-center gap-3">
-          {/* <button onClick={() => setDark((prev) => !prev)}>
+        {/* <button onClick={() => setDark((prev) => !prev)}>
             {dark ? (
               <svg className="rounded-full" viewBox="0 0 24 24" width={30} fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g strokeWidth="0"></g>
@@ -72,7 +68,7 @@ export default function CodeBox({ children, codeStr }) {
               </svg>
             ) : (
               <svg className="rounded-full" viewBox="0 0 24 24" width={30} fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g stroke-width="0"></g>
                 <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                 <g id="SVGRepo_iconCarrier">
                   {' '}
@@ -105,6 +101,7 @@ export default function CodeBox({ children, codeStr }) {
               </svg>
             )}
           </button> */}
+        <div className="flex items-center gap-3">
           <CopyToClipboard text={codeStr} onCopy={handleCopy}>
             <button
               disabled={isCopied}
@@ -119,39 +116,44 @@ export default function CodeBox({ children, codeStr }) {
             >
               {isCopied ? (
                 <>
-                  copied!{' '}
-                  <svg className="inline-block w-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xmlSpace="preserve" fill="#38bdf8">
-                    <g strokeWidth="0"></g>
-                    <g strokeLinecap="round" strokeLinejoin="round"></g>
+                  <p className="inline-block rounded-md bg-[#0EA5E9] px-1 py-px text-xs text-white">copied!</p>
+                  <svg className="inline-block w-6" fill="#0EA5E9" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
                     <g>
-                      <style type="text/css"></style>
-                      <path
-                        class="stone_een"
-                        d="M10,6c0,0.552,0.448,1,1,1h10c0.552,0,1-0.448,1-1V3c0-0.552-0.448-1-1-1h-2.184 C18.403,0.837,17.304,0,16,0s-2.403,0.837-2.816,2H11c-0.552,0-1,0.448-1,1V6z M28,6v23c0,1.657-1.343,3-3,3H7c-1.657,0-3-1.343-3-3 V6c0-1.657,1.343-3,3-3h2v2H7C6.448,5,6,5.448,6,6v23c0,0.552,0.448,1,1,1h18c0.552,0,1-0.448,1-1V6c0-0.552-0.448-1-1-1h-2V3h2 C26.657,3,28,4.343,28,6z M23,6c0,1.103-0.897,2-2,2H11C9.897,8,9,7.103,9,6H7v23h18V6H23z M19.5,19h-7c-0.276,0-0.5-0.224-0.5-0.5 c0-0.276,0.224-0.5,0.5-0.5h7c0.276,0,0.5,0.224,0.5,0.5C20,18.776,19.776,19,19.5,19z M19.5,17h-7c-0.276,0-0.5-0.224-0.5-0.5 c0-0.276,0.224-0.5,0.5-0.5h7c0.276,0,0.5,0.224,0.5,0.5C20,16.776,19.776,17,19.5,17z M19.5,15h-7c-0.276,0-0.5-0.224-0.5-0.5 c0-0.276,0.224-0.5,0.5-0.5h7c0.276,0,0.5,0.224,0.5,0.5C20,14.776,19.776,15,19.5,15z"
-                      ></path>
+                      <title>clipboard-check</title>{' '}
+                      <path d="M26 5.25h-2c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0h1.25v22.5h-18.5v-22.5h1.25c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-2c-0.414 0-0.75 0.336-0.75 0.75v0 24c0 0.414 0.336 0.75 0.75 0.75h20c0.414-0 0.75-0.336 0.75-0.75v0-24c-0-0.414-0.336-0.75-0.75-0.75v0zM11 8.749h10c0.414 0 0.75-0.336 0.75-0.75s-0.336-0.75-0.75-0.75v0h-2.019c0.477-0.616 0.766-1.398 0.769-2.248v-0.001c0-2.071-1.679-3.75-3.75-3.75s-3.75 1.679-3.75 3.75v0c0.003 0.851 0.292 1.633 0.775 2.258l-0.006-0.009h-2.019c-0.414 0-0.75 0.336-0.75 0.75s0.336 0.75 0.75 0.75v0zM13.75 5c0-0 0-0.001 0-0.001 0-1.243 1.007-2.25 2.25-2.25s2.25 1.007 2.25 2.25c0 1.243-1.007 2.25-2.25 2.25v0c-1.242-0.002-2.248-1.008-2.25-2.249v-0zM20.326 13.494l-6.792 7.424-1.886-1.873c-0.136-0.136-0.323-0.22-0.531-0.22-0.414 0-0.749 0.335-0.749 0.749 0 0.209 0.085 0.398 0.223 0.534l0 0 2.44 2.424 0.015 0.006 0.007 0.015c0.13 0.122 0.306 0.197 0.499 0.197 0.199 0 0.38-0.080 0.512-0.21l-0 0 0.027-0.011 0.005-0.011 0.017-0.012 7.317-8c0.122-0.133 0.197-0.311 0.197-0.506 0-0.414-0.335-0.749-0.749-0.749-0.219 0-0.415 0.094-0.552 0.243l-0 0.001z"></path>{' '}
                     </g>
                   </svg>
                 </>
               ) : (
-                <>
-                  <svg class="inline-block w-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" xmlSpace="preserve" fill="#38bdf8">
-                    <g strokeWidth="0"></g>
-                    <g strokeLinecap="round" strokeLinejoin="round"></g>
+                <div className="group relative">
+                  <svg className="inline-block w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke-width="0"></g>
+                    <g stroke-linecap="round" stroke-linejoin="round"></g>
                     <g>
-                      <style type="text/css"></style>
+                      {' '}
                       <path
-                        className="stone_een"
-                        d="M10,6c0,0.552,0.448,1,1,1h10c0.552,0,1-0.448,1-1V3c0-0.552-0.448-1-1-1h-2.184 C18.403,0.837,17.304,0,16,0s-2.403,0.837-2.816,2H11c-0.552,0-1,0.448-1,1V6z M28,6v23c0,1.657-1.343,3-3,3H7c-1.657,0-3-1.343-3-3 V6c0-1.657,1.343-3,3-3h2v2H7C6.448,5,6,5.448,6,6v23c0,0.552,0.448,1,1,1h18c0.552,0,1-0.448,1-1V6c0-0.552-0.448-1-1-1h-2V3h2 C26.657,3,28,4.343,28,6z M23,6c0,1.103-0.897,2-2,2H11C9.897,8,9,7.103,9,6H7v23h18V6H23z M19.5,19h-7c-0.276,0-0.5-0.224-0.5-0.5 c0-0.276,0.224-0.5,0.5-0.5h7c0.276,0,0.5,0.224,0.5,0.5C20,18.776,19.776,19,19.5,19z M19.5,17h-7c-0.276,0-0.5-0.224-0.5-0.5 c0-0.276,0.224-0.5,0.5-0.5h7c0.276,0,0.5,0.224,0.5,0.5C20,16.776,19.776,17,19.5,17z M19.5,15h-7c-0.276,0-0.5-0.224-0.5-0.5 c0-0.276,0.224-0.5,0.5-0.5h7c0.276,0,0.5,0.224,0.5,0.5C20,14.776,19.776,15,19.5,15z"
-                      ></path>
+                        d="M6 11C6 8.17157 6 6.75736 6.87868 5.87868C7.75736 5 9.17157 5 12 5H15C17.8284 5 19.2426 5 20.1213 5.87868C21 6.75736 21 8.17157 21 11V16C21 18.8284 21 20.2426 20.1213 21.1213C19.2426 22 17.8284 22 15 22H12C9.17157 22 7.75736 22 6.87868 21.1213C6 20.2426 6 18.8284 6 16V11Z"
+                        stroke="#0EA5E9"
+                        stroke-width="1.5"
+                      ></path>{' '}
+                      <path d="M6 19C4.34315 19 3 17.6569 3 16V10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H15C16.6569 2 18 3.34315 18 5" stroke="#0EA5E9" stroke-width="1.5"></path>{' '}
                     </g>
                   </svg>
-                </>
+                  <div className=" invisible absolute right-full top-1 cursor-pointer whitespace-nowrap duration-200 group-hover:visible  group-hover:duration-300">
+                    <p className="rounded-md bg-[#0EA5E9] px-1 py-px text-xs text-white">copy</p>{' '}
+                  </div>
+                </div>
               )}
             </button>
           </CopyToClipboard>
         </div>
       </div>
-      <div className={`w-full rounded-lg border ${tabNum === 1 ? 'border-sky-500 backdrop-blur-[2px]' : 'border-slate-500'} bg-black/40`}>{totalConfig[tabNum].component}</div>
+      <div className={`relative w-full rounded-sm`}>
+        <div className={`absolute inset-0 -z-50 rounded-sm backdrop-blur-lg ${tabNum === 1 ? 'bg-slate-400/20' : 'bg-slate-400/20'} `}></div>
+        {totalConfig[tabNum].component}
+      </div>
     </div>
   );
 }

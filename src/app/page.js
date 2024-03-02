@@ -34,7 +34,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <ComponentsCategory></ComponentsCategory>
+      {/* <ComponentsCategory></ComponentsCategory> */}
     </div>
   );
 }

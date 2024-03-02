@@ -1,9 +1,10 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { railscasts } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 export default function JSXCode({ codeStr }) {
   return (
-    <SyntaxHighlighter showLineNumbers customStyle={{ background: 'transparent', borderRadius: '5px', border: 0 }} language="jsx" style={atomDark}>
+    <SyntaxHighlighter customStyle={{ background: 'transparent', maxHeight: '700px', borderRadius: '5px', border: 0 }} language="jsx" style={a11yDark}>
       {codeStr}
     </SyntaxHighlighter>
   );

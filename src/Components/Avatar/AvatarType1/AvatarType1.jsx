@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import CodeBox from '@/Shared/CodeBox/CodeBox';
 
-const codeStr = `const AvatarType1 = () => {
+const codeStr = `export default function SquareAvatar() 
     return (
         // you can remove the blur by removing hover:blur-[2px] duration-500 these classes 
         <div className="flex flex-wrap justify-between">
@@ -11,8 +11,7 @@ const codeStr = `const AvatarType1 = () => {
         </div>
     );
 };
-
-export default AvatarType1;`;
+`;
 
 export default function AvatarType1() {
   return (
