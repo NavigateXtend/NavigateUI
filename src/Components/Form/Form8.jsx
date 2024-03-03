@@ -1,6 +1,6 @@
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `const Form8 = () => {
+const code = `const Form8 = () => {
     return (
         <div className="flex h-screen items-center justify-center bg-[#8EA7E9]/20 p-6 md:p-0">
             <div className="flex h-full w-full overflow-hidden rounded-xl shadow-md  md:h-[90%] md:w-[80%] lg:h-[80%]">
@@ -46,7 +46,7 @@ export default Form8;`;
 
 const Form8 = () => {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex h-screen items-center justify-center bg-[#8EA7E9]/20 p-6 md:p-0">
         <div className="flex h-full w-full overflow-hidden rounded-xl shadow-md  md:h-[90%] md:w-[80%] lg:h-[80%]">
           {/* register design side  */}
@@ -96,7 +96,7 @@ const Form8 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `import { useState } from 'react';
+const code = `import { useState } from 'react';
 
 const accordionData = [{title: 'heading 1', subtitle: 'Hi!~ How are you doing?'},{title: 'heading 2', subtitle: 'Hi!~ How are you doing?'},{title: 'heading 3', subtitle: 'Hi!~ How are you doing?'},{title: 'heading 4', subtitle: 'Hi!~ How are you doing?'},{title: 'heading 5', subtitle: 'Hi!~ How are you doing?'}];
 const Accordion10 = () => {
@@ -64,7 +64,7 @@ export default function Accordion10() {
     setIsActive((prevIdx) => (prevIdx === idx ? null : idx));
   };
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="mx-auto flex min-h-[200px] w-full bg-sky-400 md:min-h-[300px]">
         {accordionData.map((_, idx) => (
           <div key={idx} className="flex">
@@ -83,6 +83,6 @@ export default function Accordion10() {
           </div>
         ))}
       </div>
-    </CodeBox>
+    </CP>
   );
 }

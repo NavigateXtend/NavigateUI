@@ -1,7 +1,7 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `export default function DisableOfflineAvatar() {
+const code = `export default function DisableOfflineAvatar() {
     return (
             <div className="flex items-center flex-wrap justify-around" id="_DisableOfflineAvatar_NavigateUI">
             // Small Size
@@ -30,7 +30,7 @@ export default AvatarType6;
 
 export default function AvatarType6() {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex w-full flex-wrap items-center justify-evenly">
         <div className="group relative">
           <Image width={80} height={80} className="size-[80px] rounded-full bg-slate-500 object-cover opacity-60" src="https://source.unsplash.com/300x300/?profile" alt="avatar" />
@@ -45,6 +45,6 @@ export default function AvatarType6() {
           <span className="absolute bottom-5 right-0 size-5 rounded-full border-[3px] border-white bg-red-500"></span>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 }

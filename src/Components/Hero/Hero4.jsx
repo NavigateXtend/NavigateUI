@@ -1,7 +1,7 @@
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
 const Hero4 = () => {
-  const codeStr = `
+  const code = `
             <section className="bg-[#FDE047] px-8 py-12">
                 <div className="max-w-[1200px] mx-auto">
                     <div className="text-center flex flex-col space-y-3">
@@ -64,7 +64,7 @@ const Hero4 = () => {
    `;
 
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <section className="bg-[#FDE047] px-8 py-12">
         <div className="mx-auto max-w-[1200px]">
           <div className="flex flex-col space-y-3 text-center">
@@ -215,7 +215,7 @@ const Hero4 = () => {
           </div>
         </div>
       </section>
-    </CodeBox>
+    </CP>
   );
 };
 

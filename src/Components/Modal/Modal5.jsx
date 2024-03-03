@@ -1,9 +1,9 @@
 'use client';
 import { useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `import { useState } from 'react';
+const code = `import { useState } from 'react';
 export const Modal = () => {
     const [openModal, setOpenModal] = useState(false);
     return (
@@ -29,7 +29,7 @@ export const Modal = () => {
 const Modal5 = () => {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex items-center justify-center">
         <Image
           width={800}
@@ -123,7 +123,7 @@ const Modal5 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 export default Modal5;

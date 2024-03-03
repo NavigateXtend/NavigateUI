@@ -1,6 +1,6 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `import React from 'react';
+const code = `import React from 'react';
 
 const SpeedDial5 = () => {
 const svgs = [
@@ -148,7 +148,7 @@ const SpeedDial5 = () => {
     }
   ];
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="relative mx-auto h-[300px] w-16 rotate-90">
         <div className="group absolute left-[50%] top-0 mx-auto flex w-max -translate-x-1/2 flex-col items-center justify-center">
           {/* + icon  */}
@@ -185,7 +185,7 @@ const SpeedDial5 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

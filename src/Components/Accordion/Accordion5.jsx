@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `const Accordion5 = () => {
+const code = `const Accordion5 = () => {
     const accordionData = [
         {
             title: 'Profile',
@@ -134,7 +134,7 @@ export default function Accordion5() {
     setIsActive((prevIdx) => (prevIdx === idx ? null : idx));
   };
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className={`mx-auto max-w-[400px] overflow-hidden border-x ${isActive === accordionData.length - 1 ? 'border-x border-b' : 'border-x'} rounded-lg border-[#03BF70]`}>
         {accordionData?.map((data, idx) => (
           <div key={idx}>
@@ -157,6 +157,6 @@ export default function Accordion5() {
           </div>
         ))}
       </div>
-    </CodeBox>
+    </CP>
   );
 }

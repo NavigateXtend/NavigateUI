@@ -1,9 +1,9 @@
 'use client';
 import { useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Link from 'next/link';
 import Image from 'next/image';
-const codeStr = `import { useState } from "react";
+const code = `import { useState } from "react";
 import { Link } from "react-router-dom";
 export const Form = () => {
 const [register, setRegister] = useState(false);
@@ -52,7 +52,7 @@ return (
 const Form7 = () => {
   const [register, setRegister] = useState(false);
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="relative mx-auto flex w-80 items-center overflow-hidden bg-white shadow-xl md:w-96 lg:w-[800px]">
         {/* register form  */}
         <form className={`w-full p-8 ${register ? 'lg:translate-x-0' : 'hidden lg:block lg:-translate-x-full'} duration-500`}>
@@ -168,7 +168,7 @@ const Form7 = () => {
           </button>
         </form>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

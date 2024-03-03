@@ -1,8 +1,8 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
 const Card5 = () => {
-  const codeStr = `Card5 = () => {
+  const code = `Card5 = () => {
      return (
        <div className=" flex  flex-col md:flex-row  my-20">
          <div className="relative max-w-[350px] group">
@@ -47,7 +47,7 @@ const Card5 = () => {
  `;
 
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className=" mx-auto my-20 flex flex-col items-center justify-center md:flex-row">
         <div className="group relative  sm:w-[350px]">
           <Image width={350} height={350} className="h-full w-full scale-105 transform rounded-lg bg-black/70" src="https://source.unsplash.com/350x350/?men" alt="img" />
@@ -94,7 +94,7 @@ const Card5 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

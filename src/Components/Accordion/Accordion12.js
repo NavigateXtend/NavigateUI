@@ -1,9 +1,9 @@
 'use client';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 import { useState } from 'react';
 
-const codeStr = `const Accordion12 = () => {
+const code = `const Accordion12 = () => {
     const sliders = [
         { img: 'https://source.unsplash.com/1200x640/?snow-fall', title: 'Winter', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
         { img: 'https://source.unsplash.com/1200x640/?Spring', title: 'Spring', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
@@ -38,7 +38,7 @@ export default function Accordion12() {
   const [isOpen, setIsOpen] = useState(1);
   const handleToggle = (idx) => setIsOpen((prevIdx) => (prevIdx == idx ? null : idx));
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex h-[800px] items-center justify-center gap-4">
         {sliders?.map((slide, idx) => (
           <div
@@ -53,6 +53,6 @@ export default function Accordion12() {
           </div>
         ))}
       </div>
-    </CodeBox>
+    </CP>
   );
 }

@@ -1,8 +1,8 @@
-import Navbar from '@/Shared/Navbar/Navbar';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Image from 'next/image';
+import Navbar from '@/ui/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 

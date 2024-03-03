@@ -1,6 +1,6 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `export const Form = () => {
+const code = `export const Form = () => {
 return (
         <div className="w-full mx-auto lg:w-[500px] drop-shadow-lg bg-white">
             <form className="p-12">
@@ -26,7 +26,7 @@ return (
 `;
 const Form5 = () => {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="mx-auto w-full bg-white drop-shadow-lg lg:w-[500px]">
         <form className="p-12">
           <h1 className="pb-8 text-4xl backdrop-blur-sm">Login</h1>
@@ -81,7 +81,7 @@ const Form5 = () => {
           </button>
         </form>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `const Card8 = () => {
+const code = `const Card8 = () => {
     return (
       <div className="max-w-[300px] md:w-[350px] bg-white my-20 p-6 md:p-8 shadow-md rounded-2xl space-y-8"> 
       {/* profile image & bg  */}
@@ -39,7 +39,7 @@ export default Card8;
 `;
 const Card8 = () => {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="mx-auto my-20 max-w-[350px] space-y-8 rounded-2xl bg-white px-6 py-8 shadow-md md:max-w-[350px]">
         {/* profile image & bg  */}
         <div className="relative ">
@@ -78,7 +78,7 @@ const Card8 = () => {
           </button>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

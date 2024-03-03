@@ -1,7 +1,7 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `export default function AvatarWithMaleGenderIcon() {
+const code = `export default function AvatarWithMaleGenderIcon() {
     return (
             <div className="flex items-center flex-wrap justify-around" id="_AvatarWithMaleGenderIcon_NavigateUI">
                 {/* Small Size  */}
@@ -29,7 +29,7 @@ const codeStr = `export default function AvatarWithMaleGenderIcon() {
 
 export default function AvatarType7() {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex w-full flex-wrap items-center justify-evenly">
         {/* Small Size  */}
         <div className="group relative">
@@ -119,6 +119,6 @@ export default function AvatarType7() {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 }

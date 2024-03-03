@@ -1,8 +1,8 @@
 import React from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `export default function CircleAvatar() {
+const code = `export default function CircleAvatar() {
     return (
         // you can remove the blur by removing hover:blur-[2px] duration-500 these classes 
         <div className="flex flex-wrap justify-between">
@@ -17,7 +17,7 @@ const codeStr = `export default function CircleAvatar() {
 export default function AvatarType2() {
   return (
     // you can remove the blur by removing hover:blur-[2px] duration-500 these classes
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex w-full flex-wrap items-center justify-evenly">
         <Image
           width={80}
@@ -41,6 +41,6 @@ export default function AvatarType2() {
           alt="avatar image"
         />
       </div>
-    </CodeBox>
+    </CP>
   );
 }

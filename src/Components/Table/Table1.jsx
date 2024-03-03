@@ -1,8 +1,8 @@
 import React from 'react';
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
 const Table1 = () => {
-  const codestr = `
+  const code = `
     <div className="overflow-x-auto ">
     <table className="min-w-[90%] shadow-md  border mx-auto border-gray-100  my-6">
         <thead>
@@ -31,7 +31,7 @@ const Table1 = () => {
     </div>
     `;
   return (
-    <CodeBox codeStr={codestr}>
+    <CP code={code}>
       <div className="overflow-x-auto rounded-lg">
         <table className="mx-auto my-6 min-w-[90%]  rounded-lg border border-gray-100  shadow-md">
           <thead>
@@ -58,7 +58,7 @@ const Table1 = () => {
           </tbody>
         </table>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

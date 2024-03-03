@@ -1,9 +1,9 @@
 'use client';
 import { useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `import { useState } from "react";
+const code = `import { useState } from "react";
 
 export const CarouselMain = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
@@ -98,7 +98,7 @@ export const CarouselMain = () => {
 };
 export const Carousel2 = () => {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="relative mx-auto flex h-[540px] max-w-7xl flex-col items-center justify-center gap-5 overflow-hidden px-3 lg:h-[670px] lg:flex-row lg:gap-10 lg:px-10">
         <div className="absolute left-0 -z-40 h-[540px] w-full bg-[#f3f9fc] lg:h-[670px]"></div>
         <div className="w-2/3 space-y-2 py-5 text-center lg:w-1/3 lg:space-y-5 lg:text-left">
@@ -108,6 +108,6 @@ export const Carousel2 = () => {
         </div>
         <CarouselMain />
       </div>
-    </CodeBox>
+    </CP>
   );
 };

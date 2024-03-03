@@ -1,7 +1,7 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import React from 'react';
 
-const codeStr = `
+const code = `
 export default function BadgeWithText() {
     return (
         <div className="relative mx-auto h-fit w-fit rounded-md bg-white p-2 hover:bg-gray-200">
@@ -14,11 +14,11 @@ export default function BadgeWithText() {
 
 export default function Badge4() {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="relative mx-auto h-fit w-fit rounded-md bg-gray-700 p-2 text-white ">
         <h2 className=" font-medium">Notification</h2>
         <span className="absolute -right-1 -top-1 h-[14px] w-[14px] rounded-full bg-green-500 "></span>
       </div>
-    </CodeBox>
+    </CP>
   );
 }

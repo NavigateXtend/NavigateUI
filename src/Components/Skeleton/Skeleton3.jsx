@@ -1,7 +1,7 @@
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
 const Skeleton3 = () => {
-  const codeStr = `
+  const code = `
     <div className="max-w-[300px] md:w-[350px] bg-white mx-auto p-6 md:p-8 shadow-md rounded-2xl space-y-8 animate-pulse">
         {/* Profile Image & BG Skeleton */}
         <div className="relative">
@@ -32,7 +32,7 @@ const Skeleton3 = () => {
     `;
 
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="mx-auto max-w-[300px] animate-pulse space-y-8 rounded-2xl bg-white p-6 shadow-md md:w-[350px] md:p-8">
         {/* Profile Image & BG Skeleton */}
         <div className="relative">
@@ -62,7 +62,7 @@ const Skeleton3 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

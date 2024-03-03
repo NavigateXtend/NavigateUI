@@ -1,7 +1,7 @@
 import React from 'react';
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `export const InputType1 = () => {
+const code = `export const InputType1 = () => {
     return (
         <div className="">
             <input className="rounded-lg border border-[#1B8EF8] px-4 py-2 text-[#1B8EF8] focus:outline-none" type="text" />
@@ -10,10 +10,10 @@ const codeStr = `export const InputType1 = () => {
 };`;
 export const InputType1 = () => {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="">
         <input className="rounded-lg border border-[#1B8EF8] bg-transparent px-4 py-2 text-[#1B8EF8] focus:outline-none" type="text" />
       </div>
-    </CodeBox>
+    </CP>
   );
 };

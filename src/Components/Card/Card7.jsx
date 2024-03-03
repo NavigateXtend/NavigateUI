@@ -1,8 +1,8 @@
 import React from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `const Card7 = () => {
+const code = `const Card7 = () => {
     return (
       <div className="md:w-[300px] mx-auto space-y-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] my-20 relative p-8">
           {/* top part  */}
@@ -57,7 +57,7 @@ export default Card7;
 
 const Card7 = () => {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className=" relative mx-auto my-20 space-y-8 p-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] md:w-[300px]">
         {/* top part  */}
         <div>
@@ -182,7 +182,7 @@ const Card7 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

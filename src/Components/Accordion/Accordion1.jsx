@@ -1,7 +1,7 @@
 'use client';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import { useState } from 'react';
-const codeStr = `import { useState } from "react";
+const code = `import { useState } from "react";
 
 export default function Accordion() {
   const [isOpen, setIsOpen] = useState(null);
@@ -50,7 +50,7 @@ export default function Accordion1() {
   };
 
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="mx-4 rounded-lg border font-sans">
         {accordions.map((PerAccordion, idx) => (
           <div key={idx} className="border-b p-4 dark:border-black">
@@ -71,6 +71,6 @@ export default function Accordion1() {
           </div>
         ))}
       </div>
-    </CodeBox>
+    </CP>
   );
 }

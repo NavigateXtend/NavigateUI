@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
 const Card6 = () => {
-  const codeStr = `
+  const code = `
 const Card6 = () => {
   return (
     <div className="bg-white mx-auto my-6 max-w-[350px] rounded-lg border font-sans shadow-lg">
@@ -66,7 +66,7 @@ const Card6 = () => {
  `;
 
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className=" mx-auto my-6 max-w-[350px] rounded-lg border bg-white font-sans shadow-lg">
         <div className="flex items-center justify-between gap-10 px-4 py-4">
           {/* Avatar image  */}
@@ -150,7 +150,7 @@ const Card6 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

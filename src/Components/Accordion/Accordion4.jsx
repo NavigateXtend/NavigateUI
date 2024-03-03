@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `const Accordion4 = () => {
+const code = `const Accordion4 = () => {
     const [isOpen, setIsOpen] = useState(null);
 
     const handleToggle = (idx) => setIsOpen((prevIdx) => (prevIdx === idx ? null : idx));
@@ -79,7 +79,7 @@ export default function Accordion4() {
     }
   ];
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="space-y-4 p-2 md:p-6">
         {datas?.map((data, idx) => (
           <div key={idx}>
@@ -148,6 +148,6 @@ export default function Accordion4() {
           </div>
         ))}
       </div>
-    </CodeBox>
+    </CP>
   );
 }

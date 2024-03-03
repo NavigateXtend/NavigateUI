@@ -1,6 +1,6 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `const Card13 = () => {
+const code = `const Card13 = () => {
     return (
         <div className="w-[350px] mx-auto border/10 my-20 p-6 md:p-8 rounded-2xl shadow-lg bg-white">
             <div className="space-y-6 flex flex-col justify-center items-center">
@@ -15,7 +15,7 @@ const codeStr = `const Card13 = () => {
 
 const Card13 = () => {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="border/10 mx-auto my-20 w-[350px] rounded-2xl bg-white p-6 shadow-lg md:p-8">
         <div className="flex flex-col items-center justify-center space-y-6">
           <svg width={75} viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000">
@@ -33,7 +33,7 @@ const Card13 = () => {
           <button className="text-slate-500">Redeem later</button>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

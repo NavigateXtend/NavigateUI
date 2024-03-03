@@ -1,7 +1,7 @@
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
 const Skeleton1 = () => {
-  const codestr = `
+  const code = `
     {/* small avatar */}
     <div className="w-16 h-16 rounded-full bg-gray-300 animate-pulse"></div>
     {/* large avatar */}
@@ -11,7 +11,7 @@ const Skeleton1 = () => {
   `;
 
   return (
-    <CodeBox codeStr={codestr}>
+    <CP code={code}>
       <div className="flex flex-wrap items-center justify-center gap-5 ">
         {/* small avatar */}
         <div className="h-16 w-16 animate-pulse rounded-full bg-gray-300"></div>
@@ -20,7 +20,7 @@ const Skeleton1 = () => {
         {/* Extra large avatar */}
         <div className="h-32 w-32 animate-pulse rounded-full bg-gray-300"></div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

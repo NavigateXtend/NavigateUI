@@ -1,8 +1,8 @@
 import React from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `const Hero5 = () => {
+const code = `const Hero5 = () => {
     return (
         <div className="flex items-center justify-center border border-black w-full h-[80vh] bg-gradient-to-tr from-black via-black/90 to-black">
             <div className="flex flex-col items-center my-10 text-white space-y-8">
@@ -60,7 +60,7 @@ export default Hero5;`;
 
 const Hero5 = () => {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex h-[80vh] w-full items-center justify-center border border-black bg-gradient-to-tr from-black via-black/90 to-black">
         <div className="my-10 flex flex-col items-center space-y-8 text-white">
           <div className="flex items-center gap-4 rounded-lg bg-gradient-to-t from-black to-white/10 px-6 py-2">
@@ -140,7 +140,7 @@ const Hero5 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

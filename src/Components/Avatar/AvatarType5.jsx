@@ -1,7 +1,7 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `export default function AvatarWithAddButton() {
+const code = `export default function AvatarWithAddButton() {
     return (
             <div className="flex items-center flex-wrap justify-around" id="_AvatarWithAddButton_NavigateUI">
             //  Small Size 
@@ -35,8 +35,8 @@ const codeStr = `export default function AvatarWithAddButton() {
 
 export default function AvatarType5() {
   return (
-    <CodeBox codeStr={codeStr}>
-      <div className="flex w-full flex-wrap items-center justify-around justify-evenly">
+    <CP code={code}>
+      <div className="flex w-full flex-wrap items-center justify-evenly">
         <div className="group relative">
           <Image
             width={80}
@@ -116,6 +116,6 @@ export default function AvatarType5() {
           </span>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 }

@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `export default function SquareAvatar() 
+const code = `export default function SquareAvatar() 
     return (
         // you can remove the blur by removing hover:blur-[2px] duration-500 these classes 
         <div className="flex flex-wrap justify-evenly">
@@ -16,7 +16,7 @@ const codeStr = `export default function SquareAvatar()
 export default function AvatarType1() {
   return (
     // you can remove the blur by removing hover:blur-[2px] duration-500 these classes
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex w-full flex-wrap items-center justify-evenly">
         <Image
           width={80}
@@ -40,6 +40,6 @@ export default function AvatarType1() {
           alt="avatar"
         />
       </div>
-    </CodeBox>
+    </CP>
   );
 }

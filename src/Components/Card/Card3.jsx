@@ -1,7 +1,7 @@
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
 const Card3 = () => {
-  const codeStr = `const Card3 = () => {
+  const code = `const Card3 = () => {
   return (
     <div className="bg-white max-w-[350px] my-20 shadow-md py-8 pl-8 rounded-lg border-t border-l border-l-[#005eb6] border-t-[#005eb6] border-b-2 border-r-2 border-b-[#0084ff] border-r-[#0084ff] space-y-6">
       <div className="flex justify-between items-center">
@@ -25,7 +25,7 @@ const Card3 = () => {
 export default Card3;
 `;
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="mx-auto my-20 max-w-[350px] space-y-6 rounded-lg border-b-2 border-l border-r-2 border-t border-b-[#0084ff] border-l-[#005eb6] border-r-[#0084ff] border-t-[#005eb6] bg-white py-8 pl-8 shadow-md">
         <div className="flex items-center justify-between">
           <h1 className="w-[35%] text-2xl font-bold tracking-wider text-sky-900 md:text-4xl">
@@ -109,7 +109,7 @@ export default Card3;
           </button>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

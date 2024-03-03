@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
 const Table3 = () => {
-  const codeStr = `
+  const code = `
 <div className="overflow-x-auto">
   <table className="min-w-full border border-gray-200 bg-white shadow-lg">
     {/* Table Header */}
@@ -67,7 +67,7 @@ const Table3 = () => {
   `;
 
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="overflow-x-auto">
         <table className="mx-auto min-w-[90%] border border-gray-200 bg-white shadow-lg">
           {/* Table Header */}
@@ -138,7 +138,7 @@ const Table3 = () => {
           </tbody>
         </table>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

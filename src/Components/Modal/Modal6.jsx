@@ -1,8 +1,8 @@
 'use client';
+import CP from '@/ui/CP';
 import { useEffect, useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
 
-const codeStr = `
+const code = `
 import { useState } from 'react';
 
 const Modal = () => {
@@ -129,7 +129,7 @@ const Modal6 = () => {
     };
   }, [openModal]);
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="mx-auto flex w-72 items-center justify-center">
         {/* Pay Button */}
         <button onClick={() => setOpenModal(true)} className="rounded-lg bg-black p-2 text-white">
@@ -252,7 +252,7 @@ const Modal6 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

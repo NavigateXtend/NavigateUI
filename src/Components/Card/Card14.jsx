@@ -1,6 +1,6 @@
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codestr = `
+const code = `
 <div className="max-w-[370px] h-[270px] mx-auto bg-gradient-to-r from-blue-600 to-blue-400 overflow-hidden rounded-xl p-8 shadow-lg relative transform rotate-3 hover:scale-105 hover:rotate-0 transition-transform duration-300">
   <div className="absolute -top-5 -right-10  w-44 h-44 bg-white rounded-full opacity-10" />
   <div className="absolute -bottom-8 -right-10 w-44 h-44 bg-white rounded-full opacity-10" />
@@ -36,7 +36,7 @@ const codestr = `
 
 const Card14 = () => {
   return (
-    <CodeBox codeStr={codestr}>
+    <CP code={code}>
       <div className="relative mx-auto h-[270px] max-w-[370px] rotate-3 transform overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 p-8 shadow-lg transition-transform duration-300 hover:rotate-0 hover:scale-105">
         {/* Move the circles inside the card */}
         <div className="absolute -right-10 -top-5  h-44 w-44 rounded-full bg-white opacity-10" />
@@ -94,7 +94,7 @@ const Card14 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

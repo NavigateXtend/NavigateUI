@@ -1,9 +1,9 @@
 'use client';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-const codeStr = `const SpeedDial6 = () => {
+const code = `const SpeedDial6 = () => {
     const [isOpen, setIsOpen] = useState(false);
     const iconArray = [
         'https://i.ibb.co/z48T5zt/profile.png',
@@ -50,7 +50,7 @@ const SpeedDial6 = () => {
     'https://i.ibb.co/s6t2Wgr/marketing.png'
   ];
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="my-10 flex h-[400px] items-center justify-center">
         <div onClick={() => setIsOpen(true)} className={`${isOpen ? 'rotate-[0deg] gap-2 p-4' : 'gap-1'} mx-auto grid w-max origin-center rotate-90 grid-cols-3 duration-700`}>
           {iconArray?.map((icon, idx) => (
@@ -71,7 +71,7 @@ const SpeedDial6 = () => {
           ))}
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

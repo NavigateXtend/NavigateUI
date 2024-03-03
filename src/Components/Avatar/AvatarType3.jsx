@@ -1,7 +1,7 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `export default function ActiveAvatar() {
+const code = `export default function ActiveAvatar() {
     return (
             <div className="flex items-center flex-wrap justify-around" id="_ActiveAvatar_NavigateUI">
             // small
@@ -29,7 +29,7 @@ const codeStr = `export default function ActiveAvatar() {
 
 export default function AvatarType3() {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex w-full flex-wrap items-center justify-evenly">
         <div className="group relative">
           <Image width={80} height={80} className="size-[80px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/300x300/?profile" alt="avatar" />
@@ -47,6 +47,6 @@ export default function AvatarType3() {
           <span className="absolute bottom-5 right-0 size-5 animate-ping rounded-full bg-green-500"></span>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 }

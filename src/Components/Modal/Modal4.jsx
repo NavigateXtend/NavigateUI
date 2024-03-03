@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `import { useState } from 'react';
+const code = `import { useState } from 'react';
 
 export const Modal = () => {
     const [openModal, setOpenModal] = useState(false);
@@ -37,7 +37,7 @@ export const Modal = () => {
 const Modal4 = () => {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="mx-auto flex w-72 items-center justify-center">
         <button onClick={() => setOpenModal(true)} className="rounded-lg bg-gray-700 p-2 text-white">
           Modal
@@ -114,7 +114,7 @@ const Modal4 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

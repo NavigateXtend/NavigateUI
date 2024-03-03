@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `import { useState } from 'react';
+const code = `import { useState } from 'react';
 
 export const Modal2 = () => {
     const [openModal, setOpenModal] = useState(false);
@@ -23,7 +23,7 @@ export const Modal2 = () => {
 const Modal2 = () => {
   const [openModal, setOpenModal] = useState(false);
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="mx-auto w-fit">
         <button onClick={() => setOpenModal(true)} className="rounded-sm bg-sky-500 px-5 py-[6px] text-white">
           Open
@@ -48,7 +48,7 @@ const Modal2 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 

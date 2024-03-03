@@ -1,7 +1,7 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `const AvatarType8 = () => {
+const code = `const AvatarType8 = () => {
     return (
             <div className="flex items-center flex-wrap justify-around">
                 {/* Small Size  */}
@@ -37,7 +37,7 @@ export default AvatarType8;
 
 export default function AvatarType8() {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex w-full flex-wrap items-center justify-evenly">
         {/* Small Size  */}
         <div className="group relative">
@@ -115,6 +115,6 @@ export default function AvatarType8() {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 }

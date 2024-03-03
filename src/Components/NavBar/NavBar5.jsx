@@ -1,8 +1,8 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
 export const NavBar5 = () => {
-  const codeStr = `
+  const code = `
 <nav className="flex items-center justify-between bg-[#393E46] px-4 py-2 text-white">
     <div className="scale-100 cursor-pointer rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
         <h2>Logo</h2>
@@ -31,7 +31,7 @@ export const NavBar5 = () => {
    `;
 
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <nav className="flex items-center justify-between bg-[#393E46] px-4 py-2 text-white">
         <div className="scale-100 cursor-pointer rounded-2xl px-3 py-2 text-xl font-semibold text-white transition-all duration-200 hover:scale-110">
           <h2>Logo</h2>
@@ -57,6 +57,6 @@ export const NavBar5 = () => {
           </div>
         </div>
       </nav>
-    </CodeBox>
+    </CP>
   );
 };

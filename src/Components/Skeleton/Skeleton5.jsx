@@ -1,7 +1,7 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
 const Skeleton5 = () => {
-    const codestr = `
+  const code = `
                {/* Light Theme Skeleton */}
                 <div className="max-w-[700px] w-full bg-white animate-pulse flex justify-center flex-col items-start mx-auto p-6 rounded-md shadow-xl">
                     {/* User profile  Skeleton */}
@@ -37,44 +37,44 @@ const Skeleton5 = () => {
                 </div>
   `;
 
-    return (
-        <CodeBox codeStr={codestr}>
-            <div className="flex w-full flex-col justify-center gap-7 ">
-                {/* Light Theme Skeleton */}
-                <div className="mx-auto flex w-full max-w-[700px] bg-white animate-pulse flex-col items-start justify-center rounded-md p-6 shadow-xl">
-                    {/* User profile  Skeleton */}
-                    <div className="flex w-full items-center gap-2">
-                        <div className="h-16 w-16 animate-pulse rounded-full bg-gray-300"></div>
-                        <div className="w-[80%]">
-                            <div className="mb-3 h-[15px] w-[30%] rounded-full bg-gray-300"></div>
-                            <div className="h-[15px] w-[40%] rounded-full bg-gray-300"></div>
-                        </div>
-                    </div>
-                    {/* user post skeleton */}
-                    <div className="mt-8 w-full">
-                        <div className="mb-3 h-[15px] w-full rounded-full bg-gray-300"></div>
-                        <div className="h-[15px] w-[90%] rounded-full bg-gray-300"></div>
-                    </div>
-                </div>
-                {/* Dark Theme Skeleton */}
-                <div className="mx-auto flex w-full max-w-[700px] animate-pulse flex-col items-start justify-center rounded-md bg-[#657287] p-6 shadow-xl">
-                    {/* User profile  Skeleton */}
-                    <div className="flex w-full items-center gap-2">
-                        <div className="h-16 w-16 animate-pulse rounded-full bg-[#9FADC2]"></div>
-                        <div className="w-[80%]">
-                            <div className="mb-3 h-[15px] w-[30%] rounded-full bg-[#9FADC2]"></div>
-                            <div className="h-[15px] w-[40%] rounded-full bg-[#9FADC2]"></div>
-                        </div>
-                    </div>
-                    {/* user post skeleton */}
-                    <div className="mt-8 w-full">
-                        <div className="mb-3 h-[15px] w-full rounded-full bg-[#9FADC2]"></div>
-                        <div className="h-[15px] w-[90%] rounded-full bg-[#9FADC2]"></div>
-                    </div>
-                </div>
+  return (
+    <CP code={code}>
+      <div className="flex w-full flex-col justify-center gap-7 ">
+        {/* Light Theme Skeleton */}
+        <div className="mx-auto flex w-full max-w-[700px] animate-pulse flex-col items-start justify-center rounded-md bg-white p-6 shadow-xl">
+          {/* User profile  Skeleton */}
+          <div className="flex w-full items-center gap-2">
+            <div className="h-16 w-16 animate-pulse rounded-full bg-gray-300"></div>
+            <div className="w-[80%]">
+              <div className="mb-3 h-[15px] w-[30%] rounded-full bg-gray-300"></div>
+              <div className="h-[15px] w-[40%] rounded-full bg-gray-300"></div>
             </div>
-        </CodeBox>
-    );
+          </div>
+          {/* user post skeleton */}
+          <div className="mt-8 w-full">
+            <div className="mb-3 h-[15px] w-full rounded-full bg-gray-300"></div>
+            <div className="h-[15px] w-[90%] rounded-full bg-gray-300"></div>
+          </div>
+        </div>
+        {/* Dark Theme Skeleton */}
+        <div className="mx-auto flex w-full max-w-[700px] animate-pulse flex-col items-start justify-center rounded-md bg-[#657287] p-6 shadow-xl">
+          {/* User profile  Skeleton */}
+          <div className="flex w-full items-center gap-2">
+            <div className="h-16 w-16 animate-pulse rounded-full bg-[#9FADC2]"></div>
+            <div className="w-[80%]">
+              <div className="mb-3 h-[15px] w-[30%] rounded-full bg-[#9FADC2]"></div>
+              <div className="h-[15px] w-[40%] rounded-full bg-[#9FADC2]"></div>
+            </div>
+          </div>
+          {/* user post skeleton */}
+          <div className="mt-8 w-full">
+            <div className="mb-3 h-[15px] w-full rounded-full bg-[#9FADC2]"></div>
+            <div className="h-[15px] w-[90%] rounded-full bg-[#9FADC2]"></div>
+          </div>
+        </div>
+      </div>
+    </CP>
+  );
 };
 
 export default Skeleton5;

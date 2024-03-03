@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import CodeBox from '../../Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `export default function AvatarWithEditIcon() {
+const code = `export default function AvatarWithEditIcon() {
     return (
         <div className="flex items-center flex-wrap justify-around my-20" id="_AvatarWithEditIcon_NavigateUI">
             <div className="relative group">
@@ -29,7 +29,7 @@ const codeStr = `export default function AvatarWithEditIcon() {
 
 export default function AvatarType4() {
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex w-full flex-wrap items-center justify-evenly">
         <div className="group relative">
           <Image width={80} height={80} className="size-[80px] rounded-full border-2 border-blue-300 bg-slate-500 object-cover" src="https://source.unsplash.com/300x300/?profile" alt="avatar" />
@@ -83,6 +83,6 @@ export default function AvatarType4() {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 }

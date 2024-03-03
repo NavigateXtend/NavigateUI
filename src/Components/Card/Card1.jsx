@@ -1,6 +1,6 @@
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
-const codeStr = `const Card1 = () => {
+const code = `const Card1 = () => {
 
 
   const svgs = [
@@ -194,7 +194,7 @@ const Card1 = () => {
   ];
 
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="mx-auto my-10 flex max-w-[350px] flex-col items-center justify-center space-y-4 rounded-xl bg-white p-8 font-sans shadow-lg">
         <div className="group relative">
           <Image width={110} height={110} className="h-[110px] w-[110px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/300x300/?profile" alt="profile" />
@@ -233,7 +233,7 @@ const Card1 = () => {
           View Profile
         </button>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 export default Card1;

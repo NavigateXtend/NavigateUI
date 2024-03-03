@@ -1,8 +1,8 @@
 'use client';
 import { useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
-const codeStr = `import { useState } from 'react';
+const code = `import { useState } from 'react';
 
 export const Accordion11 = () => {
   const [isOpen, setIsOpen] = useState(null);
@@ -54,7 +54,7 @@ export default function Accordion11() {
     }
   ];
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex justify-center gap-1 md:gap-4">
         {/* map  */}
 
@@ -85,6 +85,6 @@ export default function Accordion11() {
           </div>
         ))}
       </div>
-    </CodeBox>
+    </CP>
   );
 }

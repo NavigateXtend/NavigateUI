@@ -1,9 +1,9 @@
 'use client';
 import { useCallback, useEffect, useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `
+const code = `
 import { useEffect, useState } from 'react';
 
 export const Carousel7 = () => {
@@ -76,7 +76,7 @@ export const Carousel7 = () => {
     };
   }, [nextSlider, currentSlider]);
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       {' '}
       <div className="mx-auto min-w-[280px] max-w-[500px]">
         <div className="relative overflow-hidden">
@@ -122,6 +122,6 @@ export const Carousel7 = () => {
           </div>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };

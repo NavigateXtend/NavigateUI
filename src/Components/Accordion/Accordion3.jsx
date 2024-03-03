@@ -1,8 +1,8 @@
 'use client';
 import React, { useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 
-const codeStr = `const Accordion3 = () => {
+const code = `const Accordion3 = () => {
 
     // add your array of object data 
     const array=[1,2,3,4]
@@ -63,7 +63,7 @@ export default function Accordion3() {
     setIsOpen((prevIdx) => (prevIdx === idx ? null : idx));
   };
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="flex w-full justify-center">
         <div className=" max-w-[550px] cursor-pointer space-y-6 rounded-lg py-20">
           {/* maping each accordion  */}
@@ -97,6 +97,6 @@ export default function Accordion3() {
           ))}
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 }

@@ -1,9 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-import CodeBox from '@/Shared/CodeBox/CodeBox';
+import CP from '@/ui/CP';
 import Image from 'next/image';
 
-const codeStr = `const Accordion6 = () => {
+const code = `const Accordion6 = () => {
     const datas = [
         {
             title: 'Connected Devices',
@@ -97,7 +97,7 @@ export default function Accordion6() {
   const [isOpen, setIsOpen] = useState(0);
   const handleToggle = (idx) => setIsOpen((prevIdx) => (prevIdx === idx ? null : idx));
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className=" mx-4 rounded-lg bg-[#18181B] lg:mx-8">
         {/* title part  */}
         {datas.map((data, idx) => (
@@ -137,6 +137,6 @@ export default function Accordion6() {
           </div>
         ))}
       </div>
-    </CodeBox>
+    </CP>
   );
 }

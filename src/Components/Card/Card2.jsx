@@ -1,8 +1,8 @@
+import CP from '@/ui/CP';
 import Image from 'next/image';
-import CodeBox from '../../Shared/CodeBox/CodeBox';
 
 const Card2 = () => {
-  const codeStr = `const Card2 = () => {
+  const code = `const Card2 = () => {
   return (
       <div className="px-4 py-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-6 my-20 mx-auto bg-white">
           <div className="flex justify-center w-full h-48 lg:h-[280px] relative">
@@ -31,7 +31,7 @@ const Card2 = () => {
 export default Card2;
 `;
   return (
-    <CodeBox codeStr={codeStr}>
+    <CP code={code}>
       <div className="mx-auto my-20 max-w-[350px] space-y-6 rounded-xl bg-white px-4 py-8 font-sans shadow-lg">
         <div className="relative flex h-48 w-full justify-center lg:h-[280px]">
           <div className="absolute left-4 right-4 top-4 flex items-center justify-between">
@@ -83,7 +83,7 @@ export default Card2;
           </button>
         </div>
       </div>
-    </CodeBox>
+    </CP>
   );
 };
 
