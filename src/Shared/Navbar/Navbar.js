@@ -6,7 +6,7 @@ export default async function Navbar() {
   const data = await getStar();
 
   return (
-    <nav className="g-white/20 sticky top-0 z-[99] text-white backdrop-blur-lg">
+    <nav className="sticky top-0 z-[99] overflow-hidden text-white backdrop-blur-lg">
       <div className="item-center mx-auto flex max-w-[1500px] justify-between px-10 py-4">
         <Link href="/" className="flex items-center text-xl font-bold text-[#38BDF8]">
           <Image src="/Logo.svg" className="rounded-lg bg-slate-400/20 p-px drop-shadow-md backdrop-blur-xl" width={33} height={33} alt="navigateui logo" />

@@ -1,4 +1,4 @@
-import Spinner1 from '@/Components/Spinner/Part1/Spinner1';
+import Spinner1 from '@/Components/Spinner/Spinner1';
 
 export const metadata = {
   title: 'Spinner ',

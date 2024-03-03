@@ -1,4 +1,4 @@
-import ComponentsCategory from '@/Home/ComponentsCategory/ComponentsCategory';
+import ComponentsCategory from '@/Home/ComponentsCategory';
 import Link from 'next/link';
 export const metadata = {
   metadataBase: new URL('https://navigateui.com'),

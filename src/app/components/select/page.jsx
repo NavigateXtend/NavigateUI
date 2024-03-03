@@ -1,4 +1,4 @@
-import Select1 from '@/Components/Selector/Select/Select';
+import Select1 from '@/Components/Select/Select1';
 import React from 'react';
 
 export const metadata = {

@@ -2,10 +2,10 @@
 import { sendGAEvent } from '@next/third-parties/google';
 import { useState } from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
-import JSXCode from './JSXCode/JSXCode';
-import Preview from './Preview/Preview';
+import JSXCode from './JSXCode';
+import Preview from './Preview';
 
-export default function CodeBox({ children, codeStr, html }) {
+export default function CodeBox({ children, codeStr }) {
   const [tabNum, setTabNum] = useState(0);
   // const [dark, setDark] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
@@ -132,7 +132,6 @@ export default function CodeBox({ children, codeStr, html }) {
                     <g stroke-width="0"></g>
                     <g stroke-linecap="round" stroke-linejoin="round"></g>
                     <g>
-                      {' '}
                       <path
                         d="M6 11C6 8.17157 6 6.75736 6.87868 5.87868C7.75736 5 9.17157 5 12 5H15C17.8284 5 19.2426 5 20.1213 5.87868C21 6.75736 21 8.17157 21 11V16C21 18.8284 21 20.2426 20.1213 21.1213C19.2426 22 17.8284 22 15 22H12C9.17157 22 7.75736 22 6.87868 21.1213C6 20.2426 6 18.8284 6 16V11Z"
                         stroke="#0EA5E9"
