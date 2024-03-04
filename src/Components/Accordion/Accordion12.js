@@ -16,7 +16,7 @@ const code = `const Accordion12 = () => {
         <div className="flex h-[800px] items-center justify-center gap-4 bg-blue-50">
             {sliders?.map((slide, idx) => (
                 <div onClick={() => handleToggle(idx)} key={idx} className={\`\${isOpen == idx ? 'w-[300px] opacity-100 shadow-lg' : 'w-[100px] opacity-70 grayscale'} \${idx % 2 == 0 ? 'translate-y-16' : ''} relative h-[600px] duration-500 ease-in-out\`}>
-                    <img className="block h-full w-full rounded-md object-cover shadow-md" src={slide?.img} alt="" />
+                    <img className="block h-full w-full rounded-md object-cover shadow-md" src={slide?.img} alt="accordion navigate ui" />
                     <div className={\`\${isOpen == idx ? 'opacity-100' : 'opacity-0'} absolute bottom-0 h-1/2 w-full bg-gradient-to-t from-black to-transparent duration-500 ease-in-out\`}>
                         <h1 className={\`relative text-center text-2xl text-white/80 \${isOpen == idx ? 'top-[150px] opacity-100' : 'top-[200px] opacity-0'} duration-500 ease-in-out\`}>{slide?.title}</h1>
                     </div>
@@ -46,7 +46,7 @@ export default function Accordion12() {
             key={idx}
             className={`${isOpen == idx ? 'w-[300px] opacity-100 shadow-lg' : 'w-[100px] opacity-70 grayscale'} ${idx % 2 == 0 ? 'translate-y-16' : ''} relative h-[600px] duration-500 ease-in-out`}
           >
-            <Image height={600} width={300} className="block h-full w-full rounded-md object-cover shadow-md" src={slide?.img} alt="" />
+            <Image height={600} width={300} className="block h-full w-full rounded-md object-cover shadow-md" src={slide?.img} alt="accordion navigate ui" />
             <div className={`${isOpen == idx ? 'opacity-100' : 'opacity-0'} absolute bottom-0 h-1/2 w-full bg-gradient-to-t from-black to-transparent duration-500 ease-in-out`}>
               <h1 className={`relative text-center text-2xl text-white/80 ${isOpen == idx ? 'top-[150px] opacity-100' : 'top-[200px] opacity-0'} duration-500 ease-in-out`}>{slide?.title}</h1>
             </div>

@@ -15,7 +15,7 @@ const code = `const Card1 = () => {
     <div className="p-8 shadow-lg max-w-[350px] font-sans rounded-xl space-y-4 my-10 flex flex-col justify-center items-center mx-auto bg-white">
       // avatar 
       <div className="relative group">
-          <img className="w-[110px] h-[110px] bg-slate-500 object-cover rounded-full" src="https://source.unsplash.com/300x300/?profile" alt="" />
+          <img className="w-[110px] h-[110px] bg-slate-500 object-cover rounded-full" src="https://source.unsplash.com/300x300/?profile" alt="card navigate ui" />
           <span className="h-5 w-5 bg-green-500 absolute rounded-full bottom-3 right-0 border-[3px] border-white"></span>
           <span className="h-5 w-5 bg-green-500 absolute rounded-full bottom-3 right-0 animate-ping"></span>
       </div>
@@ -197,7 +197,7 @@ const Card1 = () => {
     <CP code={code}>
       <div className="mx-auto my-10 flex max-w-[350px] flex-col items-center justify-center space-y-4 rounded-xl bg-white p-8 font-sans shadow-lg">
         <div className="group relative">
-          <Image width={110} height={110} className="h-[110px] w-[110px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/300x300/?profile" alt="profile" />
+          <Image width={110} height={110} className="h-[110px] w-[110px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/300x300/?profile" alt="card navigate ui" />
           <span className="absolute bottom-3 right-0 h-5 w-5 rounded-full border-[3px] border-white bg-green-500"></span>
           <span className="absolute bottom-3 right-0 h-5 w-5 animate-ping rounded-full bg-green-500"></span>
         </div>

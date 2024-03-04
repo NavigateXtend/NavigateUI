@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} overflow-x-hidden bg-black`}>
         <Navbar />
         <div>{children}</div>
-        <Image className="fixed -left-20 top-0 -z-[100]" src="/docs-left.png" width="900" height="900" alt="" />
+        <Image className="fixed -left-20 top-0 -z-[100]" src="/docs-left.png" width="900" height="900" alt="navigate ui image" />
       </body>
       <script async data-id="101444286" src="//static.getclicky.com/js"></script>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA4_ID} />

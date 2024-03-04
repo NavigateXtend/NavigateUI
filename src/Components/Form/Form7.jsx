@@ -28,7 +28,7 @@ return (
                 </form>
                 {/* img */}
                 <div className={\`hidden lg:block absolute w-1/2 h-full top-0 z-50 duration-500 overflow-hidden bg-black/20 \${register ? 'translate-x-full rounded-bl-full duration-500' : 'rounded-br-full'}\`}>
-                    <img src="https://source.unsplash.com/random" className="object-cover h-full" alt="img" />
+                    <img src="https://source.unsplash.com/random" className="object-cover h-full" alt="card navigate ui" />
                 </div>
                 {/* login form */}
                 <form className={\`p-8 w-full mr-0 ml-auto duration-500 \${register ? 'lg:translate-x-full hidden lg:block' : ''}\`}>
@@ -97,7 +97,7 @@ const Form7 = () => {
         </form>
         {/* img */}
         <div className={`absolute top-0 z-50 hidden h-full w-1/2 overflow-hidden bg-black/20 duration-500 lg:block ${register ? 'translate-x-full rounded-bl-full duration-500' : 'rounded-br-full'}`}>
-          <Image width={500} height={500} src="https://source.unsplash.com/random" className="h-full object-cover" alt="img" />
+          <Image width={500} height={500} src="https://source.unsplash.com/random" className="h-full object-cover" alt="card navigate ui" />
         </div>
         {/* login form */}
         <form className={`ml-auto mr-0 w-full p-8 duration-500 ${register ? 'hidden lg:block lg:translate-x-full' : ''}`}>

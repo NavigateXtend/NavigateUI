@@ -15,8 +15,8 @@ export const Accordion11 = () => {
         {sliders.map((slide, idx) => (
           <div onClick={() => toggle({ currentIdx: idx })} className={\`h-[600px] bg-gray-500 relative duration-500 ease-in-out \${isOpen == idx ? "w-[400px] " : "w-[80px]" }\`} key={idx}>
           {/* main image  */}
-            <img className="h-full object-cover rounded-3xl" src={slide.img} alt=""/>
-            <img className={\`absolute bottom-5 border-white border-2 \${isOpen === idx ? "left-4" : "left-1/2 -translate-x-1/2 duration-700"}  h-[50px] w-[50px] object-cover rounded-full\`} src={slide.img} alt=""/>
+            <img className="h-full object-cover rounded-3xl" src={slide.img} alt="accordion navigate ui"/>
+            <img className={\`absolute bottom-5 border-white border-2 \${isOpen === idx ? "left-4" : "left-1/2 -translate-x-1/2 duration-700"}  h-[50px] w-[50px] object-cover rounded-full\`} src={slide.img} alt="accordion navigate ui"/>
               <div className={\`text-white absolute left-[100px] bottom-5\`}>
               <h3 className="text-3xl font-semibold">Status</h3>
               <p className="text-xl">{slide.title}</p>
@@ -66,7 +66,7 @@ export default function Accordion11() {
           >
             {/* main image  */}
 
-            <Image width={640} height={640} className="h-full rounded-3xl object-cover" src={slide.img} alt="image" />
+            <Image width={640} height={640} className="h-full rounded-3xl object-cover" src={slide.img} alt="accordion navigate ui" />
 
             <Image
               width={64}
@@ -75,7 +75,7 @@ export default function Accordion11() {
                 isOpen === idx ? 'left-4' : 'left-1/2 -translate-x-1/2 duration-700'
               } h-10 w-10 rounded-full object-cover md:h-[50px] md:w-[50px]`}
               src={slide.img}
-              alt="image"
+              alt="accordion navigate ui"
             />
 
             <div className={`absolute bottom-5 left-[45%] text-white transition-all duration-300 md:left-[100px] ${isOpen === idx ? 'opacity-100' : 'opacity-0 '}`}>

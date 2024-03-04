@@ -25,16 +25,16 @@ const code = `const Hero5 = () => {
                 {/* people who use navigateUI  */}
                 <div className="flex items-center py-4 pl-4 bg-gradient-to-tr from-black via-white/10 to-black border border-white/10 rounded-xl">
                     <div className="w-14 h-14 bg-transparent  rounded-full border-[3px] border-[#191919]">
-                        <img className="w-full h-full rounded-full" src="https://source.unsplash.com/64x64/?people" alt="" />
+                        <img className="w-full h-full rounded-full" src="https://source.unsplash.com/64x64/?people" alt="avatar navigate ui" />
                     </div>
                     <div className="w-14 h-14 bg-[#191919]  rounded-full border-[3px] border-[#191919] relative -left-5">
-                        <img className="w-full h-full rounded-full" src="https://source.unsplash.com/64x64/?kid" alt="" />
+                        <img className="w-full h-full rounded-full" src="https://source.unsplash.com/64x64/?kid" alt="avatar navigate ui" />
                     </div>
                     <div className="w-14 h-14 bg-[#191919]  rounded-full border-[3px] border-[#191919]  relative -left-10">
-                        <img className="w-full h-full rounded-full" src="https://source.unsplash.com/64x64/?male" alt="" />
+                        <img className="w-full h-full rounded-full" src="https://source.unsplash.com/64x64/?male" alt="avatar navigate ui" />
                     </div>
                     <div className="w-14 h-14 bg-[#191919]  rounded-full border-[3px] border-[#191919]  relative -left-[60px]">
-                        <img className="w-full h-full rounded-full" src="https://source.unsplash.com/64x64/?female" alt="" />
+                        <img className="w-full h-full rounded-full" src="https://source.unsplash.com/64x64/?female" alt="avatar navigate ui" />
                     </div>
 
                     <div className="relative -left-5">
@@ -82,16 +82,16 @@ const Hero5 = () => {
           {/* people who use navigateUI  */}
           <div className="flex items-center rounded-xl border border-white/10 bg-gradient-to-tr from-black via-white/10 to-black py-4 pl-4">
             <div className="h-14 w-14 rounded-full  border-[3px] border-[#191919] bg-transparent">
-              <Image width={64} height={64} className="h-full w-full rounded-full" src="https://source.unsplash.com/64x64/?people" alt="avatar" />
+              <Image width={64} height={64} className="h-full w-full rounded-full" src="https://source.unsplash.com/64x64/?people" alt="avatar navigate ui" />
             </div>
             <div className="relative -left-5 h-14  w-14 rounded-full border-[3px] border-[#191919] bg-[#191919]">
-              <Image width={64} height={64} className="h-full w-full rounded-full" src="https://source.unsplash.com/64x64/?kid" alt="avatar" />
+              <Image width={64} height={64} className="h-full w-full rounded-full" src="https://source.unsplash.com/64x64/?kid" alt="avatar navigate ui" />
             </div>
             <div className="relative -left-10 h-14  w-14 rounded-full border-[3px]  border-[#191919] bg-[#191919]">
-              <Image width={64} height={64} className="h-full w-full rounded-full" src="https://source.unsplash.com/64x64/?male" alt="avatar" />
+              <Image width={64} height={64} className="h-full w-full rounded-full" src="https://source.unsplash.com/64x64/?male" alt="avatar navigate ui" />
             </div>
             <div className="relative -left-[60px] h-14  w-14 rounded-full border-[3px]  border-[#191919] bg-[#191919]">
-              <Image width={64} height={64} className="h-full w-full rounded-full" src="https://source.unsplash.com/64x64/?female" alt="avatar" />
+              <Image width={64} height={64} className="h-full w-full rounded-full" src="https://source.unsplash.com/64x64/?female" alt="avatar navigate ui" />
             </div>
 
             <div className="relative -left-5">

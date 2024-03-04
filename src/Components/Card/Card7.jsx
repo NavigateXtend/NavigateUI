@@ -7,7 +7,7 @@ const code = `const Card7 = () => {
       <div className="md:w-[300px] mx-auto space-y-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] my-20 relative p-8">
           {/* top part  */}
           <div>
-              <img className="w-[60px] border h-[60px] object-cover rounded-full p-2 bg-slate-100 duration-300 hover:scale-105" src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL2pvYjk2OC1lbGVtZW50LTAxMi14LmpwZw.jpg" alt=""
+              <img className="w-[60px] border h-[60px] object-cover rounded-full p-2 bg-slate-100 duration-300 hover:scale-105" src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL2pvYjk2OC1lbGVtZW50LTAxMi14LmpwZw.jpg" alt="card navigate ui"
               />
               {/* Price Ribbon SVG  */}
               <div className="absolute -top-4 -right-[20px] ">
@@ -66,7 +66,7 @@ const Card7 = () => {
             height={60}
             className="h-[60px] w-[60px] rounded-full border bg-slate-100 object-cover p-2 duration-300 hover:scale-105"
             src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL2pvYjk2OC1lbGVtZW50LTAxMi14LmpwZw.jpg"
-            alt=""
+            alt="card navigate ui"
           />
           {/* Price Ribbon SVG  */}
           <div className="absolute -right-[20px] -top-4 ">

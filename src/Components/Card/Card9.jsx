@@ -5,7 +5,7 @@ const code = `const Card9 = () => {
     return (
             <div className="max-[350px] md:w-[350px] bg-slate-100/70 px-6 py-4 mx-auto rounded-2xl space-y-6 shadow-md">
             {/* Card Image */}
-                <img className="w-[350px] h-[190px] bg-gray-400 rounded-2xl" src={'https://source.unsplash.com/350x200/?furniture'} alt="" />
+                <img className="w-[350px] h-[190px] bg-gray-400 rounded-2xl" src={'https://source.unsplash.com/350x200/?furniture'} alt="card navigate ui" />
                 {/* Card Heading */}
                 <div className="space-y-2">
                     <h2 className="text-slate-800 font-medium md:text-xl sm:text-lg ">Stylish chair</h2>
@@ -34,7 +34,7 @@ export const Card9 = () => {
     <CP code={code}>
       <div className="max-[350px] mx-auto space-y-6 rounded-2xl bg-slate-100/70 px-6 py-4 shadow-md md:w-[350px]">
         {/* Card Image */}
-        <Image width={350} height={190} className="h-[190px] w-[350px] rounded-2xl bg-gray-400" src={'https://source.unsplash.com/350x190/?furniture'} alt="" />
+        <Image width={350} height={190} className="h-[190px] w-[350px] rounded-2xl bg-gray-400" src={'https://source.unsplash.com/350x190/?furniture'} alt="card navigate ui" />
         {/* Card Heading */}
         <div className="space-y-2">
           <h2 className="font-medium text-slate-800 sm:text-lg md:text-xl ">Stylish chair</h2>
