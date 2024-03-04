@@ -1,11 +1,11 @@
-import AvatarType1 from '@/Components/Avatar/AvatarType1';
-import AvatarType2 from '@/Components/Avatar/AvatarType2';
-import AvatarType3 from '@/Components/Avatar/AvatarType3';
-import AvatarType4 from '@/Components/Avatar/AvatarType4';
-import AvatarType5 from '@/Components/Avatar/AvatarType5';
-import AvatarType6 from '@/Components/Avatar/AvatarType6';
-import AvatarType7 from '@/Components/Avatar/AvatarType7';
-import AvatarType8 from '@/Components/Avatar/AvatarType8';
+import AvatarType1 from '@/components/Avatar/AvatarType1';
+import AvatarType2 from '@/components/Avatar/AvatarType2';
+import AvatarType3 from '@/components/Avatar/AvatarType3';
+import AvatarType4 from '@/components/Avatar/AvatarType4';
+import AvatarType5 from '@/components/Avatar/AvatarType5';
+import AvatarType6 from '@/components/Avatar/AvatarType6';
+import AvatarType7 from '@/components/Avatar/AvatarType7';
+import AvatarType8 from '@/components/Avatar/AvatarType8';
 
 export const metadata = {
   title: 'Avatar Components',

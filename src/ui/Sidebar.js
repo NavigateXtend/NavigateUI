@@ -11,6 +11,7 @@ const navComponentsItems = [
   'Button',
   'Card',
   'Carousel',
+  'Dropdown',
   'Footer',
   'Form',
   'Hero',
@@ -47,10 +48,10 @@ export default function Sidebar() {
           {/* doc div  */}
           <div className={`grid transition-all duration-300 ease-in-out ${isDocOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
             <div className="my-2 flex flex-col space-y-2 overflow-hidden border-sky-400">
-              <MenuItem className={`${pathname === 'introduction' ? 'text-white' : 'text-[#a1a1aa] hover:opacity-100'}`} href="/">
+              <MenuItem key={23} className={`${pathname === 'introduction' ? 'text-white' : 'text-[#a1a1aa] hover:opacity-100'}`} href="/">
                 Introduction
               </MenuItem>
-              <MenuItem className={`${pathname === 'introduction' ? 'text-white' : 'text-[#a1a1aa] hover:opacity-100'}`} href="/components/avatar">
+              <MenuItem key={32} className={`${pathname === 'introduction' ? 'text-white' : 'text-[#a1a1aa] hover:opacity-100'}`} href="/components/avatar">
                 Quick Start
               </MenuItem>
             </div>

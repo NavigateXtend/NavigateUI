@@ -1,9 +1,9 @@
-import Form1 from '@/Components/Form/Form1';
-import Form4 from '@/Components/Form/Form4';
-import Form5 from '@/Components/Form/Form5';
-import Form6 from '@/Components/Form/Form6';
-import Form7 from '@/Components/Form/Form7';
-import Form8 from '@/Components/Form/Form8';
+import Form1 from '@/components/Form/Form1';
+import Form4 from '@/components/Form/Form4';
+import Form5 from '@/components/Form/Form5';
+import Form6 from '@/components/Form/Form6';
+import Form7 from '@/components/Form/Form7';
+import Form8 from '@/components/Form/Form8';
 
 export const metadata = {
   title: 'Form Components',

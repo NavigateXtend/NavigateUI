@@ -29,9 +29,9 @@ export default function Highlighter({ code }) {
             label: 'Copy'
           });
         }}
-        className="copy-button absolute right-2 top-2 z-50 me-2 rounded-md border border-[#a1a1aa] p-2 hover:bg-white/10"
+        className="copy-button absolute right-2 top-2 z-50 me-2 flex size-8 items-center justify-center rounded-md bg-slate-500/20 backdrop-blur-lg hover:bg-slate-500/60"
       >
-        {isCopied ? <FaCheck color="#a1a1aa" size={20} /> : <FaRegClipboard color="#a1a1aa" size={20} />}
+        {isCopied ? <FaCheck color="#fff" size={16} /> : <FaRegClipboard color="#fff" size={20} />}
       </button>
     </div>
   );

@@ -1,8 +1,8 @@
-import { InputType1 } from '@/Components/Input/InputType1';
-import { InputType2 } from '@/Components/Input/InputType2';
-import { InputType3 } from '@/Components/Input/InputType3';
-import { InputType4 } from '@/Components/Input/InputType4';
-import { InputType5 } from '@/Components/Input/InputType5';
+import { InputType1 } from '@/components/Input/InputType1';
+import { InputType2 } from '@/components/Input/InputType2';
+import { InputType3 } from '@/components/Input/InputType3';
+import { InputType4 } from '@/components/Input/InputType4';
+import { InputType5 } from '@/components/Input/InputType5';
 
 export const metadata = {
   title: 'Input Components',

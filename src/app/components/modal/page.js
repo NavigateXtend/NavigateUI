@@ -1,9 +1,9 @@
-import Modal1 from '@/Components/Modal/Modal1';
-import Modal2 from '@/Components/Modal/Modal2';
-import Modal3 from '@/Components/Modal/Modal3';
-import Modal4 from '@/Components/Modal/Modal4';
-import Modal5 from '@/Components/Modal/Modal5';
-import Modal6 from '@/Components/Modal/Modal6';
+import Modal1 from '@/components/Modal/Modal1';
+import Modal2 from '@/components/Modal/Modal2';
+import Modal3 from '@/components/Modal/Modal3';
+import Modal4 from '@/components/Modal/Modal4';
+import Modal5 from '@/components/Modal/Modal5';
+import Modal6 from '@/components/Modal/Modal6';
 
 export const metadata = {
   title: 'Modal Components',

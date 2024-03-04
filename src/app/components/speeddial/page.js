@@ -1,9 +1,9 @@
-import SpeedDial1 from '@/Components/SpeedDial/SpeedDial1';
-import SpeedDial2 from '@/Components/SpeedDial/SpeedDial2';
-import SpeedDial3 from '@/Components/SpeedDial/SpeedDial3';
-import SpeedDial4 from '@/Components/SpeedDial/SpeedDial4';
-import SpeedDial5 from '@/Components/SpeedDial/SpeedDial5';
-import SpeedDial6 from '@/Components/SpeedDial/SpeedDial6';
+import SpeedDial1 from '@/components/SpeedDial/SpeedDial1';
+import SpeedDial2 from '@/components/SpeedDial/SpeedDial2';
+import SpeedDial3 from '@/components/SpeedDial/SpeedDial3';
+import SpeedDial4 from '@/components/SpeedDial/SpeedDial4';
+import SpeedDial5 from '@/components/SpeedDial/SpeedDial5';
+import SpeedDial6 from '@/components/SpeedDial/SpeedDial6';
 
 export const metadata = {
   title: 'Speed Dial Components',

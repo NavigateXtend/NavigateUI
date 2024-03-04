@@ -1,10 +1,10 @@
-import Skeleton1 from '@/Components/Skeleton/Skeleton1';
-import Skeleton2 from '@/Components/Skeleton/Skeleton2';
-import Skeleton3 from '@/Components/Skeleton/Skeleton3';
-import Skeleton4 from '@/Components/Skeleton/Skeleton4';
-import Skeleton5 from '@/Components/Skeleton/Skeleton5';
-import Skeleton6 from '@/Components/Skeleton/Skeleton6';
-import Skeleton7 from '@/Components/Skeleton/Skeleton7';
+import Skeleton1 from '@/components/Skeleton/Skeleton1';
+import Skeleton2 from '@/components/Skeleton/Skeleton2';
+import Skeleton3 from '@/components/Skeleton/Skeleton3';
+import Skeleton4 from '@/components/Skeleton/Skeleton4';
+import Skeleton5 from '@/components/Skeleton/Skeleton5';
+import Skeleton6 from '@/components/Skeleton/Skeleton6';
+import Skeleton7 from '@/components/Skeleton/Skeleton7';
 
 export const metadata = {
   title: 'Skeleton Components',

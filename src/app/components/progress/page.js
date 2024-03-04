@@ -1,8 +1,8 @@
-import Progress1 from '@/Components/Progress/Progress1';
-import Progress2 from '@/Components/Progress/Progress2';
-import Progress3 from '@/Components/Progress/Progress3';
-import Progress4 from '@/Components/Progress/Progress4';
-import Progress5 from '@/Components/Progress/Progress5';
+import Progress1 from '@/components/Progress/Progress1';
+import Progress2 from '@/components/Progress/Progress2';
+import Progress3 from '@/components/Progress/Progress3';
+import Progress4 from '@/components/Progress/Progress4';
+import Progress5 from '@/components/Progress/Progress5';
 
 export const metadata = {
   title: 'Progress Components',
@@ -27,4 +27,3 @@ const Progress = () => {
 };
 
 export default Progress;
-

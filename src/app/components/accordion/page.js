@@ -1,14 +1,14 @@
-import Accordion1 from '@/Components/Accordion/Accordion1';
-import Accordion10 from '@/Components/Accordion/Accordion10';
-import Accordion11 from '@/Components/Accordion/Accordion11';
-import Accordion12 from '@/Components/Accordion/Accordion12';
-import Accordion2 from '@/Components/Accordion/Accordion2';
-import Accordion3 from '@/Components/Accordion/Accordion3';
-import Accordion4 from '@/Components/Accordion/Accordion4';
-import Accordion5 from '@/Components/Accordion/Accordion5';
-import Accordion6 from '@/Components/Accordion/Accordion6';
-import Accordion8 from '@/Components/Accordion/Accordion8';
-import Accordion9 from '@/Components/Accordion/Accordion9';
+import Accordion1 from '@/components/Accordion/Accordion1';
+import Accordion10 from '@/components/Accordion/Accordion10';
+import Accordion11 from '@/components/Accordion/Accordion11';
+import Accordion12 from '@/components/Accordion/Accordion12';
+import Accordion2 from '@/components/Accordion/Accordion2';
+import Accordion3 from '@/components/Accordion/Accordion3';
+import Accordion4 from '@/components/Accordion/Accordion4';
+import Accordion5 from '@/components/Accordion/Accordion5';
+import Accordion6 from '@/components/Accordion/Accordion6';
+import Accordion8 from '@/components/Accordion/Accordion8';
+import Accordion9 from '@/components/Accordion/Accordion9';
 
 export const metadata = {
   title: 'Accordion Components',

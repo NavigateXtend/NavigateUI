@@ -1,7 +1,7 @@
-import Tooltip1 from '@/Components/Tooltip/Tooltip1';
-import Tooltip2 from '@/Components/Tooltip/Tooltip2';
-import Tooltip3 from '@/Components/Tooltip/Tooltip3';
-import Tooltip4 from '@/Components/Tooltip/Tooltip4';
+import Tooltip1 from '@/components/Tooltip/Tooltip1';
+import Tooltip2 from '@/components/Tooltip/Tooltip2';
+import Tooltip3 from '@/components/Tooltip/Tooltip3';
+import Tooltip4 from '@/components/Tooltip/Tooltip4';
 
 export const metadata = {
   title: 'Tooltip Components',

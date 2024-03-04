@@ -22,6 +22,7 @@ export const NavBar2 = () => {
         };
 
         document.addEventListener('mousedown', closeDropDown);
+            return () => document.removeEventListener('mousedown', closeDropDown);
     }, []);
 
     return (
@@ -66,12 +67,14 @@ export const NavBar2 = () => {
 
   useEffect(() => {
     const closeDropDown = (e) => {
-      if (!dropDownMenuRef.current && !dropDownMenuRef.current.contains(e.target)) {
+      if (dropDownMenuRef.current && !dropDownMenuRef.current.contains(e.target)) {
         setDropDownState(false);
       }
     };
-
     document.addEventListener('mousedown', closeDropDown);
+    return () => {
+      document.removeEventListener('mousedown', closeDropDown);
+    };
   }, []);
 
   return (
@@ -82,12 +85,8 @@ export const NavBar2 = () => {
         </div>
         <ul className="flex items-center justify-between gap-6 text-slate-900">
           <li className="cursor-pointer  rounded-full px-6 py-2 text-white hover:bg-sky-600">Home</li>
-          <li className="relative">
-            <button
-              ref={dropDownMenuRef}
-              onClick={() => setDropDownState(!dropDownState)}
-              className="relative flex cursor-pointer  items-center gap-3 rounded-full px-6 py-2 text-white hover:bg-sky-600"
-            >
+          <li className="relative" ref={dropDownMenuRef}>
+            <button onClick={() => setDropDownState(!dropDownState)} className="relative flex cursor-pointer  items-center gap-3 rounded-full px-6 py-2 text-white hover:bg-sky-600">
               <span>Services</span>
               {dropDownState ? (
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

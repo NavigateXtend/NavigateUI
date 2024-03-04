@@ -1,4 +1,4 @@
-import BasicSwitch from '@/Components/Switch/BasicSwitch';
+import BasicSwitch from '@/components/Switch/BasicSwitch';
 
 export default function page() {
   return (

@@ -1,9 +1,9 @@
-import { NavBar1 } from '@/Components/NavBar/NavBar1';
-import { NavBar2 } from '@/Components/NavBar/NavBar2';
-import { NavBar3 } from '@/Components/NavBar/NavBar3';
-import { NavBar4 } from '@/Components/NavBar/NavBar4';
-import { NavBar5 } from '@/Components/NavBar/NavBar5';
-import { NavBar6 } from '@/Components/NavBar/NavBar6';
+import { NavBar1 } from '@/components/NavBar/NavBar1';
+import { NavBar2 } from '@/components/NavBar/NavBar2';
+import { NavBar3 } from '@/components/NavBar/NavBar3';
+import { NavBar4 } from '@/components/NavBar/NavBar4';
+import { NavBar5 } from '@/components/NavBar/NavBar5';
+import { NavBar6 } from '@/components/NavBar/NavBar6';
 
 export const metadata = {
   title: 'Navbar Components',

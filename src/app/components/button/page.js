@@ -1,5 +1,5 @@
-import Button1 from '@/Components/Button/Button1';
-import Button2 from '@/Components/Button/Button2';
+import Button1 from '@/components/Button/Button1';
+import Button2 from '@/components/Button/Button2';
 
 export const metadata = {
   title: 'Button Components',

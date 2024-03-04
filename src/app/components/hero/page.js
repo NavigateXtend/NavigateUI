@@ -1,8 +1,8 @@
-import Hero1 from '@/Components/Hero/Hero1';
-import Hero2 from '@/Components/Hero/Hero2';
-import Hero3 from '@/Components/Hero/Hero3';
-import Hero4 from '@/Components/Hero/Hero4';
-import Hero5 from '@/Components/Hero/Hero5';
+import Hero1 from '@/components/Hero/Hero1';
+import Hero2 from '@/components/Hero/Hero2';
+import Hero3 from '@/components/Hero/Hero3';
+import Hero4 from '@/components/Hero/Hero4';
+import Hero5 from '@/components/Hero/Hero5';
 
 export const metadata = {
   title: 'Hero Components',

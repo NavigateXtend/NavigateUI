@@ -1,10 +1,10 @@
-import Footer1 from '@/Components/Footer/Footer1';
-import Footer2 from '@/Components/Footer/Footer2';
-import Footer3 from '@/Components/Footer/Footer3';
-import Footer4 from '@/Components/Footer/Footer4';
-import Footer5 from '@/Components/Footer/Footer5';
-import Footer6 from '@/Components/Footer/Footer6';
-import Footer7 from '@/Components/Footer/Footer7';
+import Footer1 from '@/components/Footer/Footer1';
+import Footer2 from '@/components/Footer/Footer2';
+import Footer3 from '@/components/Footer/Footer3';
+import Footer4 from '@/components/Footer/Footer4';
+import Footer5 from '@/components/Footer/Footer5';
+import Footer6 from '@/components/Footer/Footer6';
+import Footer7 from '@/components/Footer/Footer7';
 
 export const metadata = {
   title: 'Footer Components',

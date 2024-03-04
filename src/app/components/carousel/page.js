@@ -1,12 +1,12 @@
-import { Carousel1 } from '@/Components/Carousel/Carousel1';
-import { Carousel2 } from '@/Components/Carousel/Carousel2';
-import { Carousel3 } from '@/Components/Carousel/Carousel3';
-import { Carousel4 } from '@/Components/Carousel/Carousel4';
-import { Carousel5 } from '@/Components/Carousel/Carousel5';
-import { Carousel6 } from '@/Components/Carousel/Carousel6';
-import { Carousel7 } from '@/Components/Carousel/Carousel7';
-import { Carousel8 } from '@/Components/Carousel/Carousel8';
-import { Carousel9 } from '@/Components/Carousel/Carousel9';
+import { Carousel1 } from '@/components/Carousel/Carousel1';
+import { Carousel2 } from '@/components/Carousel/Carousel2';
+import { Carousel3 } from '@/components/Carousel/Carousel3';
+import { Carousel4 } from '@/components/Carousel/Carousel4';
+import { Carousel5 } from '@/components/Carousel/Carousel5';
+import { Carousel6 } from '@/components/Carousel/Carousel6';
+import { Carousel7 } from '@/components/Carousel/Carousel7';
+import { Carousel8 } from '@/components/Carousel/Carousel8';
+import { Carousel9 } from '@/components/Carousel/Carousel9';
 
 export const metadata = {
   title: 'Carousel Components',

@@ -1,17 +1,17 @@
-import Card1 from '@/Components/Card/Card1';
-import Card10 from '@/Components/Card/Card10';
-import Card11 from '@/Components/Card/Card11';
-import Card12 from '@/Components/Card/Card12';
-import Card13 from '@/Components/Card/Card13';
-import Card14 from '@/Components/Card/Card14';
-import Card2 from '@/Components/Card/Card2';
-import Card3 from '@/Components/Card/Card3';
-import Card4 from '@/Components/Card/Card4';
-import Card5 from '@/Components/Card/Card5';
-import Card6 from '@/Components/Card/Card6';
-import Card7 from '@/Components/Card/Card7';
-import Card8 from '@/Components/Card/Card8';
-import Card9 from '@/Components/Card/Card9';
+import Card1 from '@/components/Card/Card1';
+import Card10 from '@/components/Card/Card10';
+import Card11 from '@/components/Card/Card11';
+import Card12 from '@/components/Card/Card12';
+import Card13 from '@/components/Card/Card13';
+import Card14 from '@/components/Card/Card14';
+import Card2 from '@/components/Card/Card2';
+import Card3 from '@/components/Card/Card3';
+import Card4 from '@/components/Card/Card4';
+import Card5 from '@/components/Card/Card5';
+import Card6 from '@/components/Card/Card6';
+import Card7 from '@/components/Card/Card7';
+import Card8 from '@/components/Card/Card8';
+import Card9 from '@/components/Card/Card9';
 
 export const metadata = {
   title: 'Card Components',
