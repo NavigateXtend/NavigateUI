@@ -1,3 +1,4 @@
+import AvatarDropDown from '@/components/DropDown/AvatarDropDown';
 import BasicDropDown from '@/components/DropDown/BasicDropDown';
 import BoxDropDown from '@/components/DropDown/BoxDropDown';
 import FadeLeftDropDown from '@/components/DropDown/FadeLeftDropDown';
@@ -12,6 +13,7 @@ export default function DropDownPage() {
       <FadeUpDropDown />
       <FadeUpBoxDropDown />
       <FadeLeftDropDown />
+      <AvatarDropDown />
     </div>
   );
 }

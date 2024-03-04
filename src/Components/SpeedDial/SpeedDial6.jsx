@@ -26,7 +26,7 @@ const code = `const SpeedDial6 = () => {
                                 : null
                         }
                         key={idx} className={\`\flex origin-center items-center justify-center  shadow-md \${isOpen ? 'bg h-16 w-16 rounded-lg ' : 'h-3 w-3 bg-black'} duration-500\`}>
-                        <img className={\`\${isOpen ? 'scale-100' : 'scale-0'}  origin-center duration-500\`} width={35} src={icon} alt="" />
+                        <img className={\`\${isOpen ? 'scale-100' : 'scale-0'}  origin-center duration-500\`} width={35} src={icon}  alt="speed dial navigate ui" />
                     </div>
                 ))}
             </div>
@@ -66,7 +66,15 @@ const SpeedDial6 = () => {
               key={idx}
               className={`flex origin-center items-center justify-center self-center justify-self-center shadow-md hover:scale-95 ${isOpen ? ' bg-white' : 'size-3 bg-cyan-900'} ${idx === 4 && isOpen ? 'size-10 rounded-full p-2' : 'size-16 rounded-sm'} duration-500 `}
             >
-              <Image className={`${isOpen ? 'scale-100' : 'scale-0'} origin-center duration-300 `} placeholder="blur" blurDataURL={icon} width={35} height={35} src={icon} alt={(`Image`, idx)} />
+              <Image
+                className={`${isOpen ? 'scale-100' : 'scale-0'} origin-center duration-300 `}
+                placeholder="blur"
+                blurDataURL={icon}
+                width={35}
+                height={35}
+                src={icon}
+                alt="speed dial navigate ui"
+              />
             </div>
           ))}
         </div>

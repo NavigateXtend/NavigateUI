@@ -49,7 +49,7 @@ const code = `const Carousel9 = () => {
                                 </svg>
                                 <p className="leading-relaxed mb-6 text-gray-500">{each?.testimonialDescription}</p>
                                 <a className="inline-flex items-center">
-                                    <img alt="testimonial" src={\`https://source.unsplash.com/200x200/?\${each.keyWord}\`} className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" />
+                                    <img className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center" src={\`https://source.unsplash.com/200x200/?\${each.keyWord}\`} alt="carousel navigate ui"  />
                                     <span className="flex-grow flex flex-col pl-4">
                                         <span className="title-font font-medium text-gray-900">{each.name}</span>
                                         <span className="text-gray-500 text-sm">{each?.designation}</span>
@@ -191,7 +191,7 @@ export const Carousel9 = () => {
                     <Image
                       width={48}
                       height={48}
-                      alt="testimonial"
+                      alt="carousel navigate ui"
                       src={`https://source.unsplash.com/200x200/?${each.keyWord}`}
                       className="h-12 w-12 flex-shrink-0 rounded-full object-cover object-center"
                     />

@@ -10,7 +10,7 @@ export default async function Navbar() {
     <nav className="sticky top-0 z-[99] w-full text-white backdrop-blur-lg">
       <div className="item-center mx-auto flex max-w-[1500px] justify-between px-10 py-4">
         <Link href="/" className="flex items-center text-xl font-bold text-sky-400">
-          <Image src="/Logo.svg" className="rounded-lg bg-slate-400/20 p-px drop-shadow-md backdrop-blur-xl" width={33} height={33} alt="navigateui logo" />
+          <Image src="/Logo.svg" className="rounded-lg bg-slate-400/20 p-px drop-shadow-md backdrop-blur-xl" width={33} height={33} alt="navigate ui logo" />
           NavigateUI
         </Link>
         <ul className="flex items-center gap-10">
@@ -37,7 +37,7 @@ export default async function Navbar() {
             </Link>
           </li>
           <li>
-            <Link className="group relative flex items-center justify-center" href="https://discord.com/invite/ezphnpnEXx" target="_blank">
+            <Link className="group relative flex items-center justify-center" href="https://facebook.com/groups/navigateui" target="_blank">
               <FaFacebook size={22} className="text-white hover:text-blue-500" />
             </Link>
           </li>

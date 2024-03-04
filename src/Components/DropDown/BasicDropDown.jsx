@@ -56,9 +56,9 @@ export default function BasicDropDown() {
         >
           Dropdown
         </button>
-        <ul className={`${open ? 'visible' : 'invisible'} absolute top-12 z-50 w-full rounded-sm bg-sky-400 shadow-md`}>
+        <ul className={`${open ? 'visible duration-300' : 'invisible'} absolute top-12 z-50 w-full rounded-sm bg-sky-400 shadow-md`}>
           {items.map((item, idx) => (
-            <li key={idx} className={`rounded-sm p-2 ${open ? 'opacity-100 duration-300' : 'opacity-0 duration-150'} hover:bg-sky-500`}>
+            <li key={idx} className={`rounded-sm p-2 ${open ? 'opacity-100 duration-300' : 'opacity-0'} hover:bg-sky-500`}>
               {item}
             </li>
           ))}

@@ -25,7 +25,7 @@ const Card12 = () => {
                     <p className="text-sm rounded-lg text-center p-2 bg-gray-700 text-white">Category: Clothing</p>
                 </div>
                 <div className="">
-                    <img className="rounded-lg h-[350px]  bg-gray-600 object-cover w-full " src="https://source.unsplash.com/350x350/?jacket" />
+                    <img className="rounded-lg h-[350px]  bg-gray-600 object-cover w-full " src="https://source.unsplash.com/350x350/?jacket" alt="card navigate ui" />
                 </div>
                 {/* Color chossing option */}
                 <div>
@@ -96,7 +96,7 @@ const Card12 = () => {
             <p className="rounded-lg bg-gray-700 p-2 text-center text-sm text-white">Category: Clothing</p>
           </div>
           <div className="">
-            <Image width={350} height={350} className="h-[300px] w-full  rounded-lg bg-gray-600 object-cover" src="https://source.unsplash.com/350x350/?jacket" alt="jacket" />
+            <Image width={350} height={350} className="h-[300px] w-full  rounded-lg bg-gray-600 object-cover" src="https://source.unsplash.com/350x350/?jacket" alt="card navigate ui" />
           </div>
           {/* Color chossing option */}
           <div>

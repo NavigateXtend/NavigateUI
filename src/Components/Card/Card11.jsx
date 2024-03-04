@@ -5,7 +5,7 @@ import Image from 'next/image';
 const code = `const Card11 = () => {
     return (
         <div className="max-w-[350px] space-y-4 rounded-lg  p-6 shadow-lg md:w-[350px] bg-white">
-            <img alt="Product Image" className="w-[350px] h-[275px] object-cover  rounded-lg " src="https://source.unsplash.com/200x200/?bed" />
+            <img alt="card navigate ui" className="w-[350px] h-[275px] object-cover  rounded-lg " src="https://source.unsplash.com/200x200/?bed" />
             <div className="grid gap-2">
                 <h1 className="text-lg font-semibold ">Product Name</h1>
                 <p className="text-sm text-gray-500 dark:text-gray-400">This is a brief description of the product. It highlights the key features and benefits.</p>
@@ -25,7 +25,7 @@ const Card11 = () => {
   return (
     <CP code={code}>
       <div className="mx-auto max-w-[350px] space-y-4 rounded-lg  bg-white p-6 shadow-lg md:w-[350px]">
-        <Image width={200} height={200} className="h-[275px] w-[350px] rounded-lg  object-cover " src="https://source.unsplash.com/200x200/?bed" alt="Product Image" />
+        <Image width={200} height={200} className="h-[275px] w-[350px] rounded-lg  object-cover " src="https://source.unsplash.com/200x200/?bed" alt="card navigate ui" />
         <div className="grid gap-2">
           <h1 className="text-lg font-semibold ">Product Name</h1>
           <p className="text-sm text-gray-500 dark:text-gray-400">This is a brief description of the product. It highlights the key features and benefits.</p>

@@ -23,7 +23,7 @@ const code = `const Card10 = () => {
             {items.map((item, idx) => (
                 <div key={item?.id} className="flex justify-between items-center border-b pb-6">
                     <div className="flex flex-wrap items-center gap-4">
-                        <img className="w-[75px] h-[75px] rounded-lg bg-slate-500" src={\`https://source.unsplash.com/75x75/?\${item?.imgToFetch}\`} alt="" />
+                        <img className="w-[75px] h-[75px] rounded-lg bg-slate-500" src={\`https://source.unsplash.com/75x75/?\${item?.imgToFetch}\`} alt="card navigate ui" />
                         <div>
                             <h5 className="text-lg font-medium">{item?.name}</h5>
                             <p className="text-sm text-gray-400">Delivery {item?.deliveryDate}</p>
@@ -76,7 +76,7 @@ const Card10 = () => {
         {items.map((item, idx) => (
           <div key={item?.id} className="flex  items-center justify-between border-b pb-6">
             <div className="flex flex-wrap items-center gap-4">
-              <Image width={75} height={75} className="h-[75px] w-[75px] rounded-lg bg-slate-500" src={`https://source.unsplash.com/75x75/?${item?.imgToFetch}`} alt={`?${item?.imgToFetch}`} />
+              <Image width={75} height={75} className="h-[75px] w-[75px] rounded-lg bg-slate-500" src={`https://source.unsplash.com/75x75/?${item?.imgToFetch}`} alt="card navigate ui" />
               <div className="">
                 <h5 className="text-lg font-medium">{item?.name}</h5>
                 <p className="text-sm text-gray-400 ">Delivery {item?.deliveryDate}</p>

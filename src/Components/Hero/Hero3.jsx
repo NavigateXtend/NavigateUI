@@ -21,7 +21,7 @@ const Hero3 = () => {
         <p className="text-sm text-gray-500">Trusted by 5000+ Users</p>
       </div>
       <div className="relative">  
-        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"  className="relative md:h-[600px]  sm:h-[500px] h-[300px]   w-[500px] bg-gray-400 rounded-b-full object-cover"  />
+        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"  className="relative md:h-[600px]  sm:h-[500px] h-[300px]  w-[500px] bg-gray-400 rounded-b-full object-cover" alt="hero navigate ui"/>
       </div>
     </div>
   </section>       
@@ -48,9 +48,9 @@ const Hero3 = () => {
             <Image
               width={500}
               height={300}
-              alt="hero"
-              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"
               className="relative h-[300px] w-[500px] rounded-b-full bg-gray-400 object-cover sm:h-[500px] md:h-[600px]"
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7"
+              alt="hero navigate ui"
             />
           </div>
         </div>

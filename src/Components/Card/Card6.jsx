@@ -9,7 +9,7 @@ const Card6 = () => {
     <div className="flex items-center justify-between gap-10 px-4 py-4">
         {/* Avatar image  */}
         <div className="flex items-center gap-3">
-            <Image width={100} height={100} className="h-16 w-16 rounded-full bg-black/40" src="https://source.unsplash.com/100x100/?portrait" alt="portrait" />
+            <img width={100} height={100} className="h-16 w-16 rounded-full bg-black/40" src="https://source.unsplash.com/100x100/?portrait" alt="card navigate ui" />
             <div className="flex flex-col">
                 <h2 className="text-xl font-semibold">Yoan Lee</h2>
                 <p className="text-gray-400">2 days ago</p>
@@ -24,14 +24,14 @@ const Card6 = () => {
         </div>
     </div>
 
-    {/* Post Image */}
+    {/* Post img */}
     <div className="flex flex-col gap-1">
         <div className="w-full">
-            <Image width={400} height={200} className="h-[150px] w-full bg-black/40" src="https://source.unsplash.com/400x200/?arts" alt="" />
+            <img width={400} height={200} className="h-[150px] w-full bg-black/40" src="https://source.unsplash.com/400x200/?arts" alt="card navigate ui" />
         </div>
         <div className="flex gap-1 overflow-hidden">
-            <Image width={201} height={201} className="h-[150px] w-[49.5%] bg-black/40" src="https://source.unsplash.com/201x201/?arts" alt="" />
-            <Image width={202} height={202} className="h-[150px] w-[49.5%]  bg-black/40" src="https://source.unsplash.com/202x202/?arts" alt="" />
+            <img width={201} height={201} className="h-[150px] w-[49.5%] bg-black/40" src="https://source.unsplash.com/201x201/?arts" alt="card navigate ui" />
+            <img width={202} height={202} className="h-[150px] w-[49.5%]  bg-black/40" src="https://source.unsplash.com/202x202/?arts" alt="card navigate ui" />
         </div>
     </div>
     {/* Post content */}
@@ -71,7 +71,7 @@ const Card6 = () => {
         <div className="flex items-center justify-between gap-10 px-4 py-4">
           {/* Avatar image  */}
           <div className="flex items-center gap-3">
-            <Image width={100} height={100} className="h-16 w-16 rounded-full bg-black/40" src="https://source.unsplash.com/100x100/?portrait" alt="portrait" />
+            <Image width={100} height={100} className="h-16 w-16 rounded-full bg-black/40" src="https://source.unsplash.com/100x100/?portrait" alt="card navigate ui" />
             <div className="flex flex-col">
               <h2 className="text-xl font-semibold">Yoan Lee</h2>
               <p className="text-gray-400">2 days ago</p>
@@ -97,11 +97,11 @@ const Card6 = () => {
         {/* Post Image */}
         <div className="flex flex-col gap-1">
           <div className="w-full">
-            <Image width={400} height={200} className="h-[150px] w-full bg-black/40" src="https://source.unsplash.com/400x200/?arts" alt="" />
+            <Image width={400} height={200} className="h-[150px] w-full bg-black/40" src="https://source.unsplash.com/400x200/?arts" alt="card navigate ui" />
           </div>
           <div className="flex gap-1 overflow-hidden">
-            <Image width={201} height={201} className="h-[150px] w-[49.5%] bg-black/40" src="https://source.unsplash.com/201x201/?arts" alt="" />
-            <Image width={202} height={202} className="h-[150px] w-[49.5%]  bg-black/40" src="https://source.unsplash.com/202x202/?arts" alt="" />
+            <Image width={201} height={201} className="h-[150px] w-[49.5%] bg-black/40" src="https://source.unsplash.com/201x201/?arts" alt="card navigate ui" />
+            <Image width={202} height={202} className="h-[150px] w-[49.5%]  bg-black/40" src="https://source.unsplash.com/202x202/?arts" alt="card navigate ui" />
           </div>
         </div>
 

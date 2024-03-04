@@ -6,7 +6,7 @@ const Card5 = () => {
      return (
        <div className=" flex  flex-col md:flex-row  my-20">
          <div className="relative max-w-[350px] group">
-           <img className="rounded-lg transform scale-105" src="https://source.unsplash.com/350x350/?men" alt="img" />
+           <img className="rounded-lg transform scale-105" src="https://source.unsplash.com/350x350/?men" alt="card navigate ui" />
            <span className="absolute -bottom-6 left-1/2 z-30 flex h-[40px] w-[40px] -translate-x-1/2 transform items-center  justify-center rounded-full bg-white bg-gradient-to-tr from-[#0d87f8]  to-[#70c4ff] duration-500 group-hover:rotate-180 group-hover:shadow-[0px_0px_30px_2px_#0d87f8]">
            <svg width={25} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <g strokeWidth="0"></g> <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g> <g id="SVGRepo_iconCarrier"> <g id="style=linear"> <g id="add"> <path id="vector" d="M11.998 5.84424L11.998 18.1604" stroke="#9EE6FD" strokeWidth="2" strokeLinecap="round"></path> <path id="vector_2" d="M18.1561 12.002L5.83998 12.0019" stroke="#9EE6FD" strokeWidth="2" strokeLinecap="round"></path> </g> </g> </g> </svg>
        </span>
@@ -50,7 +50,7 @@ const Card5 = () => {
     <CP code={code}>
       <div className=" mx-auto my-20 flex flex-col items-center justify-center md:flex-row">
         <div className="group relative  sm:w-[350px]">
-          <Image width={350} height={350} className="h-full w-full scale-105 transform rounded-lg bg-black/70" src="https://source.unsplash.com/350x350/?men" alt="img" />
+          <Image width={350} height={350} className="h-full w-full scale-105 transform rounded-lg bg-black/70" src="https://source.unsplash.com/350x350/?men" alt="card navigate ui" />
           <span className="absolute -bottom-6 left-1/2 z-30 flex h-[40px] w-[40px] -translate-x-1/2 transform items-center  justify-center rounded-full bg-white bg-gradient-to-tr from-[#0d87f8]  to-[#70c4ff] duration-500 group-hover:rotate-180 group-hover:shadow-[0px_0px_30px_2px_#0d87f8]">
             <svg width={25} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g strokeWidth="0"></g>

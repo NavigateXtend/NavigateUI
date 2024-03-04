@@ -89,7 +89,7 @@ const Table3 = () => {
                 <input type="checkbox" id="myCheckbox" className="flex h-6 w-6  items-center rounded-full border-2 border-red-500 bg-red-500 text-red-500 focus:border-red-400 focus:ring-red-400" />
               </th>
               <th className="px-6 py-4 text-start">
-                <Image width={44} height={44} className="h-[44px] w-[44px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/44x44/?profile" alt="profile" />
+                <Image width={44} height={44} className="h-[44px] w-[44px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/44x44/?profile" alt="table navigate ui" />
               </th>
               <th className="px-6 py-4 text-start ">Front-end Developer</th>
               <th className="px-6 py-4 text-start">
@@ -114,7 +114,7 @@ const Table3 = () => {
                 <input type="checkbox" id="myCheckbox" className="flex h-6 w-6  items-center rounded-full border-2 border-red-500 bg-red-500 text-red-500 focus:border-red-400 focus:ring-red-400" />
               </th>
               <th className="px-6 py-4 text-start">
-                <Image width={44} height={44} className="h-[44px] w-[44px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/44x44/?profile" alt="profile" />
+                <Image width={44} height={44} className="h-[44px] w-[44px] rounded-full bg-slate-500 object-cover" src="https://source.unsplash.com/44x44/?profile" alt="table navigate ui" />
               </th>
               <th className="px-6 py-4 text-start ">Back-end Developer</th>
               <th className="px-6 py-4 text-start">

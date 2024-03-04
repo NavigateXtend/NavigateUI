@@ -12,7 +12,7 @@ const Card2 = () => {
                   </div>
                   <button className="bg-[#0095FF] hover:bg-[#0095FF]/90 duration-200 text-white font-medium px-3 py-1 rounded-xl">30% off</button>
               </div>
-              <img className="rounded-lg bg-black/40 w-full h-full" src="https://source.unsplash.com/300x300/?macbook" alt="img" />
+              <img className="rounded-lg bg-black/40 w-full h-full" src="https://source.unsplash.com/300x300/?macbook" alt="card navigate ui" />
           </div>
           <div className="text-center w-[85%] mx-auto font-semibold space-y-2">
               <h6 className="text-sm md:text-base lg:text-lg">Waterproof Sport HD Monitor for MacBook</h6>
@@ -53,7 +53,7 @@ export default Card2;
             </div>
             <button className="rounded-xl bg-[#0095FF] px-3 py-1 font-medium text-white duration-200 hover:bg-[#0095FF]/90">30% off</button>
           </div>
-          <Image width={300} height={300} className="h-full w-full rounded-lg bg-black/40" src="https://source.unsplash.com/300x300/?macbook" alt="img" />
+          <Image width={300} height={300} className="h-full w-full rounded-lg bg-black/40" src="https://source.unsplash.com/300x300/?macbook" alt="card navigate ui" />
         </div>
         <div className="mx-auto w-[85%] space-y-2 text-center font-semibold">
           <h6 className="text-sm md:text-base lg:text-lg">Waterproof Sport HD Monitor for MacBook</h6>

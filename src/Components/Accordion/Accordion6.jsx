@@ -39,7 +39,7 @@ const code = `const Accordion6 = () => {
                                     idx === 0 ? 'border-green-500' : idx === 1 ? 'border-yellow-400' : idx === 2 ? 'border-[#0095FF]' : 'border-white'
                                 }\`}
                                 src={\`https://source.unsplash.com/600x600/?profile/\${idx}\`}
-                                alt=""
+                                alt="accordion navigate ui"
                             />
                         </div>
                         <div className="flex-1">
@@ -109,7 +109,7 @@ export default function Accordion6() {
                   height={600}
                   className={`h-14 w-14 rounded-2xl border-2 bg-[#18181B] p-0.5 ${idx === 0 ? 'border-green-500' : idx === 1 ? 'border-yellow-500' : idx === 2 ? 'border-[#0095FF]' : 'border-white'}`}
                   src={`https://source.unsplash.com/600x600/?profile/${idx}`}
-                  alt="profile"
+                  alt="accordion navigate ui"
                 />
               </div>
               <div className="flex-1">
