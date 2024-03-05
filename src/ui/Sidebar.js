@@ -23,9 +23,11 @@ const navComponentsItems = [
   'Skeleton',
   'Speed Dial',
   'Spinner',
+  'Pagination',
   'Switch',
   'Table',
-  'Tooltip'
+  'Tooltip',
+
 ];
 
 export default function Sidebar() {
