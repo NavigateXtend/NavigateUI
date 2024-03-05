@@ -13,7 +13,6 @@ const code = `export default function CircleAvatar() {
     );
 };
 `;
-alt = '';
 
 export default function AvatarType2() {
   return (
