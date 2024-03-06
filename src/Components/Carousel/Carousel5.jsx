@@ -7,7 +7,7 @@ const code = `import { useEffect, useState } from "react";
 
 export const Carousel5 = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
-  const sliders = [{img: "https://source.unsplash.com/1200x640/?nature", title: "Escape 1", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?hill", title: "Escape 2", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?mountain", title: "Escape 3", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?river", title: "Escape 4",des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x640/?sea", title: "Escape 5", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",},];
+  const sliders = [{img: "https://source.unsplash.com/1200x540/?nature", title: "Escape 1", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x540/?hill", title: "Escape 2", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x540/?mountain", title: "Escape 3", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x540/?river", title: "Escape 4",des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",}, {img: "https://source.unsplash.com/1200x540/?sea", title: "Escape 5", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.",},];
   // if you don't want to change the slider automatically then you can just remove the useEffect
   useEffect(() => {
     const intervalId = setInterval(() => setCurrentSlider(currentSlider === sliders.length - 1 ? 0 : currentSlider + 1), 5000);
@@ -16,7 +16,7 @@ export const Carousel5 = () => {
 
   return (
         <>
-            <div className="w-full h-72 sm:h-96 md:h-[540px] lg:h-[640px] xl:h-[780px] flex flex-col items-center justify-center gap-5 lg:gap-10 bg-cover bg-center before:absolute before:bg-black/50 before:inset-0 transform duration-1000 ease-linear"
+            <div className="w-full h-60 sm:h-96 md:h-[540px] flex flex-col items-center justify-center gap-5 lg:gap-10 bg-cover bg-center before:absolute before:bg-black/50 before:inset-0 transform duration-1000 ease-linear"
                 style={{ backgroundImage: \`url(\${sliders[currentSlider].img})\` }}>
                 {/* text container here */}
                 <div className="drop-shadow-lg text-white text-center px-5">
@@ -39,27 +39,27 @@ export const Carousel5 = () => {
 
 const sliders = [
   {
-    img: 'https://source.unsplash.com/1200x640/?nature',
+    img: 'https://source.unsplash.com/1200x540/?nature',
     title: 'Escape 1',
     des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.'
   },
   {
-    img: 'https://source.unsplash.com/1200x640/?hill',
+    img: 'https://source.unsplash.com/1200x540/?hill',
     title: 'Escape 2',
     des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.'
   },
   {
-    img: 'https://source.unsplash.com/1200x640/?mountain',
+    img: 'https://source.unsplash.com/1200x540/?mountain',
     title: 'Escape 3',
     des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.'
   },
   {
-    img: 'https://source.unsplash.com/1200x640/?river',
+    img: 'https://source.unsplash.com/1200x540/?river',
     title: 'Escape 4',
     des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.'
   },
   {
-    img: 'https://source.unsplash.com/1200x640/?sea',
+    img: 'https://source.unsplash.com/1200x540/?sea',
     title: 'Escape 5',
     des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.'
   }
@@ -77,7 +77,7 @@ export const Carousel5 = () => {
     <CP code={code}>
       <>
         <div
-          className="flex h-72 w-full transform flex-col items-center justify-center gap-5 bg-cover bg-center duration-1000 ease-linear before:absolute before:inset-0 before:bg-black/50 sm:h-96 md:h-[540px] lg:h-[640px] lg:gap-10 xl:h-[780px]"
+          className="flex h-60 w-full transform flex-col items-center justify-center gap-5 bg-cover bg-center duration-1000 ease-linear before:absolute before:inset-0 before:bg-black/50 sm:h-96 md:h-[540px] lg:gap-10"
           style={{ backgroundImage: `url(${sliders[currentSlider].img})` }}
         >
           {/* text container here */}
@@ -92,7 +92,7 @@ export const Carousel5 = () => {
           {sliders.map((slide, inx) => (
             <Image
               width={1200}
-              height={640}
+              height={540}
               onClick={() => setCurrentSlider(inx)}
               key={inx}
               src={slide.img}

@@ -7,7 +7,7 @@ const code = `import { useEffect, useState } from 'react';
 
 export const Carousel6 = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
-    const sliders = [{ img: 'https://source.unsplash.com/1200x640/?nature', title: 'Escape 1', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },{ img: 'https://source.unsplash.com/1200x640/?hill', title: 'Escape 2', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },{ img: 'https://source.unsplash.com/1200x640/?mountain', title: 'Escape 3', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },{ img: 'https://source.unsplash.com/1200x640/?river', title: 'Escape 4', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },{ img: 'https://source.unsplash.com/1200x640/?sea', title: 'Escape 5', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' }];
+    const sliders = [{ img: 'https://source.unsplash.com/1200x540/?nature', title: 'Escape 1', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },{ img: 'https://source.unsplash.com/1200x540/?hill', title: 'Escape 2', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },{ img: 'https://source.unsplash.com/1200x540/?mountain', title: 'Escape 3', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },{ img: 'https://source.unsplash.com/1200x540/?river', title: 'Escape 4', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },{ img: 'https://source.unsplash.com/1200x540/?sea', title: 'Escape 5', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' }];
     // if you don't want to change the slider automatically then you can just remove the useEffect
     useEffect(() => {
         const intervalId = setInterval(() => setCurrentSlider(currentSlider === sliders.length - 1 ? 0 : currentSlider + 1), 5000);
@@ -40,11 +40,11 @@ export const Carousel6 = () => {
 export const Carousel6 = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
   const sliders = [
-    { img: 'https://source.unsplash.com/1200x640/?nature', title: 'Escape 1', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
-    { img: 'https://source.unsplash.com/1200x640/?hill', title: 'Escape 2', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
-    { img: 'https://source.unsplash.com/1200x640/?mountain', title: 'Escape 3', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
-    { img: 'https://source.unsplash.com/1200x640/?river', title: 'Escape 4', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
-    { img: 'https://source.unsplash.com/1200x640/?sea', title: 'Escape 5', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' }
+    { img: 'https://source.unsplash.com/1200x540/?nature', title: 'Escape 1', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
+    { img: 'https://source.unsplash.com/1200x540/?hill', title: 'Escape 2', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
+    { img: 'https://source.unsplash.com/1200x540/?mountain', title: 'Escape 3', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
+    { img: 'https://source.unsplash.com/1200x540/?river', title: 'Escape 4', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
+    { img: 'https://source.unsplash.com/1200x540/?sea', title: 'Escape 5', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' }
   ];
   // if you don't want to change the slider automatically then you can just remove the useEffect
   useEffect(() => {
@@ -71,7 +71,7 @@ export const Carousel6 = () => {
           {sliders.map((slide, inx) => (
             <Image
               width={1200}
-              height={640}
+              height={540}
               onClick={() => setCurrentSlider(inx)}
               key={inx}
               src={slide.img}
