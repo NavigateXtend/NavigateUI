@@ -1,0 +1,65 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  /* font-family: 'Poppins', sans-serif; */
+  scroll-behavior: smooth;
+  /* scrollbar-width: none; */
+  /* background-image: linear-gradient(#8bb9d230 0.5px, transparent 0.5px), linear-gradient(to right, #8bb9d230 0.5px, transparent 0.5px);
+  background-size: 100px 100px; */
+}
+
+.heightWithOutNav {
+  height: calc(100vh - 65px);
+}
+
+.sidebar {
+  height: calc(100vh - 73px);
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #646c727e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #646c72eb;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #6a78842c;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+  background: #4c51556e;
+  border-radius: 100px;
+  opacity: 1;
+}
+
+.giveLineHeight {
+  line-height: 80px;
+}
