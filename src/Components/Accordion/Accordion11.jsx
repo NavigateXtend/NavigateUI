@@ -66,7 +66,7 @@ export default function Accordion11() {
           >
             {/* main image  */}
 
-            <Image width={640} height={640} className="h-full rounded-3xl object-cover" src={slide.img} alt="accordion navigate ui" />
+            <Image width={640} height={540} className="h-full rounded-3xl object-cover" src={slide.img} alt="accordion navigate ui" />
 
             <Image
               width={64}

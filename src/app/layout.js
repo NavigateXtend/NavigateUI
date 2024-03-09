@@ -29,9 +29,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} overflow-x-hidden bg-black`}>
+      <body className={`${inter.className} overflow-x-hidden bg-black px-2 sm:px-10`}>
         <Navbar />
-        <div>{children}</div>
+        <div className="mx-auto max-w-[1500px]">{children}</div>
         <Image className="fixed -left-20 top-0 -z-[100]" src="/docs-left.png" width="900" height="900" alt="navigate ui image" />
       </body>
       <script async data-id="101444286" src="//static.getclicky.com/js"></script>

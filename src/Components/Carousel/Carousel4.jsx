@@ -7,12 +7,12 @@ const code = `import { useState } from "react";
 
 export const Carousel4 = () => {
   const [currentSlider, setCurrentSlider] = useState(0);
-  const sliders = [{img: "https://source.unsplash.com/1200x640/?nature", title: "Escape 1", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement."}, {img: "https://source.unsplash.com/1200x640/?hill", title: "Escape 2", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement."}, {img: "https://source.unsplash.com/1200x640/?mountain", title: "Escape 3", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement."}, {img: "https://source.unsplash.com/1200x640/?river", title: "Escape 4", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement."}, {img: "https://source.unsplash.com/1200x640/?sea", title: "Escape 5", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement."},];
+  const sliders = [{img: "https://source.unsplash.com/1200x540/?nature", title: "Escape 1", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement."}, {img: "https://source.unsplash.com/1200x540/?hill", title: "Escape 2", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement."}, {img: "https://source.unsplash.com/1200x540/?mountain", title: "Escape 3", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement."}, {img: "https://source.unsplash.com/1200x540/?river", title: "Escape 4", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement."}, {img: "https://source.unsplash.com/1200x540/?sea", title: "Escape 5", des: "A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement."},];
   const prevSlider = () => setCurrentSlider((currentSlider) => currentSlider === 0 ? sliders.length - 1 : currentSlider - 1);
   const nextSlider = () => setCurrentSlider((currentSlider) => currentSlider === sliders.length - 1 ? 0 : currentSlider + 1);
   const isSmallScreen = window.innerWidth <= 768;
   return (
-      <div className="w-full h-72 sm:h-96 md:h-[540px] lg:h-[640px] xl:h-[780px] flex flex-col xl:flex-row items-center justify-center gap-5 lg:gap-10 relative bg-cover before:absolute before:bg-black/50 before:inset-0 transform duration-1000 ease-linear z-50 overflow-hidden"
+      <div className="w-full h-60 sm:h-96 md:h-[540px] flex flex-col xl:flex-row items-center justify-center gap-5 lg:gap-10 relative bg-cover before:absolute before:bg-black/50 before:inset-0 transform duration-1000 ease-linear z-50 overflow-hidden"
             style={{ backgroundImage: \`url(\${currentSlider === 0 ? sliders[sliders.length - 1].img : sliders[currentSlider - 1].img})\`}}>
             {/* arrow */}
             <div className="absolute bottom-1/4 flex gap-3 z-50 px-5">
@@ -53,27 +53,27 @@ export const Carousel4 = () => {
 
   const sliders = [
     {
-      img: 'https://source.unsplash.com/1200x640/?nature',
+      img: 'https://source.unsplash.com/1200x540/?nature',
       title: 'Escape 1',
       des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.'
     },
     {
-      img: 'https://source.unsplash.com/1200x640/?hill',
+      img: 'https://source.unsplash.com/1200x540/?hill',
       title: 'Escape 2',
       des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.'
     },
     {
-      img: 'https://source.unsplash.com/1200x640/?mountain',
+      img: 'https://source.unsplash.com/1200x540/?mountain',
       title: 'Escape 3',
       des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.'
     },
     {
-      img: 'https://source.unsplash.com/1200x640/?river',
+      img: 'https://source.unsplash.com/1200x540/?river',
       title: 'Escape 4',
       des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.'
     },
     {
-      img: 'https://source.unsplash.com/1200x640/?sea',
+      img: 'https://source.unsplash.com/1200x540/?sea',
       title: 'Escape 5',
       des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.'
     }
@@ -88,7 +88,7 @@ export const Carousel4 = () => {
   return (
     <CP code={code}>
       <div
-        className="relative z-50 flex h-72 w-full transform flex-col items-center justify-center gap-5 overflow-hidden bg-cover duration-1000 ease-linear before:absolute before:inset-0 before:bg-black/50 sm:h-96 md:h-[540px] lg:h-[640px] lg:gap-10 xl:h-[780px] xl:flex-row"
+        className="relative z-50 flex h-60 w-full transform flex-col items-center justify-center gap-5 overflow-hidden bg-cover duration-1000 ease-linear before:absolute before:inset-0 before:bg-black/50 sm:h-96 md:h-[540px] lg:gap-10 xl:flex-row"
         style={{ backgroundImage: `url(${currentSlider === 0 ? sliders[sliders.length - 1].img : sliders[currentSlider - 1].img})` }}
       >
         {/* arrow */}
@@ -132,7 +132,7 @@ export const Carousel4 = () => {
             {sliders.map((slide, inx) => (
               <Image
                 width={1200}
-                height={640}
+                height={540}
                 key={inx}
                 src={slide.img}
                 className={`h-[180px] min-w-[90px] sm:h-[200px] lg:h-[320px] lg:min-w-[184px] ${

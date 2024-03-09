@@ -5,6 +5,16 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { FaCheck, FaRegClipboard } from 'react-icons/fa6';
 
+const yourElementStyle = {
+  background: 'transparent',
+  maxHeight: '500px',
+  borderRadius: '5px',
+  fontSize: 14,
+  border: 0,
+  '.layout::-webkit-scrollbar-thumb': {
+    background: '#646c72'
+  }
+};
 export default function Highlighter({ code }) {
   const [isCopied, setIsCopied] = useState(false);
 
@@ -13,11 +23,11 @@ export default function Highlighter({ code }) {
     setTimeout(() => {
       setIsCopied(false);
       navigator.clipboard.writeText(code);
-    }, 2500);
+    }, 500);
   };
   return (
-    <div className="relative">
-      <SyntaxHighlighter customStyle={{ background: 'transparent', maxHeight: '500px', borderRadius: '5px', fontSize: 14, border: 0 }} language="jsx" style={a11yDark}>
+    <div className="layout relative">
+      <SyntaxHighlighter customStyle={yourElementStyle} language="jsx" style={a11yDark}>
         {code}
       </SyntaxHighlighter>
       <button
