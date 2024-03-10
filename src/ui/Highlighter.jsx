@@ -1,9 +1,9 @@
 'use client';
 import { sendGAEvent } from '@next/third-parties/google';
 import { useState } from 'react';
+import { FaCheck, FaRegClipboard } from 'react-icons/fa6';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { FaCheck, FaRegClipboard } from 'react-icons/fa6';
 
 const yourElementStyle = {
   background: 'transparent',
@@ -28,8 +28,9 @@ export default function Highlighter({ code }) {
   return (
     <div className="layout relative">
       <SyntaxHighlighter customStyle={yourElementStyle} language="jsx" style={a11yDark}>
-        {code}
+        {code.trim()}
       </SyntaxHighlighter>
+
       <button
         onClick={() => {
           handleCopy();
@@ -39,9 +40,9 @@ export default function Highlighter({ code }) {
             label: 'Copy'
           });
         }}
-        className="copy-button absolute right-2 top-2 z-50 me-2 flex size-8 items-center justify-center rounded-md bg-slate-500/20 backdrop-blur-lg hover:bg-slate-500/60"
+        className="absolute right-2 top-2 z-50 rounded-md bg-slate-500/20 p-[5px] backdrop-blur-lg hover:bg-slate-500/60"
       >
-        {isCopied ? <FaCheck color="#fff" size={16} /> : <FaRegClipboard color="#fff" size={20} />}
+        {isCopied ? <FaCheck color="#fff" size={20} /> : <FaRegClipboard color="#fff" size={20} />}
       </button>
     </div>
   );

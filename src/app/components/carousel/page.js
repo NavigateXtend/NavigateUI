@@ -22,7 +22,6 @@ export default function SliderPage() {
       <Carousel4></Carousel4>
       <Carousel5></Carousel5>
       <Carousel6></Carousel6>
-      <h1 className="text-red-500">Have some Issue.. (but code JSX will work perfectly in React project)</h1>
       <Carousel7></Carousel7>
       <Carousel8></Carousel8>
       <h1 className="text-red-500">Have some Issue.. (but code JSX will work perfectly in React project)</h1>

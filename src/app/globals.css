@@ -12,14 +12,7 @@ body {
   background-size: 100px 100px; */
 }
 
-.heightWithOutNav {
-  height: calc(100vh - 65px);
-}
-
-.sidebar {
-  height: calc(100vh - 73px);
-}
-
+.heightWithOutNav {}
 
 ::-webkit-scrollbar-thumb {
   background: #646c727e;
@@ -60,6 +53,11 @@ body {
   opacity: 1;
 }
 
-.giveLineHeight {
-  line-height: 80px;
+
+
+@media screen and (max-width: 640px) {
+  .heightWithOutNav {
+    height: calc(100vh - 48px);
+  }
+
 }

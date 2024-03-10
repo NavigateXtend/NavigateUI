@@ -1,8 +1,8 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Highlighter from './Highlighter';
 
-export default function CP({ children, code, }) {
+export default function CP({ children, code }) {
   const [tabNum, setTabNum] = useState(0);
   const totalConfig = [
     {
