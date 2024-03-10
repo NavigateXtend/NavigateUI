@@ -5,10 +5,10 @@ import { useState } from 'react';
 
 const code = `const Accordion12 = () => {
     const sliders = [
-        { img: 'https://source.unsplash.com/1200x640/?snow-fall', title: 'Winter', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
-        { img: 'https://source.unsplash.com/1200x640/?Spring', title: 'Spring', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
-        { img: 'https://source.unsplash.com/1200x640/?sea-beach', title: 'Summer', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
-        { img: 'https://source.unsplash.com/1200x640/?Autumn', title: 'Autumn', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' }
+        { img: 'https://source.unsplash.com/1200x540/?snow-fall', title: 'Winter', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
+        { img: 'https://source.unsplash.com/1200x540/?Spring', title: 'Spring', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
+        { img: 'https://source.unsplash.com/1200x540/?sea-beach', title: 'Summer', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
+        { img: 'https://source.unsplash.com/1200x540/?Autumn', title: 'Autumn', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' }
     ];
     const [isOpen, setIsOpen] = useState(1);
     const handleToggle = (idx) => setIsOpen((prevIdx) => (prevIdx == idx ? null : idx));
@@ -30,10 +30,10 @@ export default Accordion12;
 
 export default function Accordion12() {
   const sliders = [
-    { img: 'https://source.unsplash.com/1200x640/?snow-fall', title: 'Winter', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
-    { img: 'https://source.unsplash.com/1200x640/?Spring', title: 'Spring', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
-    { img: 'https://source.unsplash.com/1200x640/?sea-beach', title: 'Summer', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
-    { img: 'https://source.unsplash.com/1200x640/?Autumn', title: 'Autumn', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' }
+    { img: 'https://source.unsplash.com/1200x540/?snow-fall', title: 'Winter', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
+    { img: 'https://source.unsplash.com/1200x540/?Spring', title: 'Spring', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
+    { img: 'https://source.unsplash.com/1200x540/?sea-beach', title: 'Summer', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' },
+    { img: 'https://source.unsplash.com/1200x540/?Autumn', title: 'Autumn', des: 'A Symphony of Tranquility. Experience the perfect blend of relaxation and excitement.' }
   ];
   const [isOpen, setIsOpen] = useState(1);
   const handleToggle = (idx) => setIsOpen((prevIdx) => (prevIdx == idx ? null : idx));

@@ -7,48 +7,39 @@
 body {
   /* font-family: 'Poppins', sans-serif; */
   scroll-behavior: smooth;
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
   /* background-image: linear-gradient(#8bb9d230 0.5px, transparent 0.5px), linear-gradient(to right, #8bb9d230 0.5px, transparent 0.5px);
   background-size: 100px 100px; */
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 .heightWithOutNav {
   height: calc(100vh - 65px);
 }
 
-.sidebar,
-.layout {
+.sidebar {
   height: calc(100vh - 73px);
 }
 
 
-.layout::-webkit-scrollbar {
-  width: 10px;
+::-webkit-scrollbar-thumb {
+  background: #646c727e;
 }
 
-.layout::-webkit-scrollbar-thumb,
-*::-webkit-scrollbar-thumb {
-  background: #646c72;
-  border-radius: 100px;
-}
-
-.layout::-webkit-scrollbar-track,
-*::-webkit-scrollbar-track {
-  background: #6a788451;
-  border-radius: 100px;
+::-webkit-scrollbar-thumb:hover {
+  background: #646c72eb;
 }
 
 ::-webkit-scrollbar {
-  height: 10px;
-  width: 10px;
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #6a78842c;
 }
 
 .sidebar::-webkit-scrollbar {
-  width: 7px;
+  width: 6px;
 }
 
 .sidebar::-webkit-scrollbar-track {
@@ -56,60 +47,19 @@ body::-webkit-scrollbar {
 }
 
 
-.sidebar::-webkit-scrollbar-thumb,
-:not(*) {
-  opacity: 0 !important;
-  /* visibility: hidden; */
-  border-radius: 100px;
-  transition: opacity 3s ease;
-  transition-delay: 1s;
+.sidebar::-webkit-scrollbar-thumb {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .sidebar:hover::-webkit-scrollbar-thumb {
-  /* visibility: visible; */
+  visibility: visible;
   background: #4c51556e;
   border-radius: 100px;
   opacity: 1;
 }
 
-
-.card {
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-
 .giveLineHeight {
   line-height: 80px;
-}
-
-@media screen and (min-width: 992px) {
-  .giveLineHeight {
-    line-height: 80px;
-  }
-}
-
-/* For medium screens */
-@media screen and (max-width: 991px) and (min-width: 768px) {
-  .giveLineHeight {
-    line-height: 60px;
-  }
-}
-
-/* For small screens */
-@media screen and (max-width: 767px) and (min-width: 400px) {
-  .giveLineHeight {
-    line-height: 40px;
-  }
-}
-
-@media screen and (max-width: 399px) {
-  .giveLineHeight {
-    line-height: 30px;
-  }
 }
