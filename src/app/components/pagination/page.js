@@ -1,20 +1,27 @@
 import SimplePagination from '@/Components/Pagination/SimplePagination';
+import CardPagination from '@/Components/Pagination/CardPagination';
+import SqureCardPagination from '@/Components/Pagination/SqureCardPagination';
+import TransParentPagination from '@/Components/Pagination/TransParentPagination';
+import SquareCardPaginaiton2 from '@/Components/Pagination/SquareCardPaginaiton2';
+
 import React from 'react';
 
-
-
-
 export const metadata = {
-    title: 'Modal Components',
-    description: 'Modal tailwind components'
-  }; 
-
-export default function page () {
-    return (
-        <div className="flex flex-col items-center justify-center">
-        <h1 className="mt-10 px-4 text-lg  font-semibold text-white md:text-xl lg:text-2xl"># Simple progress</h1>
-        <SimplePagination />
-        </div>
-    );
+  title: 'Pagination Components',
+  description: 'Pagination tailwind components'
 };
+
+export default function page() {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <SimplePagination />
+      <CardPagination></CardPagination>
+      <SqureCardPagination></SqureCardPagination>
+      <SquareCardPaginaiton2></SquareCardPaginaiton2>
+      <TransParentPagination></TransParentPagination>
+
+
+    </div>
+  );
+}
 

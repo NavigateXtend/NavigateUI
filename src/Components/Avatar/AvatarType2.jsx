@@ -1,4 +1,3 @@
-import React from 'react';
 import CP from '@/ui/CP';
 import Image from 'next/image';
 
