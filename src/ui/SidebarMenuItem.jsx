@@ -39,8 +39,10 @@ export default function SidebarMenuItem({ menuItem, isOpen }) {
               ) : (
                 <Link className="group flex items-center gap-1 pl-2 lg:pl-0" href={`/${menuItem.about.toLowerCase()}/${item.route.toLowerCase().replace(/\s+/g, '')}`}>
                   <span className={`duration-200 group-hover:pl-[2px] group-hover:tracking-widest group-hover:text-white`}>{item.route}</span>
-                  <span className="rounded-lg border border-cyan-400 px-1 font-mono text-xs text-cyan-400" hidden={!item.new}>
-                    {item.new ? 'new' : ''}
+                  <span
+                    className={`rounded-lg border px-1 font-mono text-xs ${item.new ? 'border-cyan-400 bg-cyan-400/20 text-cyan-400' : item.update ? 'border-orange-500 bg-orange-500/20 text-orange-500' : 'hidden'}`}
+                  >
+                    {item.new ? 'new' : item.update ? 'updated' : null}
                   </span>
                 </Link>
               )}

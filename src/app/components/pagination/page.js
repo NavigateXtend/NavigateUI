@@ -1,8 +1,8 @@
 import SimplePagination from '@/Components/Pagination/SimplePagination';
 import CardPagination from '@/Components/Pagination/CardPagination';
-import SqureCardPagination from '@/Components/Pagination/SqureCardPagination';
+import SquareCardPagination from '@/components/Pagination/SquareCardPagination';
 import TransParentPagination from '@/Components/Pagination/TransParentPagination';
-import SquareCardPaginaiton2 from '@/Components/Pagination/SquareCardPaginaiton2';
+import SquareCardPagination2 from '@/components/Pagination/SquareCardPagination2';
 
 import React from 'react';
 
@@ -16,12 +16,9 @@ export default function page() {
     <div className="flex flex-col items-center justify-center">
       <SimplePagination />
       <CardPagination></CardPagination>
-      <SqureCardPagination></SqureCardPagination>
-      <SquareCardPaginaiton2></SquareCardPaginaiton2>
+      <SquareCardPagination></SquareCardPagination>
+      <SquareCardPagination2></SquareCardPagination2>
       <TransParentPagination></TransParentPagination>
-
-
     </div>
   );
 }
-
