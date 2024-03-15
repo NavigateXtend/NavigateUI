@@ -20,7 +20,7 @@ export default function FadeLeftDropDown() {
   return (
     <div ref={dropDownRef} className="relative mx-auto w-fit text-white">
       <button onClick={() => setOpen((prev) => !prev)} className="rounded-sm bg-sky-600 px-6 py-2">Dropdown</button>
-      <ul className={\`\${open ? 'visible' : 'invisible'} absolute top-12 z-50 w-full space-y-1 rounded-sm shadow-md\`}>
+      <ul className={\`\${open ? 'visible' : 'invisible'} absolute top-12 z-50 w-full space-y-1 rounded-sm\`}>
         {items.map((item, idx) => (
           <li
             key={idx}
@@ -63,7 +63,7 @@ export default function FadeLeftDropDown() {
         >
           Dropdown
         </button>
-        <ul className={`${open ? 'visible' : 'invisible'} absolute top-12 z-50 w-full space-y-1 rounded-sm shadow-md`}>
+        <ul className={`${open ? 'visible' : 'invisible'} absolute top-12 z-50 w-full space-y-1 rounded-sm`}>
           {items.map((item, idx) => (
             <li
               key={idx}

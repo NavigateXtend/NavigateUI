@@ -3,6 +3,7 @@ import Hero2 from '@/components/Hero/Hero2';
 import Hero3 from '@/components/Hero/Hero3';
 import Hero4 from '@/components/Hero/Hero4';
 import Hero5 from '@/components/Hero/Hero5';
+import Heading from '@/ui/Heading';
 
 export const metadata = {
   title: 'Hero Components',
@@ -11,12 +12,13 @@ export const metadata = {
 
 export default function HeroPage() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <>
+      <Heading>#Explore The Hero Collections</Heading>
       <Hero1 />
       <Hero2 />
       <Hero3 />
       <Hero4 />
       <Hero5 />
-    </div>
+    </>
   );
 }

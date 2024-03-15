@@ -1,9 +1,10 @@
+import Navbar from '@/ui/Navbar';
+import Sidebar from '@/ui/Sidebar';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Inter, Lato } from 'next/font/google';
 import './globals.css';
-import Image from 'next/image';
-import Navbar from '@/ui/Navbar';
-import Sidebar from '@/ui/Sidebar';
+import { Providers } from './provider';
+import { ThemeProvider } from 'next-themes';
 
 const inter = Inter({ subsets: ['latin'] });
 export const lato = Lato({ subsets: ['latin'], weight: ['100', '300', '400', '700', '900'] });
@@ -30,14 +31,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} overflow-x-hidden bg-black px-2 lg:px-10`}>
-        <Navbar />
-        <div className="lg:hidden">
-          <Sidebar />
-        </div>
-        <div className="mx-auto max-w-[1400px]">{children}</div>
-        <Image className="fixed -left-20 top-0 -z-[100] select-none" src="/docs-left.png" width="900" height="900" alt="navigate ui image" />
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${inter.className} overflow-x-hidden bg-[#fff] dark:bg-black`}>
+        <ThemeProvider attribute="class" defaultTheme="system">
+          <Navbar />
+          <div className="lg:hidden">
+            <Sidebar />
+          </div>
+          <div className="mx-auto max-w-[1400px] px-2 lg:px-10">{children}</div>
+
+          {/* <Image className="fixed -left-20 top-0 -z-[100] select-none" src="/docs-left.png" width="900" height="900" alt="navigate ui image" /> */}
+        </ThemeProvider>
       </body>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA4_ID} />
     </html>

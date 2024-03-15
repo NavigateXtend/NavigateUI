@@ -5,6 +5,7 @@ import Footer4 from '@/components/Footer/Footer4';
 import Footer5 from '@/components/Footer/Footer5';
 import Footer6 from '@/components/Footer/Footer6';
 import Footer7 from '@/components/Footer/Footer7';
+import Heading from '@/ui/Heading';
 
 export const metadata = {
   title: 'Footer Components',
@@ -14,19 +15,19 @@ export const metadata = {
 export default function FooterPage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Basic Footer</h1>
+      <Heading>#Basic Footer</Heading>
       <Footer1 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Single Column Footer</h1>
+      <Heading>#Single Column Footer</Heading>
       <Footer2 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Single Column Footer V2</h1>
+      <Heading>#Single Column Footer V2</Heading>
       <Footer3 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Multi-Column Footer</h1>
+      <Heading>#Multi-Column Footer</Heading>
       <Footer4 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Multi-Column Footer V2</h1>
+      <Heading>#Multi-Column Footer V2</Heading>
       <Footer5 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Multi-Column Footer With Vertical Links</h1>
+      <Heading>#Multi-Column Footer With Vertical Links</Heading>
       <Footer6 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Multi-Column Footer With Three Columns</h1>
+      <Heading>#Multi-Column Footer With Three Columns</Heading>
       <Footer7 />
     </div>
   );

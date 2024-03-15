@@ -84,11 +84,11 @@ const SimplePagination = () => {
           className=" scale-100 cursor-pointer rounded-full px-1 py-1 transition-all duration-200 hover:scale-110 hover:bg-sky-200"
         >
           <svg className="w-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
               {' '}
-              <path d="M10 7L15 12L10 17" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>{' '}
+              <path d="M10 7L15 12L10 17" stroke="#0284C7" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>{' '}
             </g>
           </svg>
         </div>
