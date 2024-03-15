@@ -19,12 +19,16 @@ export default function SidebarMenuItem({ menuItem, isOpen }) {
   }, [isOpen]);
   return (
     <div className={`${path.includes('components') && menuItem.about === 'Blocks' ? 'hidden' : path.includes('blocks') && menuItem.about === 'Components' ? 'hidden' : null}`}>
+      
       {/* click event div  */}
+
       <div onClick={() => setIsDropdownOpen(!isDropdownOpen)} className={`group flex w-full cursor-pointer items-center justify-between gap-5 py-3`}>
         <h4 className={`group-hover:text-primary text-lg font-medium capitalize text-[14x] text-white duration-300 `}>{menuItem.about}</h4>
         <IoIosArrowDown className={`${isDropdownOpen ? '-rotate-180 text-white duration-300' : ' text-white/60 duration-300'} duration-300`} />
       </div>
+      
       {/* the dropdown  */}
+      
       <div className={`grid origin-top overflow-hidden duration-300 ease-in-out ${isDropdownOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}>
         <div className="flex flex-col space-y-3 overflow-hidden text-[#a1a1aa] lg:space-y-2">
           {menuItem?.links?.map((item, key) => (

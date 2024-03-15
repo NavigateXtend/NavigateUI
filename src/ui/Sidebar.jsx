@@ -22,6 +22,7 @@ const MenuItems = [
       { route: 'Dropdown', new: true },
       // { route: 'Footer' },
       { route: 'Form' },
+      { route: 'File Upload', new: true },
       { route: 'Hero' },
       { route: 'Input', new: true },
       { route: 'Modal' },
