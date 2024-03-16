@@ -1,13 +1,18 @@
-import Button1 from '@/Components/Button/Buttons1/Button1';
-import Button2 from '@/Components/Button/Buttons2/Button2';
-const Button = () => {
-    return (
-        <div className="w-full text-center">
-            <h1 className="my-10 border-gray-700 text-2xl font-semibold text-gray-800 md:text-3xl">Explore The Button Collections</h1>
-            <Button1 />
-            <Button2 />
-        </div>
-    );
+import Button1 from '@/components/Button/Button1';
+import Button2 from '@/components/Button/Button2';
+import Heading from '@/ui/Heading';
+
+export const metadata = {
+  title: 'Button Components',
+  description: 'Button tailwind components'
 };
 
-export default Button;
+export default function ButtonPage() {
+  return (
+    <div>
+      <Heading>#Explore The Button Collections</Heading>
+      <Button1 />
+      <Button2 />
+    </div>
+  );
+}

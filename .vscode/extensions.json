@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    // code snippets
+    "xabikos.reactsnippets",
+    //linting / formatting
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    // Collaborating
+    "ms-vsliveshare.vsliveshare"
+  ]
+}

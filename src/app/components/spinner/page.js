@@ -1,11 +1,16 @@
-import Spinner1 from '@/Components/Spinner/Part1/Spinner1';
+import Spinner1 from '@/components/Spinner/Spinner1';
+import Heading from '@/ui/Heading';
 
-function page() {
-    return (
-        <div>
-            <Spinner1 />
-        </div>
-    );
+export const metadata = {
+  title: 'Spinner ',
+  description: 'Spinner tailwind components'
+};
+
+export default function SpinnerPage() {
+  return (
+    <div>
+      <Heading>#Explore The Spinner Collections</Heading>
+      <Spinner1 />
+    </div>
+  );
 }
-
-export default page;
