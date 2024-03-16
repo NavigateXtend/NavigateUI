@@ -57,3 +57,4 @@ export default function SidebarMenuItem({ menuItem, isOpen }) {
     </div>
   );
 }
+

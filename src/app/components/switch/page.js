@@ -1,9 +1,14 @@
-import BasicSwitch from '@/components/Switch/BasicSwitch';
+import BasicSwitchWithPeer from '@/components/Switch/BasicSwitchWithPeer';
+import BasicSwitchWithState from '@/components/Switch/BasicSwitchWithState';
+import Heading from '@/ui/Heading';
 
 export default function page() {
   return (
     <div>
-      <BasicSwitch />
+      <Heading>#BasicSwitchWithPeer</Heading>
+      <BasicSwitchWithPeer />
+      <Heading>#BasicSwitchWithState</Heading>
+      <BasicSwitchWithState />
     </div>
   );
 }

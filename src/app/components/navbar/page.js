@@ -4,6 +4,7 @@ import { NavBar3 } from '@/components/NavBar/NavBar3';
 import { NavBar4 } from '@/components/NavBar/NavBar4';
 import { NavBar5 } from '@/components/NavBar/NavBar5';
 import { NavBar6 } from '@/components/NavBar/NavBar6';
+import Heading from '@/ui/Heading';
 
 export const metadata = {
   title: 'Navbar Components',
@@ -13,17 +14,17 @@ export const metadata = {
 export default function FooterPage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Basic NavBar</h1>
+      <Heading>#Basic NavBar</Heading>
       <NavBar1 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Basic NavBar with Dropdown menu</h1>
+      <Heading>#Basic NavBar with Dropdown menu</Heading>
       <NavBar2 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Basic NavBar With Three Ends</h1>
+      <Heading>#Basic NavBar With Three Ends</Heading>
       <NavBar3 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Basic NavBar With Buttons</h1>
+      <Heading>#Basic NavBar With Buttons</Heading>
       <NavBar4 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Basic NavBar With Routes and Buttons</h1>
+      <Heading>#Basic NavBar With Routes and Buttons</Heading>
       <NavBar5 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100"># Responsive NavBar</h1>
+      <Heading>#Responsive NavBar</Heading>
       <NavBar6 />
     </div>
   );

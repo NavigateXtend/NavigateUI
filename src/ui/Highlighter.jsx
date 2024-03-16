@@ -40,7 +40,7 @@ export default function Highlighter({ code }) {
             label: 'Copy'
           });
         }}
-        className="absolute right-2 top-2 z-50 rounded-md bg-slate-500/20 p-[5px] backdrop-blur-lg hover:bg-slate-500/60"
+        className="absolute right-2 top-2 z-50 rounded-md p-[5px] backdrop-blur-lg hover:bg-slate-500/60 dark:bg-slate-500/20"
       >
         {isCopied ? <FaCheck color="#fff" size={20} /> : <FaRegClipboard color="#fff" size={20} />}
       </button>

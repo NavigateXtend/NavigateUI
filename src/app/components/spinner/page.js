@@ -1,4 +1,5 @@
 import Spinner1 from '@/components/Spinner/Spinner1';
+import Heading from '@/ui/Heading';
 
 export const metadata = {
   title: 'Spinner ',
@@ -8,6 +9,7 @@ export const metadata = {
 export default function SpinnerPage() {
   return (
     <div>
+      <Heading>#Explore The Spinner Collections</Heading>
       <Spinner1 />
     </div>
   );

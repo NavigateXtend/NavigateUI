@@ -4,6 +4,7 @@ import Modal3 from '@/components/Modal/Modal3';
 import Modal4 from '@/components/Modal/Modal4';
 import Modal5 from '@/components/Modal/Modal5';
 import Modal6 from '@/components/Modal/Modal6';
+import Heading from '@/ui/Heading';
 
 export const metadata = {
   title: 'Modal Components',
@@ -13,6 +14,8 @@ export const metadata = {
 export default function ModalPage() {
   return (
     <div className="flex flex-col items-center justify-center">
+      <Heading>#Explore The Modal Collections</Heading>
+
       <Modal1 />
       <Modal2 />
       <Modal3 />

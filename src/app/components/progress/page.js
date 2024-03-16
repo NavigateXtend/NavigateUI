@@ -3,6 +3,7 @@ import Progress2 from '@/components/Progress/Progress2';
 import Progress3 from '@/components/Progress/Progress3';
 import Progress4 from '@/components/Progress/Progress4';
 import Progress5 from '@/components/Progress/Progress5';
+import Heading from '@/ui/Heading';
 
 export const metadata = {
   title: 'Progress Components',
@@ -12,15 +13,15 @@ export const metadata = {
 const Progress = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <h1 className="mt-10 px-4 text-lg  font-semibold text-white md:text-xl lg:text-2xl"># Basic progress</h1>
+      <Heading>#Basic progress</Heading>
       <Progress5 />
-      <h1 className="mt-10 px-4 text-lg  font-semibold text-white md:text-xl lg:text-2xl"># Basic dynamic progress</h1>
+      <Heading>#Basic dynamic progress</Heading>
       <Progress1 />
-      <h1 className="mt-10 px-4 text-lg  font-semibold text-white md:text-xl lg:text-2xl"># Basic dynamic animated progress</h1>
+      <Heading>#Basic dynamic animated progress</Heading>
       <Progress2 />
-      <h1 className="mt-10 px-4 text-lg  font-semibold text-white md:text-xl lg:text-2xl"># Dynamic progress bar with inside text</h1>
+      <Heading>#Dynamic progress bar with inside text</Heading>
       <Progress3 />
-      <h1 className="mt-10 px-4 text-lg  font-semibold text-white md:text-xl lg:text-2xl"># Dynamic animated progress bar with outside text</h1>
+      <Heading>#Dynamic animated progress bar with outside text</Heading>
       <Progress4 />
     </div>
   );

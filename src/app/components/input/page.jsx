@@ -3,6 +3,7 @@ import { InputType2 } from '@/components/Input/InputType2';
 import { InputType3 } from '@/components/Input/InputType3';
 import { InputType4 } from '@/components/Input/InputType4';
 import { InputType5 } from '@/components/Input/InputType5';
+import Heading from '@/ui/Heading';
 
 export const metadata = {
   title: 'Input Components',
@@ -12,15 +13,15 @@ export const metadata = {
 export default function InputPage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100 dark:text-white"># Default Input box</h1>
+      <Heading>#Default Input box</Heading>
       <InputType1 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100 dark:text-white"># Input with ring</h1>
+      <Heading>#Input with ring</Heading>
       <InputType2 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100 dark:text-white"># Input with ring</h1>
+      <Heading>#Input with ring</Heading>
       <InputType3 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100 dark:text-white"># Input with ring</h1>
+      <Heading>#Input with ring</Heading>
       <InputType4 />
-      <h1 className="mt-10 px-4 text-2xl font-semibold text-gray-100 dark:text-white"># Input with ring</h1>
+      <Heading>#Input with ring</Heading>
       <InputType5 />
     </div>
   );

@@ -12,6 +12,7 @@ import Card6 from '@/components/Card/Card6';
 import Card7 from '@/components/Card/Card7';
 import Card8 from '@/components/Card/Card8';
 import Card9 from '@/components/Card/Card9';
+import Heading from '@/ui/Heading';
 
 export const metadata = {
   title: 'Card Components',
@@ -20,8 +21,8 @@ export const metadata = {
 
 export default function CardPage() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <h1 className="border-gray-700 pb-2 pt-10 text-center text-2xl font-semibold text-white lg:text-3xl">Explore The Card Collections</h1>
+    <>
+      <Heading>#Explore The Card Collections</Heading>
       <Card1 />
       <Card2 />
       <Card3 />
@@ -36,6 +37,6 @@ export default function CardPage() {
       <Card12 />
       <Card13 />
       <Card14 />
-    </div>
+    </>
   );
 }
