@@ -60,7 +60,7 @@ export function SidebarMenuItem({ menuItem, setIsOpen }) {
 const MenuItems = [
   {
     about: 'Getting Start',
-    links: [{ route: 'Over View' }, { route: 'Instruction' }, { route: 'Components' }, { route: 'Blocks' }]
+    links: [{ route: 'Installation' }, { route: 'Overview' }, { route: 'Components' }, { route: 'Blocks' }]
   },
   {
     about: 'Components',
@@ -72,12 +72,13 @@ const MenuItems = [
       { route: 'Card' },
       { route: 'Carousel', update: true },
       { route: 'Dropdown', new: true },
-      // { route: 'Footer' },
+      { route: 'Footer' },
       { route: 'Form' },
+      { route: 'File Upload', new: true },
       { route: 'Hero' },
       { route: 'Input', new: true },
       { route: 'Modal' },
-      // { route: 'Navbar' },
+      { route: 'Navbar' },
       { route: 'Pagination', new: true },
       { route: 'Progress', new: true },
       { route: 'Select', new: true },
@@ -85,7 +86,7 @@ const MenuItems = [
       { route: 'Speed Dial' },
       { route: 'Spinner' },
       { route: 'Switch', new: true },
-      // { route: 'Table' },
+      { route: 'Table' },
       { route: 'Tooltip' }
     ]
   },
