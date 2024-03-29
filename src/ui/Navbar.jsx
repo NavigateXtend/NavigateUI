@@ -11,11 +11,11 @@ export default async function Navbar() {
   const data = await getRepoData();
 
   return (
-    <nav className="sticky top-0 z-[99] w-full backdrop-blur-2xl dark:bg-black/60 dark:text-white">
+    <nav className="sticky top-0 z-[99] w-full backdrop-blur-2xl dark:text-white">
       <div className="item-center mx-auto flex max-w-[1400px] justify-between px-2 py-4 lg:px-10">
         <Link href="/" className="group flex flex-1 items-center gap-px rounded-lg text-xl font-semibold">
           <Image src="/Logo.svg" className="hidden size-8 lg:block" width={33} height={32} alt="navigate ui logo" />
-          <span className="hidden lg:block">NavigateUI</span>
+          <span className="hidden text-sky-400 lg:block">NavigateUI</span>
         </Link>
         <NavMenu />
         <ul className="flex flex-1 items-center justify-end gap-3 text-2xl">
