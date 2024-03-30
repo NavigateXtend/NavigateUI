@@ -8,7 +8,9 @@ const code = `const Card7 = () => {
       <div className="relative mx-auto my-20 space-y-8 bg-white p-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] dark:bg-[#18181B] md:w-[300px]">
         {/* top part  */}
         <div>
-            <Image width={60} height={60} className="h-[60px] w-[60px] rounded-full border bg-slate-100 dark:bg-slate-700 object-cover p-2 duration-300 hover:scale-105" src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL2pvYjk2OC1lbGVtZW50LTAxMi14LmpwZw.jpg" alt="card navigate ui"/>
+
+            <Image width={60} height={60} className="h-[60px] w-[60px] rounded-full border bg-slate-100 object-cover p-2 duration-300 hover:scale-105" src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL2pvYjk2OC1lbGVtZW50LTAxMi14LmpwZw.jpg" alt="card navigate ui"/>
+
             {/* Price Ribbon SVG  */}
             <div className="absolute -right-[20px] -top-4 ">
                 <div className="relative h-full w-full">
@@ -51,7 +53,7 @@ const Card7 = () => {
                   <Image
                       width={60}
                       height={60}
-                      className="h-[60px] w-[60px] rounded-full border bg-slate-100 dark:bg-slate-700 object-cover p-2 duration-300 hover:scale-105"
+                      className="h-[60px] w-[60px] rounded-full border bg-slate-100 object-cover p-2 duration-300 hover:scale-105"
                       src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL2pvYjk2OC1lbGVtZW50LTAxMi14LmpwZw.jpg"
                       alt="card navigate ui"
                   />
