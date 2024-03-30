@@ -32,7 +32,7 @@ export default function CardPage() {
       <Card7 />
       <Card8 />
       <Card9 />
-      <Card10 />
+      {/* <Card10 /> */}
       <Card11 />
       <Card12 />
       <Card13 />
