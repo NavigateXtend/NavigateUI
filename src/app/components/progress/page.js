@@ -13,15 +13,15 @@ export const metadata = {
 const Progress = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading>#Basic progress</Heading>
+      <Heading>Basic progress</Heading>
       <Progress5 />
-      <Heading>#Basic dynamic progress</Heading>
+      <Heading>Basic dynamic progress</Heading>
       <Progress1 />
-      <Heading>#Basic dynamic animated progress</Heading>
+      <Heading>Basic dynamic animated progress</Heading>
       <Progress2 />
-      <Heading>#Dynamic progress bar with inside text</Heading>
+      <Heading>Dynamic progress bar with inside text</Heading>
       <Progress3 />
-      <Heading>#Dynamic animated progress bar with outside text</Heading>
+      <Heading>Dynamic animated progress bar with outside text</Heading>
       <Progress4 />
     </div>
   );

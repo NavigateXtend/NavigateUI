@@ -14,7 +14,7 @@ export const metadata = {
 export default function SpeedDialPage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading>#Explore The SpeedDials Collections</Heading>
+      <Heading>Explore The SpeedDials Collections</Heading>
       <SpeedDial1 />
       <SpeedDial2 />
       <SpeedDial3 />

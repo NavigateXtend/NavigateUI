@@ -15,24 +15,24 @@ export const metadata = {
 export default function SkeletonPage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading>#Avatar loading skeleton</Heading>
+      <Heading>Avatar loading skeleton</Heading>
       <Skeleton1 />
 
-      <Heading>#Product Details loading skeleton</Heading>
+      <Heading>Product Details loading skeleton</Heading>
       <Skeleton4 />
-      <Heading>#Ecommerce Card Skeleton</Heading>
+      <Heading>E-commerce Card Skeleton</Heading>
       <Skeleton2 />
 
-      <Heading>#Ecommerce Card Skeleton</Heading>
+      <Heading>E-commerce Card Skeleton</Heading>
       <Skeleton3 />
 
-      <Heading>#Social media post skeleton</Heading>
+      <Heading>Social media post skeleton</Heading>
       <Skeleton5 />
 
-      <Heading>#Social media post skeleton</Heading>
+      <Heading>Social media post skeleton</Heading>
       <Skeleton6 />
 
-      <Heading>#Social media post skeleton</Heading>
+      <Heading>Social media post skeleton</Heading>
       <Skeleton7 />
     </div>
   );

@@ -19,27 +19,27 @@ export const metadata = {
 export default function AccordionPage() {
   return (
     <div className="">
-      <Heading>#Basic Accordion</Heading>
+      <Heading>Basic Accordion</Heading>
       <Accordion1 />
-      <Heading>#Dark theme Accordion</Heading>
+      <Heading>Dark theme Accordion</Heading>
       <Accordion2 />
-      <Heading>#Accordion With Index</Heading>
+      <Heading>Accordion With Index</Heading>
       <Accordion3 />
-      <Heading>#ColorFull Accordion </Heading>
+      <Heading>ColorFull Accordion </Heading>
       <Accordion4 />
-      <Heading>#Menu Accordion</Heading>
+      <Heading>Menu Accordion</Heading>
       <Accordion5 />
-      <Heading>#Accordion with image</Heading>
+      <Heading>Accordion with image</Heading>
       <Accordion6 />
-      <Heading>#Vertical Accordion</Heading>
+      <Heading>Vertical Accordion</Heading>
       <Accordion8 />
-      <Heading>#Vertical Menu Accordion</Heading>
+      <Heading>Vertical Menu Accordion</Heading>
       <Accordion9 />
-      <Heading>#Drawer Accordion</Heading>
+      <Heading>Drawer Accordion</Heading>
       <Accordion10 />
-      <Heading>#Accordion With Image Slide</Heading>
+      <Heading>Accordion With Image Slide</Heading>
       <Accordion11 />
-      <Heading>#Accordion With Image Slide</Heading>
+      <Heading>Accordion With Image Slide</Heading>
       <Accordion12 />
     </div>
   );

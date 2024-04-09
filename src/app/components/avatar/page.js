@@ -16,21 +16,21 @@ export const metadata = {
 export default function Avatar() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading>#Default square</Heading>
+      <Heading>Default square</Heading>
       <AvatarType1 />
-      <Heading>#Default circle</Heading>
+      <Heading>Default circle</Heading>
       <AvatarType2 />
-      <Heading>#Active avatar</Heading>
+      <Heading>Active avatar</Heading>
       <AvatarType3 />
-      <Heading>#Avatar with edit icon</Heading>
+      <Heading>Avatar with edit icon</Heading>
       <AvatarType4 />
-      <Heading>#Avatar with Add Button</Heading>
+      <Heading>Avatar with Add Button</Heading>
       <AvatarType5 />
-      <Heading>#Disabled Offline Avatar</Heading>
+      <Heading>Disabled Offline Avatar</Heading>
       <AvatarType6 />
-      <Heading>#Avatar With Male Gender Icon</Heading>
+      <Heading>Avatar With Male Gender Icon</Heading>
       <AvatarType7 />
-      <Heading>#Avatar With Female Gender Icon</Heading>
+      <Heading>Avatar With Female Gender Icon</Heading>
       <AvatarType8 />
     </div>
   );

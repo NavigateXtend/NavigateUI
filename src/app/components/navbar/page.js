@@ -1,9 +1,10 @@
-import BasicNavbar from '@/components/Navbar/BasicNavbar';
-import { NavBar3 } from '@/components/Navbar/NavBar3';
-import { NavBar4 } from '@/components/Navbar/NavBar4';
-import { NavBar5 } from '@/components/Navbar/NavBar5';
-import { NavBar6 } from '@/components/Navbar/NavBar6';
-import NavbarWithDropdown from '@/components/Navbar/NavbarWithDropdown';
+
+import BasicNavbar from '@/components/NavBar/BasicNavbar';
+import { NavBar3 } from '@/components/NavBar/NavBar3';
+import { NavBar4 } from '@/components/NavBar/NavBar4';
+import { NavBar5 } from '@/components/NavBar/NavBar5';
+import { NavBar6 } from '@/components/NavBar/NavBar6';
+import NavbarWithDropdown from '@/components/NavBar/NavbarWithDropdown';
 import Heading from '@/ui/Heading';
 
 export const metadata = {

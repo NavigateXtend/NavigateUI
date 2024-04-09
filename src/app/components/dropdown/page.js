@@ -9,17 +9,17 @@ import Heading from '@/ui/Heading';
 export default function DropDownPage() {
   return (
     <div className="mt-5">
-      <Heading>#Basic Dropdown</Heading>
+      <Heading>Basic Dropdown</Heading>
       <BasicDropDown />
-      <Heading>#Box Dropdown</Heading>
+      <Heading>Box Dropdown</Heading>
       <BoxDropDown />
-      <Heading>#Fade Up Dropdown</Heading>
+      <Heading>Fade Up Dropdown</Heading>
       <FadeUpDropDown />
-      <Heading>#Fade Up Box Dropdown</Heading>
+      <Heading>Fade Up Box Dropdown</Heading>
       <FadeUpBoxDropDown />
-      <Heading>#Fade Left Dropdown</Heading>
+      <Heading>Fade Left Dropdown</Heading>
       <FadeLeftDropDown />
-      <Heading>#Avatar Dropdown</Heading>
+      <Heading>Avatar Dropdown</Heading>
       <AvatarDropDown />
     </div>
   );

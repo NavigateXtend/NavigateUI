@@ -11,11 +11,11 @@ export const metadata = {
 export default function TablePage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading># Simple Table</Heading>
+      <Heading>Simple Table</Heading>
       <Table1 />
-      <Heading># Simple Table with button and images</Heading>
+      <Heading>Simple Table with button and images</Heading>
       <Table2 />
-      <Heading># Simple Table with button and images</Heading>
+      <Heading>Simple Table with button and images</Heading>
       <Table3 />
     </div>
   );

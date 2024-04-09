@@ -14,7 +14,7 @@ export const metadata = {
 export default function page() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading>#Explore The Button Collections</Heading>
+      <Heading>Explore The Button Collections</Heading>
       <SimplePagination />
       <CardPagination />
       <SquareCardPagination />

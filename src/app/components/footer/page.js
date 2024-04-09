@@ -15,19 +15,19 @@ export const metadata = {
 export default function FooterPage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading>#Basic Footer</Heading>
+      <Heading>Basic Footer</Heading>
       <Footer1 />
-      <Heading>#Single Column Footer</Heading>
+      <Heading>Single Column Footer</Heading>
       <Footer2 />
-      <Heading>#Single Column Footer V2</Heading>
+      <Heading>Single Column Footer V2</Heading>
       <Footer3 />
-      <Heading>#Multi-Column Footer</Heading>
+      <Heading>Multi-Column Footer</Heading>
       <Footer4 />
-      <Heading>#Multi-Column Footer V2</Heading>
+      <Heading>Multi-Column Footer V2</Heading>
       <Footer5 />
-      <Heading>#Multi-Column Footer With Vertical Links</Heading>
+      <Heading>Multi-Column Footer With Vertical Links</Heading>
       <Footer6 />
-      <Heading>#Multi-Column Footer With Three Columns</Heading>
+      <Heading>Multi-Column Footer With Three Columns</Heading>
       <Footer7 />
     </div>
   );

@@ -14,8 +14,7 @@ export const metadata = {
 export default function ModalPage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading>#Explore The Modal Collections</Heading>
-
+      <Heading>Explore The Modal Collections</Heading>
       <Modal1 />
       <Modal2 />
       <Modal3 />

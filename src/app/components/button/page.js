@@ -10,7 +10,7 @@ export const metadata = {
 export default function ButtonPage() {
   return (
     <div>
-      <Heading>#Explore The Button Collections</Heading>
+      <Heading>Explore The Button Collections</Heading>
       <Button1 />
       <Button2 />
     </div>

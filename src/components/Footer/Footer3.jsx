@@ -2,7 +2,7 @@ import CP from '@/ui/CP';
 
 const Footer3 = () => {
   const code = `
-        <footer className="flex flex-col justify-around gap-5 bg-sky-50 py-8">
+        <footer className="flex flex-col justify-around gap-5 bg-sky-50 py-8 text-black">
             <nav className="text-lg">
                 <ul className="flex h-full flex-wrap items-center justify-center gap-3">
                     <li>
@@ -49,7 +49,7 @@ const Footer3 = () => {
 
   return (
     <CP code={code}>
-      <footer className="flex flex-col justify-around gap-5 bg-sky-50 py-8">
+      <footer className="flex flex-col justify-around gap-5 bg-sky-50 py-8 text-black">
         <nav className="text-lg">
           <ul className="flex h-full flex-wrap items-center justify-center gap-3">
             <li>

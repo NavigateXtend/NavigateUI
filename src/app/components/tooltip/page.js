@@ -12,13 +12,13 @@ export const metadata = {
 export default function TooltipPage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading># Tooltip from top</Heading>
+      <Heading>Tooltip from top</Heading>
       <Tooltip1 />
-      <Heading># Tooltip from right</Heading>
+      <Heading>Tooltip from right</Heading>
       <Tooltip2 />
-      <Heading># Tooltip from bottom</Heading>
+      <Heading>Tooltip from bottom</Heading>
       <Tooltip3 />
-      <Heading># Tooltip from left</Heading>
+      <Heading>Tooltip from left</Heading>
       <Tooltip4 />
     </div>
   );

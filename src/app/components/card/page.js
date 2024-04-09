@@ -22,7 +22,7 @@ export const metadata = {
 export default function CardPage() {
   return (
     <>
-      <Heading>#Explore The Card Collections</Heading>
+      <Heading>Explore The Card Collections</Heading>
       <Card1 />
       <Card2 />
       <Card3 />

@@ -12,13 +12,13 @@ export const metadata = {
 export default function BadgePage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading>#Simple notification badge</Heading>
+      <Heading>Simple notification badge</Heading>
       <Badge1 />
-      <Heading>#Notification badge with numbers</Heading>
+      <Heading>Notification badge with numbers</Heading>
       <Badge2 />
-      <Heading>#Home badge with below numbers</Heading>
+      <Heading>Home badge with below numbers</Heading>
       <Badge3 />
-      <Heading>#Badge with text </Heading>
+      <Heading>Badge with text </Heading>
       <Badge4 />
     </div>
   );

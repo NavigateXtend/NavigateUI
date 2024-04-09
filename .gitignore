@@ -40,3 +40,5 @@ dist
 dist-ssr
 
 package-lock.json
+
+bun.lockb

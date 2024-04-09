@@ -13,7 +13,7 @@ export const metadata = {
 export default function HeroPage() {
   return (
     <>
-      <Heading>#Explore The Hero Collections</Heading>
+      <Heading>Explore The Hero Collections</Heading>
       <Hero1 />
       <Hero2 />
       <Hero3 />

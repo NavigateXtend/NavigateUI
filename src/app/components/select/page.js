@@ -10,7 +10,7 @@ export const metadata = {
 const Selector = () => {
   return (
     <div>
-      <Heading>#Explore The Selects Collections</Heading>
+      <Heading>Explore The Selects Collections</Heading>
       <Select1></Select1>
     </div>
   );

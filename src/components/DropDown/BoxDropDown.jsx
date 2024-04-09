@@ -20,7 +20,7 @@ export default function BoxDropDown() {
   return (
         <div ref={dropDownRef} className="relative mx-auto w-fit text-white">
             <button onClick={() => setOpen((prev) => !prev)} className="rounded-sm bg-sky-600 px-6 py-2">Dropdown</button>
-            <ul className={\`\${open ? 'visible' : 'invisible'} absolute top-12 z-50 w-full space-y-1 rounded-sm shadow-md\`}>
+            <ul className={\`\${open ? 'visible' : 'invisible'} absolute top-12 z-50 w-full space-y-1 rounded-sm\`}>
                 {items.map((item, idx) => (
                 <li key={idx} className={\`rounded-sm bg-sky-400 p-2 \${open ? 'opacity-100 duration-300' : 'opacity-0 duration-150'} hover:bg-sky-500\`}>
                     {item}
@@ -57,7 +57,7 @@ export default function BoxDropDown() {
         >
           Dropdown
         </button>
-        <ul className={`${open ? 'visible' : 'invisible'} absolute top-12 z-50 w-full space-y-1 rounded-sm shadow-md`}>
+        <ul className={`${open ? 'visible' : 'invisible'} absolute top-12 z-50 w-full space-y-1 rounded-sm`}>
           {items.map((item, idx) => (
             <li key={idx} className={`rounded-sm bg-sky-400 p-2 ${open ? 'opacity-100 duration-300' : 'opacity-0 duration-150'} hover:bg-sky-500`}>
               {item}

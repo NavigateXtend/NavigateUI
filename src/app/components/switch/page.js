@@ -5,9 +5,9 @@ import Heading from '@/ui/Heading';
 export default function page() {
   return (
     <div>
-      <Heading>#BasicSwitchWithPeer</Heading>
+      <Heading>BasicSwitchWithPeer</Heading>
       <BasicSwitchWithPeer />
-      <Heading>#BasicSwitchWithState</Heading>
+      <Heading>BasicSwitchWithState</Heading>
       <BasicSwitchWithState />
     </div>
   );

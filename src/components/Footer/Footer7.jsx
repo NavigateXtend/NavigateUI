@@ -2,7 +2,7 @@ import CP from '@/ui/CP';
 
 const Footer7 = () => {
   const code = `
-        <footer className="flex flex-col">
+        <footer className="flex flex-col text-black">
             <div className="flex flex-col items-start justify-around gap-5 bg-sky-50 p-10 py-10 md:flex-row md:gap-0 md:items-center">
                 <aside className="text-xl">
                     <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" className="fill-current">
@@ -45,7 +45,7 @@ const Footer7 = () => {
 
   return (
     <CP code={code}>
-      <footer className="flex flex-col">
+      <footer className="flex flex-col text-black">
         <div className="flex flex-col items-start justify-around gap-5 bg-sky-50 p-10 py-10 md:flex-row md:items-center md:gap-0">
           <aside className="text-xl">
             <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" className="fill-current">

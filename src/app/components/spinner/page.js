@@ -9,7 +9,7 @@ export const metadata = {
 export default function SpinnerPage() {
   return (
     <div>
-      <Heading>#Explore The Spinner Collections</Heading>
+      <Heading>Explore The Spinner Collections</Heading>
       <Spinner1 />
     </div>
   );

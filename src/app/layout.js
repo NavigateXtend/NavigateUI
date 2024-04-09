@@ -31,7 +31,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={`${inter.className} overflow-x-hidden bg-slate-100 selection:bg-sky-500 selection:text-white dark:bg-black/50`}>
+            <body className={`${inter.className} overflow-x-hidden bg-slate-100 selection:bg-sky-500 dark:bg-black/50`}>
                 <Providers>
                     <Navbar />
                     <div className="lg:hidden">

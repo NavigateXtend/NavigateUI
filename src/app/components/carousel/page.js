@@ -17,7 +17,7 @@ export const metadata = {
 export default function SliderPage() {
   return (
     <div className="flex flex-col items-center justify-center">
-      <Heading>#Explore The Carousel Collections</Heading>
+      <Heading>Explore The Carousel Collections</Heading>
       <Carousel1 />
       <Carousel2 />
       <Carousel3 />

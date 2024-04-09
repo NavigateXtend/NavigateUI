@@ -1,9 +1,9 @@
-import FileUpload1 from "@/Components/FileUpload/FileUpload1";
-import FileUpload2 from "@/Components/FileUpload/FileUpload2";
-import FileUpload3 from "@/Components/FileUpload/FileUpload3";
-import FileUpload4 from "@/Components/FileUpload/FileUpload4";
-import FileUpload5 from "@/Components/FileUpload/FileUpload5";
-import FileUpload6 from "@/Components/FileUpload/FileUpload6";
+import FileUpload1 from "@/components/FileUpload/FileUpload1";
+import FileUpload2 from "@/components/FileUpload/FileUpload2";
+import FileUpload3 from "@/components/FileUpload/FileUpload3";
+import FileUpload4 from "@/components/FileUpload/FileUpload4";
+import FileUpload5 from "@/components/FileUpload/FileUpload5";
+import FileUpload6 from "@/components/FileUpload/FileUpload6";
 
 export default function FileUpload() {
   return (
