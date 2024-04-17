@@ -80,6 +80,7 @@ const MenuItems = [
       { route: 'Modal' },
       { route: 'Navbar' },
       { route: 'Pagination' },
+      { route: 'Rating' , new: true},
       { route: 'Progress' },
       { route: 'Select' },
       { route: 'Skeleton' },
