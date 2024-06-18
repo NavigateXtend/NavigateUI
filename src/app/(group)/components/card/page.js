@@ -1,5 +1,6 @@
 import AlertCard from '@/components/Card/AlertCard';
 import ArticleCard from '@/components/Card/ArticleCard';
+import Card14 from '@/components/Card/Card14';
 import CookieCard from '@/components/Card/CookieCard';
 import PricingCard from '@/components/Card/PricingCard';
 import PricingCard2 from '@/components/Card/PricingCard2';

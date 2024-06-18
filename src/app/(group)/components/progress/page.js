@@ -1,6 +1,7 @@
 import DynamicProgress from '@/components/Progress/DynamicProgress';
 import InsidePercentageProgress from '@/components/Progress/InsidePercentageProgress';
 import OutsidePercentageProgress from '@/components/Progress/OutsidePercentageProgress';
+import CircleProgress from '@/components/Progress/CircleProgress';
 import StaticProgress from '@/components/Progress/StaticProgress';
 import StaticWithPercentage from '@/components/Progress/StaticWithPercentage';
 import { ComponentPortion } from '@/ui/Server';
@@ -30,11 +31,13 @@ const progressArr = [
     {
         name: 'Outside percentage progress',
         Comp: OutsidePercentageProgress
+    },
+    {
+        name: 'Circle progress',
+        Comp: CircleProgress
     }
 ];
 
-const Progress = () => {
+export default function Progress() {
     return <ComponentPortion arr={progressArr} />;
-};
-
-export default Progress;
+}
