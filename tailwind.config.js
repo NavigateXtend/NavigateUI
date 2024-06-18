@@ -22,12 +22,15 @@ module.exports = {
             },
 
             height: {
-                ch: 'calc(100vh - 70px)'
+                ch: 'calc(100vh - 50px)'
+            },
+            maxWidth: {
+                con: '1500px'
             },
             color: {
                 darkM: '#18181B'
             }
         }
     },
-    plugins: []
+    plugins: [require('@tailwindcss/typography')]
 };

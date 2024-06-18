@@ -1,15 +1,23 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+  scroll-behavior: smooth;
+  scroll-margin: 60px 0px 0px 0px;
+}
+.ser::-webkit-scrollbar{
+width: 0px;
+height: 0px;
+}
 body {
   /* font-family: 'Poppins', sans-serif; */
   scroll-behavior: smooth;
-  /* scrollbar-width: none; */
-  /* background-image: linear-gradient(#8bb9d230 0.5px, transparent 0.5px), linear-gradient(to right, #8bb9d230 0.5px, transparent 0.5px);
-  background-size: 100px 100px; */
+  
+  background-image: linear-gradient(#484b4b06 1px, transparent 1px), linear-gradient(to right, #484b4b06 1px, transparent 1px);
+    background-size: 302px 302px;
+    background-color: #5c5c5c;
+    background-attachment: fixed;
 }
 
 
@@ -27,8 +35,9 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #6a78842c;
+  background: rgb(0, 0, 0);
 }
+
 
 .sidebar::-webkit-scrollbar {
   width: 6px;
@@ -52,11 +61,23 @@ body {
   opacity: 1;
 }
 
-
-
-@media screen and (max-width: 640px) {
-  .heightWithOutNav {
-    height: calc(100vh - 48px);
-  }
-
+.codebox::-webkit-scrollbar-thumb {
+  background: #b3b3b36e;
+  border-radius: 100px;
+  opacity: 1;
 }
+
+.codebox::-webkit-scrollbar-track {
+  background: transparent;
+}
+.codebox::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.prose h1 {
+  @apply dark:text-white;
+}
+
+
+

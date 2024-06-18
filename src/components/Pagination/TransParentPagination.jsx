@@ -36,51 +36,51 @@ export const TransParentPagination = () => {
 `;
 
 const TransParentPagination = () => {
-  const [pageNumber, setPageNumber] = useState(0);
-  const page = 5; // Adjust the page numbers the way you want
-  const updatePageNumber = (num) => {
-    if (num > page - 1 || 0 > num) {
-      return setPageNumber(0);
-    }
-    setPageNumber(num);
-  };
-  return (
-    <CP code={codeStr}>
-      <div className="mx-auto flex w-fit select-none items-center justify-center gap-5 rounded-md bg-white p-2 shadow-lg">
-        {/* left arrow */}
-        <div
-          onClick={() => {
-            updatePageNumber(pageNumber - 1);
-          }}
-          className="cursor-pointer px-1 py-1 text-[12px] font-semibold"
-        >
-          PREV
-        </div>
-        <div className="flex items-center justify-center gap-2 ">
-          {[...Array(page).keys()].map((item, ind) => (
-            <div
-              key={item}
-              onClick={() => {
-                setPageNumber(item);
-              }}
-              className={`scale-100 cursor-pointer  border-b-2  px-3 text-sm transition-all duration-200 hover:scale-110 ${pageNumber === item ? 'border-sky-300' : 'border-white'}   py-[6px] font-semibold   text-gray-700 `}
-            >
-              {item + 1}
+    const [pageNumber, setPageNumber] = useState(0);
+    const page = 5; // Adjust the page numbers the way you want
+    const updatePageNumber = (num) => {
+        if (num > page - 1 || 0 > num) {
+            return setPageNumber(0);
+        }
+        setPageNumber(num);
+    };
+    return (
+        <CP code={codeStr}>
+            <div className="mx-auto flex w-fit select-none items-center justify-center gap-5 rounded-md bg-white p-2 text-black shadow-lg">
+                {/* left arrow */}
+                <div
+                    onClick={() => {
+                        updatePageNumber(pageNumber - 1);
+                    }}
+                    className="cursor-pointer px-1 py-1 text-[12px] font-semibold"
+                >
+                    PREV
+                </div>
+                <div className="flex items-center justify-center gap-2 ">
+                    {[...Array(page).keys()].map((item, ind) => (
+                        <div
+                            key={item}
+                            onClick={() => {
+                                setPageNumber(item);
+                            }}
+                            className={`scale-100 cursor-pointer  border-b-2  px-3 text-sm transition-all duration-200 hover:scale-110 ${pageNumber === item ? 'border-sky-300' : 'border-white'}   py-[6px] font-semibold   text-gray-700 `}
+                        >
+                            {item + 1}
+                        </div>
+                    ))}
+                </div>
+                {/* right arrow */}
+                <div
+                    onClick={() => {
+                        updatePageNumber(pageNumber + 1);
+                    }}
+                    className="cursor-pointer px-1 py-1 text-[12px] font-semibold"
+                >
+                    NEXT
+                </div>
             </div>
-          ))}
-        </div>
-        {/* right arrow */}
-        <div
-          onClick={() => {
-            updatePageNumber(pageNumber + 1);
-          }}
-          className="cursor-pointer px-1 py-1 text-[12px] font-semibold"
-        >
-          NEXT
-        </div>
-      </div>
-    </CP>
-  );
+        </CP>
+    );
 };
 
 export default TransParentPagination;
