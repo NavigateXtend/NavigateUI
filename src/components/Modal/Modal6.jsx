@@ -79,11 +79,7 @@ return (
                                         </div>
                                     </form>
                                 </div>
-                            </div>
                         </div>
-
-                        <div className="space-y-8 lg:mb-0 mb-6">
-                            <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
                                 <div className="flex flex-col space-y-1.5 lg:p-6 p-2">
                                     <h3 className="text-2xl font-semibold whitespace-nowrap">Order Summary</h3>
                                 </div>
@@ -132,14 +128,14 @@ const Modal6 = () => {
     <CP code={code}>
       <div className="mx-auto flex w-72 items-center justify-center">
         {/* Pay Button */}
-        <button onClick={() => setOpenModal(true)} className="rounded-md bg-black dark:bg-white py-2 px-5 text-white dark:text-black">
+        <button onClick={() => setOpenModal(true)} className="rounded-md bg-black px-5 py-2 text-white dark:bg-white dark:text-black">
           Pay Now
         </button>
         {/* purchase modal */}
         <div className={`fixed z-[100] ${openModal ? 'visible' : 'invisible'} inset-0`}>
           <div
             onClick={(e_) => e_.stopPropagation()}
-            className={`absolute flex h-full w-full justify-center overflow-x-hidden overflow-y-scroll rounded-lg bg-white dark:bg-[#111] drop-shadow-2xl ${
+            className={`absolute flex h-full w-full justify-center overflow-x-hidden overflow-y-scroll rounded-lg bg-white drop-shadow-2xl dark:bg-[#111] ${
               openModal ? 'opacity-1 translate-y-0 duration-300' : 'translate-y-32 opacity-0'
             }`}
           >
@@ -163,19 +159,19 @@ const Modal6 = () => {
                       <form className="space-y-4">
                         <div className="space-y-2">
                           <label className="text-sm font-medium">Name</label>
-                          <input className="bg-transparent flex h-10 w-full rounded-md border px-3" placeholder="Enter your name" />
+                          <input className="flex h-10 w-full rounded-md border bg-transparent px-3" placeholder="Enter your name" />
                         </div>
                         <div className="space-y-2">
                           <label className="text-sm font-medium">Address</label>
-                          <input className="bg-transparent flex h-10 w-full rounded-md border px-3" placeholder="Enter your address" />
+                          <input className="flex h-10 w-full rounded-md border bg-transparent px-3" placeholder="Enter your address" />
                         </div>
                         <div className="space-y-2">
                           <label className="text-sm font-medium">City</label>
-                          <input className="bg-transparent flex h-10 w-full rounded-md border px-3" placeholder="Enter your city" />
+                          <input className="flex h-10 w-full rounded-md border bg-transparent px-3" placeholder="Enter your city" />
                         </div>
                         <div className="space-y-2">
                           <label className="text-sm font-medium">Country</label>
-                          <input className="bg-transparent flex h-10 w-full rounded-md border px-3" placeholder="Enter your country" />
+                          <input className="flex h-10 w-full rounded-md border bg-transparent px-3" placeholder="Enter your country" />
                         </div>
                       </form>
                     </div>
@@ -189,21 +185,21 @@ const Modal6 = () => {
                       <form className="space-y-4">
                         <div className="space-y-2">
                           <label className="text-sm font-medium leading-none">Card Number</label>
-                          <input className="bg-transparent flex h-10 w-full rounded-md border px-3" placeholder="Enter your card number" />
+                          <input className="flex h-10 w-full rounded-md border bg-transparent px-3" placeholder="Enter your card number" />
                         </div>
                         <div className="grid grid-cols-2 gap-4">
                           <div className="space-y-2">
                             <label className="text-sm font-medium leading-none">Expiry Date</label>
-                            <input className="bg-transparent flex h-10 w-full rounded-md border px-3" placeholder="MM/YY" />
+                            <input className="flex h-10 w-full rounded-md border bg-transparent px-3" placeholder="MM/YY" />
                           </div>
                           <div className="space-y-2">
                             <label className="text-sm font-medium leading-none">CVV</label>
-                            <input className="bg-transparent flex h-10 w-full rounded-md border px-3" placeholder="Enter your CVV" />
+                            <input className="flex h-10 w-full rounded-md border bg-transparent px-3" placeholder="Enter your CVV" />
                           </div>
                         </div>
                         <div className="space-y-2">
                           <label className="text-sm font-medium leading-none">Billing Address</label>
-                          <input className="bg-transparent flex h-10 w-full rounded-md border px-3" placeholder="Enter your billing address" />
+                          <input className="flex h-10 w-full rounded-md border bg-transparent px-3" placeholder="Enter your billing address" />
                         </div>
                       </form>
                     </div>
@@ -241,7 +237,7 @@ const Modal6 = () => {
                         onClick={() => {
                           setOpenModal(false);
                         }}
-                        className="ring-offset-background focus-visible:ring-ring bg-primary text-primary-foreground hover:bg-primary/90 inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md bg-slate-950 dark:bg-white dark:text-black px-4 py-2 text-sm font-medium text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+                        className="ring-offset-background focus-visible:ring-ring bg-primary text-primary-foreground hover:bg-primary/90 inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md bg-slate-950 px-4 py-2 text-sm font-medium text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:bg-white dark:text-black"
                       >
                         Complete Purchase
                       </button>

@@ -26,11 +26,6 @@ export default function Footer() {
                     </li>
                     <li className="cursor-pointer">
                         <a>
-                            <YouTube className="size-6 fill-current" />
-                        </a>
-                    </li>
-                    <li className="cursor-pointer">
-                        <a>
                             <Twitter className="size-6 fill-current" />
                         </a>
                     </li>

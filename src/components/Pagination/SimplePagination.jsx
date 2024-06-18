@@ -36,55 +36,55 @@ export const SimplePagination = () => {
 `;
 
 const SimplePagination = () => {
-    const [pageNumber, setPageNumber] = useState(0);
-    const page = 5; // Adjust the page numbers the way you want
-    const updatePageNumber = (num) => {
-        if (num > page - 1 || 0 > num) {
-            return setPageNumber(0);
-        }
-        setPageNumber(num);
-    };
-    return (
-        <CP code={codeStr}>
-            <div className="flex select-none items-center justify-center gap-5">
-                {/* left arrow */}
-                <div
-                    onClick={() => {
-                        updatePageNumber(pageNumber - 1);
-                    }}
-                    className=" scale-100 cursor-pointer rounded-full px-1 py-1 transition-all duration-200 hover:scale-110 hover:bg-zinc-200"
-                >
-                    <svg className="w-10 stroke-zinc-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15 7L10 12L15 17" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />{' '}
-                    </svg>
-                </div>
-                <div className="flex items-center justify-center gap-2 ">
-                    {[...Array(page).keys()].map((item, ind) => (
-                        <div
-                            onClick={() => {
-                                setPageNumber(item);
-                            }}
-                            className={`scale-100 cursor-pointer px-5 transition-all duration-200 hover:scale-110 ${pageNumber === item ? 'bg-zinc-500 text-white' : 'bg-white'} rounded-full  border-zinc-300 py-3   font-semibold text-gray-700`}
-                            key={item}
-                        >
-                            {item + 1}
-                        </div>
-                    ))}
-                </div>
-                {/* right arrow */}
-                <button
-                    onClick={() => {
-                        updatePageNumber(pageNumber + 1);
-                    }}
-                    className=" scale-100 cursor-pointer rounded-full px-1 py-1 outline-none transition-all duration-200 hover:scale-110 hover:bg-zinc-200"
-                >
-                    <svg className="w-10 stroke-zinc-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10 7L15 12L10 17" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>{' '}
-                    </svg>
-                </button>
+  const [pageNumber, setPageNumber] = useState(0);
+  const page = 5; // Adjust the page numbers the way you want
+  const updatePageNumber = (num) => {
+    if (num > page - 1 || 0 > num) {
+      return setPageNumber(0);
+    }
+    setPageNumber(num);
+  };
+  return (
+    <CP code={codeStr}>
+      <div className="flex select-none items-center justify-center gap-5">
+        {/* left arrow */}
+        <div
+          onClick={() => {
+            updatePageNumber(pageNumber - 1);
+          }}
+          className=" scale-100 cursor-pointer rounded-full px-1 py-1 transition-all duration-200 hover:scale-110 hover:bg-zinc-200"
+        >
+          <svg className="w-10 stroke-zinc-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 7L10 12L15 17" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />{' '}
+          </svg>
+        </div>
+        <div className="flex items-center justify-center gap-2 ">
+          {[...Array(page).keys()].map((item, ind) => (
+            <div
+              onClick={() => {
+                setPageNumber(item);
+              }}
+              className={`scale-100 cursor-pointer px-5 transition-all duration-200 hover:scale-110 ${pageNumber === item ? 'bg-zinc-500 text-white' : 'bg-white'} rounded-full  border-zinc-300 py-3   font-semibold text-gray-700`}
+              key={item}
+            >
+              {item + 1}
             </div>
-        </CP>
-    );
+          ))}
+        </div>
+        {/* right arrow */}
+        <button
+          onClick={() => {
+            updatePageNumber(pageNumber + 1);
+          }}
+          className=" scale-100 cursor-pointer rounded-full px-1 py-1 outline-none transition-all duration-200 hover:scale-110 hover:bg-zinc-200"
+        >
+          <svg className="w-10 stroke-zinc-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 7L15 12L10 17" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>{' '}
+          </svg>
+        </button>
+      </div>
+    </CP>
+  );
 };
 
 export default SimplePagination;
